@@ -1437,7 +1437,7 @@ async def training_step_3_handler(callback: Callback, cursor: FSMCursor):
         
         await callback.send(text)
 
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
             
@@ -1470,7 +1470,7 @@ async def lawyer_show_course_intro_handler(callback: Callback, cursor: FSMCursor
         text = table_of_content_lawyer()
         await callback.send(text)
         # 2) Через 15 секунд — содержание Блока №1
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
         cursor.change_state(TrainingStates.lawyer['block_1'])
         
@@ -1502,7 +1502,7 @@ async def show_course_intro_handler(callback: Callback, cursor: FSMCursor):
             text = get_course_intro_text()
             await callback.send(text)
             # 2) Через 15 секунд — содержание Блока №1
-            await asyncio.sleep(2) # 15
+            await asyncio.sleep(15) # 2
             block1_intro = get_block1_intro_text()
        
         elif current_course in ["Другой сотрудник", "Обучение по продукту"]:
@@ -1514,7 +1514,7 @@ async def show_course_intro_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(block1_intro)
         
         # 3) Ещё через 10 секунд — сообщение с кнопкой «Продолжить обучение»
-        await asyncio.sleep(2) # 10
+        await asyncio.sleep(10) # 2
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
         cursor.change_state(TrainingStates.step_3_presentation)
@@ -1544,7 +1544,7 @@ async def training_step_3_handler_first_step(callback: Callback, cursor: FSMCurs
         if continue_flag:
             intro_text = get_block1_intro_text()
             await callback.send(intro_text)
-            await asyncio.sleep(2) # 10
+            await asyncio.sleep(10) # 2
         
         
         # if await debounce_button_max(callback, cursor):
@@ -1554,7 +1554,7 @@ async def training_step_3_handler_first_step(callback: Callback, cursor: FSMCurs
         intro_text = get_block1_section1_intro_text()
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 3
         
         # сообщение о тестировании с кнопкой
         test_text = go_to_test_1_text(5)
@@ -1749,9 +1749,9 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
             result_text += "❌ **Неправильные ответы:**\n\n"
             for mistake in mistakes:
                 result_text += f"**{mistake['question']}**\n\n"
-                result_text += f"Ваш ответ: {mistake['user_answer']}\n"
-                result_text += f"Правильный ответ: {mistake['correct_answer']}\n\n"
-                result_text += "───────────────────────────\n\n"
+                result_text += f"📝 **Ваш ответ**: {mistake['user_answer']}\n"
+                result_text += f"🎯 **Правильный ответ**: {mistake['correct_answer']}\n\n"
+                result_text += f"━━━━━━━━━━━━━━━━━━━━\n\n"
             
             result_text += "💡 **Обратите внимание на эти моменты и повторите материал!**"
         
@@ -1780,7 +1780,7 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
         )
         
         # Через 15 секунд предлагаем продолжить
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
         await save_cursor(message.user_id, extra_data = {'call_button': 'next_education::not_first'})    
@@ -2000,7 +2000,7 @@ async def training_step_6_handler(callback: Callback, cursor: FSMCursor):
         intro_text = get_block1_section2_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -2074,7 +2074,7 @@ async def training_step_8_handler(callback: Callback, cursor: FSMCursor):
         intro_text = get_block1_section_3_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -2141,7 +2141,7 @@ async def training_step_9_handler(callback: Callback, cursor: FSMCursor):
         intro_text = get_block1_section_4_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -2207,7 +2207,7 @@ async def training_step_10_handler(callback: Callback, cursor: FSMCursor):
         intro_text = get_block1_section_5_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, format='markdown', keyboard=start_test_kb())
@@ -2273,7 +2273,7 @@ async def training_step_11_handler(callback: Callback, cursor: FSMCursor):
         intro_text = get_block1_section_6_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -2886,6 +2886,7 @@ async def show_results_step12(message: Message, cursor: FSMCursor, lesson_id: st
             score = evaluation.get("score", 0)
             feedback = evaluation.get("feedback", "Нет фидбека")
             passed = evaluation.get("passed", False)
+            ideal_answer = evaluation.get("ideal_answer", "Не нашли правильного ответа")
                   
             open_scores.append(score)
             
@@ -2895,7 +2896,8 @@ async def show_results_step12(message: Message, cursor: FSMCursor, lesson_id: st
                     "question": question["question"],
                     "user_answer": user_answer[:200] + "..." if len(user_answer) > 200 else user_answer,
                     "feedback": feedback,
-                    "score": score
+                    "score": score,
+                    "ideal_answer": ideal_answer
                 })
             
             if 7.0 < score < 10.0:
@@ -2904,7 +2906,8 @@ async def show_results_step12(message: Message, cursor: FSMCursor, lesson_id: st
                     "question": question["question"],
                     "user_answer": user_answer[:200] + "..." if len(user_answer) > 200 else user_answer,
                     "feedback": feedback,
-                    "score": score
+                    "score": score,
+                    "ideal_answer": ideal_answer
                 })
                 
                 
@@ -3048,10 +3051,12 @@ async def show_results_step12(message: Message, cursor: FSMCursor, lesson_id: st
                 
                 result_text += "**Не точные ответы в открытых вопросах:**\n\n"
                 for comment in giga_comments:
-                    result_text += f"⚠️ **Вопрос {comment['number']}:** {comment['question']}\n"
-                    result_text += f"Ваш ответ: {comment['user_answer']}\n"
-                    result_text += f"Оценка: {comment['score']}/10\n"
-                    result_text += f"Фидбек: {comment['feedback']}\n\n"
+                    result_text += f"⚠️ **Вопрос {comment['number']}:** {comment['question']}\n\n"
+                    result_text += f"📝 **Ваш ответ**:\n{comment['user_answer']}\n\n"
+                    result_text += f"🎯 **Правильный ответ**:\n{comment['ideal_answer']}\n\n"
+                    result_text += f"📊 **Оценка**: {comment['score']}/10\n\n"
+                    result_text += f"💬 **Фидбек**:\n{comment['feedback']}\n\n"
+                    result_text += f"━━━━━━━━━━━━━━━━━━━━\n\n"
                 
             
             result_text += f"🎉 **Отлично!**\n\nВы успешно прошли финальный тест! Поздравляем с завершением Блока {migration_header}!"
@@ -3065,8 +3070,8 @@ async def show_results_step12(message: Message, cursor: FSMCursor, lesson_id: st
                 result_text += "**Ошибки в тестовых вопросах:**\n\n"
                 for mistake in closed_mistakes:
                     result_text += f"❌ **Вопрос {mistake['number']}:** {mistake['question']}\n"
-                    result_text += f"Ваш ответ: {mistake['user_answer']}\n"
-                    result_text += f"Правильный ответ: {mistake['correct_answer']}\n\n"
+                    result_text += f"**Ваш ответ**:\n{mistake['user_answer']}\n"
+                    result_text += f"**Правильный ответ**:\n{mistake['correct_answer']}\n\n"
             
             # Показываем ошибки в открытых вопросах
             if giga_comments:
@@ -3074,18 +3079,22 @@ async def show_results_step12(message: Message, cursor: FSMCursor, lesson_id: st
                 
                 result_text += "**Не точные ответы в открытых вопросах:**\n\n"
                 for comment in giga_comments:
-                    result_text += f"⚠️ **Вопрос {comment['number']}:** {comment['question']}\n"
-                    result_text += f"Ваш ответ: {comment['user_answer']}\n"
-                    result_text += f"Оценка: {comment['score']}/10\n"
-                    result_text += f"Фидбек: {comment['feedback']}\n\n"
+                    result_text += f"⚠️ **Вопрос {comment['number']}:** {comment['question']}\n\n"
+                    result_text += f"📝 **Ваш ответ**:\n{comment['user_answer']}\n\n"
+                    result_text += f"🎯 **Правильный ответ**:\n{comment['ideal_answer']}\n\n"
+                    result_text += f"📊 **Оценка**:{comment['score']}/10\n\n"
+                    result_text += f"💬 **Фидбек**:\n{comment['feedback']}\n\n"
+                    result_text += f"━━━━━━━━━━━━━━━━━━━━\n\n"
             
             if open_mistakes:
                 result_text += "**Ошибки в открытых вопросах:**\n\n"
                 for mistake in open_mistakes:
-                    result_text += f"❌ **Вопрос {mistake['number']}:** {mistake['question']}\n"
-                    result_text += f"Ваш ответ: {mistake['user_answer']}\n"
-                    result_text += f"Оценка: {mistake['score']}/10\n"
-                    result_text += f"Фидбек: {mistake['feedback']}\n\n"
+                    result_text += f"❌ **Вопрос {mistake['number']}:** {mistake['question']}\n\n"
+                    result_text += f"📝 **Ваш ответ**:\n{mistake['user_answer']}\n\n"
+                    result_text += f"🎯 **Правильный ответ**:\n{mistake['ideal_answer']}\n\n"
+                    result_text += f"📊 **Оценка**:{mistake['score']}/10\n\n"
+                    result_text += f"💬 **Фидбек**:\n{mistake['feedback']}\n\n"
+                    result_text += f"━━━━━━━━━━━━━━━━━━━━\n\n"
             
             result_text += "\n**Рекомендуем изучить материалы ещё раз!**"
         
@@ -3094,7 +3103,7 @@ async def show_results_step12(message: Message, cursor: FSMCursor, lesson_id: st
         #game = GamificationService()
         
         # Переход дальше (или завершение)
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         # ==========================================
         # ПОКАЗЫВАЕМ РЕЙТИНГ ПО ИТОГАМ ПРОЙДЕННОГО БЛОКА
@@ -3257,7 +3266,7 @@ async def show_results_step12(message: Message, cursor: FSMCursor, lesson_id: st
         await message.send(rating_text, format="markdown")
         
         # Пауза перед кнопкой продолжения
-        await asyncio.sleep(2) # 5
+        await asyncio.sleep(5) # 2
         
         logger.info(f'Строка 2621: {migration_header=}')
         await del_value_from_redis(message.user_id, 'migration_state')
@@ -3383,7 +3392,7 @@ async def start_block_2_handler(callback: Callback, cursor: FSMCursor, continue_
         if continue_flag:
             intro_text = get_block2_intro_text()
             await callback.send(intro_text)
-            await asyncio.sleep(2) # 10        
+            await asyncio.sleep(10) # 2        
         
         # if await debounce_button_max(callback, cursor):
         #     return
@@ -3392,7 +3401,7 @@ async def start_block_2_handler(callback: Callback, cursor: FSMCursor, continue_
         
         await callback.send(intro_text, format='markdown', disable_link_preview=True)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         test_text = go_to_test_1_text(10)
         await callback.send(test_text, format="markdown", keyboard=start_test_kb())
@@ -3462,7 +3471,7 @@ async def block_2_test_2_ready_for_test_handl(callback: Callback, cursor: FSMCur
         intro_text = get_block2_section_2_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         test_text = go_to_test_1_text(10)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -3482,7 +3491,7 @@ async def training_block_2_test_2_handler(callback: Callback, cursor: FSMCursor)
     """БЛО№ № 2 Тест 2 - Начало тестирования"""
     try:
         logger.info("[INFO][training_block_2_test_2_handler] Стартовал")
-        # if await debounce_button_max(callback, cursor):
+        # if await debounce_button_max(callback, cursor):'5. ООО "Альфа-Крас" — Производство малярных работ'   
         #     logger.info(f"[training_step_4_handler] Идет обработка нажмите позднее")
         #     return
         await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2) 
@@ -3527,7 +3536,7 @@ async def block_2_test_3_ready_for_test_handl(callback: Callback, cursor: FSMCur
         intro_text = get_block2_section_3_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         test_text = go_to_test_1_text(10)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -3601,7 +3610,7 @@ async def block_2_go_to_final_test_handl(callback: Callback, cursor: FSMCursor):
         if not current_course:
             current_course = get_current_course(cursor)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         game = GamificationService(current_course)
         game.increment_lessons_completed(callback.user_id, increment_lesson=1)
         
@@ -3998,14 +4007,14 @@ async def start_block_3_handler(callback: Callback, cursor: FSMCursor, continue_
         if continue_flag:
             intro_text = get_block3_intro_text()
             await callback.send(intro_text)
-            await asyncio.sleep(2) # 10 
+            await asyncio.sleep(10) # 2 
         
         await callback.message.delete()
         
         intro_text = get_block3_section_1_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, format="markdown", keyboard=start_test_kb())
@@ -4047,7 +4056,7 @@ async def go_to_block3_section1_handler(callback: Callback, cursor: FSMCursor):
         intro_text = get_block3_section_1_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, format="markdown", keyboard=start_test_kb())
@@ -4115,7 +4124,7 @@ async def block_3_test_2_ready_for_test_handl(callback: Callback, cursor: FSMCur
         intro_text = get_block3_section_2_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(3) # 15
+        await asyncio.sleep(15) # 3
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -4184,7 +4193,7 @@ async def block_3_test_3_ready_for_test_handl(callback: Callback, cursor: FSMCur
         intro_text = get_block3_section_3_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -4250,7 +4259,7 @@ async def block_3_test_4_ready_for_test_handl(callback: Callback, cursor: FSMCur
         intro_text = get_block3_section_4_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -4319,7 +4328,7 @@ async def block_3_test_5_ready_for_test_handl(callback: Callback, cursor: FSMCur
         intro_text = get_block3_section_5_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -4387,7 +4396,7 @@ async def block_3_test_6_ready_for_test_handl(callback: Callback, cursor: FSMCur
         intro_text = get_block3_section_6_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -4729,14 +4738,14 @@ async def start_block_4_handler(callback: Callback, cursor: FSMCursor, continue_
         if continue_flag:
             intro_text = get_block4_intro_text()
             await callback.send(intro_text)
-            await asyncio.sleep(2) # 10 
+            await asyncio.sleep(10) # 2 
         
         await callback.message.delete()
         
         intro_text = get_block4_section_1_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         test_text = go_to_test_1_text(10)
         await callback.send(test_text, format="markdown", keyboard=start_test_kb())
@@ -4768,7 +4777,7 @@ async def go_to_block4_section1_handler(callback: Callback, cursor: FSMCursor):
         intro_text = get_block4_section_1_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         test_text = go_to_test_1_text(10)
         await callback.send(test_text, format="markdown", keyboard=start_test_kb())
@@ -4835,7 +4844,7 @@ async def block_4_test_2_ready_for_test_handl(callback: Callback, cursor: FSMCur
         intro_text = get_block4_section_2_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -4901,7 +4910,7 @@ async def block_4_test_3_ready_for_test_handl(callback: Callback, cursor: FSMCur
         intro_text = get_block4_section_3_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -4951,7 +4960,7 @@ async def training_block_4_test_3_handler(callback: Callback, cursor: FSMCursor)
         await remove_repeat_flag(callback.user_id)
         
 
-
+'5. ООО "Альфа-Крас" — Производство малярных работ'   
 # ============================================================================
 # БЛОК №4 - РАЗДЕЛ №4: Быстрый расчёт: ИИ-Агент
 # ============================================================================
@@ -4970,7 +4979,7 @@ async def block_4_test_4_ready_for_test_handl(callback: Callback, cursor: FSMCur
         intro_text = get_block4_section_4_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -5009,7 +5018,7 @@ async def training_block_4_test_4_handler(callback: Callback, cursor: FSMCursor)
         logger.info(f'[training_block_4_test_4_handler] после добавления вопросов в state: {data=}')  
         cursor.change_data(data)
         # Отправляем первый вопрос
-        await send_question(callback, cursor, 'section_21')
+        await send_question(callback, cursor, 'section_21')  
         await save_cursor(callback.user_id, extra_data=dict(state_name = TrainingStates.block_4_test_4_testing))
         cursor.change_state(TrainingStates.block_4_test_4_testing)
     
@@ -5306,7 +5315,7 @@ async def start_block_5_handler(callback: Callback, cursor: FSMCursor, continue_
         if continue_flag:
             intro_text = get_block5_intro_text()
             await callback.send(intro_text)
-            await asyncio.sleep(2) # 15
+            await asyncio.sleep(15) # 2
         
         current_course = await get_value_from_redis(callback.user_id, 'current_course')
         if not current_course:
@@ -5325,7 +5334,7 @@ async def start_block_5_handler(callback: Callback, cursor: FSMCursor, continue_
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_1")
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5372,7 +5381,7 @@ async def block_5_video_2_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_2")
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5419,7 +5428,7 @@ async def block_5_video_3_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_3")
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5467,7 +5476,7 @@ async def block_5_video_4_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_4")
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5515,7 +5524,7 @@ async def block_5_video_5_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_5")
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5563,7 +5572,7 @@ async def block_5_video_6_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_6")
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5611,7 +5620,7 @@ async def block_5_video_7_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_7")
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5657,7 +5666,7 @@ async def block_5_video_8_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_8")
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5703,7 +5712,7 @@ async def block_5_video_9_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_9")
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5749,7 +5758,7 @@ async def block_5_video_10_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_10")
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5795,7 +5804,7 @@ async def block_5_video_11_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_11")
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5841,7 +5850,7 @@ async def block_5_video_12_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_12")
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5887,7 +5896,7 @@ async def block_5_video_13_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_13")
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5934,7 +5943,7 @@ async def block_5_video_14_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_14")
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5981,7 +5990,7 @@ async def block_5_video_15_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_15")
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -6293,7 +6302,7 @@ async def start_block_6_section_1_handler(callback: Callback, cursor: FSMCursor,
         if continue_flag:
             intro_text = get_block6_intro_text()
             await callback.send(intro_text, disable_link_preview=True)
-            await asyncio.sleep(2) # 10
+            await asyncio.sleep(10) # 2
         #cursor.change_state(TrainingStates.block4_start)
         
         # if await debounce_button_max(callback, cursor):
@@ -6302,7 +6311,7 @@ async def start_block_6_section_1_handler(callback: Callback, cursor: FSMCursor,
         intro_text = get_block6_section_1_intro_text()  
         #await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         kb = next_to_educ_to_part_kb()
         await callback.send(intro_text, format='markdown', disable_link_preview=True, keyboard=kb)
@@ -6592,7 +6601,7 @@ async def start_block_7_handler(callback: Callback, cursor: FSMCursor, continue_
         if continue_flag:
             intro_text = get_block7_intro_text()
             await callback.send(intro_text)
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         await save_cursor(callback.user_id, extra_data={**cursor_redis_data, 'state_name': TrainingStates.block7_questions, 'payload': 'start_test'})       
         await continue_after_block7_handler(callback, cursor)
@@ -7120,7 +7129,7 @@ async def next_education_handler(callback: Callback, cursor: FSMCursor):
         text = get_first_day_congrats_text()
         await callback.send(text)
 
-        await asyncio.sleep(5) # 15
+        await asyncio.sleep(15) # 5
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
             
@@ -7386,7 +7395,7 @@ async def lawyer_training_step_3_handler(callback: Callback, cursor: FSMCursor, 
         if continue_flag:
             intro_text = table_of_content_lawyer()
             await callback.send(intro_text)
-            await asyncio.sleep(2) # 10
+            await asyncio.sleep(10) # 2
         
         
         # if await debounce_button_max(callback, cursor):
@@ -7396,7 +7405,7 @@ async def lawyer_training_step_3_handler(callback: Callback, cursor: FSMCursor, 
         intro_text = get_block1_intro_text_lawyer()
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         # сообщение о тестировании с кнопкой
         test_text = get_text_to_test_block_1_lawyer()
@@ -7423,7 +7432,7 @@ async def lawyer_part2_section2_handler(callback: Callback, cursor: FSMCursor, c
         if continue_flag:
             intro_text = get_block2_intro_text_lawyer()
             await callback.send(intro_text)
-            await asyncio.sleep(2) # 10
+            await asyncio.sleep(10) # 2
         
         
         # if await debounce_button_max(callback, cursor):
@@ -7433,7 +7442,7 @@ async def lawyer_part2_section2_handler(callback: Callback, cursor: FSMCursor, c
         intro_text = get_block2_section_2_intro_text_lawyer()
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(2) # 10
+        await asyncio.sleep(10) # 2
         
         # сообщение о тестировании с кнопкой
         test_text = get_text_to_test_block_1_lawyer()
@@ -7973,7 +7982,7 @@ async def lawyer_start_block_2_handler(callback: Callback, cursor: FSMCursor, co
         if continue_flag:
             intro_text = table_of_content_lawyer()
             await callback.send(intro_text)
-            await asyncio.sleep(2) # 10
+            await asyncio.sleep(10) # 10
         
         
         # if await debounce_button_max(callback, cursor):
@@ -7983,12 +7992,12 @@ async def lawyer_start_block_2_handler(callback: Callback, cursor: FSMCursor, co
         intro_text = get_block2_intro_text_lawyer()
         await callback.send(intro_text)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
                
         section_1_text = get_block2_section_1_intro_text_lawyer()
         await callback.send(section_1_text, disable_link_preview=True)
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         # сообщение о предложении перейти к 2 разделу блока № 2 с кнопкой
         continue_text = "📚 Для того, чтобы перейти к следующему разделу, нажмите кнопку ниже 👇"
@@ -8011,7 +8020,7 @@ async def lawyer_start_block_3_handler(callback: Callback, cursor: FSMCursor, co
         if continue_flag:
             intro_text = table_of_content_lawyer()
             await callback.send(intro_text)
-            await asyncio.sleep(2) # 10
+            await asyncio.sleep(10) # 2
         
         
         # if await debounce_button_max(callback, cursor):
@@ -8022,7 +8031,7 @@ async def lawyer_start_block_3_handler(callback: Callback, cursor: FSMCursor, co
         await callback.send(intro_text, disable_link_preview=True)
         
                 
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         # сообщение о тестировании с кнопкой
         test_text = get_text_to_test_block_1_lawyer()
@@ -8047,7 +8056,7 @@ async def lawyer_start_block_4_handler(callback: Callback, cursor: FSMCursor, co
         if continue_flag:
             intro_text = table_of_content_lawyer()
             await callback.send(intro_text)
-            await asyncio.sleep(2) # 10
+            await asyncio.sleep(10) #2
         
         
         # if await debounce_button_max(callback, cursor):
@@ -8057,7 +8066,7 @@ async def lawyer_start_block_4_handler(callback: Callback, cursor: FSMCursor, co
         intro_text = get_block4_intro_text_lawyer()
         await callback.send(intro_text, disable_link_preview=True)
                
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         # сообщение о тестировании с кнопкой
         test_text = get_text_to_test_block_1_lawyer()
@@ -8080,7 +8089,7 @@ async def lawyer_start_block_5_handler(callback: Callback, cursor: FSMCursor, co
         if continue_flag:
             intro_text = table_of_content_lawyer()
             await callback.send(intro_text)
-            await asyncio.sleep(2) # 10
+            await asyncio.sleep(10) # 2
         
         
         # if await debounce_button_max(callback, cursor):
@@ -8090,7 +8099,7 @@ async def lawyer_start_block_5_handler(callback: Callback, cursor: FSMCursor, co
         intro_text = get_block5_intro_text_lawyer()
         await callback.send(intro_text, disable_link_preview=True)
                
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         # сообщение о тестировании с кнопкой
         test_text = get_text_to_test_block_1_lawyer()
@@ -8113,7 +8122,7 @@ async def lawyer_start_final_test_handler(callback: Callback, cursor: FSMCursor,
         if continue_flag:
             intro_text = table_of_content_lawyer()
             await callback.send(intro_text)
-            await asyncio.sleep(2) # 10
+            await asyncio.sleep(10) # 2
         
         
         # if await debounce_button_max(callback, cursor):
@@ -8287,7 +8296,7 @@ async def regular_managment_message_2_handler(callback: Callback, cursor: FSMCur
             cursor_data.update(current_block='block_33')
             cursor.change_data(cursor_data)
             await callback.send(text_mess)
-            await asyncio.sleep(2) # 5
+            await asyncio.sleep(5) # 2
             await callback.send(
                 "📚 Вы можете продолжить обучение, нажав кнопку ниже 👇",
                 keyboard=kb
@@ -8301,7 +8310,7 @@ async def regular_managment_message_2_handler(callback: Callback, cursor: FSMCur
             cursor_data.update(current_block='block_34')
             cursor.change_data(cursor_data)
             await callback.send(text_mess)
-            await asyncio.sleep(2) # 5
+            await asyncio.sleep(5) # 2
             await callback.send(
                 "📚 Вы можете продолжить обучение, нажав кнопку ниже 👇",
                 keyboard=kb
@@ -8318,7 +8327,7 @@ async def regular_managment_message_2_handler(callback: Callback, cursor: FSMCur
             return
             
         await callback.send(text_mess)
-        await asyncio.sleep(2) # 30
+        await asyncio.sleep(30) # 2
         await callback.message.delete()
         to_period_sender_text = get_period_sender_text()
         await callback.send(to_period_sender_text)
@@ -8476,6 +8485,7 @@ async def check_answers_to_terms(message: Message, cursor: FSMCursor):
             score = evaluation.get("score", 0)
             feedback = evaluation.get("feedback", "Нет фидбека")
             passed = evaluation.get("passed", False)
+            ideal_answer = evaluation.get("ideal_answer", "Не нашли правильного ответа")
             
             term_scores.append(score)
             
@@ -8485,16 +8495,18 @@ async def check_answers_to_terms(message: Message, cursor: FSMCursor):
                     "term": term,
                     "user_answer": user_answer[:200] + "..." if len(user_answer) > 200 else user_answer,
                     "feedback": feedback,
-                    "score": score
+                    "score": score,
+                    "ideal_answer": ideal_answer
                 })
             
-            if 7.0 < score < 10.0:
+            if 6.0 < score < 10.0:
                 giga_comments.append({
                     "number": 1 + i,
                     "term": term,
                     "user_answer": user_answer[:200] + "..." if len(user_answer) > 200 else user_answer,
                     "feedback": feedback,
-                    "score": score
+                    "score": score,
+                    "ideal_answer": ideal_answer
                 })
             
         await checking_msg.delete()
@@ -8504,7 +8516,7 @@ async def check_answers_to_terms(message: Message, cursor: FSMCursor):
         # ==========================================
         logger.info(f"РАСЧЁТ ДЛЯ ОТОБРАЖЕНИЯ РЕЗУЛЬТАТОВ")
         logger.info(f'{term_scores=}')
-        term_correct = sum(1 for score in term_scores if score >= 7.0)
+        term_correct = sum(1 for score in term_scores if score >= 6.0)
         total_terms = len(list(user_answers.keys()))
         
         # Процент для отображения
@@ -8616,10 +8628,12 @@ async def check_answers_to_terms(message: Message, cursor: FSMCursor):
                 
                 result_text += "**Не точные ответы в следующих вопросах:**\n\n"
                 for comment in giga_comments:
-                    result_text += f"⚠️ **Вопрос {comment['number']}:** {comment['term']}\n"  # question !!!
-                    result_text += f"Ваш ответ: {comment['user_answer']}\n"
-                    result_text += f"Оценка: {comment['score']}/10\n"
-                    result_text += f"Фидбек: {comment['feedback']}\n\n"
+                    result_text += f"⚠️ **Вопрос {comment['number']}:** {comment['term']}\n\n"  # question !!!
+                    result_text += f"📝 **Ваш ответ**:\n{comment['user_answer']}\n\n"
+                    result_text += f"🎯 **Правильный ответ**:\n{comment['ideal_answer']}\n\n"
+                    result_text += f"📊 **Оценка**: {comment['score']}/10\n\n"
+                    result_text += f"💬 **Фидбек**:\n{comment['feedback']}\n\n"
+                    result_text += f"━━━━━━━━━━━━━━━━━━━━\n\n"
             
             result_text += f"🎉 **Отлично!**\n\nВы успешно прошли тест! Поздравляем с завершением Блока {migration_header}!"
         
@@ -8631,24 +8645,28 @@ async def check_answers_to_terms(message: Message, cursor: FSMCursor):
                 
                 result_text += "**Не точные ответы в следующих вопросах:**\n\n"
                 for comment in giga_comments:
-                    result_text += f"⚠️ **Вопрос {comment['number']}:** {comment['term']}\n" # question !!!!
-                    result_text += f"Ваш ответ: {comment['user_answer']}\n"
-                    result_text += f"Оценка: {comment['score']}/10\n"
-                    result_text += f"Фидбек: {comment['feedback']}\n\n"
+                    result_text += f"⚠️ **Вопрос {comment['number']}:** {comment['term']}\n\n" # question !!!!
+                    result_text += f"📝 **Ваш ответ**:\n{comment['user_answer']}\n\n"
+                    result_text += f"🎯 **Правильный ответ**:\n{comment['ideal_answer']}\n\n"
+                    result_text += f"📊 **Оценка**: {comment['score']}/10\n\n"
+                    result_text += f"💬 **Фидбек**:\n{comment['feedback']}\n\n"
+                    result_text += f"━━━━━━━━━━━━━━━━━━━━\n\n"
             
             if term_mistakes:
                 result_text += "**Ошибки в следующих вопросах:**\n\n"
                 for mistake in term_mistakes:
-                    result_text += f"❌ **Вопрос {mistake['number']}:** {mistake['term']}\n"
-                    result_text += f"Ваш ответ: {mistake['user_answer']}\n"
-                    result_text += f"Оценка: {mistake['score']}/10\n"
-                    result_text += f"Фидбек: {mistake['feedback']}\n\n"
+                    result_text += f"❌ **Вопрос {mistake['number']}:** {mistake['term']}\n\n"
+                    result_text += f"📝 **Ваш ответ**:\n{mistake['user_answer']}\n\n"
+                    result_text += f"🎯 **Правильный ответ**:\n{mistake['ideal_answer']}\n\n"
+                    result_text += f"📊 **Оценка**: {mistake['score']}/10\n\n"
+                    result_text += f"💬 **Фидбек**:\n{mistake['feedback']}\n\n"
+                    result_text += f"━━━━━━━━━━━━━━━━━━━━\n\n"
             
             result_text += "\n**Рекомендуем изучить материалы ещё раз!**"
         
         await send_message_safely(message, result_text, format="markdown")
         
-        await asyncio.sleep(2) # 15
+        await asyncio.sleep(15) # 2
         
         # ==========================================
         # ПОКАЗЫВАЕМ РЕЙТИНГ ПО ИТОГАМ ПРОЙДЕННОГО БЛОКА
@@ -8716,7 +8734,7 @@ async def check_answers_to_terms(message: Message, cursor: FSMCursor):
         await message.send(rating_text, format="markdown")
         
         # Пауза перед кнопкой продолжения
-        await asyncio.sleep(2) # 5
+        await asyncio.sleep(5) # 2
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::regular_managment"))
                 

@@ -3,6 +3,10 @@
         "first_name": "Илья",
         "second_name": "Шабалин"
     },
+    "275082514": {
+        "first_name": "Тестовый",
+        "second_name": "Пользователь"
+    },
     "228312484": {
         "first_name": "Ирина",
         "second_name": "Соколова"
@@ -67,72 +71,20 @@
         "first_name": "Древаль",
         "second_name": "денис"
     },
-    "219566997": {
-        "first_name": "Данир",
-        "second_name": "Мазнавиев"
-    },
-    "6426195": {
-        "first_name": "Михаил",
-        "second_name": "Савонькин"
-    },
-    "6819366": {
-        "first_name": "Евгений",
-        "second_name": "Грищенко"
-    },
-    "136892661": {
-        "first_name": "Екатерина",
-        "second_name": "Ушакова"
-    },
-    "108212884": {
-        "first_name": "Денис",
-        "second_name": "Толочков"
-    },
     "313754518": {
         "first_name": "Иван",
         "second_name": "Иванов"
     },
-    "113213362": {
-        "first_name": "Арина",
-        "second_name": "Петухова"
+    "1175082514": {
+        "first_name": "Валентин",
+        "second_name": "Иванов"
     },
-    "34496878": {
-        "first_name": "Николай",
-        "second_name": "Дрямин"
-    },
-    "173839117": {
-        "first_name": "Николай",
-        "second_name": "Шаблий"
-    },
-    "134418250": {
-        "first_name": "Эльвира",
-        "second_name": "Нуриева"
-    },
-    "147244614": {
-        "first_name": "Сидорова",
-        "second_name": "Екатерина"
-    },
-    "122276170": {
-        "first_name": "Оксана",
-        "second_name": "Кудасова"
-    },
-    "15396352": {
-        "first_name": "Майя",
-        "second_name": "Северова"
-    },
-    "131793830": {
-        "first_name": "Валентина",
-        "second_name": "Танкова"
-    },
-    "202701799": {
-        "first_name": "Князев",
-        "second_name": "Алексей"
-    },
-    "167716183": {
-        "first_name": "Павел",
-        "second_name": "Кожанов"
+    "3175082514": {
+        "first_name": "Артём",
+        "second_name": "Иванов"
     },
     "175082514": {
-        "first_name": "Валентин",
+        "first_name": "Сергей",
         "second_name": "Иванов"
     }
 }

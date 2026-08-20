@@ -1,11 +1,11 @@
 {
   "51490094": {
-    "start_date": "11.07",
+    "start_date": "07.07",
     "reminder_sent": true
   },
   "20759321": {
-    "start_date": "16.06",
-    "reminder_sent": false
+    "start_date": "23.05",
+    "reminder_sent": true
   },
   "24297191": {
     "start_date": "22.04",
@@ -47,32 +47,12 @@
     "start_date": "14.05",
     "reminder_sent": false
   },
-  "219566997": {
-    "start_date": "03.06",
+  "275082514": {
+    "start_date": "09.06",
     "reminder_sent": true
   },
-  "6426195": {
-    "start_date": "18.06",
-    "reminder_sent": false
-  },
-  "6819366": {
-    "start_date": "18.06",
-    "reminder_sent": true
-  },
-  "34496878": {
-    "start_date": "20.06",
-    "reminder_sent": false
-  },
-  "122276170": {
-    "start_date": "19.06",
-    "reminder_sent": true
-  },
-  "15396352": {
-    "start_date": "29.06",
-    "reminder_sent": false
-  },
-  "131793830": {
-    "start_date": "07.07",
+  "3175082514": {
+    "start_date": "30.07",
     "reminder_sent": true
   }
 }

@@ -192,11 +192,19 @@ class GigaChatService:
             f"Ответ сотрудника: {user_answer}\n\n"
             "Оцени ответ по шкале от 1 до 10.\n"
             "• 9-10: Отличный, все ключевые моменты раскрыты\n"
-            "• 7-8: Хороший, основные моменты упомянуты\n"
-            "• 5-6: Удовлетворительно, есть пробелы\n"
-            "• 1-4: Слабый, многое упущено\n\n"
+            "• 6-8: Хороший, основные моменты упомянуты\n"
+            "• 4-5: Удовлетворительно, есть пробелы\n"
+            "• 1-3: Слабый, многое упущено\n\n"
             'Верни СТРОГО в формате JSON:\n'
-            '{"score": число от 1 до 10, "feedback": "комментарий до 150 символов"}'
+            '{"score": число от 1 до 10, "feedback": "структурированное и развёрнутое сравнение ответа пользователя '
+            'с правильным ответом, с явным и связным объяснением различий (без избыточного объёма информации)"}\n'
+            'независимо от итогового балла (низкого, среднего, высокого) feedback должен содержать '
+            'поддерживающие элементы: указание на прогресс («ты на правильном пути»), подбадривание'
+            '(«осталось немного»), похвалу за старание;\n'
+            'фидбек должен явно указывать: чего не хватило в ответе пользователя, почему именно этот момент важен, как это влияет на итоговую оценку'
+            'запрещается использовать критикующие, осуждающие или обесценивающие формулировки по отношению к обучаемому;\n'
+            'суть допущенной ошибки должна оставаться точной, полной и не искажаться в целях «смягчения» '
+            'тона — фактическое содержание пробела в знаниях должно быть объективно зафиксировано;'
         )
 
         try:
@@ -220,23 +228,23 @@ class GigaChatService:
                 json_match = re.search(r'\{[^}]+\}', result_text)
                 if json_match:
                     result_json = json.loads(json_match.group())
-                    score = float(result_json.get('score', 7.0))
+                    score = float(result_json.get('score', 6.0))
                     feedback = result_json.get('feedback', 'Ответ принят')
                 else:
                     raise ValueError("JSON не найден")
             except (json.JSONDecodeError, ValueError):
                 numbers = re.findall(r'\b([1-9]|10)(?:\.\d+)?\b', result_text)
-                score = float(numbers) if numbers else 7.0
-                feedback = result_text[:150]
+                score = float(numbers) if numbers else 6.0
+                feedback = result_text #[:150]
 
             score = max(1.0, min(10.0, score))
-            logger.info(f"[INFO][GigaChatService][evaluate_answer] 'score': {score}, 'feedback': {feedback}, 'passed': {score >= 7.0}")
-            return {'score': score, 'feedback': feedback, 'passed': score >= 7.0}
+            logger.info(f"[INFO][GigaChatService][evaluate_answer] 'score': {score}, 'feedback': {feedback}, 'passed': {score >= 6.0}")
+            return {'score': score, 'feedback': feedback, 'passed': score >= 6.0, 'ideal_answer': ideal_answer}
 
         except Exception as e:
             print(f"❌ Ошибка GigaChatService.evaluate_answer: {e}")
             logger.error(f'[ERROR][GigaChatService][evaluate_answer] Произошла ошибка {e}')
-            return {'score': 7.0, 'feedback': 'Оценка временно недоступна.', 'passed': True}
+            return {'score': 6.0, 'feedback': 'Оценка временно недоступна.', 'passed': True, 'ideal_answer': ideal_answer}
         
 
 

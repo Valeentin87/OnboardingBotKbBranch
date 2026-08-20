@@ -5,10 +5,16 @@ from datetime import datetime
 #import logging
 from bot.adapters.max.create_bot import logger
 
+USERNAME = "fps_shabalin"
+PROJECT_NAME = "onboarding_bot_with_redis"
+# Формируем абсолютный путь к корню проекта
+PROJECT_ROOT = f"/home/{USERNAME}/{PROJECT_NAME}"
+DATA_DIR = os.path.join(PROJECT_ROOT, "data")
+PROGRESS_FILE = os.path.join(DATA_DIR, "progress.json")
+
 
 class GamificationService:
     def __init__(self, current_course: str = "Обучение по продажам"):
-        self.progress_file = 'data/progress.json'
         self.total_lessons_info = {
             "Обучение по продажам": 43,
             "Обучение по продукту": 7,
@@ -16,44 +22,37 @@ class GamificationService:
             "Регулярный менеджмент": 10
         }
         self.current_course = current_course
-        os.makedirs('data', exist_ok=True)
-    
+        
+        # Гарантируем, что папка data существует
+        os.makedirs(DATA_DIR, exist_ok=True)
+        
+        logger.info(f"[INFO][GamificationService][__init__] Инициализация завершена. Путь к файлу: {PROGRESS_FILE}")
+
     def _load_data(self) -> Dict:
         """Загружает данные из файла прогресса"""
-        logger.info(f'[INFO][GamificationService][_load_data] Загружаем данные из файла прогресса')
+        logger.info(f'[INFO][GamificationService][_load_data] Пытаемся загрузить: {PROGRESS_FILE}')
         try:
-            with open(self.progress_file, 'r', encoding='utf-8') as f:
-                logger.info(f'[INFO][GamificationService][_load_data] данные из файла прогресса успешно загружены')
+            if not os.path.exists(PROGRESS_FILE):
+                logger.warning('[WARNING][GamificationService][_load_data] Файл не найден, возвращаем пустой словарь')
+                return {}
+            
+            with open(PROGRESS_FILE, 'r', encoding='utf-8') as f:
+                logger.info('[INFO][GamificationService][_load_data] Данные успешно загружены')
                 return json.load(f)
         except Exception as e:
-            logger.error(f'[INFO][GamificationService][_load_data] Произошла ошибка {e=}')
+            logger.error(f'[ERROR][GamificationService][_load_data] Произошла ошибка: {e}')
             return {}
     
     def _save_data(self, data: Dict):
         """Сохраняет данные в файл прогресса"""
-        logger.info(f'[INFO][GamificationService][_save_data] Загружаем данные из файла прогресса')
-        with open(self.progress_file, 'w', encoding='utf-8') as f:
+        logger.info(f'[INFO][GamificationService][_save_data] Сохраняем данные в: {PROGRESS_FILE}')
+        
+        # Страховка: создаем папку, если вдруг её удалили
+        if not os.path.exists(DATA_DIR):
+            os.makedirs(DATA_DIR, exist_ok=True)
+            
+        with open(PROGRESS_FILE, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
-    
-    '''
-    def get_user_progress(self, user_id: int, course_name: str = "Обучение по продажам") -> Dict[str, Any]:
-        """Получить прогресс пользователя по конкретному курсу"""
-        logger.info(f'[INFO][GamificationService][get_user_progress] Получаем прогресс пользователя по курсу: {course_name}')
-        data = self._load_data()
-        user_data = data.get(str(user_id), {})
-        courses = user_data.get('courses', {})
-        
-        # Дефолтная структура для курса
-        default_course = {
-            'lessons_completed': 0,
-            'total_lessons': 43,  
-            'correct_answers': 0,
-            'total_answers': 0,
-            'accuracy_percent': 0.0
-        }
-        
-        return courses.get(course_name, default_course)
-    '''
     
     def get_user_progress(self, user_id: int, course_name: str = "Обучение по продажам") -> Any:
         """

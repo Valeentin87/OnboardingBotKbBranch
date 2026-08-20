@@ -5,7 +5,7 @@
       "username": "Илья Шабалин",
       "first_name": "Илья",
       "last_name": "Шабалин",
-      "last_activity": "2026-07-16T16:01:17.483531"
+      "last_activity": "2026-08-04T05:03:47.673199"
     },
     "courses": {
       "Обучение по продажам": {
@@ -15,67 +15,33 @@
         "total_answers": 0,
         "accuracy_percent": 0.0
       },
+      "Обучение по продукту": {
+        "lessons_completed": 0,
+        "total_lessons": 7,
+        "correct_answers": 0,
+        "total_answers": 0,
+        "accuracy_percent": 0.0
+      },
+      "Обучение для юриста": {
+        "lessons_completed": 0,
+        "total_lessons": 12,
+        "correct_answers": 0,
+        "total_answers": 0,
+        "accuracy_percent": 0.0
+      },
       "Регулярный менеджмент": {
-        "lessons_completed": 10,
+        "lessons_completed": 0,
         "total_lessons": 10,
-        "correct_answers": 40,
-        "total_answers": 66,
-        "accuracy_percent": 60.6
+        "correct_answers": 0,
+        "total_answers": 0,
+        "accuracy_percent": 0.0
       }
     },
     "lesson_results": {
-      "Регулярный менеджмент": {
-        "block_3": {
-          "correct_count": 7,
-          "total_count": 9,
-          "accuracy": 77.8
-        },
-        "block_6": {
-          "correct_count": 2,
-          "total_count": 6,
-          "accuracy": 33.3
-        },
-        "block_9": {
-          "correct_count": 1,
-          "total_count": 4,
-          "accuracy": 25.0
-        },
-        "block_12": {
-          "correct_count": 6,
-          "total_count": 6,
-          "accuracy": 100.0
-        },
-        "block_15": {
-          "correct_count": 3,
-          "total_count": 7,
-          "accuracy": 42.9
-        },
-        "block_18": {
-          "correct_count": 7,
-          "total_count": 7,
-          "accuracy": 100.0
-        },
-        "block_21": {
-          "correct_count": 4,
-          "total_count": 7,
-          "accuracy": 57.1
-        },
-        "block_24": {
-          "correct_count": 4,
-          "total_count": 7,
-          "accuracy": 57.1
-        },
-        "block_27": {
-          "correct_count": 3,
-          "total_count": 6,
-          "accuracy": 50.0
-        },
-        "block_30": {
-          "correct_count": 3,
-          "total_count": 7,
-          "accuracy": 42.9
-        }
-      }
+      "Обучение по продукту": {},
+      "Обучение по продажам": {},
+      "Обучение для юриста": {},
+      "Регулярный менеджмент": {}
     },
     "completed_attempts": [
       {
@@ -87,177 +53,28 @@
         "course_name": "Обучение по продажам"
       },
       {
-        "date_completed": "2026-07-16T16:01:17.491146",
-        "correct_answers": 40,
-        "total_answers": 66,
-        "accuracy_percent": 60.6,
-        "lessons_completed": 10,
-        "course_name": "Регулярный менеджмент"
-      }
-    ]
-  },
-  "1175082514": {
-    "user_info": {
-      "user_id": 1175082514,
-      "username": "Валентин Иванов",
-      "first_name": "Валентин",
-      "last_name": "Иванов",
-      "last_activity": "2026-07-29T01:02:10.383180"
-    },
-    "courses": {
-      "Регулярный менеджмент": {
-        "lessons_completed": 2,
-        "total_lessons": 10,
-        "correct_answers": 3,
-        "total_answers": 15,
-        "accuracy_percent": 20.0
-      },
-      "Обучение для юриста": {
-        "lessons_completed": 6,
-        "total_lessons": 12,
-        "correct_answers": 8,
+        "date_completed": "2026-06-08T06:37:07.254154",
+        "correct_answers": 41,
         "total_answers": 45,
-        "accuracy_percent": 17.8
-      },
-      "Обучение по продукту": {
-        "lessons_completed": 0,
-        "total_lessons": 7,
-        "correct_answers": 0,
-        "total_answers": 0,
-        "accuracy_percent": 0.0
-      },
-      "Обучение по продажам": {
-        "lessons_completed": 2,
-        "total_lessons": 43,
-        "correct_answers": 2,
-        "total_answers": 10,
-        "accuracy_percent": 20.0
-      }
-    },
-    "lesson_results": {
-      "Регулярный менеджмент": {
-        "block_3": {
-          "correct_count": 2,
-          "total_count": 9,
-          "accuracy": 22.2
-        },
-        "block_6": {
-          "correct_count": 1,
-          "total_count": 6,
-          "accuracy": 16.7
-        }
-      },
-      "Обучение для юриста": {
-        "section_1": {
-          "correct_count": 2,
-          "total_count": 15,
-          "accuracy": 13.3
-        },
-        "section_2": {
-          "correct_count": 2,
-          "total_count": 15,
-          "accuracy": 13.3
-        },
-        "section_3": {
-          "correct_count": 4,
-          "total_count": 15,
-          "accuracy": 26.7
-        }
-      },
-      "Обучение по продукту": {},
-      "Обучение по продажам": {
-        "section_1": {
-          "correct_count": 0,
-          "total_count": 5,
-          "accuracy": 0.0
-        },
-        "section_2": {
-          "correct_count": 2,
-          "total_count": 5,
-          "accuracy": 40.0
-        }
-      }
-    },
-    "completed_attempts": [
-      {
-        "date_completed": "2026-07-13T00:00:37.081717",
-        "correct_answers": 52,
-        "total_answers": 100,
-        "accuracy_percent": 52.0,
-        "lessons_completed": 10,
-        "course_name": "Регулярный менеджмент"
+        "accuracy_percent": 91.1,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
       },
       {
-        "date_completed": "2026-07-21T23:02:40.773563",
-        "correct_answers": 39,
+        "date_completed": "2026-06-08T11:23:26.731115",
+        "correct_answers": 16,
+        "total_answers": 45,
+        "accuracy_percent": 35.6,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
+      },
+      {
+        "date_completed": "2026-07-03T06:46:35.501171",
+        "correct_answers": 60,
         "total_answers": 105,
-        "accuracy_percent": 37.1,
+        "accuracy_percent": 57.1,
         "lessons_completed": 12,
         "course_name": "Обучение для юриста"
-      },
-      {
-        "date_completed": "2026-07-23T18:46:06.212615",
-        "correct_answers": 38,
-        "total_answers": 92,
-        "accuracy_percent": 41.3,
-        "lessons_completed": 10,
-        "course_name": "Регулярный менеджмент"
-      },
-      {
-        "date_completed": "2026-07-23T20:56:40.458959",
-        "correct_answers": 39,
-        "total_answers": 99,
-        "accuracy_percent": 39.4,
-        "lessons_completed": 10,
-        "course_name": "Регулярный менеджмент"
-      },
-      {
-        "date_completed": "2026-07-26T16:43:43.623825",
-        "correct_answers": 19,
-        "total_answers": 45,
-        "accuracy_percent": 42.2,
-        "lessons_completed": 7,
-        "course_name": "Обучение по продукту"
-      },
-      {
-        "date_completed": "2026-07-27T09:54:16.598794",
-        "correct_answers": 5,
-        "total_answers": 45,
-        "accuracy_percent": 11.1,
-        "lessons_completed": 7,
-        "course_name": "Обучение по продукту"
-      },
-      {
-        "date_completed": "2026-07-27T10:42:32.775976",
-        "correct_answers": 10,
-        "total_answers": 45,
-        "accuracy_percent": 22.2,
-        "lessons_completed": 7,
-        "course_name": "Обучение по продукту"
-      },
-      {
-        "date_completed": "2026-07-28T13:09:52.913019",
-        "correct_answers": 4,
-        "total_answers": 45,
-        "accuracy_percent": 8.9,
-        "lessons_completed": 7,
-        "course_name": "Обучение по продукту"
-      },
-      {
-        "date_completed": "2026-07-28T13:36:32.398919",
-        "correct_answers": 8,
-        "total_answers": 45,
-        "accuracy_percent": 17.8,
-        "lessons_completed": 7,
-        "course_name": "Обучение по продукту"
-      },
-      {
-        "date_completed": "2026-07-29T00:52:07.144605",
-        "correct_answers": 65,
-        "total_answers": 310,
-        "accuracy_percent": 21.0,
-        "lessons_completed": 43,
-        "course_name": "Обучение по продажам"
       }
     ]
   },
@@ -267,7 +84,7 @@
       "username": "Алексей Гаранин",
       "first_name": "Алексей",
       "last_name": "Гаранин",
-      "last_activity": "2026-04-20T06:26:13.150947"
+      "last_activity": "2026-08-19T13:37:56.572883"
     },
     "courses": {
       "Обучение по продажам": {
@@ -276,6 +93,20 @@
         "correct_answers": 179,
         "total_answers": 235,
         "accuracy_percent": 76.2
+      },
+      "Обучение для юриста": {
+        "lessons_completed": 2,
+        "total_lessons": 12,
+        "correct_answers": 7,
+        "total_answers": 15,
+        "accuracy_percent": 46.7
+      },
+      "Регулярный менеджмент": {
+        "lessons_completed": 5,
+        "total_lessons": 10,
+        "correct_answers": 15,
+        "total_answers": 32,
+        "accuracy_percent": 46.9
       }
     },
     "lesson_results": {
@@ -454,6 +285,40 @@
           "correct_count": 24,
           "total_count": 30,
           "accuracy": 80.0
+        }
+      },
+      "Обучение для юриста": {
+        "section_1": {
+          "correct_count": 7,
+          "total_count": 15,
+          "accuracy": 46.7
+        }
+      },
+      "Регулярный менеджмент": {
+        "block_3": {
+          "correct_count": 1,
+          "total_count": 9,
+          "accuracy": 11.1
+        },
+        "block_6": {
+          "correct_count": 1,
+          "total_count": 6,
+          "accuracy": 16.7
+        },
+        "block_9": {
+          "correct_count": 3,
+          "total_count": 4,
+          "accuracy": 75.0
+        },
+        "block_12": {
+          "correct_count": 5,
+          "total_count": 6,
+          "accuracy": 83.3
+        },
+        "block_15": {
+          "correct_count": 5,
+          "total_count": 7,
+          "accuracy": 71.4
         }
       }
     },
@@ -1086,15 +951,15 @@
       "username": "Анна Мельникова",
       "first_name": "Анна",
       "last_name": "Мельникова",
-      "last_activity": "2026-05-12T16:24:42.361910"
+      "last_activity": "2026-06-13T16:47:40.019588"
     },
     "courses": {
       "Обучение по продажам": {
-        "lessons_completed": 2,
+        "lessons_completed": 12,
         "total_lessons": 43,
-        "correct_answers": 10,
-        "total_answers": 10,
-        "accuracy_percent": 100.0
+        "correct_answers": 86,
+        "total_answers": 90,
+        "accuracy_percent": 95.6
       }
     },
     "lesson_results": {
@@ -1108,9 +973,64 @@
           "correct_count": 5,
           "total_count": 5,
           "accuracy": 100.0
+        },
+        "section_3": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_4": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_5": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_6": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "final_test": {
+          "correct_count": 14,
+          "total_count": 15,
+          "accuracy": 93.3
+        },
+        "section_7": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_8": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_9": {
+          "correct_count": 9,
+          "total_count": 10,
+          "accuracy": 90.0
+        },
+        "section_10": {
+          "correct_count": 13,
+          "total_count": 15,
+          "accuracy": 86.7
         }
       }
-    }
+    },
+    "completed_attempts": [
+      {
+        "date_completed": "2026-06-11T11:01:05.795654",
+        "correct_answers": 44,
+        "total_answers": 45,
+        "accuracy_percent": 97.8,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
+      }
+    ]
   },
   "152163122": {
     "user_info": {
@@ -1388,152 +1308,2300 @@
       }
     }
   },
-  "3175082514": {
+  "34496878": {
     "user_info": {
-      "user_id": 3175082514,
-      "username": "Артём Иванов",
-      "first_name": "Артём",
-      "last_name": "Иванов",
-      "last_activity": "2026-07-29T22:21:46.421471"
+      "user_id": 34496878,
+      "username": "Николай Дрямин",
+      "first_name": "Николай",
+      "last_name": "Дрямин",
+      "last_activity": "2026-06-29T19:53:03.775221"
     },
     "courses": {
-      "Регулярный менеджмент": {
-        "lessons_completed": 4,
-        "total_lessons": 10,
-        "correct_answers": 5,
-        "total_answers": 25,
+      "Обучение по продукту": {
+        "lessons_completed": 1,
+        "total_lessons": 7,
+        "correct_answers": 1,
+        "total_answers": 5,
         "accuracy_percent": 20.0
       },
-      "Обучение по продукту": {
-        "lessons_completed": 7,
-        "total_lessons": 7,
-        "correct_answers": 15,
-        "total_answers": 45,
-        "accuracy_percent": 33.3
-      },
-      "Обучение для юриста": {
-        "lessons_completed": 12,
-        "total_lessons": 12,
-        "correct_answers": 25,
-        "total_answers": 105,
-        "accuracy_percent": 23.8
+      "Обучение по продажам": {
+        "lessons_completed": 43,
+        "total_lessons": 43,
+        "correct_answers": 194,
+        "total_answers": 235,
+        "accuracy_percent": 82.6
       }
     },
     "lesson_results": {
-      "Регулярный менеджмент": {
-        "block_3": {
-          "correct_count": 2,
-          "total_count": 9,
-          "accuracy": 22.2
-        },
-        "block_6": {
-          "correct_count": 1,
-          "total_count": 6,
-          "accuracy": 16.7
-        },
-        "block_9": {
-          "correct_count": 0,
-          "total_count": 4,
-          "accuracy": 0.0
-        },
-        "block_12": {
-          "correct_count": 2,
-          "total_count": 6,
-          "accuracy": 33.3
-        }
-      },
       "Обучение по продукту": {
         "section_1": {
-          "correct_count": 2,
-          "total_count": 5,
-          "accuracy": 40.0
-        },
-        "section_2": {
-          "correct_count": 2,
-          "total_count": 5,
-          "accuracy": 40.0
-        },
-        "section_3": {
-          "correct_count": 3,
-          "total_count": 5,
-          "accuracy": 60.0
-        },
-        "section_4": {
           "correct_count": 1,
           "total_count": 5,
           "accuracy": 20.0
+        }
+      },
+      "Обучение по продажам": {
+        "section_1": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_2": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_3": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_4": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
         },
         "section_5": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_6": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "final_test": {
+          "correct_count": 12,
+          "total_count": 15,
+          "accuracy": 80.0
+        },
+        "section_7": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_8": {
+          "correct_count": 9,
+          "total_count": 10,
+          "accuracy": 90.0
+        },
+        "section_9": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_10": {
+          "correct_count": 13,
+          "total_count": 15,
+          "accuracy": 86.7
+        },
+        "section_11": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_12": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_13": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_14": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_15": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_16": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_17": {
+          "correct_count": 12,
+          "total_count": 15,
+          "accuracy": 80.0
+        },
+        "section_18": {
+          "correct_count": 9,
+          "total_count": 10,
+          "accuracy": 90.0
+        },
+        "section_19": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_20": {
           "correct_count": 3,
           "total_count": 5,
           "accuracy": 60.0
         },
-        "section_6": {
-          "correct_count": 0,
+        "section_21": {
+          "correct_count": 2,
           "total_count": 5,
-          "accuracy": 0.0
+          "accuracy": 40.0
         },
-        "final_test": {
-          "correct_count": 4,
+        "section_22": {
+          "correct_count": 12,
           "total_count": 15,
-          "accuracy": 26.7
-        }
-      },
-      "Обучение для юриста": {
-        "section_1": {
-          "correct_count": 4,
-          "total_count": 15,
-          "accuracy": 26.7
+          "accuracy": 80.0
         },
-        "section_2": {
-          "correct_count": 3,
-          "total_count": 15,
-          "accuracy": 20.0
+        "video_section_1": {
+          "viewed_flag": 1
         },
-        "section_3": {
-          "correct_count": 4,
-          "total_count": 15,
-          "accuracy": 26.7
+        "video_section_2": {
+          "viewed_flag": 1
         },
-        "section_4": {
+        "video_section_3": {
+          "viewed_flag": 1
+        },
+        "video_section_4": {
+          "viewed_flag": 1
+        },
+        "video_section_5": {
+          "viewed_flag": 1
+        },
+        "video_section_6": {
+          "viewed_flag": 1
+        },
+        "video_section_7": {
+          "viewed_flag": 1
+        },
+        "video_section_8": {
+          "viewed_flag": 1
+        },
+        "video_section_9": {
+          "viewed_flag": 1
+        },
+        "video_section_10": {
+          "viewed_flag": 1
+        },
+        "video_section_11": {
+          "viewed_flag": 1
+        },
+        "video_section_12": {
+          "viewed_flag": 1
+        },
+        "video_section_13": {
+          "viewed_flag": 1
+        },
+        "video_section_14": {
+          "viewed_flag": 1
+        },
+        "video_section_15": {
+          "viewed_flag": 1
+        },
+        "section_39": {
           "correct_count": 6,
           "total_count": 15,
           "accuracy": 40.0
         },
-        "section_5": {
-          "correct_count": 4,
+        "section_41": {
+          "correct_count": 11,
           "total_count": 15,
-          "accuracy": 26.7
+          "accuracy": 73.3
         },
-        "final_test": {
-          "correct_count": 4,
+        "section_42": {
+          "correct_count": 24,
           "total_count": 30,
-          "accuracy": 13.3
+          "accuracy": 80.0
         }
       }
     },
     "completed_attempts": [
       {
-        "date_completed": "2026-07-29T16:45:12.195507",
-        "correct_answers": 11,
-        "total_answers": 66,
-        "accuracy_percent": 16.7,
-        "lessons_completed": 10,
-        "course_name": "Регулярный менеджмент"
-      },
-      {
-        "date_completed": "2026-07-29T21:09:11.915793",
-        "correct_answers": 15,
+        "date_completed": "2026-06-18T05:44:09.186565",
+        "correct_answers": 39,
         "total_answers": 45,
-        "accuracy_percent": 33.3,
+        "accuracy_percent": 86.7,
         "lessons_completed": 7,
         "course_name": "Обучение по продукту"
       },
       {
-        "date_completed": "2026-07-29T22:21:46.442030",
-        "correct_answers": 25,
+        "date_completed": "2026-06-29T19:53:03.781718",
+        "correct_answers": 194,
+        "total_answers": 235,
+        "accuracy_percent": 82.6,
+        "lessons_completed": 43,
+        "course_name": "Обучение по продажам"
+      }
+    ]
+  },
+  "136892661": {
+    "user_info": {
+      "user_id": 136892661,
+      "username": "Екатерина Ушакова",
+      "first_name": "Екатерина",
+      "last_name": "Ушакова",
+      "last_activity": "2026-07-01T04:52:32.660682"
+    },
+    "courses": {
+      "Обучение по продажам": {
+        "lessons_completed": 43,
+        "total_lessons": 43,
+        "correct_answers": 209,
+        "total_answers": 235,
+        "accuracy_percent": 88.9
+      }
+    },
+    "lesson_results": {
+      "Обучение по продажам": {
+        "section_1": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_2": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_3": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_4": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_5": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_6": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "final_test": {
+          "correct_count": 14,
+          "total_count": 15,
+          "accuracy": 93.3
+        },
+        "section_7": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_8": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_9": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_10": {
+          "correct_count": 13,
+          "total_count": 15,
+          "accuracy": 86.7
+        },
+        "section_11": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_12": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_13": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_14": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_15": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_16": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_17": {
+          "correct_count": 11,
+          "total_count": 15,
+          "accuracy": 73.3
+        },
+        "section_18": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_19": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_20": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_21": {
+          "correct_count": 3,
+          "total_count": 5,
+          "accuracy": 60.0
+        },
+        "section_22": {
+          "correct_count": 13,
+          "total_count": 15,
+          "accuracy": 86.7
+        },
+        "video_section_1": {
+          "viewed_flag": 1
+        },
+        "video_section_2": {
+          "viewed_flag": 1
+        },
+        "video_section_3": {
+          "viewed_flag": 1
+        },
+        "video_section_4": {
+          "viewed_flag": 1
+        },
+        "video_section_5": {
+          "viewed_flag": 1
+        },
+        "video_section_6": {
+          "viewed_flag": 1
+        },
+        "video_section_7": {
+          "viewed_flag": 1
+        },
+        "video_section_8": {
+          "viewed_flag": 1
+        },
+        "video_section_9": {
+          "viewed_flag": 1
+        },
+        "video_section_10": {
+          "viewed_flag": 1
+        },
+        "video_section_11": {
+          "viewed_flag": 1
+        },
+        "video_section_12": {
+          "viewed_flag": 1
+        },
+        "video_section_13": {
+          "viewed_flag": 1
+        },
+        "video_section_14": {
+          "viewed_flag": 1
+        },
+        "video_section_15": {
+          "viewed_flag": 1
+        },
+        "section_39": {
+          "correct_count": 8,
+          "total_count": 15,
+          "accuracy": 53.3
+        },
+        "section_41": {
+          "correct_count": 12,
+          "total_count": 15,
+          "accuracy": 80.0
+        },
+        "section_42": {
+          "correct_count": 26,
+          "total_count": 30,
+          "accuracy": 86.7
+        }
+      }
+    },
+    "completed_attempts": [
+      {
+        "date_completed": "2026-06-18T06:21:10.109953",
+        "correct_answers": 44,
+        "total_answers": 45,
+        "accuracy_percent": 97.8,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
+      },
+      {
+        "date_completed": "2026-07-01T04:52:32.666999",
+        "correct_answers": 209,
+        "total_answers": 235,
+        "accuracy_percent": 88.9,
+        "lessons_completed": 43,
+        "course_name": "Обучение по продажам"
+      }
+    ]
+  },
+  "6819366": {
+    "user_info": {
+      "user_id": 6819366,
+      "username": "Евгений Грищенко",
+      "first_name": "Евгений",
+      "last_name": "Грищенко",
+      "last_activity": "2026-06-30T12:56:27.613399"
+    },
+    "courses": {
+      "Обучение по продажам": {
+        "lessons_completed": 42,
+        "total_lessons": 43,
+        "correct_answers": 155,
+        "total_answers": 205,
+        "accuracy_percent": 75.6
+      }
+    },
+    "lesson_results": {
+      "Обучение по продажам": {
+        "section_1": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_2": {
+          "correct_count": 3,
+          "total_count": 5,
+          "accuracy": 60.0
+        },
+        "section_3": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_4": {
+          "correct_count": 3,
+          "total_count": 5,
+          "accuracy": 60.0
+        },
+        "section_5": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_6": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "final_test": {
+          "correct_count": 13,
+          "total_count": 15,
+          "accuracy": 86.7
+        },
+        "section_7": {
+          "correct_count": 9,
+          "total_count": 10,
+          "accuracy": 90.0
+        },
+        "section_8": {
+          "correct_count": 9,
+          "total_count": 10,
+          "accuracy": 90.0
+        },
+        "section_9": {
+          "correct_count": 6,
+          "total_count": 10,
+          "accuracy": 60.0
+        },
+        "section_10": {
+          "correct_count": 13,
+          "total_count": 15,
+          "accuracy": 86.7
+        },
+        "section_11": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_12": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_13": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_14": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_15": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_16": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_17": {
+          "correct_count": 10,
+          "total_count": 15,
+          "accuracy": 66.7
+        },
+        "section_18": {
+          "correct_count": 7,
+          "total_count": 10,
+          "accuracy": 70.0
+        },
+        "section_19": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_20": {
+          "correct_count": 0,
+          "total_count": 5,
+          "accuracy": 0.0
+        },
+        "section_21": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_22": {
+          "correct_count": 13,
+          "total_count": 15,
+          "accuracy": 86.7
+        },
+        "video_section_1": {
+          "viewed_flag": 1
+        },
+        "video_section_2": {
+          "viewed_flag": 1
+        },
+        "video_section_3": {
+          "viewed_flag": 1
+        },
+        "video_section_4": {
+          "viewed_flag": 1
+        },
+        "video_section_5": {
+          "viewed_flag": 1
+        },
+        "video_section_6": {
+          "viewed_flag": 1
+        },
+        "video_section_7": {
+          "viewed_flag": 1
+        },
+        "video_section_8": {
+          "viewed_flag": 1
+        },
+        "video_section_9": {
+          "viewed_flag": 1
+        },
+        "video_section_10": {
+          "viewed_flag": 1
+        },
+        "video_section_11": {
+          "viewed_flag": 1
+        },
+        "video_section_12": {
+          "viewed_flag": 1
+        },
+        "video_section_13": {
+          "viewed_flag": 1
+        },
+        "video_section_14": {
+          "viewed_flag": 1
+        },
+        "video_section_15": {
+          "viewed_flag": 1
+        },
+        "section_39": {
+          "correct_count": 5,
+          "total_count": 15,
+          "accuracy": 33.3
+        },
+        "section_41": {
+          "correct_count": 10,
+          "total_count": 15,
+          "accuracy": 66.7
+        }
+      }
+    },
+    "completed_attempts": [
+      {
+        "date_completed": "2026-06-18T13:42:50.273635",
+        "correct_answers": 38,
+        "total_answers": 45,
+        "accuracy_percent": 84.4,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
+      }
+    ]
+  },
+  "113213362": {
+    "user_info": {
+      "user_id": 113213362,
+      "username": "Арина Петухова",
+      "first_name": "Арина",
+      "last_name": "Петухова",
+      "last_activity": "2026-06-26T09:26:12.022912"
+    },
+    "courses": {
+      "Обучение по продажам": {
+        "lessons_completed": 43,
+        "total_lessons": 43,
+        "correct_answers": 219,
+        "total_answers": 235,
+        "accuracy_percent": 93.2
+      }
+    },
+    "lesson_results": {
+      "Обучение по продажам": {
+        "section_1": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_2": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_3": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_4": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_5": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_6": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "final_test": {
+          "correct_count": 14,
+          "total_count": 15,
+          "accuracy": 93.3
+        },
+        "section_7": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_8": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_9": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_10": {
+          "correct_count": 14,
+          "total_count": 15,
+          "accuracy": 93.3
+        },
+        "section_11": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_12": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_13": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_14": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_15": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_16": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_17": {
+          "correct_count": 14,
+          "total_count": 15,
+          "accuracy": 93.3
+        },
+        "section_18": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_19": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_20": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_21": {
+          "correct_count": 3,
+          "total_count": 5,
+          "accuracy": 60.0
+        },
+        "section_22": {
+          "correct_count": 13,
+          "total_count": 15,
+          "accuracy": 86.7
+        },
+        "video_section_1": {
+          "viewed_flag": 1
+        },
+        "video_section_2": {
+          "viewed_flag": 1
+        },
+        "video_section_3": {
+          "viewed_flag": 1
+        },
+        "video_section_4": {
+          "viewed_flag": 1
+        },
+        "video_section_5": {
+          "viewed_flag": 1
+        },
+        "video_section_6": {
+          "viewed_flag": 1
+        },
+        "video_section_7": {
+          "viewed_flag": 1
+        },
+        "video_section_8": {
+          "viewed_flag": 1
+        },
+        "video_section_9": {
+          "viewed_flag": 1
+        },
+        "video_section_10": {
+          "viewed_flag": 1
+        },
+        "video_section_11": {
+          "viewed_flag": 1
+        },
+        "video_section_12": {
+          "viewed_flag": 1
+        },
+        "video_section_13": {
+          "viewed_flag": 1
+        },
+        "video_section_14": {
+          "viewed_flag": 1
+        },
+        "video_section_15": {
+          "viewed_flag": 1
+        },
+        "section_39": {
+          "correct_count": 9,
+          "total_count": 15,
+          "accuracy": 60.0
+        },
+        "section_41": {
+          "correct_count": 14,
+          "total_count": 15,
+          "accuracy": 93.3
+        },
+        "section_42": {
+          "correct_count": 28,
+          "total_count": 30,
+          "accuracy": 93.3
+        }
+      }
+    },
+    "completed_attempts": [
+      {
+        "date_completed": "2026-06-18T12:25:26.715930",
+        "correct_answers": 44,
+        "total_answers": 45,
+        "accuracy_percent": 97.8,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
+      },
+      {
+        "date_completed": "2026-06-26T09:26:12.029528",
+        "correct_answers": 219,
+        "total_answers": 235,
+        "accuracy_percent": 93.2,
+        "lessons_completed": 43,
+        "course_name": "Обучение по продажам"
+      }
+    ]
+  },
+  "173839117": {
+    "user_info": {
+      "user_id": 173839117,
+      "username": "Николай Шаблий",
+      "first_name": "Николай",
+      "last_name": "Шаблий",
+      "last_activity": "2026-06-27T18:06:17.701439"
+    },
+    "courses": {
+      "Обучение по продажам": {
+        "lessons_completed": 0,
+        "total_lessons": 43,
+        "correct_answers": 0,
+        "total_answers": 0,
+        "accuracy_percent": 0.0
+      }
+    },
+    "lesson_results": {
+      "Обучение по продажам": {}
+    },
+    "completed_attempts": [
+      {
+        "date_completed": "2026-06-18T13:43:19.697497",
+        "correct_answers": 43,
+        "total_answers": 45,
+        "accuracy_percent": 95.6,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
+      },
+      {
+        "date_completed": "2026-06-18T14:18:29.493182",
+        "correct_answers": 43,
+        "total_answers": 45,
+        "accuracy_percent": 95.6,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
+      }
+    ]
+  },
+  "108212884": {
+    "user_info": {
+      "user_id": 108212884,
+      "username": "Денис Толочков",
+      "first_name": "Денис",
+      "last_name": "Толочков",
+      "last_activity": "2026-06-29T18:40:16.095521"
+    },
+    "courses": {
+      "Обучение по продажам": {
+        "lessons_completed": 43,
+        "total_lessons": 43,
+        "correct_answers": 204,
+        "total_answers": 235,
+        "accuracy_percent": 86.8
+      }
+    },
+    "lesson_results": {
+      "Обучение по продажам": {
+        "section_1": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_2": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_3": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_4": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_5": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_6": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "final_test": {
+          "correct_count": 13,
+          "total_count": 15,
+          "accuracy": 86.7
+        },
+        "section_7": {
+          "correct_count": 9,
+          "total_count": 10,
+          "accuracy": 90.0
+        },
+        "section_8": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_9": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_10": {
+          "correct_count": 13,
+          "total_count": 15,
+          "accuracy": 86.7
+        },
+        "section_11": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_12": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_13": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_14": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_15": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_16": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_17": {
+          "correct_count": 12,
+          "total_count": 15,
+          "accuracy": 80.0
+        },
+        "section_18": {
+          "correct_count": 9,
+          "total_count": 10,
+          "accuracy": 90.0
+        },
+        "section_19": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_20": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_21": {
+          "correct_count": 3,
+          "total_count": 5,
+          "accuracy": 60.0
+        },
+        "section_22": {
+          "correct_count": 13,
+          "total_count": 15,
+          "accuracy": 86.7
+        },
+        "video_section_1": {
+          "viewed_flag": 1
+        },
+        "video_section_2": {
+          "viewed_flag": 1
+        },
+        "video_section_3": {
+          "viewed_flag": 1
+        },
+        "video_section_4": {
+          "viewed_flag": 1
+        },
+        "video_section_5": {
+          "viewed_flag": 1
+        },
+        "video_section_6": {
+          "viewed_flag": 1
+        },
+        "video_section_7": {
+          "viewed_flag": 1
+        },
+        "video_section_8": {
+          "viewed_flag": 1
+        },
+        "video_section_9": {
+          "viewed_flag": 1
+        },
+        "video_section_10": {
+          "viewed_flag": 1
+        },
+        "video_section_11": {
+          "viewed_flag": 1
+        },
+        "video_section_12": {
+          "viewed_flag": 1
+        },
+        "video_section_13": {
+          "viewed_flag": 1
+        },
+        "video_section_14": {
+          "viewed_flag": 1
+        },
+        "video_section_15": {
+          "viewed_flag": 1
+        },
+        "section_39": {
+          "correct_count": 7,
+          "total_count": 15,
+          "accuracy": 46.7
+        },
+        "section_41": {
+          "correct_count": 11,
+          "total_count": 15,
+          "accuracy": 73.3
+        },
+        "section_42": {
+          "correct_count": 26,
+          "total_count": 30,
+          "accuracy": 86.7
+        }
+      }
+    },
+    "completed_attempts": [
+      {
+        "date_completed": "2026-06-18T14:50:15.924528",
+        "correct_answers": 42,
+        "total_answers": 45,
+        "accuracy_percent": 93.3,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
+      },
+      {
+        "date_completed": "2026-06-29T18:40:16.102540",
+        "correct_answers": 204,
+        "total_answers": 235,
+        "accuracy_percent": 86.8,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продажам"
+      }
+    ]
+  },
+  "134418250": {
+    "user_info": {
+      "user_id": 134418250,
+      "username": "Эльвира Нуриева",
+      "first_name": "Эльвира",
+      "last_name": "Нуриева",
+      "last_activity": "2026-06-29T16:02:27.218477"
+    },
+    "courses": {
+      "Обучение по продажам": {
+        "lessons_completed": 43,
+        "total_lessons": 43,
+        "correct_answers": 208,
+        "total_answers": 235,
+        "accuracy_percent": 88.5
+      }
+    },
+    "lesson_results": {
+      "Обучение по продажам": {
+        "section_1": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_2": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_3": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_4": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_5": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_6": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "final_test": {
+          "correct_count": 14,
+          "total_count": 15,
+          "accuracy": 93.3
+        },
+        "section_7": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_8": {
+          "correct_count": 9,
+          "total_count": 10,
+          "accuracy": 90.0
+        },
+        "section_9": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_10": {
+          "correct_count": 14,
+          "total_count": 15,
+          "accuracy": 93.3
+        },
+        "section_11": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_12": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_13": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_14": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_15": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_16": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_17": {
+          "correct_count": 10,
+          "total_count": 15,
+          "accuracy": 66.7
+        },
+        "section_18": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_19": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_20": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_21": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_22": {
+          "correct_count": 14,
+          "total_count": 15,
+          "accuracy": 93.3
+        },
+        "video_section_1": {
+          "viewed_flag": 1
+        },
+        "video_section_2": {
+          "viewed_flag": 1
+        },
+        "video_section_3": {
+          "viewed_flag": 1
+        },
+        "video_section_4": {
+          "viewed_flag": 1
+        },
+        "video_section_5": {
+          "viewed_flag": 1
+        },
+        "video_section_6": {
+          "viewed_flag": 1
+        },
+        "video_section_7": {
+          "viewed_flag": 1
+        },
+        "video_section_8": {
+          "viewed_flag": 1
+        },
+        "video_section_9": {
+          "viewed_flag": 1
+        },
+        "video_section_10": {
+          "viewed_flag": 1
+        },
+        "video_section_11": {
+          "viewed_flag": 1
+        },
+        "video_section_12": {
+          "viewed_flag": 1
+        },
+        "video_section_13": {
+          "viewed_flag": 1
+        },
+        "video_section_14": {
+          "viewed_flag": 1
+        },
+        "video_section_15": {
+          "viewed_flag": 1
+        },
+        "section_39": {
+          "correct_count": 10,
+          "total_count": 15,
+          "accuracy": 66.7
+        },
+        "section_41": {
+          "correct_count": 10,
+          "total_count": 15,
+          "accuracy": 66.7
+        },
+        "section_42": {
+          "correct_count": 27,
+          "total_count": 30,
+          "accuracy": 90.0
+        }
+      }
+    },
+    "completed_attempts": [
+      {
+        "date_completed": "2026-06-18T14:37:22.466652",
+        "correct_answers": 43,
+        "total_answers": 45,
+        "accuracy_percent": 95.6,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
+      },
+      {
+        "date_completed": "2026-06-29T16:02:27.227324",
+        "correct_answers": 208,
+        "total_answers": 235,
+        "accuracy_percent": 88.5,
+        "lessons_completed": 43,
+        "course_name": "Обучение по продажам"
+      }
+    ]
+  },
+  "147244614": {
+    "user_info": {
+      "user_id": 147244614,
+      "username": "Сидорова Екатерина",
+      "first_name": "Сидорова",
+      "last_name": "Екатерина",
+      "last_activity": "2026-06-29T15:39:16.935383"
+    },
+    "courses": {
+      "Обучение по продажам": {
+        "lessons_completed": 43,
+        "total_lessons": 43,
+        "correct_answers": 203,
+        "total_answers": 235,
+        "accuracy_percent": 86.4
+      }
+    },
+    "lesson_results": {
+      "Обучение по продажам": {
+        "section_1": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_2": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_3": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_4": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_5": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_6": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "final_test": {
+          "correct_count": 14,
+          "total_count": 15,
+          "accuracy": 93.3
+        },
+        "section_7": {
+          "correct_count": 9,
+          "total_count": 10,
+          "accuracy": 90.0
+        },
+        "section_8": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_9": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_10": {
+          "correct_count": 14,
+          "total_count": 15,
+          "accuracy": 93.3
+        },
+        "section_11": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_12": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_13": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_14": {
+          "correct_count": 3,
+          "total_count": 5,
+          "accuracy": 60.0
+        },
+        "section_15": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_16": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_17": {
+          "correct_count": 14,
+          "total_count": 15,
+          "accuracy": 93.3
+        },
+        "section_18": {
+          "correct_count": 9,
+          "total_count": 10,
+          "accuracy": 90.0
+        },
+        "section_19": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_20": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_21": {
+          "correct_count": 2,
+          "total_count": 5,
+          "accuracy": 40.0
+        },
+        "section_22": {
+          "correct_count": 13,
+          "total_count": 15,
+          "accuracy": 86.7
+        },
+        "video_section_1": {
+          "viewed_flag": 1
+        },
+        "video_section_2": {
+          "viewed_flag": 1
+        },
+        "video_section_3": {
+          "viewed_flag": 1
+        },
+        "video_section_4": {
+          "viewed_flag": 1
+        },
+        "video_section_5": {
+          "viewed_flag": 1
+        },
+        "video_section_6": {
+          "viewed_flag": 1
+        },
+        "video_section_7": {
+          "viewed_flag": 1
+        },
+        "video_section_8": {
+          "viewed_flag": 1
+        },
+        "video_section_9": {
+          "viewed_flag": 1
+        },
+        "video_section_10": {
+          "viewed_flag": 1
+        },
+        "video_section_11": {
+          "viewed_flag": 1
+        },
+        "video_section_12": {
+          "viewed_flag": 1
+        },
+        "video_section_13": {
+          "viewed_flag": 1
+        },
+        "video_section_14": {
+          "viewed_flag": 1
+        },
+        "video_section_15": {
+          "viewed_flag": 1
+        },
+        "section_39": {
+          "correct_count": 8,
+          "total_count": 15,
+          "accuracy": 53.3
+        },
+        "section_41": {
+          "correct_count": 10,
+          "total_count": 15,
+          "accuracy": 66.7
+        },
+        "section_42": {
+          "correct_count": 25,
+          "total_count": 30,
+          "accuracy": 83.3
+        }
+      }
+    },
+    "completed_attempts": [
+      {
+        "date_completed": "2026-06-18T14:14:40.711354",
+        "correct_answers": 44,
+        "total_answers": 45,
+        "accuracy_percent": 97.8,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
+      },
+      {
+        "date_completed": "2026-06-29T15:39:16.942124",
+        "correct_answers": 203,
+        "total_answers": 235,
+        "accuracy_percent": 86.4,
+        "lessons_completed": 43,
+        "course_name": "Обучение по продажам"
+      }
+    ]
+  },
+  "122276170": {
+    "user_info": {
+      "user_id": 122276170,
+      "username": "Оксана Кудасова",
+      "first_name": "Оксана",
+      "last_name": "Кудасова",
+      "last_activity": "2026-06-29T15:38:55.292068"
+    },
+    "courses": {
+      "Обучение по продажам": {
+        "lessons_completed": 43,
+        "total_lessons": 43,
+        "correct_answers": 200,
+        "total_answers": 235,
+        "accuracy_percent": 85.1
+      }
+    },
+    "lesson_results": {
+      "Обучение по продажам": {
+        "section_1": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_2": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_3": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_4": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_5": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_6": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "final_test": {
+          "correct_count": 14,
+          "total_count": 15,
+          "accuracy": 93.3
+        },
+        "section_7": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_8": {
+          "correct_count": 9,
+          "total_count": 10,
+          "accuracy": 90.0
+        },
+        "section_9": {
+          "correct_count": 9,
+          "total_count": 10,
+          "accuracy": 90.0
+        },
+        "section_10": {
+          "correct_count": 13,
+          "total_count": 15,
+          "accuracy": 86.7
+        },
+        "section_11": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_12": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_13": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_14": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_15": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_16": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_17": {
+          "correct_count": 10,
+          "total_count": 15,
+          "accuracy": 66.7
+        },
+        "section_18": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_19": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_20": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_21": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_22": {
+          "correct_count": 13,
+          "total_count": 15,
+          "accuracy": 86.7
+        },
+        "video_section_1": {
+          "viewed_flag": 1
+        },
+        "video_section_2": {
+          "viewed_flag": 1
+        },
+        "video_section_3": {
+          "viewed_flag": 1
+        },
+        "video_section_4": {
+          "viewed_flag": 1
+        },
+        "video_section_5": {
+          "viewed_flag": 1
+        },
+        "video_section_6": {
+          "viewed_flag": 1
+        },
+        "video_section_7": {
+          "viewed_flag": 1
+        },
+        "video_section_8": {
+          "viewed_flag": 1
+        },
+        "video_section_9": {
+          "viewed_flag": 1
+        },
+        "video_section_10": {
+          "viewed_flag": 1
+        },
+        "video_section_11": {
+          "viewed_flag": 1
+        },
+        "video_section_12": {
+          "viewed_flag": 1
+        },
+        "video_section_13": {
+          "viewed_flag": 1
+        },
+        "video_section_14": {
+          "viewed_flag": 1
+        },
+        "video_section_15": {
+          "viewed_flag": 1
+        },
+        "section_39": {
+          "correct_count": 8,
+          "total_count": 15,
+          "accuracy": 53.3
+        },
+        "section_41": {
+          "correct_count": 11,
+          "total_count": 15,
+          "accuracy": 73.3
+        },
+        "section_42": {
+          "correct_count": 25,
+          "total_count": 30,
+          "accuracy": 83.3
+        }
+      }
+    },
+    "completed_attempts": [
+      {
+        "date_completed": "2026-06-18T15:27:49.715313",
+        "correct_answers": 44,
+        "total_answers": 45,
+        "accuracy_percent": 97.8,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
+      },
+      {
+        "date_completed": "2026-06-29T15:38:55.298126",
+        "correct_answers": 200,
+        "total_answers": 235,
+        "accuracy_percent": 85.1,
+        "lessons_completed": 43,
+        "course_name": "Обучение по продажам"
+      }
+    ]
+  },
+  "6426195": {
+    "user_info": {
+      "user_id": 6426195,
+      "username": "Михаил Савонькин",
+      "first_name": "Михаил",
+      "last_name": "Савонькин",
+      "last_activity": "2026-07-10T11:45:14.545430"
+    },
+    "courses": {
+      "Обучение по продажам": {
+        "lessons_completed": 12,
+        "total_lessons": 43,
+        "correct_answers": 71,
+        "total_answers": 90,
+        "accuracy_percent": 78.9
+      }
+    },
+    "lesson_results": {
+      "Обучение по продажам": {
+        "section_1": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_2": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_3": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_4": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_5": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_6": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "final_test": {
+          "correct_count": 10,
+          "total_count": 15,
+          "accuracy": 66.7
+        },
+        "section_7": {
+          "correct_count": 2,
+          "total_count": 10,
+          "accuracy": 20.0
+        },
+        "section_8": {
+          "correct_count": 9,
+          "total_count": 10,
+          "accuracy": 90.0
+        },
+        "section_9": {
+          "correct_count": 9,
+          "total_count": 10,
+          "accuracy": 90.0
+        },
+        "section_10": {
+          "correct_count": 12,
+          "total_count": 15,
+          "accuracy": 80.0
+        }
+      }
+    },
+    "completed_attempts": [
+      {
+        "date_completed": "2026-06-25T08:52:28.036199",
+        "correct_answers": 38,
+        "total_answers": 45,
+        "accuracy_percent": 84.4,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
+      },
+      {
+        "date_completed": "2026-07-10T10:28:06.652360",
+        "correct_answers": 39,
+        "total_answers": 45,
+        "accuracy_percent": 86.7,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
+      },
+      {
+        "date_completed": "2026-07-10T10:30:12.826134",
+        "correct_answers": 39,
+        "total_answers": 45,
+        "accuracy_percent": 86.7,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
+      },
+      {
+        "date_completed": "2026-07-10T10:30:36.677475",
+        "correct_answers": 39,
+        "total_answers": 45,
+        "accuracy_percent": 86.7,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
+      },
+      {
+        "date_completed": "2026-07-10T10:32:30.477835",
+        "correct_answers": 39,
+        "total_answers": 45,
+        "accuracy_percent": 86.7,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
+      },
+      {
+        "date_completed": "2026-07-10T10:32:53.525842",
+        "correct_answers": 39,
+        "total_answers": 45,
+        "accuracy_percent": 86.7,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
+      },
+      {
+        "date_completed": "2026-07-10T10:34:48.350360",
+        "correct_answers": 39,
+        "total_answers": 45,
+        "accuracy_percent": 86.7,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
+      },
+      {
+        "date_completed": "2026-07-10T10:34:49.285990",
+        "correct_answers": 39,
+        "total_answers": 45,
+        "accuracy_percent": 86.7,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
+      }
+    ]
+  },
+  "15396352": {
+    "user_info": {
+      "user_id": 15396352,
+      "username": "Майя Северова",
+      "first_name": "Майя",
+      "last_name": "Северова",
+      "last_activity": "2026-06-30T10:40:31.197979"
+    },
+    "courses": {
+      "Обучение по продажам": {
+        "lessons_completed": 43,
+        "total_lessons": 43,
+        "correct_answers": 210,
+        "total_answers": 235,
+        "accuracy_percent": 89.4
+      }
+    },
+    "lesson_results": {
+      "Обучение по продажам": {
+        "section_1": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_2": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_3": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_4": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_5": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_6": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "final_test": {
+          "correct_count": 13,
+          "total_count": 15,
+          "accuracy": 86.7
+        },
+        "section_7": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_8": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_9": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_10": {
+          "correct_count": 13,
+          "total_count": 15,
+          "accuracy": 86.7
+        },
+        "section_11": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_12": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_13": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_14": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_15": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_16": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_17": {
+          "correct_count": 13,
+          "total_count": 15,
+          "accuracy": 86.7
+        },
+        "section_18": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_19": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_20": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_21": {
+          "correct_count": 3,
+          "total_count": 5,
+          "accuracy": 60.0
+        },
+        "section_22": {
+          "correct_count": 13,
+          "total_count": 15,
+          "accuracy": 86.7
+        },
+        "video_section_1": {
+          "viewed_flag": 1
+        },
+        "video_section_2": {
+          "viewed_flag": 1
+        },
+        "video_section_3": {
+          "viewed_flag": 1
+        },
+        "video_section_4": {
+          "viewed_flag": 1
+        },
+        "video_section_5": {
+          "viewed_flag": 1
+        },
+        "video_section_6": {
+          "viewed_flag": 1
+        },
+        "video_section_7": {
+          "viewed_flag": 1
+        },
+        "video_section_8": {
+          "viewed_flag": 1
+        },
+        "video_section_9": {
+          "viewed_flag": 1
+        },
+        "video_section_10": {
+          "viewed_flag": 1
+        },
+        "video_section_11": {
+          "viewed_flag": 1
+        },
+        "video_section_12": {
+          "viewed_flag": 1
+        },
+        "video_section_13": {
+          "viewed_flag": 1
+        },
+        "video_section_14": {
+          "viewed_flag": 1
+        },
+        "video_section_15": {
+          "viewed_flag": 1
+        },
+        "section_39": {
+          "correct_count": 8,
+          "total_count": 15,
+          "accuracy": 53.3
+        },
+        "section_41": {
+          "correct_count": 12,
+          "total_count": 15,
+          "accuracy": 80.0
+        },
+        "section_42": {
+          "correct_count": 26,
+          "total_count": 30,
+          "accuracy": 86.7
+        }
+      }
+    },
+    "completed_attempts": [
+      {
+        "date_completed": "2026-06-26T10:44:39.285889",
+        "correct_answers": 42,
+        "total_answers": 45,
+        "accuracy_percent": 93.3,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
+      },
+      {
+        "date_completed": "2026-06-30T10:40:31.204100",
+        "correct_answers": 210,
+        "total_answers": 235,
+        "accuracy_percent": 89.4,
+        "lessons_completed": 43,
+        "course_name": "Обучение по продажам"
+      }
+    ]
+  },
+  "131793830": {
+    "user_info": {
+      "user_id": 131793830,
+      "username": "Валентина Танкова",
+      "first_name": "Валентина",
+      "last_name": "Танкова",
+      "last_activity": "2026-07-07T07:44:33.064657"
+    },
+    "courses": {
+      "Обучение по продукту": {
+        "lessons_completed": 7,
+        "total_lessons": 7,
+        "correct_answers": 40,
+        "total_answers": 45,
+        "accuracy_percent": 88.9
+      },
+      "Обучение по продажам": {
+        "lessons_completed": 7,
+        "total_lessons": 43,
+        "correct_answers": 44,
+        "total_answers": 45,
+        "accuracy_percent": 97.8
+      }
+    },
+    "lesson_results": {
+      "Обучение по продукту": {
+        "section_1": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_2": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_3": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_4": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_5": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_6": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "final_test": {
+          "correct_count": 13,
+          "total_count": 15,
+          "accuracy": 86.7
+        }
+      },
+      "Обучение по продажам": {
+        "section_1": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_2": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_3": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_4": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_5": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_6": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "final_test": {
+          "correct_count": 14,
+          "total_count": 15,
+          "accuracy": 93.3
+        }
+      }
+    },
+    "completed_attempts": [
+      {
+        "date_completed": "2026-07-06T11:49:27.944252",
+        "correct_answers": 40,
+        "total_answers": 45,
+        "accuracy_percent": 88.9,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
+      },
+      {
+        "date_completed": "2026-07-07T07:44:33.072671",
+        "correct_answers": 44,
+        "total_answers": 45,
+        "accuracy_percent": 97.8,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
+      }
+    ]
+  },
+  "167716183": {
+    "user_info": {
+      "user_id": 167716183,
+      "username": "Павел Кожанов",
+      "first_name": "Павел",
+      "last_name": "Кожанов",
+      "last_activity": "2026-07-29T14:33:22.252013"
+    },
+    "courses": {
+      "Обучение для юриста": {
+        "lessons_completed": 12,
+        "total_lessons": 12,
+        "correct_answers": 76,
         "total_answers": 105,
-        "accuracy_percent": 23.8,
+        "accuracy_percent": 72.4
+      }
+    },
+    "lesson_results": {
+      "Обучение для юриста": {
+        "section_1": {
+          "correct_count": 13,
+          "total_count": 15,
+          "accuracy": 86.7
+        },
+        "section_2": {
+          "correct_count": 11,
+          "total_count": 15,
+          "accuracy": 73.3
+        },
+        "section_3": {
+          "correct_count": 11,
+          "total_count": 15,
+          "accuracy": 73.3
+        },
+        "section_4": {
+          "correct_count": 11,
+          "total_count": 15,
+          "accuracy": 73.3
+        },
+        "section_5": {
+          "correct_count": 10,
+          "total_count": 15,
+          "accuracy": 66.7
+        },
+        "final_test": {
+          "correct_count": 20,
+          "total_count": 30,
+          "accuracy": 66.7
+        }
+      }
+    },
+    "completed_attempts": [
+      {
+        "date_completed": "2026-07-29T14:33:22.259545",
+        "correct_answers": 76,
+        "total_answers": 105,
+        "accuracy_percent": 72.4,
         "lessons_completed": 12,
         "course_name": "Обучение для юриста"
       }
@@ -1542,221 +3610,659 @@
   "175082514": {
     "user_info": {
       "user_id": 175082514,
-      "username": "Сергей Иванов",
-      "first_name": "Сергей",
+      "username": "Валентин Иванов",
+      "first_name": "Валентин",
       "last_name": "Иванов",
-      "last_activity": "2026-07-30T23:54:45.033326"
+      "last_activity": "2026-07-31T20:14:17.779924"
     },
     "courses": {
-      "Регулярный менеджмент": {
-        "lessons_completed": 10,
-        "total_lessons": 10,
-        "correct_answers": 8,
-        "total_answers": 66,
-        "accuracy_percent": 12.1
-      },
-      "Обучение для юриста": {
-        "lessons_completed": 12,
-        "total_lessons": 12,
-        "correct_answers": 20,
-        "total_answers": 135,
-        "accuracy_percent": 14.8
-      },
       "Обучение по продукту": {
-        "lessons_completed": 7,
+        "lessons_completed": 1,
         "total_lessons": 7,
-        "correct_answers": 10,
-        "total_answers": 45,
-        "accuracy_percent": 22.2
+        "correct_answers": 2,
+        "total_answers": 5,
+        "accuracy_percent": 40.0
       }
     },
     "lesson_results": {
-      "Регулярный менеджмент": {
-        "block_3": {
-          "correct_count": 2,
-          "total_count": 9,
-          "accuracy": 22.2
-        },
-        "block_6": {
-          "correct_count": 1,
-          "total_count": 6,
-          "accuracy": 16.7
-        },
-        "block_9": {
-          "correct_count": 1,
-          "total_count": 4,
-          "accuracy": 25.0
-        },
-        "block_12": {
-          "correct_count": 1,
-          "total_count": 6,
-          "accuracy": 16.7
-        },
-        "block_15": {
-          "correct_count": 0,
-          "total_count": 7,
-          "accuracy": 0.0
-        },
-        "block_18": {
-          "correct_count": 0,
-          "total_count": 7,
-          "accuracy": 0.0
-        },
-        "block_21": {
-          "correct_count": 0,
-          "total_count": 7,
-          "accuracy": 0.0
-        },
-        "block_24": {
-          "correct_count": 1,
-          "total_count": 7,
-          "accuracy": 14.3
-        },
-        "block_27": {
-          "correct_count": 1,
-          "total_count": 6,
-          "accuracy": 16.7
-        },
-        "block_30": {
-          "correct_count": 1,
-          "total_count": 7,
-          "accuracy": 14.3
-        }
-      },
-      "Обучение для юриста": {
-        "section_1": {
-          "correct_count": 4,
-          "total_count": 15,
-          "accuracy": 26.7
-        },
-        "section_2": {
-          "correct_count": 2,
-          "total_count": 15,
-          "accuracy": 13.3
-        },
-        "section_3": {
-          "correct_count": 2,
-          "total_count": 15,
-          "accuracy": 13.3
-        },
-        "section_4": {
-          "correct_count": 2,
-          "total_count": 15,
-          "accuracy": 13.3
-        },
-        "section_5": {
-          "correct_count": 0,
-          "total_count": 15,
-          "accuracy": 0.0
-        },
-        "final_test": {
-          "correct_count": 7,
-          "total_count": 30,
-          "accuracy": 23.3
-        }
-      },
       "Обучение по продукту": {
         "section_1": {
-          "correct_count": 0,
+          "correct_count": 2,
           "total_count": 5,
-          "accuracy": 0.0
+          "accuracy": 40.0
+        }
+      }
+    }
+  },
+  "231035421": {
+    "user_info": {
+      "user_id": 231035421,
+      "username": "Яна Лемазина",
+      "first_name": "Яна",
+      "last_name": "Лемазина",
+      "last_activity": "2026-08-05T11:45:33.758026"
+    },
+    "courses": {
+      "Обучение по продажам": {
+        "lessons_completed": 42,
+        "total_lessons": 43,
+        "correct_answers": 165,
+        "total_answers": 205,
+        "accuracy_percent": 80.5
+      }
+    },
+    "lesson_results": {
+      "Обучение по продажам": {
+        "section_1": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
         },
         "section_2": {
-          "correct_count": 2,
+          "correct_count": 5,
           "total_count": 5,
-          "accuracy": 40.0
+          "accuracy": 100.0
         },
         "section_3": {
-          "correct_count": 1,
+          "correct_count": 4,
           "total_count": 5,
-          "accuracy": 20.0
+          "accuracy": 80.0
         },
         "section_4": {
-          "correct_count": 1,
+          "correct_count": 5,
           "total_count": 5,
-          "accuracy": 20.0
+          "accuracy": 100.0
         },
         "section_5": {
-          "correct_count": 1,
+          "correct_count": 5,
           "total_count": 5,
-          "accuracy": 20.0
+          "accuracy": 100.0
         },
         "section_6": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "final_test": {
+          "correct_count": 11,
+          "total_count": 15,
+          "accuracy": 73.3
+        },
+        "section_7": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_8": {
+          "correct_count": 9,
+          "total_count": 10,
+          "accuracy": 90.0
+        },
+        "section_9": {
+          "correct_count": 9,
+          "total_count": 10,
+          "accuracy": 90.0
+        },
+        "section_10": {
+          "correct_count": 12,
+          "total_count": 15,
+          "accuracy": 80.0
+        },
+        "section_11": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_12": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_13": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_14": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_15": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_16": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_17": {
+          "correct_count": 10,
+          "total_count": 15,
+          "accuracy": 66.7
+        },
+        "section_18": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_19": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_20": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_21": {
           "correct_count": 2,
           "total_count": 5,
           "accuracy": 40.0
         },
-        "final_test": {
-          "correct_count": 3,
+        "section_22": {
+          "correct_count": 11,
           "total_count": 15,
-          "accuracy": 20.0
+          "accuracy": 73.3
+        },
+        "video_section_1": {
+          "viewed_flag": 1
+        },
+        "video_section_2": {
+          "viewed_flag": 1
+        },
+        "video_section_3": {
+          "viewed_flag": 1
+        },
+        "video_section_4": {
+          "viewed_flag": 1
+        },
+        "video_section_5": {
+          "viewed_flag": 1
+        },
+        "video_section_6": {
+          "viewed_flag": 1
+        },
+        "video_section_7": {
+          "viewed_flag": 1
+        },
+        "video_section_8": {
+          "viewed_flag": 1
+        },
+        "video_section_9": {
+          "viewed_flag": 1
+        },
+        "video_section_10": {
+          "viewed_flag": 1
+        },
+        "video_section_11": {
+          "viewed_flag": 1
+        },
+        "video_section_12": {
+          "viewed_flag": 1
+        },
+        "video_section_13": {
+          "viewed_flag": 1
+        },
+        "video_section_14": {
+          "viewed_flag": 1
+        },
+        "video_section_15": {
+          "viewed_flag": 1
+        },
+        "section_39": {
+          "correct_count": 5,
+          "total_count": 15,
+          "accuracy": 33.3
+        },
+        "section_41": {
+          "correct_count": 10,
+          "total_count": 15,
+          "accuracy": 66.7
         }
       }
     },
     "completed_attempts": [
       {
-        "date_completed": "2026-07-30T09:05:59.562271",
-        "correct_answers": 3,
-        "total_answers": 66,
-        "accuracy_percent": 4.5,
-        "lessons_completed": 10,
-        "course_name": "Регулярный менеджмент"
-      },
-      {
-        "date_completed": "2026-07-30T09:39:50.662763",
-        "correct_answers": 18,
-        "total_answers": 105,
-        "accuracy_percent": 17.1,
-        "lessons_completed": 12,
-        "course_name": "Обучение для юриста"
-      },
-      {
-        "date_completed": "2026-07-30T09:39:51.423022",
-        "correct_answers": 18,
-        "total_answers": 105,
-        "accuracy_percent": 17.1,
-        "lessons_completed": 12,
-        "course_name": "Обучение для юриста"
-      },
-      {
-        "date_completed": "2026-07-30T09:49:32.893720",
-        "correct_answers": 16,
-        "total_answers": 90,
-        "accuracy_percent": 17.8,
-        "lessons_completed": 12,
-        "course_name": "Обучение для юриста"
-      },
-      {
-        "date_completed": "2026-07-30T23:24:57.102257",
-        "correct_answers": 10,
+        "date_completed": "2026-08-03T12:53:27.107493",
+        "correct_answers": 39,
         "total_answers": 45,
-        "accuracy_percent": 22.2,
+        "accuracy_percent": 86.7,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
+      }
+    ]
+  },
+  "248180797": {
+    "user_info": {
+      "user_id": 248180797,
+      "username": "Анна Пайкова",
+      "first_name": "Анна",
+      "last_name": "Пайкова",
+      "last_activity": "2026-08-18T09:14:35.023797"
+    },
+    "courses": {
+      "Обучение по продажам": {
+        "lessons_completed": 43,
+        "total_lessons": 43,
+        "correct_answers": 194,
+        "total_answers": 235,
+        "accuracy_percent": 82.6
+      }
+    },
+    "lesson_results": {
+      "Обучение по продажам": {
+        "section_1": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_2": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_3": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_4": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_5": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_6": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "final_test": {
+          "correct_count": 13,
+          "total_count": 15,
+          "accuracy": 86.7
+        },
+        "section_7": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_8": {
+          "correct_count": 6,
+          "total_count": 10,
+          "accuracy": 60.0
+        },
+        "section_9": {
+          "correct_count": 9,
+          "total_count": 10,
+          "accuracy": 90.0
+        },
+        "section_10": {
+          "correct_count": 12,
+          "total_count": 15,
+          "accuracy": 80.0
+        },
+        "section_11": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_12": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_13": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_14": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_15": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_16": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_17": {
+          "correct_count": 13,
+          "total_count": 15,
+          "accuracy": 86.7
+        },
+        "section_18": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_19": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_20": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_21": {
+          "correct_count": 2,
+          "total_count": 5,
+          "accuracy": 40.0
+        },
+        "section_22": {
+          "correct_count": 12,
+          "total_count": 15,
+          "accuracy": 80.0
+        },
+        "video_section_1": {
+          "viewed_flag": 1
+        },
+        "video_section_2": {
+          "viewed_flag": 1
+        },
+        "video_section_3": {
+          "viewed_flag": 1
+        },
+        "video_section_4": {
+          "viewed_flag": 1
+        },
+        "video_section_5": {
+          "viewed_flag": 1
+        },
+        "video_section_6": {
+          "viewed_flag": 1
+        },
+        "video_section_7": {
+          "viewed_flag": 1
+        },
+        "video_section_8": {
+          "viewed_flag": 1
+        },
+        "video_section_9": {
+          "viewed_flag": 1
+        },
+        "video_section_10": {
+          "viewed_flag": 1
+        },
+        "video_section_11": {
+          "viewed_flag": 1
+        },
+        "video_section_12": {
+          "viewed_flag": 1
+        },
+        "video_section_13": {
+          "viewed_flag": 1
+        },
+        "video_section_14": {
+          "viewed_flag": 1
+        },
+        "video_section_15": {
+          "viewed_flag": 1
+        },
+        "section_39": {
+          "correct_count": 8,
+          "total_count": 15,
+          "accuracy": 53.3
+        },
+        "section_41": {
+          "correct_count": 11,
+          "total_count": 15,
+          "accuracy": 73.3
+        },
+        "section_42": {
+          "correct_count": 24,
+          "total_count": 30,
+          "accuracy": 80.0
+        }
+      }
+    },
+    "completed_attempts": [
+      {
+        "date_completed": "2026-08-10T14:21:30.857996",
+        "correct_answers": 40,
+        "total_answers": 45,
+        "accuracy_percent": 88.9,
         "lessons_completed": 7,
         "course_name": "Обучение по продукту"
       },
       {
-        "date_completed": "2026-07-30T23:34:41.795927",
-        "correct_answers": 13,
-        "total_answers": 105,
-        "accuracy_percent": 12.4,
-        "lessons_completed": 12,
-        "course_name": "Обучение для юриста"
+        "date_completed": "2026-08-18T09:14:35.037907",
+        "correct_answers": 194,
+        "total_answers": 235,
+        "accuracy_percent": 82.6,
+        "lessons_completed": 43,
+        "course_name": "Обучение по продажам"
+      }
+    ]
+  },
+  "189744743": {
+    "user_info": {
+      "user_id": 189744743,
+      "username": "Ринат Мустафин",
+      "first_name": "Ринат",
+      "last_name": "Мустафин",
+      "last_activity": "2026-08-16T18:54:44.384690"
+    },
+    "courses": {
+      "Обучение по продажам": {
+        "lessons_completed": 43,
+        "total_lessons": 43,
+        "correct_answers": 193,
+        "total_answers": 235,
+        "accuracy_percent": 82.1
+      }
+    },
+    "lesson_results": {
+      "Обучение по продажам": {
+        "section_1": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_2": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_3": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_4": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_5": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_6": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "final_test": {
+          "correct_count": 12,
+          "total_count": 15,
+          "accuracy": 80.0
+        },
+        "section_7": {
+          "correct_count": 10,
+          "total_count": 10,
+          "accuracy": 100.0
+        },
+        "section_8": {
+          "correct_count": 9,
+          "total_count": 10,
+          "accuracy": 90.0
+        },
+        "section_9": {
+          "correct_count": 9,
+          "total_count": 10,
+          "accuracy": 90.0
+        },
+        "section_10": {
+          "correct_count": 13,
+          "total_count": 15,
+          "accuracy": 86.7
+        },
+        "section_11": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_12": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_13": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_14": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_15": {
+          "correct_count": 3,
+          "total_count": 5,
+          "accuracy": 60.0
+        },
+        "section_16": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_17": {
+          "correct_count": 12,
+          "total_count": 15,
+          "accuracy": 80.0
+        },
+        "section_18": {
+          "correct_count": 8,
+          "total_count": 10,
+          "accuracy": 80.0
+        },
+        "section_19": {
+          "correct_count": 4,
+          "total_count": 5,
+          "accuracy": 80.0
+        },
+        "section_20": {
+          "correct_count": 5,
+          "total_count": 5,
+          "accuracy": 100.0
+        },
+        "section_21": {
+          "correct_count": 2,
+          "total_count": 5,
+          "accuracy": 40.0
+        },
+        "section_22": {
+          "correct_count": 10,
+          "total_count": 15,
+          "accuracy": 66.7
+        },
+        "video_section_1": {
+          "viewed_flag": 1
+        },
+        "video_section_2": {
+          "viewed_flag": 1
+        },
+        "video_section_3": {
+          "viewed_flag": 1
+        },
+        "video_section_4": {
+          "viewed_flag": 1
+        },
+        "video_section_5": {
+          "viewed_flag": 1
+        },
+        "video_section_6": {
+          "viewed_flag": 1
+        },
+        "video_section_7": {
+          "viewed_flag": 1
+        },
+        "video_section_8": {
+          "viewed_flag": 1
+        },
+        "video_section_9": {
+          "viewed_flag": 1
+        },
+        "video_section_10": {
+          "viewed_flag": 1
+        },
+        "video_section_11": {
+          "viewed_flag": 1
+        },
+        "video_section_12": {
+          "viewed_flag": 1
+        },
+        "video_section_13": {
+          "viewed_flag": 1
+        },
+        "video_section_14": {
+          "viewed_flag": 1
+        },
+        "video_section_15": {
+          "viewed_flag": 1
+        },
+        "section_39": {
+          "correct_count": 6,
+          "total_count": 15,
+          "accuracy": 40.0
+        },
+        "section_41": {
+          "correct_count": 10,
+          "total_count": 15,
+          "accuracy": 66.7
+        },
+        "section_42": {
+          "correct_count": 25,
+          "total_count": 30,
+          "accuracy": 83.3
+        }
+      }
+    },
+    "completed_attempts": [
+      {
+        "date_completed": "2026-08-11T07:15:12.439714",
+        "correct_answers": 42,
+        "total_answers": 45,
+        "accuracy_percent": 93.3,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
       },
       {
-        "date_completed": "2026-07-30T23:41:51.798226",
-        "correct_answers": 20,
-        "total_answers": 135,
-        "accuracy_percent": 14.8,
-        "lessons_completed": 12,
-        "course_name": "Обучение для юриста"
-      },
-      {
-        "date_completed": "2026-07-30T23:54:45.038141",
-        "correct_answers": 8,
-        "total_answers": 66,
-        "accuracy_percent": 12.1,
-        "lessons_completed": 10,
-        "course_name": "Регулярный менеджмент"
+        "date_completed": "2026-08-16T18:54:44.403682",
+        "correct_answers": 193,
+        "total_answers": 235,
+        "accuracy_percent": 82.1,
+        "lessons_completed": 43,
+        "course_name": "Обучение по продажам"
       }
     ]
   }
