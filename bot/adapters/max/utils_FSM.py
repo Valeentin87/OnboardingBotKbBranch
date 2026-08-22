@@ -14,6 +14,11 @@ class LawyerStates:
     user_type = "lawyer"
     
 
+class BranchKbStates:
+    """Состояния для ветки ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ"""
+    user_type = "konstructor"
+    
+
 class OnboardingStates:
     """Состояния конечных атвоматов для подготовки к обучению"""
     waiting_for_start_date = 'waiting_for_start_date'

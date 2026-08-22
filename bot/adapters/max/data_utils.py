@@ -137,6 +137,8 @@ def format_progress_attempts(attempts: list) -> str:
                 f"✅ Уроков пройдено: {attempt['lessons_completed']} / 10",
                 f"📈 Процент правильных ответов: {attempt['accuracy_percent']}%"
             ]
+        elif attempt["course_name"] == "Обучение для конструкторов":
+            pass # заглушка
             
 
         block = "\n".join(block_lines)

@@ -21,7 +21,7 @@ from aiomax import bot
 
 from bot.adapters.max.data_utils import format_progress_attempts, get_max_accuracy_item, load_user_data, save_reminder, save_user_data, validate_name_surname
 from bot.adapters.max.test_utils import block_definition_func, get_block_2_test_1_quests, get_block_2_test_2_quests, get_block_2_test_3_quests, get_block_3_test_1_quests, get_block_3_test_2_quests, get_block_3_test_3_quests, get_block_3_test_4_quests, get_block_3_test_5_quests, get_block_3_test_6_quests, get_block_4_test_1_quests, get_block_4_test_2_quests, get_block_4_test_3_quests, get_block_4_test_4_quests, get_final_test_all_course_lawyer, get_final_test_block_1, get_final_test_block_1_lawyer, get_final_test_block_2, get_final_test_block_2_lawyer, get_final_test_block_3, get_final_test_block_3_lawyer, get_final_test_block_4, get_final_test_block_4_lawyer, get_final_test_block_5, get_final_test_block_5_lawyer, get_final_test_block_6, get_final_test_block_7, get_testing_data_1, get_testing_data_2, get_testing_data_3, get_testing_data_4, get_testing_data_5, get_testing_data_6
-from bot.adapters.max.utils_FSM import AnotherEmployerStates, LawyerStates, OnboardingStates, TrainingStates, UserInfo
+from bot.adapters.max.utils_FSM import AnotherEmployerStates, BranchKbStates, LawyerStates, OnboardingStates, TrainingStates, UserInfo
 from bot.core.onboarding_flow import flow_about_company, flow_another_emp_training_intro, flow_lawyer_training_intro, flow_sales_training_intro, flow_start, flow_start_change_kb, flow_start_new_empl_change_kb
 from bot.core.reg_managment_content import get_message_11_text, get_message_14_text, get_message_17_text, get_message_1_text, get_message_20_text, get_message_23_text, get_message_26_text, get_message_29_text, get_message_2_text, get_message_32_text, get_message_33_text, get_message_34_text, get_message_5_text, get_message_8_text, get_period_sender_text
 from core.content import get_another_emp_intro_text, get_block1_intro_text, get_block1_intro_text_lawyer, get_block1_section1_intro_text, get_block1_section2_intro_text, get_block1_section_3_intro_text, get_block1_section_4_intro_text, get_block1_section_5_intro_text, get_block1_section_6_intro_text, get_block2_intro_text, get_block2_intro_text_lawyer, get_block2_section1_intro_text, get_block2_section_1_intro_text_lawyer, get_block2_section_2_intro_text, get_block2_section_2_intro_text_lawyer, get_block2_section_3_intro_text, get_block2_section_4_intro_text, get_block3_intro_text, get_block3_intro_text_lawyer, get_block3_section_1_intro_text, get_block3_section_2_intro_text, get_block3_section_3_intro_text, get_block3_section_4_intro_text, get_block3_section_5_intro_text, get_block3_section_6_intro_text, get_block4_intro_text, get_block4_intro_text_lawyer, get_block4_section_1_intro_text, get_block4_section_2_intro_text, get_block4_section_3_intro_text, get_block4_section_4_intro_text, get_block5_intro_text, get_block5_intro_text_lawyer, get_block5_intro_video1, get_block5_intro_video10, get_block5_intro_video11, get_block5_intro_video12, get_block5_intro_video13, get_block5_intro_video14, get_block5_intro_video15, get_block5_intro_video2, get_block5_intro_video3, get_block5_intro_video4, get_block5_intro_video5, get_block5_intro_video6, get_block5_intro_video7, get_block5_intro_video8, get_block5_intro_video9, get_block6_intro_text, get_block6_section_1_intro_text, get_block7_intro_text, get_change_course_text, get_course_intro_text, get_final_another_emp_text, get_final_intro_text, get_final_lawyer_text, get_first_day_congrats_text, get_first_mess_another_empl, get_reminder_text, get_start_text, get_text_change_department, get_text_change_status, get_text_for_add_educ, get_text_in_process, get_text_start_final_test_block_1, get_text_start_final_test_block_2, get_text_start_final_test_block_3, get_text_start_final_test_block_4, get_text_start_final_test_block_5, get_text_start_final_test_block_6, get_text_to_final_test_block_1, get_text_to_final_test_block_2, get_text_to_final_test_block_3, get_text_to_final_test_block_4, get_text_to_final_test_block_5, get_text_to_final_test_block_6, get_text_to_final_test_block_7, get_text_to_final_test_lawyer, get_text_to_test_block_1_lawyer, get_to_final_intro_text_lawyer, get_tomorrow_reminder_text, get_training_step_3_text, go_to_test_1_text, table_of_content_lawyer
@@ -44,7 +44,8 @@ NAME_DATA_FILE = "data/name_surname.json"
 COURSES_NAMES = {"Обучение по продажам": 'sales_training',
                  "Обучение по продукту": 'another_employee',
                  "Обучение для юриста": "lawyer",
-                 "Регулярный менеджмент": "regular_managment"}
+                 "Регулярный менеджмент": "regular_managment",
+                 "Обучение для конструкторов": "branch_kb"}
 
 
 router = Router()
@@ -118,7 +119,14 @@ async def another_employer_start_handl(ctx: Callback, cursor: FSMCursor, status_
     
     
     await start_command(ctx, cursor, user_type = "another_employer", status_user = status_user)
-    
+
+
+@router.on_button_callback(lambda data: data.payload == "branch_kb")
+async def branch_kb_start_handl(ctx: Callback, cursor: FSMCursor, status_user: str = "new_employer"):
+    """Обработчик нажатия пользователем кнопки ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ 
+    при выборе курса обучения"""
+    pass # заглушка для обработки нажатия на кнопку ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ
+   
 
 async def lawyer_start_handl(ctx: Callback, cursor: FSMCursor, status_user: str = 'new_employer'):
     """Обработчик нажатия пользователем кнопки ЮРИДИЧЕСКИЙ ОТДЕЛ
@@ -246,6 +254,8 @@ async def start_command(ctx: CommandContext, cursor: FSMCursor, user_type:str = 
                 current_course = "Обучение для юриста"
             elif state_name == "another_employer":
                 current_course = "Обучение по продукту"
+            elif state_name == 'branch_kb':
+                current_course == "Обучение для конструкторов"
             else:
                 current_course = "Обучение по продажам"
                 
@@ -257,6 +267,8 @@ async def start_command(ctx: CommandContext, cursor: FSMCursor, user_type:str = 
                 await ctx.send(text, keyboard=main_menu_keyboard(educ_button_name = "Обучение по продукту", status_user = status_user))
             elif state_name == 'lawyer':
                 await ctx.send(text, keyboard=main_menu_keyboard(educ_button_name = "Обучение для юриста", status_user = status_user))
+            elif state_name == 'branch_kb':
+                await ctx.send(text, keyboard=main_menu_keyboard(educ_button_name = "Обучение для конструкторов", status_user = status_user))
             else:
                 await ctx.send(text, keyboard=main_menu_keyboard(educ_button_name = "Обучение по продажам", status_user = status_user))
 
@@ -293,8 +305,16 @@ async def start_command(ctx: CommandContext, cursor: FSMCursor, user_type:str = 
                 logger.info(f'Перешли в состояние LawyerStates.user_type, ветка ЮРИСТ {course_name=}')
                 await flow_start(send, course_name, status_user)
                 return
+            
+            if "current_course" in data and data.get("current_course") == "Обучение для конструкторов":
+                cursor.change_state(BranchKbStates.user_type)
+                await save_cursor(ctx.user_id, extra_data={'state_name': BranchKbStates.user_type})
+                course_name = data.get("current_course")
+                logger.info(f'Перешли в состояние BranchKbStates.user_type, ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ {course_name=}')
+                await flow_start(send, course_name, status_user)
+                return
         
-            logger.info(f"285 Проверяем наличие {user_id=} в progress.json")
+            logger.info(f"317 Проверяем наличие {user_id=} в progress.json")
             if user_id in ['51490094', '175082514', '20759321', '24297191', '228312484', '276950556', '49728997',
                             '85179182', '108241884', '152163122', '50076911', '219566997']:           
                 await flow_start_new_empl_change_kb(change_course_new_empl_send, True)
@@ -303,7 +323,7 @@ async def start_command(ctx: CommandContext, cursor: FSMCursor, user_type:str = 
                 await flow_start_change_kb(change_course_send)
                 return 
         
-        logger.info(f"294 Проверяем наличие {user_id=} в progress.json")
+        logger.info(f"326 Проверяем наличие {user_id=} в progress.json")
         data = {}
         data.setdefault("status_user", "new_employer")
         cursor.change_data(data)
@@ -516,7 +536,26 @@ async def raiting_command(ctx: CommandContext | Callback, cursor: FSMCursor):
                 elif int(completed_lessons) < 43:
                     completed_lessons = 6
                 else:
-                    completed_lessons = 7 
+                    completed_lessons = 7
+            elif current_course == 'Обучение для конструкторов':
+                if int(completed_lessons) < 13:
+                    completed_lessons = 0
+                elif int(completed_lessons) < 26:
+                    completed_lessons = 1
+                elif int(completed_lessons) < 37:
+                    completed_lessons = 2
+                elif int(completed_lessons) < 48:
+                    completed_lessons = 3
+                elif int(completed_lessons) < 57:
+                    completed_lessons = 4
+                elif int(completed_lessons) < 66:
+                    completed_lessons = 5
+                elif int(completed_lessons) < 75:
+                    completed_lessons = 6
+                elif int(completed_lessons) < 84:
+                    completed_lessons = 7
+                
+                 
             elif current_course == 'Обучение для юриста':
                 completed_lessons = int(int(completed_lessons) / 2)
                   
@@ -823,6 +862,8 @@ async def answer_to_send_question(ctx: CommandContext | Callback, cursor: FSMCur
             branch_name = 'regular_managment'
         elif current_course == 'Другой сотрудник':
             branch_name = 'another_employer'
+        elif current_course == 'Обучение для конструкторов':
+            branch_name = 'branch_kb'
         if isinstance(ctx, Callback):
             await ctx.message.delete()
         # Проверяем загрузку базы знаний
@@ -838,7 +879,7 @@ async def answer_to_send_question(ctx: CommandContext | Callback, cursor: FSMCur
             )
             return
         
-        logger.info(f'812 {current_course=}')
+        logger.info(f'882 {current_course=}')
         
         if current_course in ['Обучение по продажам', 'Другой сотрудник', 'Обучение по продукту']:
            
@@ -881,6 +922,21 @@ async def answer_to_send_question(ctx: CommandContext | Callback, cursor: FSMCur
                 '· Что такое "Ошибка" и "Проступок"?\n'
                 '· Что такое парадигмы в контексте компании?\n'
                 '· Что понимается под термином «препятствие»?\n\n'
+                'Напишите ваш вопрос 👇\n\n'
+                'Для выхода нажмите <b>🏠 Главное меню</b>',
+                format='html',
+                keyboard=education_kb(True, True) 
+            )
+        elif current_course == 'Обучение для конструкторов':
+            await ctx.send(
+                '🤖 <b>AI-ассистент компании</b>\n\n'
+                f'📚 База знаний загружена ({stats["total_size"]} символов)\n\n'
+                'Задавайте вопросы о компании, продукции или процессах.\n'
+                'Я буду отвечать на каждый ваш вопрос.\n\n'
+                '<i>Например:</i>\n'
+                '· Как пользоваться Glass Builder?\n'
+                '· Что значит СП 2.13130.2020?\n'
+                '· Как закрывать задачу в Б24?\n\n'
                 'Напишите ваш вопрос 👇\n\n'
                 'Для выхода нажмите <b>🏠 Главное меню</b>',
                 format='html',
@@ -939,6 +995,8 @@ async def process_ai_question_handler(message: Message, cursor: FSMCursor):
         branch_name = 'lawyer'
     elif current_course == 'Регулярный менеджмент':
         branch_name = 'regular_managment'
+    elif current_course == 'Обучение для конструкторов':
+        branch_name = 'branch_kb'
     thinking_msg = await message.send("🔍 Ищу информацию в базе знаний...")
     
     try:
@@ -1067,31 +1125,6 @@ async def export_stats(message: Message):
     except Exception as e:
         logger.error(f'[ERROR][export_stats] Произошла ошибка: {e}')
         
-
-# @router.on_bot_start()
-# async def on_bot_start(pd: BotStartPayload):
-#     print("Стартовала on_bot_start")
-#     async def send(text: str):
-#         await pd.send(text, keyboard=main_menu_keyboard())
-
-#     await flow_start(send)
-
-
-# async def handle_start_max(send_func, user_id: int, user_name: str | None = None):
-#     """
-#     Обработчик старта в MAX.
-
-#     Параметры:
-#     - send_func: асинхронная функция отправки сообщения вида
-#         await send_func(text: str, keyboard: dict | None = None)
-#     - user_id: ID пользователя в MAX (на будущее, если потребуется логированиe)
-#     - user_name: Имя пользователя (можно использовать в тексте, если нужно)
-#     """
-
-#     text = get_start_text(fmt="md")
-#     kb = main_menu()
-
-#     await send_func(text, kb)
 
 async def send(message: Message | Callback, out: str, with_keyboard: bool = False):
         try:
