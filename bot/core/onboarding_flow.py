@@ -92,9 +92,9 @@ async def flow_about_company(send):
     prinsipes_text = get_cel_and_prinsipes_text()
     
     await send(text)
-    await asyncio.sleep(30)  # 5 секунд !!!!!!
+    await asyncio.sleep(5)  # 30 секунд !!!!!!
     await send(prinsipes_text)
-    await asyncio.sleep(15) # 5
+    await asyncio.sleep(5) # 15
     
     tom_kb = tomorrow_kb
        
@@ -114,7 +114,7 @@ async def flow_sales_training_intro(send, user_name: str = "коллега"):
         logger.info(f"{intro=}\n{info=}")
         logger.info("Пытаюсь отправить intro")
         await send(intro, with_keyboard="clear")
-        await asyncio.sleep(30)  # 5 секунд 
+        await asyncio.sleep(5)  # 30 секунд 
         # Паузы, задержки и т.п. — в адаптере (MAX), чтобы не блокировать CORE.
         next_kb = next_to_education_kb
         logger.info("Пытаюсь отправить info")
@@ -137,7 +137,7 @@ async def flow_another_emp_training_intro(send, user_name: str = "коллега
         logger.info(f"{intro=}\n{info=}")
         logger.info("Пытаюсь отправить intro")
         await send(intro, with_keyboard="clear")
-        await asyncio.sleep(30)  # 5 секунд 
+        await asyncio.sleep(5)  # 30 секунд 
         # Паузы, задержки и т.п. — в адаптере (MAX), чтобы не блокировать CORE.
         next_kb = next_to_education_kb
         logger.info("Пытаюсь отправить info")
@@ -159,7 +159,7 @@ async def flow_lawyer_training_intro(send, user_name: str = "коллега", us
         logger.info(f"{intro=}\n{info=}")
         logger.info("Пытаюсь отправить intro")
         await send(intro, with_keyboard="clear")
-        await asyncio.sleep(30)  # 5 секунд 
+        await asyncio.sleep(5)  # 30 секунд 
         # Паузы, задержки и т.п. — в адаптере (MAX), чтобы не блокировать CORE.
         next_kb = next_to_education_kb
         logger.info("Пытаюсь отправить info")
@@ -182,7 +182,7 @@ async def flow_branch_kb_training_intro(send, user_name: str = "коллега",
         logger.info(f"{intro=}\n{info=}")
         logger.info("Пытаюсь отправить intro")
         await send(intro, with_keyboard="clear")
-        await asyncio.sleep(30)  # 5 секунд 
+        await asyncio.sleep(5)  # 30 секунд 
         # Паузы, задержки и т.п. — в адаптере (MAX), чтобы не блокировать CORE.
         next_kb = next_to_education_kb
         logger.info("Пытаюсь отправить info")

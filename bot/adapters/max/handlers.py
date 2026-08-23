@@ -22,9 +22,9 @@ from aiomax import bot
 from bot.adapters.max.data_utils import format_progress_attempts, get_max_accuracy_item, load_user_data, save_reminder, save_user_data, validate_name_surname
 from bot.adapters.max.test_utils import block_definition_func, get_block_2_test_1_quests, get_block_2_test_2_quests, get_block_2_test_3_quests, get_block_3_test_1_quests, get_block_3_test_2_quests, get_block_3_test_3_quests, get_block_3_test_4_quests, get_block_3_test_5_quests, get_block_3_test_6_quests, get_block_4_test_1_quests, get_block_4_test_2_quests, get_block_4_test_3_quests, get_block_4_test_4_quests, get_final_test_all_course_lawyer, get_final_test_block_1, get_final_test_block_1_lawyer, get_final_test_block_2, get_final_test_block_2_lawyer, get_final_test_block_3, get_final_test_block_3_lawyer, get_final_test_block_4, get_final_test_block_4_lawyer, get_final_test_block_5, get_final_test_block_5_lawyer, get_final_test_block_6, get_final_test_block_7, get_testing_data_1, get_testing_data_2, get_testing_data_3, get_testing_data_4, get_testing_data_5, get_testing_data_6
 from bot.adapters.max.utils_FSM import AnotherEmployerStates, BranchKbStates, LawyerStates, OnboardingStates, TrainingStates, UserInfo
-from bot.core.onboarding_flow import flow_about_company, flow_another_emp_training_intro, flow_lawyer_training_intro, flow_sales_training_intro, flow_start, flow_start_change_kb, flow_start_new_empl_change_kb
+from bot.core.onboarding_flow import flow_about_company, flow_another_emp_training_intro, flow_branch_kb_training_intro, flow_lawyer_training_intro, flow_sales_training_intro, flow_start, flow_start_change_kb, flow_start_new_empl_change_kb
 from bot.core.reg_managment_content import get_message_11_text, get_message_14_text, get_message_17_text, get_message_1_text, get_message_20_text, get_message_23_text, get_message_26_text, get_message_29_text, get_message_2_text, get_message_32_text, get_message_33_text, get_message_34_text, get_message_5_text, get_message_8_text, get_period_sender_text
-from core.content import get_another_emp_intro_text, get_block1_intro_text, get_block1_intro_text_lawyer, get_block1_section1_intro_text, get_block1_section2_intro_text, get_block1_section_3_intro_text, get_block1_section_4_intro_text, get_block1_section_5_intro_text, get_block1_section_6_intro_text, get_block2_intro_text, get_block2_intro_text_lawyer, get_block2_section1_intro_text, get_block2_section_1_intro_text_lawyer, get_block2_section_2_intro_text, get_block2_section_2_intro_text_lawyer, get_block2_section_3_intro_text, get_block2_section_4_intro_text, get_block3_intro_text, get_block3_intro_text_lawyer, get_block3_section_1_intro_text, get_block3_section_2_intro_text, get_block3_section_3_intro_text, get_block3_section_4_intro_text, get_block3_section_5_intro_text, get_block3_section_6_intro_text, get_block4_intro_text, get_block4_intro_text_lawyer, get_block4_section_1_intro_text, get_block4_section_2_intro_text, get_block4_section_3_intro_text, get_block4_section_4_intro_text, get_block5_intro_text, get_block5_intro_text_lawyer, get_block5_intro_video1, get_block5_intro_video10, get_block5_intro_video11, get_block5_intro_video12, get_block5_intro_video13, get_block5_intro_video14, get_block5_intro_video15, get_block5_intro_video2, get_block5_intro_video3, get_block5_intro_video4, get_block5_intro_video5, get_block5_intro_video6, get_block5_intro_video7, get_block5_intro_video8, get_block5_intro_video9, get_block6_intro_text, get_block6_section_1_intro_text, get_block7_intro_text, get_change_course_text, get_course_intro_text, get_final_another_emp_text, get_final_intro_text, get_final_lawyer_text, get_first_day_congrats_text, get_first_mess_another_empl, get_reminder_text, get_start_text, get_text_change_department, get_text_change_status, get_text_for_add_educ, get_text_in_process, get_text_start_final_test_block_1, get_text_start_final_test_block_2, get_text_start_final_test_block_3, get_text_start_final_test_block_4, get_text_start_final_test_block_5, get_text_start_final_test_block_6, get_text_to_final_test_block_1, get_text_to_final_test_block_2, get_text_to_final_test_block_3, get_text_to_final_test_block_4, get_text_to_final_test_block_5, get_text_to_final_test_block_6, get_text_to_final_test_block_7, get_text_to_final_test_lawyer, get_text_to_test_block_1_lawyer, get_to_final_intro_text_lawyer, get_tomorrow_reminder_text, get_training_step_3_text, go_to_test_1_text, table_of_content_lawyer
+from core.content import get_another_emp_intro_text, get_block1_intro_text, get_block1_intro_text_lawyer, get_block1_section1_intro_text, get_block1_section2_intro_text, get_block1_section_3_intro_text, get_block1_section_4_intro_text, get_block1_section_5_intro_text, get_block1_section_6_intro_text, get_block2_intro_text, get_block2_intro_text_lawyer, get_block2_section1_intro_text, get_block2_section_1_intro_text_lawyer, get_block2_section_2_intro_text, get_block2_section_2_intro_text_lawyer, get_block2_section_3_intro_text, get_block2_section_4_intro_text, get_block3_intro_text, get_block3_intro_text_lawyer, get_block3_section_1_intro_text, get_block3_section_2_intro_text, get_block3_section_3_intro_text, get_block3_section_4_intro_text, get_block3_section_5_intro_text, get_block3_section_6_intro_text, get_block4_intro_text, get_block4_intro_text_lawyer, get_block4_section_1_intro_text, get_block4_section_2_intro_text, get_block4_section_3_intro_text, get_block4_section_4_intro_text, get_block5_intro_text, get_block5_intro_text_lawyer, get_block5_intro_video1, get_block5_intro_video10, get_block5_intro_video11, get_block5_intro_video12, get_block5_intro_video13, get_block5_intro_video14, get_block5_intro_video15, get_block5_intro_video2, get_block5_intro_video3, get_block5_intro_video4, get_block5_intro_video5, get_block5_intro_video6, get_block5_intro_video7, get_block5_intro_video8, get_block5_intro_video9, get_block6_intro_text, get_block6_section_1_intro_text, get_block7_intro_text, get_change_course_text, get_course_intro_text, get_final_another_emp_text, get_final_intro_text, get_final_lawyer_text, get_first_day_congrats_text, get_first_mess_another_empl, get_module0_intro_text_kb_branch, get_reminder_text, get_start_text, get_text_change_department, get_text_change_status, get_text_for_add_educ, get_text_in_process, get_text_start_final_test_block_1, get_text_start_final_test_block_2, get_text_start_final_test_block_3, get_text_start_final_test_block_4, get_text_start_final_test_block_5, get_text_start_final_test_block_6, get_text_to_final_test_block_1, get_text_to_final_test_block_2, get_text_to_final_test_block_3, get_text_to_final_test_block_4, get_text_to_final_test_block_5, get_text_to_final_test_block_6, get_text_to_final_test_block_7, get_text_to_final_test_lawyer, get_text_to_test_block_1_lawyer, get_to_final_intro_text_lawyer, get_tomorrow_reminder_text, get_training_step_3_text, go_to_test_1_text, table_of_content_kb_branch, table_of_content_lawyer
 from bot.adapters.max.keyboards import change_another_department_kb, change_course_kb, change_course_to_export_stat_kb, change_department_kb, change_status_kb, continue_studying_kb, education_kb, final_start_test_kb, final_test_kb, finish_studying_kb, main_menu_keyboard, main_one_kb, next_to_educ_to_part_kb, next_to_education_kb, regular_managment_kb, start_test_kb, test_abcd_keyboard, variants_questions_kb, yes_no_kb
 #from services.claude_api import ClaudeService
 from services.ExelStatisticGenerator import ExcelStatisticGenerator
@@ -1419,7 +1419,7 @@ async def training_step_3_handler(callback: Callback, cursor: FSMCursor):
         
         await callback.send(text)
 
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(3) # 15
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
             
@@ -1442,6 +1442,35 @@ async def training_step_3_handler(callback: Callback, cursor: FSMCursor):
 from services.debounce import debounce_button_max        
 
 
+async def kb_branch_show_course_intro_handler(callback: Callback, cursor: FSMCursor, state_name = None):
+    """Интро курса 'Обучение для конструкторов' - отправка ОГЛАВЛЕНИЯ"""
+    try:
+        logger.info("[kb_branch_show_course_intro_handler] Стартовал")
+        await callback.message.delete()
+        status_user = cursor.get_data().get('status_user') if cursor.get_data() else await get_value_from_redis(callback.user_id, 'status_user')
+        if state_name != 'module_0':
+            text = table_of_content_kb_branch()
+            await callback.send(text)
+            # 2) Через 15 секунд — содержание Блока №1
+            await asyncio.sleep(2) # 15
+            kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
+            cursor.change_state(TrainingStates.konstructor['module_0'])
+        
+            await callback.send(
+                "📚 Чтобы перейти к первому разделу и начать обучение, нажмите кнопку ниже 👇",
+                keyboard=kb
+                )
+            await save_cursor(callback.user_id, state={"status_user": status_user, "state_name": TrainingStates.konstructor['module_0'], 'current_course': 'Обучение для конструкторов', "payload": "next_education::not_first" })
+        else:
+            text = get_module0_intro_text_kb_branch()
+            await callback.send(text)  
+            await asyncio.sleep(2) # 15
+            kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))      
+            cursor.change_state(TrainingStates.konstructor['module_0_lesson_1'])
+            await save_cursor(callback.user_id, state={"status_user": status_user, "state_name": TrainingStates.konstructor['module_0_lesson_1'], 'current_course': 'Обучение для конструкторов', "payload": "next_education::not_first" })
+    except Exception as e:
+        logger.error(f"[kb_branch_show_course_intro_handler] Произошла ошибка {e}") 
+
 
 async def lawyer_show_course_intro_handler(callback: Callback, cursor: FSMCursor):
     """Интро курса 'Обучение для юриста' - отправка ОГЛАВЛЕНИЯ"""
@@ -1452,7 +1481,7 @@ async def lawyer_show_course_intro_handler(callback: Callback, cursor: FSMCursor
         text = table_of_content_lawyer()
         await callback.send(text)
         # 2) Через 15 секунд — содержание Блока №1
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
         cursor.change_state(TrainingStates.lawyer['block_1'])
         
@@ -1484,7 +1513,7 @@ async def show_course_intro_handler(callback: Callback, cursor: FSMCursor):
             text = get_course_intro_text()
             await callback.send(text)
             # 2) Через 15 секунд — содержание Блока №1
-            await asyncio.sleep(15) # 2
+            await asyncio.sleep(2) # 15
             block1_intro = get_block1_intro_text()
        
         elif current_course in ["Другой сотрудник", "Обучение по продукту"]:
@@ -1492,11 +1521,19 @@ async def show_course_intro_handler(callback: Callback, cursor: FSMCursor):
         elif current_course == "Обучение для юриста":
             await lawyer_show_course_intro_handler(callback, cursor)
             return
-            
+        elif current_course == "Обучение для конструкторов":
+            state = cursor.get_state() # изменил 12.07.26 !!!!!
+            state_name = state.state if all([state, not isinstance(state, str)]) else state
+            logger.info(f'Из курсора: {state_name=}')
+            if not state_name:
+                state_name = await get_value_from_redis(callback.user_id, 'state_name')    
+            module_0_intro = get_module0_intro_text_kb_branch()     
+            await kb_branch_show_course_intro_handler(callback, cursor, state_name)
+            return
         await callback.send(block1_intro)
         
         # 3) Ещё через 10 секунд — сообщение с кнопкой «Продолжить обучение»
-        await asyncio.sleep(10) # 2
+        await asyncio.sleep(2) # 10
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
         cursor.change_state(TrainingStates.step_3_presentation)
@@ -1526,7 +1563,7 @@ async def training_step_3_handler_first_step(callback: Callback, cursor: FSMCurs
         if continue_flag:
             intro_text = get_block1_intro_text()
             await callback.send(intro_text)
-            await asyncio.sleep(10) # 2
+            await asyncio.sleep(2) # 10
         
         
         # if await debounce_button_max(callback, cursor):
@@ -1536,7 +1573,7 @@ async def training_step_3_handler_first_step(callback: Callback, cursor: FSMCurs
         intro_text = get_block1_section1_intro_text()
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(15) # 3
+        await asyncio.sleep(3) # 15
         
         # сообщение о тестировании с кнопкой
         test_text = go_to_test_1_text(5)
@@ -1762,7 +1799,7 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
         )
         
         # Через 15 секунд предлагаем продолжить
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
         await save_cursor(message.user_id, extra_data = {'call_button': 'next_education::not_first'})    
@@ -1982,7 +2019,7 @@ async def training_step_6_handler(callback: Callback, cursor: FSMCursor):
         intro_text = get_block1_section2_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -2056,7 +2093,7 @@ async def training_step_8_handler(callback: Callback, cursor: FSMCursor):
         intro_text = get_block1_section_3_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -2123,7 +2160,7 @@ async def training_step_9_handler(callback: Callback, cursor: FSMCursor):
         intro_text = get_block1_section_4_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -2189,7 +2226,7 @@ async def training_step_10_handler(callback: Callback, cursor: FSMCursor):
         intro_text = get_block1_section_5_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, format='markdown', keyboard=start_test_kb())
@@ -2255,7 +2292,7 @@ async def training_step_11_handler(callback: Callback, cursor: FSMCursor):
         intro_text = get_block1_section_6_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -3085,7 +3122,7 @@ async def show_results_step12(message: Message, cursor: FSMCursor, lesson_id: st
         #game = GamificationService()
         
         # Переход дальше (или завершение)
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         # ==========================================
         # ПОКАЗЫВАЕМ РЕЙТИНГ ПО ИТОГАМ ПРОЙДЕННОГО БЛОКА
@@ -3248,7 +3285,7 @@ async def show_results_step12(message: Message, cursor: FSMCursor, lesson_id: st
         await message.send(rating_text, format="markdown")
         
         # Пауза перед кнопкой продолжения
-        await asyncio.sleep(5) # 2
+        await asyncio.sleep(2) # 5
         
         logger.info(f'Строка 2621: {migration_header=}')
         await del_value_from_redis(message.user_id, 'migration_state')
@@ -3374,7 +3411,7 @@ async def start_block_2_handler(callback: Callback, cursor: FSMCursor, continue_
         if continue_flag:
             intro_text = get_block2_intro_text()
             await callback.send(intro_text)
-            await asyncio.sleep(10) # 2        
+            await asyncio.sleep(2) # 10        
         
         # if await debounce_button_max(callback, cursor):
         #     return
@@ -3383,7 +3420,7 @@ async def start_block_2_handler(callback: Callback, cursor: FSMCursor, continue_
         
         await callback.send(intro_text, format='markdown', disable_link_preview=True)
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         test_text = go_to_test_1_text(10)
         await callback.send(test_text, format="markdown", keyboard=start_test_kb())
@@ -3453,7 +3490,7 @@ async def block_2_test_2_ready_for_test_handl(callback: Callback, cursor: FSMCur
         intro_text = get_block2_section_2_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         test_text = go_to_test_1_text(10)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -3518,7 +3555,7 @@ async def block_2_test_3_ready_for_test_handl(callback: Callback, cursor: FSMCur
         intro_text = get_block2_section_3_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         test_text = go_to_test_1_text(10)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -3592,7 +3629,7 @@ async def block_2_go_to_final_test_handl(callback: Callback, cursor: FSMCursor):
         if not current_course:
             current_course = get_current_course(cursor)
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         game = GamificationService(current_course)
         game.increment_lessons_completed(callback.user_id, increment_lesson=1)
         
@@ -3989,14 +4026,14 @@ async def start_block_3_handler(callback: Callback, cursor: FSMCursor, continue_
         if continue_flag:
             intro_text = get_block3_intro_text()
             await callback.send(intro_text)
-            await asyncio.sleep(10) # 2 
+            await asyncio.sleep(2) # 10 
         
         await callback.message.delete()
         
         intro_text = get_block3_section_1_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, format="markdown", keyboard=start_test_kb())
@@ -4038,7 +4075,7 @@ async def go_to_block3_section1_handler(callback: Callback, cursor: FSMCursor):
         intro_text = get_block3_section_1_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, format="markdown", keyboard=start_test_kb())
@@ -4106,7 +4143,7 @@ async def block_3_test_2_ready_for_test_handl(callback: Callback, cursor: FSMCur
         intro_text = get_block3_section_2_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(15) # 3
+        await asyncio.sleep(3) # 15
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -4175,7 +4212,7 @@ async def block_3_test_3_ready_for_test_handl(callback: Callback, cursor: FSMCur
         intro_text = get_block3_section_3_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 215
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -4241,7 +4278,7 @@ async def block_3_test_4_ready_for_test_handl(callback: Callback, cursor: FSMCur
         intro_text = get_block3_section_4_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -4310,7 +4347,7 @@ async def block_3_test_5_ready_for_test_handl(callback: Callback, cursor: FSMCur
         intro_text = get_block3_section_5_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -4378,7 +4415,7 @@ async def block_3_test_6_ready_for_test_handl(callback: Callback, cursor: FSMCur
         intro_text = get_block3_section_6_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -4720,14 +4757,14 @@ async def start_block_4_handler(callback: Callback, cursor: FSMCursor, continue_
         if continue_flag:
             intro_text = get_block4_intro_text()
             await callback.send(intro_text)
-            await asyncio.sleep(10) # 2 
+            await asyncio.sleep(2) # 10 
         
         await callback.message.delete()
         
         intro_text = get_block4_section_1_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         test_text = go_to_test_1_text(10)
         await callback.send(test_text, format="markdown", keyboard=start_test_kb())
@@ -4759,7 +4796,7 @@ async def go_to_block4_section1_handler(callback: Callback, cursor: FSMCursor):
         intro_text = get_block4_section_1_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         test_text = go_to_test_1_text(10)
         await callback.send(test_text, format="markdown", keyboard=start_test_kb())
@@ -4826,7 +4863,7 @@ async def block_4_test_2_ready_for_test_handl(callback: Callback, cursor: FSMCur
         intro_text = get_block4_section_2_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -4892,7 +4929,7 @@ async def block_4_test_3_ready_for_test_handl(callback: Callback, cursor: FSMCur
         intro_text = get_block4_section_3_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -4961,7 +4998,7 @@ async def block_4_test_4_ready_for_test_handl(callback: Callback, cursor: FSMCur
         intro_text = get_block4_section_4_intro_text()  
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         test_text = go_to_test_1_text(5)
         await callback.send(test_text, keyboard=start_test_kb())
@@ -5297,7 +5334,7 @@ async def start_block_5_handler(callback: Callback, cursor: FSMCursor, continue_
         if continue_flag:
             intro_text = get_block5_intro_text()
             await callback.send(intro_text)
-            await asyncio.sleep(15) # 2
+            await asyncio.sleep(2) # 15
         
         current_course = await get_value_from_redis(callback.user_id, 'current_course')
         if not current_course:
@@ -5316,7 +5353,7 @@ async def start_block_5_handler(callback: Callback, cursor: FSMCursor, continue_
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_1")
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5363,7 +5400,7 @@ async def block_5_video_2_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_2")
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5410,7 +5447,7 @@ async def block_5_video_3_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_3")
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5458,7 +5495,7 @@ async def block_5_video_4_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_4")
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5506,7 +5543,7 @@ async def block_5_video_5_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_5")
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5554,7 +5591,7 @@ async def block_5_video_6_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_6")
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5602,7 +5639,7 @@ async def block_5_video_7_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_7")
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5648,7 +5685,7 @@ async def block_5_video_8_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_8")
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5694,7 +5731,7 @@ async def block_5_video_9_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_9")
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5740,7 +5777,7 @@ async def block_5_video_10_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_10")
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5786,7 +5823,7 @@ async def block_5_video_11_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_11")
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5832,7 +5869,7 @@ async def block_5_video_12_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_12")
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5878,7 +5915,7 @@ async def block_5_video_13_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_13")
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5925,7 +5962,7 @@ async def block_5_video_14_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_14")
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -5972,7 +6009,7 @@ async def block_5_video_15_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(intro_text)
         
         game.mark_video_section_viewed(user_id, "video_section_15")
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                  
@@ -6284,7 +6321,7 @@ async def start_block_6_section_1_handler(callback: Callback, cursor: FSMCursor,
         if continue_flag:
             intro_text = get_block6_intro_text()
             await callback.send(intro_text, disable_link_preview=True)
-            await asyncio.sleep(10) # 2
+            await asyncio.sleep(2) # 10
         #cursor.change_state(TrainingStates.block4_start)
         
         # if await debounce_button_max(callback, cursor):
@@ -6293,7 +6330,7 @@ async def start_block_6_section_1_handler(callback: Callback, cursor: FSMCursor,
         intro_text = get_block6_section_1_intro_text()  
         #await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         kb = next_to_educ_to_part_kb()
         await callback.send(intro_text, format='markdown', disable_link_preview=True, keyboard=kb)
@@ -6583,7 +6620,7 @@ async def start_block_7_handler(callback: Callback, cursor: FSMCursor, continue_
         if continue_flag:
             intro_text = get_block7_intro_text()
             await callback.send(intro_text)
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         await save_cursor(callback.user_id, extra_data={**cursor_redis_data, 'state_name': TrainingStates.block7_questions, 'payload': 'start_test'})       
         await continue_after_block7_handler(callback, cursor)
@@ -6893,9 +6930,6 @@ async def lawyer_training_handler(callback: Callback, cursor: FSMCursor):
         
 
 
-
-
-
 @router.on_button_callback(lambda data: data.payload == 'education')
 async def flow_sales_training_handler(callback: Callback, cursor: FSMCursor):
     """Обработчик нажатия на кнопку 📚 Обучение по продажам или ДРУГОГО НАЗВАНИЯ ОБУЧЕНИЯ"""
@@ -6959,6 +6993,14 @@ async def flow_sales_training_handler(callback: Callback, cursor: FSMCursor):
                     return
                 #await save_cursor(callback.user_id, extra_data={'payload': 'next_education'})
                 await flow_lawyer_training_intro(
+                    lambda text, with_keyboard=None: send(callback, text, with_keyboard),
+                    user_id = callback.user_id
+                    )
+            elif current_course == 'Обучение для конструкторов':
+                if status_user == 'upper_qualification':
+                    await show_course_intro_handler(callback, cursor)
+                    return
+                await flow_branch_kb_training_intro(
                     lambda text, with_keyboard=None: send(callback, text, with_keyboard),
                     user_id = callback.user_id
                     )
@@ -7111,7 +7153,7 @@ async def next_education_handler(callback: Callback, cursor: FSMCursor):
         text = get_first_day_congrats_text()
         await callback.send(text)
 
-        await asyncio.sleep(15) # 5
+        await asyncio.sleep(5) # 15
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
             
@@ -7394,7 +7436,7 @@ async def lawyer_training_step_3_handler(callback: Callback, cursor: FSMCursor, 
         if continue_flag:
             intro_text = table_of_content_lawyer()
             await callback.send(intro_text)
-            await asyncio.sleep(10) # 2
+            await asyncio.sleep(2) # 10
         
         
         # if await debounce_button_max(callback, cursor):
@@ -7404,7 +7446,7 @@ async def lawyer_training_step_3_handler(callback: Callback, cursor: FSMCursor, 
         intro_text = get_block1_intro_text_lawyer()
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         # сообщение о тестировании с кнопкой
         test_text = get_text_to_test_block_1_lawyer()
@@ -7431,7 +7473,7 @@ async def lawyer_part2_section2_handler(callback: Callback, cursor: FSMCursor, c
         if continue_flag:
             intro_text = get_block2_intro_text_lawyer()
             await callback.send(intro_text)
-            await asyncio.sleep(10) # 2
+            await asyncio.sleep(2) # 10
         
         
         # if await debounce_button_max(callback, cursor):
@@ -7441,7 +7483,7 @@ async def lawyer_part2_section2_handler(callback: Callback, cursor: FSMCursor, c
         intro_text = get_block2_section_2_intro_text_lawyer()
         await callback.send(intro_text, disable_link_preview=True)
         
-        await asyncio.sleep(10) # 2
+        await asyncio.sleep(2) # 10
         
         # сообщение о тестировании с кнопкой
         test_text = get_text_to_test_block_1_lawyer()
@@ -7991,12 +8033,12 @@ async def lawyer_start_block_2_handler(callback: Callback, cursor: FSMCursor, co
         intro_text = get_block2_intro_text_lawyer()
         await callback.send(intro_text)
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
                
         section_1_text = get_block2_section_1_intro_text_lawyer()
         await callback.send(section_1_text, disable_link_preview=True)
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         # сообщение о предложении перейти к 2 разделу блока № 2 с кнопкой
         continue_text = "📚 Для того, чтобы перейти к следующему разделу, нажмите кнопку ниже 👇"
@@ -8019,7 +8061,7 @@ async def lawyer_start_block_3_handler(callback: Callback, cursor: FSMCursor, co
         if continue_flag:
             intro_text = table_of_content_lawyer()
             await callback.send(intro_text)
-            await asyncio.sleep(10) # 2
+            await asyncio.sleep(2) # 10
         
         
         # if await debounce_button_max(callback, cursor):
@@ -8030,7 +8072,7 @@ async def lawyer_start_block_3_handler(callback: Callback, cursor: FSMCursor, co
         await callback.send(intro_text, disable_link_preview=True)
         
                 
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         # сообщение о тестировании с кнопкой
         test_text = get_text_to_test_block_1_lawyer()
@@ -8055,7 +8097,7 @@ async def lawyer_start_block_4_handler(callback: Callback, cursor: FSMCursor, co
         if continue_flag:
             intro_text = table_of_content_lawyer()
             await callback.send(intro_text)
-            await asyncio.sleep(10) #2
+            await asyncio.sleep(2) #10
         
         
         # if await debounce_button_max(callback, cursor):
@@ -8065,7 +8107,7 @@ async def lawyer_start_block_4_handler(callback: Callback, cursor: FSMCursor, co
         intro_text = get_block4_intro_text_lawyer()
         await callback.send(intro_text, disable_link_preview=True)
                
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         # сообщение о тестировании с кнопкой
         test_text = get_text_to_test_block_1_lawyer()
@@ -8088,7 +8130,7 @@ async def lawyer_start_block_5_handler(callback: Callback, cursor: FSMCursor, co
         if continue_flag:
             intro_text = table_of_content_lawyer()
             await callback.send(intro_text)
-            await asyncio.sleep(10) # 2
+            await asyncio.sleep(2) # 10
         
         
         # if await debounce_button_max(callback, cursor):
@@ -8098,7 +8140,7 @@ async def lawyer_start_block_5_handler(callback: Callback, cursor: FSMCursor, co
         intro_text = get_block5_intro_text_lawyer()
         await callback.send(intro_text, disable_link_preview=True)
                
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(2) # 15
         
         # сообщение о тестировании с кнопкой
         test_text = get_text_to_test_block_1_lawyer()
@@ -8121,7 +8163,7 @@ async def lawyer_start_final_test_handler(callback: Callback, cursor: FSMCursor,
         if continue_flag:
             intro_text = table_of_content_lawyer()
             await callback.send(intro_text)
-            await asyncio.sleep(10) # 2
+            await asyncio.sleep(2) # 10
         
         
         # if await debounce_button_max(callback, cursor):
@@ -8295,7 +8337,7 @@ async def regular_managment_message_2_handler(callback: Callback, cursor: FSMCur
             cursor_data.update(current_block='block_33')
             cursor.change_data(cursor_data)
             await callback.send(text_mess)
-            await asyncio.sleep(5) # 2
+            await asyncio.sleep(2) # 5
             await callback.send(
                 "📚 Вы можете продолжить обучение, нажав кнопку ниже 👇",
                 keyboard=kb
@@ -8309,7 +8351,7 @@ async def regular_managment_message_2_handler(callback: Callback, cursor: FSMCur
             cursor_data.update(current_block='block_34')
             cursor.change_data(cursor_data)
             await callback.send(text_mess)
-            await asyncio.sleep(5) # 2
+            await asyncio.sleep(2) # 5
             await callback.send(
                 "📚 Вы можете продолжить обучение, нажав кнопку ниже 👇",
                 keyboard=kb
@@ -8326,7 +8368,7 @@ async def regular_managment_message_2_handler(callback: Callback, cursor: FSMCur
             return
             
         await callback.send(text_mess)
-        await asyncio.sleep(30) # 2
+        await asyncio.sleep(5) # 30
         await callback.message.delete()
         to_period_sender_text = get_period_sender_text()
         await callback.send(to_period_sender_text)
@@ -8665,7 +8707,7 @@ async def check_answers_to_terms(message: Message, cursor: FSMCursor):
         
         await send_message_safely(message, result_text, format="markdown")
         
-        await asyncio.sleep(15) # 2
+        await asyncio.sleep(3) # 15
         
         # ==========================================
         # ПОКАЗЫВАЕМ РЕЙТИНГ ПО ИТОГАМ ПРОЙДЕННОГО БЛОКА
@@ -8733,7 +8775,7 @@ async def check_answers_to_terms(message: Message, cursor: FSMCursor):
         await message.send(rating_text, format="markdown")
         
         # Пауза перед кнопкой продолжения
-        await asyncio.sleep(5) # 2
+        await asyncio.sleep(2) # 5
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::regular_managment"))
                 

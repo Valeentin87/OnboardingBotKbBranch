@@ -177,6 +177,7 @@ class TrainingStates:
     
     # ============ ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ ============
     
-    branch_kb = {
-        
+    konstructor = {
+        'module_0': 'module_0',
+        'module_0_lesson_1': 'module_0_lesson_1'
     }
