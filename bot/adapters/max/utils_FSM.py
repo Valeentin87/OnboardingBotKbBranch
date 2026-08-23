@@ -156,7 +156,7 @@ class TrainingStates:
         'final_test_questions': 'final_test_questions_lawyer',
     }
     
-    # =========== РЕГУЛЯРНЫЙ МЕНЕДЖМЕНТ (омера сообщений и блоков согласно технического задания) ============= 
+    # =========== РЕГУЛЯРНЫЙ МЕНЕДЖМЕНТ (номера сообщений и блоков согласно технического задания) ============= 
     regular_managment = {
         'message_1': 'message_1',
         'message_2': 'message_2',
@@ -173,4 +173,10 @@ class TrainingStates:
         'message_33': 'message_33',
         'message_34': 'message_34',
         'waiting_response': 'waiting_response'
+    }
+    
+    # ============ ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ ============
+    
+    branch_kb = {
+        
     }

@@ -7,7 +7,8 @@ from services.redis_storage import save_cursor
 COURSES_NAMES = {"Обучение по продажам": 'sales_training',
                  "Обучение по продукту": 'another_employee',
                  "Обучение для юриста": "lawyer",
-                 "Регулярный менеджмент": "regular_managment"}
+                 "Регулярный менеджмент": "regular_managment",
+                 "Обучение для конструкторов": "branch_kb"}
 
 def test_abcd_keyboard():
     """
@@ -100,6 +101,8 @@ def change_course_to_export_stat_kb(courses_name: list[str]):
             course_name = '⚖️' + course_name
         elif course_name == "Регулярный менеджмент":
             course_name = '🎓' + course_name
+        elif course_name == "Обучение для конструкторов":
+            course_name = '📐' + course_name
         print(f'{course=}')
         export_stat_kb.row(CallbackButton(text=course_name, payload=f'export_data::{course}'))
     export_stat_kb.row(CallbackButton(text="🎯 По всем курсам", payload="all_courses"))
@@ -115,6 +118,8 @@ def education_kb(final_flag:bool = False, with_out_ai_flag:bool = False, current
         payload_data = 'another_emp'
     elif current_cource == 'Обучение для юриста':
         payload_data = 'lawyer_educ'
+    elif current_cource == 'Обучение для конструкторов':
+        payload_data = 'konstructor_educ'
     
     if not final_flag:
         educ_kb.row(CallbackButton(text=f"💼 {current_cource}", payload=payload_data))

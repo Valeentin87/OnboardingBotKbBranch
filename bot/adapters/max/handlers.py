@@ -1090,38 +1090,6 @@ async def export_stats(message: Message):
         
         return
                 
-        users = game.get_all_users_progress_new()
-        
-        pprint(users)
-        logger.info(f'Данные для преобразования в exel файл:\n{users=}')
-        return
-        
-        if not users:
-            await message.answer("📭 Нет данных о пользователях")
-            return
-        
-        text = "📊 Статистика всех пользователей:\n\n"
-        
-        for idx, user in enumerate(users, 1):
-            name = f"{user.get('first_name', 'Неизвестно')} {user.get('last_name', '')}".strip()
-            #username = f"@{user['username']}" if user.get('username') else "—"
-            
-            text += f"{idx}. 👤 {name} \n\n\n"
-            text += f"   🆔 ID: {user['user_id']}\n\n\n"
-            
-            for j, attemp in enumerate(user['leaderboard_list']):
-                date_obj = datetime.fromisoformat(attemp['date_attemp'])
-                formatted_date =  date_obj.strftime('%d.%m.%Y')  # date_obj.strftime('%d.%m.%Y в %H:%M')
-                
-                if j > 0:
-                    text += "\n"
-                text += f"   ✅ Уроков: {attemp['lessons_completed']}/43\n"
-                text += f"   📈 Точность: {attemp['accuracy_percent']:.1f}%\n\n"
-                text += f"   📆 Дата: {formatted_date}\n\n"
-                
-            
-        
-        await message.send(text, keyboard=education_kb(True))
     except Exception as e:
         logger.error(f'[ERROR][export_stats] Произошла ошибка: {e}')
         
@@ -1227,12 +1195,18 @@ async def start_tomorrow_handler(callback: Callback, cursor: FSMCursor):
                 
         if current_course == "Обучение по продукту":
             cursor.change_state(AnotherEmployerStates.user_type)
+            pass # возможно нужна строка await save_cursor(callback.user_id, extra_data={"payload": ......"})
             #current_course = "Обучение по продукту"
         
         if current_course == "Обучение для юриста":
             cursor.change_state(LawyerStates.user_type)
             current_course = "Обучение для юриста"
             await save_cursor(callback.user_id, extra_data={"payload": "lawyer_educ"})
+        
+        if current_course == "Обучение для юриста":
+            cursor.change_state(BranchKbStates.user_type)
+            current_course = "Обучение для конструкторов"
+            await save_cursor(callback.user_id, extra_data={"payload": "konstructor_educ"})
             
         text = get_tomorrow_reminder_text(date_str, current_course)
         
@@ -1396,46 +1370,7 @@ async def not_confirm_date_handler(callback: Callback, cursor: FSMCursor):
     finally:
         await remove_repeat_flag(callback.user_id)
 
-# @router.on_button_callback(state(OnboardingStates.waiting_for_confirmation))
-# async def confirm_date_handler(callback: Callback, cursor: FSMCursor):
-#     """Обработчик подтверждения выбора даты пользователем"""
-#     try:
-#         logger.info(f"[confirm_date_handler] Стартовал")
-#         data = cursor.get_data()
-#         logger.info(f'{data=}')
-#         start_date_str = data.get("start_date")
-#         current_course = data.get("current_course")
-        
-#         if callback.payload == "yes":
-        
-#             save_reminder(callback.user.user_id, start_date_str, REMINDERS_FILE)
-
-#             # if await debounce_button_max(callback, cursor):
-#             #     logger.info(f"[confirm_date_handler] Идет обработка нажмите позднее")
-#             #     return
-            
-#             text = get_reminder_text(start_date_str)
-#             if current_course == "Другой сотрудник":
-#                 current_course = "Обучение по продукту"
-#                 text = get_reminder_text(start_date_str, current_course)
-#                 await callback.send(text, keyboard=main_menu_keyboard("Обучение по продукту"))
-#                 state = cursor.get_state() # изменил 12.07.26 !!!!!
-#                 state_name = state.state if all([state, not isinstance(state, str)]) else state
-#                 logger.info(f'{state_name=}')
-#                 cursor.change_state(AnotherEmployerStates.user_type)
-#             else:
-#                 await callback.send(text, keyboard=main_menu_keyboard(current_course))
-#                 cursor.clear_state()
-                 
-#         elif callback.payload == "no":  # пользователь отклонил дату
-            
-#             await callback.send("📝 Напишите правильную дату вашего первого рабочего дня в формате ДД.ММ\n\n"
-#         "Например: 10.02")
-#             cursor.change_state(OnboardingStates.waiting_for_start_date)
-            
-#     except Exception as e:
-#         logger.error(f"[confirm_date_handler] Произошла ошибка {e}")
-      
+     
         
 from services.debounce import debounce_button_max
                       
@@ -1878,7 +1813,7 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
         elif state_name == 'block_4_test_4_testing':
             cursor.change_state(TrainingStates.block4_final_test)
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.block4_final_test, 'current_course': course_name, 'payload': 'ai_after_block4'})
-
+        # заглушка - здесь надо продумать с состояниями для ветки ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ
         
         
         logger.info(f"[INFO][show_results] state = {cursor.get_state()}")

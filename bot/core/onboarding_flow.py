@@ -6,10 +6,12 @@ from bot.adapters.max.keyboards import next_to_education_kb, tomorrow_kb
 from bot.adapters.max.create_bot import logger
 from core.content import (
     get_another_emp_training_info_text,
+    get_branch_kb_info_text,
     get_cel_and_prinsipes_text,
     get_change_course_text,
     get_change_date_text,
     get_first_mess_another_empl,
+    get_first_mess_branch_kb,
     get_first_mess_lawyer,
     get_start_text,
     get_about_company_text,
@@ -48,7 +50,9 @@ async def flow_start(send, course_name:str, status_user:str):
     if course_name == "Обучение для юриста":
         text = get_start_text(status_user)
     
-    #if state_name == "another_employer":
+    if course_name == "Обучение для конструкторов":
+        text = get_start_text(status_user)
+    
     await send(text=text)
      
 
@@ -162,5 +166,28 @@ async def flow_lawyer_training_intro(send, user_name: str = "коллега", us
         await send(info, with_keyboard=next_kb)
     except Exception as e:
         logger.error(f"[flow_lawyer_training_intro] произошла ошибка {e}")
+        
+        
+async def flow_branch_kb_training_intro(send, user_name: str = "коллега", user_id: int = 0):
+    """
+    Сценарий '📐 Обучение для конструкторов' (ШАГ 1 + инфо).
+    """
+    try:
+        logger.info("[flow_branch_kb_training_intro] стартовал")
+        intro = get_first_mess_branch_kb()
+        #intro = get_sales_training_intro_text(user_name)
+        #info = get_change_date_text()
+        info = get_branch_kb_info_text()
+        logger.info(f"{intro=}\n{info=}")
+        logger.info("Пытаюсь отправить intro")
+        await send(intro, with_keyboard="clear")
+        await asyncio.sleep(30)  # 5 секунд 
+        # Паузы, задержки и т.п. — в адаптере (MAX), чтобы не блокировать CORE.
+        next_kb = next_to_education_kb
+        logger.info("Пытаюсь отправить info")
+        await save_cursor(user_id, extra_data={"payload": "next_education"})
+        await send(info, with_keyboard=next_kb)
+    except Exception as e:
+        logger.error(f"[flow_branch_kb_training_intro] произошла ошибка {e}")
     
 

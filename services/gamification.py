@@ -19,7 +19,8 @@ class GamificationService:
             "Обучение по продажам": 43,
             "Обучение по продукту": 7,
             "Обучение для юриста": 12,
-            "Регулярный менеджмент": 10
+            "Регулярный менеджмент": 10,
+            "Обучение для конструкторов": 85
         }
         self.current_course = current_course
         
@@ -590,6 +591,8 @@ class GamificationService:
             lessons_completed = 12
         elif course_name == 'Регулярный менеджмент':
             lessons_completed = 10
+        elif course_name == 'Обучение для конструкторов':
+            lessons_completed = 85
         else:
             logger.warning("Кажется не корректное название курса обучения, возможно надо поменять на ОБУЧЕНИЕ ПО ПРОДУКТУ")
             
@@ -778,6 +781,8 @@ class GamificationService:
         elif course_name == "Обучение для юриста":
             total_lessons = 12
         elif course_name == "Регулярный менеджмент":
+            total_lessons = 10
+        elif course_name == "Обучение для конструкторов":
             total_lessons = 10
         else:
             logger.warning("Кажется не корректное название курса обучения, возможно надо поменять на ОБУЧЕНИЕ ПО ПРОДУКТУ")
