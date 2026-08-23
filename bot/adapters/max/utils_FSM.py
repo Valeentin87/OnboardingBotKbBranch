@@ -178,7 +178,12 @@ class TrainingStates:
     # ============ ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ ============
     
     konstructor = {
+        # модуль № 0
         'module_0': 'module_0',
+        # урок № 1
         'module_0_lesson_1': 'module_0_lesson_1',
-        'module_0_lesson_1_questions': 'module_0_lesson_1_questions'
+        'module_0_lesson_1_questions': 'module_0_lesson_1_questions',
+        'module_0_lesson_1_testing': 'module_0_lesson_1_testing',
+        # урок № 2
+        'module_0_lesson_2': 'module_0_lesson_2'
     }

@@ -10,7 +10,8 @@ from bot.adapters.max.create_bot import logger
 USERNAME = "valeentin87"
 PROJECT_NAME = "onboarding_bot_kb_branch"
 # Формируем абсолютный путь к корню проекта
-PROJECT_ROOT = f"/home/{USERNAME}/{PROJECT_NAME}"
+PROJECT_ROOT = f"/home/{USERNAME}/education/TgBot/work_projects/FPSProject/{PROJECT_NAME}"
+#PROJECT_ROOT = f"/home/{USERNAME}/{PROJECT_NAME}"
 DATA_DIR = os.path.join(PROJECT_ROOT, "data")
 PROGRESS_FILE = os.path.join(DATA_DIR, "progress.json")
 
@@ -135,6 +136,71 @@ class GamificationService:
         except Exception as e:
             logger.error(f'Произошла ошибка: {e}')
     
+    
+    async def increment_lesson_func(self, user_id: int, course_name: str, lesson_id: str, user_data: dict = None, increment_value: int = 1):
+        """Увеличивает количество пройденных по курсу уроков"""
+        # Загружаем все данные
+        data = self._load_data()
+        
+        # Инициализируем структуру пользователя
+        user_key = str(user_id)
+        logger.info(f'[INFO][GamificationService][increment_lesson_func] {data=} {user_key=}')
+        
+        if user_key not in data:
+            logger.info(f'[INFO][GamificationService][increment_lesson_func] Пользователь: {user_id} - новый, добавляем информацию по нему')
+            data[user_key] = {
+                'user_info': {},
+                'courses': {},
+                'lesson_results': {}
+            }
+        
+        # Обновляем информацию о пользователе
+        if user_data:
+            logger.info(f'[INFO][GamificationService][increment_lesson_func] Информация о пользователе: {user_data}')
+            data[user_key]['user_info'] = {
+                'user_id': user_id,
+                'username': user_data.get('username'),
+                'first_name': user_data.get('first_name'),
+                'last_name': user_data.get('last_name'),
+                'last_activity': datetime.now().isoformat()
+            }
+        
+        # Инициализируем структуру курса
+        if 'courses' not in data[user_key]:
+            logger.info(f'[INFO][GamificationService][increment_lesson_func] Инициализируем структуру курса')
+            data[user_key]['courses'] = {}
+        
+        if 'lesson_results' not in data[user_key]:
+            logger.info(f'[INFO][GamificationService][increment_lesson_func] Инициализируем lesson_results пустым словарем')
+            data[user_key]['lesson_results'] = {}
+        
+        # Получаем текущий прогресс по курсу
+        logger.info(f'[INFO][GamificationService][increment_lesson_func] Получаем текущий прогресс по курсу {course_name=}')
+        if course_name not in data[user_key]['courses']:
+            logger.info(f'[INFO][GamificationService][increment_lesson_func] Пользователь еще не проходил этот курс')
+            total_lessons = self.total_lessons_info[self.current_course]
+            data[user_key]['courses'][course_name] = {
+                'lessons_completed': 0,
+                'total_lessons': total_lessons,
+                'correct_answers': 0,
+                'total_answers': 0,
+                'accuracy_percent': 0.0
+            }
+        course_progress = data[user_key]['courses'][course_name]
+        course_progress['lessons_completed'] += increment_value
+        
+        info_dict = data[user_key]['lesson_results']
+        course_result_flag = info_dict.setdefault(course_name, {})
+        logger.info(f'[INFO][GamificationService][increment_lesson_func] Обновляем статистику (добавляем новый результат)')
+        logger.info(f'{data=}')
+        data[user_key]['lesson_results'][course_name][lesson_id] = {'finished_flag': True }
+        
+        self._save_data(data)
+        logger.info(f'[INFO][GamificationService][update_lesson_progress] Завершение работы метода. {course_progress=}')
+                
+        return course_progress
+        
+       
     
     async def update_lesson_progress(
         self, 
@@ -661,6 +727,7 @@ class GamificationService:
             return 0
 
         # Получаем количество пройденных уроков
+        logger.info(f'Данные по пройденным курсам для пользователя {user_key}:\n{data[user_key]["courses"]}')
         lessons_completed = data[user_key]['courses'][course_name].get('lessons_completed', 0)
 
         logger.info(f'[INFO][GamificationService][get_lessons_completed] '
