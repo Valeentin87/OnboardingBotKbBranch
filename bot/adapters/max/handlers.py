@@ -24,7 +24,7 @@ from bot.adapters.max.test_utils import block_definition_func, get_block_2_test_
 from bot.adapters.max.utils_FSM import AnotherEmployerStates, BranchKbStates, LawyerStates, OnboardingStates, TrainingStates, UserInfo
 from bot.core.onboarding_flow import flow_about_company, flow_another_emp_training_intro, flow_branch_kb_training_intro, flow_lawyer_training_intro, flow_sales_training_intro, flow_start, flow_start_change_kb, flow_start_new_empl_change_kb
 from bot.core.reg_managment_content import get_message_11_text, get_message_14_text, get_message_17_text, get_message_1_text, get_message_20_text, get_message_23_text, get_message_26_text, get_message_29_text, get_message_2_text, get_message_32_text, get_message_33_text, get_message_34_text, get_message_5_text, get_message_8_text, get_period_sender_text
-from core.content import get_another_emp_intro_text, get_block1_intro_text, get_block1_intro_text_lawyer, get_block1_section1_intro_text, get_block1_section2_intro_text, get_block1_section_3_intro_text, get_block1_section_4_intro_text, get_block1_section_5_intro_text, get_block1_section_6_intro_text, get_block2_intro_text, get_block2_intro_text_lawyer, get_block2_section1_intro_text, get_block2_section_1_intro_text_lawyer, get_block2_section_2_intro_text, get_block2_section_2_intro_text_lawyer, get_block2_section_3_intro_text, get_block2_section_4_intro_text, get_block3_intro_text, get_block3_intro_text_lawyer, get_block3_section_1_intro_text, get_block3_section_2_intro_text, get_block3_section_3_intro_text, get_block3_section_4_intro_text, get_block3_section_5_intro_text, get_block3_section_6_intro_text, get_block4_intro_text, get_block4_intro_text_lawyer, get_block4_section_1_intro_text, get_block4_section_2_intro_text, get_block4_section_3_intro_text, get_block4_section_4_intro_text, get_block5_intro_text, get_block5_intro_text_lawyer, get_block5_intro_video1, get_block5_intro_video10, get_block5_intro_video11, get_block5_intro_video12, get_block5_intro_video13, get_block5_intro_video14, get_block5_intro_video15, get_block5_intro_video2, get_block5_intro_video3, get_block5_intro_video4, get_block5_intro_video5, get_block5_intro_video6, get_block5_intro_video7, get_block5_intro_video8, get_block5_intro_video9, get_block6_intro_text, get_block6_section_1_intro_text, get_block7_intro_text, get_change_course_text, get_course_intro_text, get_final_another_emp_text, get_final_intro_text, get_final_lawyer_text, get_first_day_congrats_text, get_first_mess_another_empl, get_module0_intro_text_kb_branch, get_reminder_text, get_start_text, get_text_change_department, get_text_change_status, get_text_for_add_educ, get_text_in_process, get_text_start_final_test_block_1, get_text_start_final_test_block_2, get_text_start_final_test_block_3, get_text_start_final_test_block_4, get_text_start_final_test_block_5, get_text_start_final_test_block_6, get_text_to_final_test_block_1, get_text_to_final_test_block_2, get_text_to_final_test_block_3, get_text_to_final_test_block_4, get_text_to_final_test_block_5, get_text_to_final_test_block_6, get_text_to_final_test_block_7, get_text_to_final_test_lawyer, get_text_to_test_block_1_lawyer, get_to_final_intro_text_lawyer, get_tomorrow_reminder_text, get_training_step_3_text, go_to_test_1_text, table_of_content_kb_branch, table_of_content_lawyer
+from core.content import get_another_emp_intro_text, get_block1_intro_text, get_block1_intro_text_lawyer, get_block1_section1_intro_text, get_block1_section2_intro_text, get_block1_section_3_intro_text, get_block1_section_4_intro_text, get_block1_section_5_intro_text, get_block1_section_6_intro_text, get_block2_intro_text, get_block2_intro_text_lawyer, get_block2_section1_intro_text, get_block2_section_1_intro_text_lawyer, get_block2_section_2_intro_text, get_block2_section_2_intro_text_lawyer, get_block2_section_3_intro_text, get_block2_section_4_intro_text, get_block3_intro_text, get_block3_intro_text_lawyer, get_block3_section_1_intro_text, get_block3_section_2_intro_text, get_block3_section_3_intro_text, get_block3_section_4_intro_text, get_block3_section_5_intro_text, get_block3_section_6_intro_text, get_block4_intro_text, get_block4_intro_text_lawyer, get_block4_section_1_intro_text, get_block4_section_2_intro_text, get_block4_section_3_intro_text, get_block4_section_4_intro_text, get_block5_intro_text, get_block5_intro_text_lawyer, get_block5_intro_video1, get_block5_intro_video10, get_block5_intro_video11, get_block5_intro_video12, get_block5_intro_video13, get_block5_intro_video14, get_block5_intro_video15, get_block5_intro_video2, get_block5_intro_video3, get_block5_intro_video4, get_block5_intro_video5, get_block5_intro_video6, get_block5_intro_video7, get_block5_intro_video8, get_block5_intro_video9, get_block6_intro_text, get_block6_section_1_intro_text, get_block7_intro_text, get_change_course_text, get_course_intro_text, get_final_another_emp_text, get_final_intro_text, get_final_lawyer_text, get_first_day_congrats_text, get_first_mess_another_empl, get_module0_intro_text_kb_branch, get_module0_lesson1_intro_text_kb_branch, get_reminder_text, get_start_text, get_text_change_department, get_text_change_status, get_text_for_add_educ, get_text_in_process, get_text_start_final_test_block_1, get_text_start_final_test_block_2, get_text_start_final_test_block_3, get_text_start_final_test_block_4, get_text_start_final_test_block_5, get_text_start_final_test_block_6, get_text_to_final_test_block_1, get_text_to_final_test_block_2, get_text_to_final_test_block_3, get_text_to_final_test_block_4, get_text_to_final_test_block_5, get_text_to_final_test_block_6, get_text_to_final_test_block_7, get_text_to_final_test_lawyer, get_text_to_test_after_lesson_kb, get_text_to_test_block_1_lawyer, get_to_final_intro_text_lawyer, get_tomorrow_reminder_text, get_training_step_3_text, go_to_test_1_text, table_of_content_kb_branch, table_of_content_lawyer
 from bot.adapters.max.keyboards import change_another_department_kb, change_course_kb, change_course_to_export_stat_kb, change_department_kb, change_status_kb, continue_studying_kb, education_kb, final_start_test_kb, final_test_kb, finish_studying_kb, main_menu_keyboard, main_one_kb, next_to_educ_to_part_kb, next_to_education_kb, regular_managment_kb, start_test_kb, test_abcd_keyboard, variants_questions_kb, yes_no_kb
 #from services.claude_api import ClaudeService
 from services.ExelStatisticGenerator import ExcelStatisticGenerator
@@ -7422,6 +7422,80 @@ async def another_department_handler(callback: Callback, cursor: FSMCursor):
         await callback.send(text, keyboard = kb)
     except Exception as e:
         logger.error(f'Произошла ошибка: {e}')
+
+
+# ========================  СПЕЦИФИЧЕСКИЕ ХЭНДЛЕРЫ ДЛЯ ВЕТКИ ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ =======================
+@router.on_button_callback(state(TrainingStates.konstructor['module_0']), lambda data: data.payload.split('::')[1] == "not_first")
+async def kb_module_0_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
+    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №0: «Онбординг и экосистема КБ»"""
+    try:
+        logger.info("[kb_module_0_handler] Стартовал")
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2) 
+        if continue_flag:
+            intro_text = get_module0_intro_text_kb_branch()
+            await callback.send(intro_text)
+            await asyncio.sleep(2) # 10
+        
+        status_user = await get_value_from_redis(callback.user_id, 'status_user')
+        if not status_user:
+            if cursor.get_data():
+                status_user = cursor.get_data().get('status_user')
+        
+        # if await debounce_button_max(callback, cursor):
+        #     logger.info(f"[training_step_3_handler] Идет обработка нажмите позднее")
+        #     return      
+        await callback.message.delete()
+        intro_text = get_module0_intro_text_kb_branch()
+        await callback.send(intro_text)
+        
+        await asyncio.sleep(2) # 15
+        
+        kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
+                
+        cursor.change_state(TrainingStates.konstructor['module_0_lesson_1'])
+        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_0_lesson_1'], 'current_course': 'Обучение для конструкторов', 'payload': 'next_education::not_first', 'status_user': status_user})
+        
+        await callback.send(
+            "📚 Вы можете продолжить обучение, нажав кнопку ниже 👇",
+            keyboard=kb
+        )
+    
+    except Exception as e:
+        logger.error(f"[kb_module_0_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id) 
+        
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_0_lesson_1']), lambda data: data.payload.split('::')[1] == "not_first")
+async def kb_module_0_lesson_1_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
+    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №0 Урок №1: «Роль конструктора в цепочке заказа»"""
+    try:
+        logger.info("[kb_module_0_lesson_1_handler] Стартовал")
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2)
+        status_user = await get_value_from_redis(callback.user_id, 'status_user')
+        if not status_user:
+            if cursor.get_data():
+                status_user = cursor.get_data().get('status_user')
+        
+        await callback.message.delete()
+        intro_text = get_module0_lesson1_intro_text_kb_branch()
+        await callback.send(intro_text, disable_link_preview = True) 
+        
+        await asyncio.sleep(2) # 15
+                
+        # сообщение о тестировании с кнопкой
+        test_text = get_text_to_test_after_lesson_kb()
+        await callback.send(test_text, keyboard=start_test_kb(True))
+        
+        cursor.change_state(TrainingStates.konstructor['module_0_lesson_1_questions'])
+        await asyncio.sleep(2) # 2
+        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_0_lesson_1_questions'], 'current_course': 'Обучение для конструкторов', 'status_user': status_user})
+    except Exception as e:
+        logger.error(f"[kb_module_0_lesson_1_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id) 
+
+
         
         
 # ================== СПЕЦИФИЧЕСКИЕ ХЭНДЛЕРЫ ДЛЯ ВЕТКИ ЮРИДИЧЕСКИЙ ОТДЕЛ =================
@@ -8184,6 +8258,7 @@ async def lawyer_start_final_test_handler(callback: Callback, cursor: FSMCursor,
     except Exception as e:
         logger.error(f"[lawyer_start_final_test_handler] Произошла ошибка {e}") 
         
+
 
 # ========================= РЕГУЛЯРНЫЙ МЕНЕДЖМЕНТ ==========================
 
@@ -8971,7 +9046,6 @@ async def final_process_answer_without_cursor(callback: Callback, cursor: FSMCur
             logger.info(f'{repeat_flag=}')
             call_button = await get_value_from_redis(callback.user_id, 'call_button')
             
-            logger.info(f'Работаем с {current_course=} {state_name=} {call_button=}')
             
             if not repeat_flag and payload == 'mark_video_section_viewed':
                 if state_name == TrainingStates.block_5_video_2_viewer:
@@ -9323,8 +9397,14 @@ async def final_process_answer_without_cursor(callback: Callback, cursor: FSMCur
                     await regular_managment_message_2_handler(callback, cursor)
                 return
                          
-                
-        
+        # для курса Обучение для конструкторов
+        if current_course == 'Обучение для конструкторов' and not repeat_flag:                  
+            logger.info(f'Работаем с {current_course=} {state_name=}')
+            if state_name == TrainingStates.konstructor['module_0']:
+                await kb_module_0_handler(callback, cursor)
+            if state_name == TrainingStates.konstructor['module_0_lesson_1']:
+                await kb_module_0_lesson_1_handler(callback, cursor)
+            return    
         
         logger.info("Проверяем на принадлежность к блоку ПРОДОЛЖЕНИЯ ОБУЧЕНИЯ")
         migration_header = await get_value_from_redis(callback.user_id, 'migration_header')

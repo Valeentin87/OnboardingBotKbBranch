@@ -179,5 +179,6 @@ class TrainingStates:
     
     konstructor = {
         'module_0': 'module_0',
-        'module_0_lesson_1': 'module_0_lesson_1'
+        'module_0_lesson_1': 'module_0_lesson_1',
+        'module_0_lesson_1_questions': 'module_0_lesson_1_questions'
     }
