@@ -5,8 +5,10 @@ from datetime import datetime
 #import logging
 from bot.adapters.max.create_bot import logger
 
-USERNAME = "fps_shabalin"
-PROJECT_NAME = "onboarding_bot_with_redis"
+# USERNAME = "fps_shabalin"
+# PROJECT_NAME = "onboarding_bot_with_redis"
+USERNAME = "valeentin87"
+PROJECT_NAME = "onboarding_bot_kb_branch"
 # Формируем абсолютный путь к корню проекта
 PROJECT_ROOT = f"/home/{USERNAME}/{PROJECT_NAME}"
 DATA_DIR = os.path.join(PROJECT_ROOT, "data")

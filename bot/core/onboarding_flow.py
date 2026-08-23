@@ -39,6 +39,7 @@ async def flow_start(send, course_name:str, status_user:str):
     переданного в аргументе.
     """
     #state_name = cursor.get_state()
+    logger.info("Стартовал")
     print(f'{status_user=}')
     if course_name == "Обучение по продажам":
         text = get_start_text(status_user)

@@ -47,6 +47,8 @@ async def save_cursor(
     - По умолчанию: 7 дней (604800 сек).
     - Можно переопределить через параметр ttl_seconds (например, 2-3 сек для временных данных).
     """
+    logger.info(f'Стартовал. {extra_data=}')
+   
     if not redis_client:
         raise RuntimeError("Redis не инициализирован!")
 

@@ -28,7 +28,7 @@ from core.content import get_another_emp_intro_text, get_block1_intro_text, get_
 from bot.adapters.max.keyboards import change_another_department_kb, change_course_kb, change_course_to_export_stat_kb, change_department_kb, change_status_kb, continue_studying_kb, education_kb, final_start_test_kb, final_test_kb, finish_studying_kb, main_menu_keyboard, main_one_kb, next_to_educ_to_part_kb, next_to_education_kb, regular_managment_kb, start_test_kb, test_abcd_keyboard, variants_questions_kb, yes_no_kb
 #from services.claude_api import ClaudeService
 from services.ExelStatisticGenerator import ExcelStatisticGenerator
-from services.gigachat_api import GigaChatService
+from services.gigachat_api_last import GigaChatService
 from services.debounce import debounce_button_max
 from services.gamification import GamificationService
 from services.rag_service import RAGService
@@ -123,9 +123,21 @@ async def another_employer_start_handl(ctx: Callback, cursor: FSMCursor, status_
 
 @router.on_button_callback(lambda data: data.payload == "branch_kb")
 async def branch_kb_start_handl(ctx: Callback, cursor: FSMCursor, status_user: str = "new_employer"):
-    """Обработчик нажатия пользователем кнопки ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ 
+    """Обработчик нажатия пользователем кнопки КОНСТРУКТОРСКИЙ ОТДЕЛ 
     при выборе курса обучения"""
-    pass # заглушка для обработки нажатия на кнопку ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ
+    await ctx.message.delete()
+        
+    data = cursor.get_data()
+    logger.info(f'{data=}\n{status_user=}')
+    if data:
+        await save_cursor(ctx.user_id, extra_data=data)
+    #status_user = data.get("status_user")
+    if status_user == 'new_employer':
+        cursor.change_data({"current_course": "Обучение для конструкторов"})
+        await start_command(ctx, cursor, "konstructor", status_user)
+    else:
+        cursor.change_data({"current_course": "Обучение для конструкторов", "status_user": status_user})
+        await start_command(ctx, cursor, "konstructor", status_user)
    
 
 async def lawyer_start_handl(ctx: Callback, cursor: FSMCursor, status_user: str = 'new_employer'):
@@ -254,11 +266,13 @@ async def start_command(ctx: CommandContext, cursor: FSMCursor, user_type:str = 
                 current_course = "Обучение для юриста"
             elif state_name == "another_employer":
                 current_course = "Обучение по продукту"
-            elif state_name == 'branch_kb':
-                current_course == "Обучение для конструкторов"
+            elif state_name == 'konstructor':
+                #logger.info('попали в условие state_name == "konstructor" ')
+                current_course = "Обучение для конструкторов"
             else:
                 current_course = "Обучение по продажам"
                 
+            #logger.info(f'Перед save_cursor {current_course=}')
             await save_cursor(ctx.user_id, extra_data={'state_name': state_name, 'status_user': status_user, 'current_course': current_course})
             
             if status_user == 'upper_qualification':
@@ -267,7 +281,7 @@ async def start_command(ctx: CommandContext, cursor: FSMCursor, user_type:str = 
                 await ctx.send(text, keyboard=main_menu_keyboard(educ_button_name = "Обучение по продукту", status_user = status_user))
             elif state_name == 'lawyer':
                 await ctx.send(text, keyboard=main_menu_keyboard(educ_button_name = "Обучение для юриста", status_user = status_user))
-            elif state_name == 'branch_kb':
+            elif state_name == 'konstructor':
                 await ctx.send(text, keyboard=main_menu_keyboard(educ_button_name = "Обучение для конструкторов", status_user = status_user))
             else:
                 await ctx.send(text, keyboard=main_menu_keyboard(educ_button_name = "Обучение по продажам", status_user = status_user))
@@ -7331,6 +7345,23 @@ async def change_department_handler(callback: Callback, cursor: FSMCursor):
                 cursor.change_data({"current_course": "Обучение для юриста", "status_user": status_user})
                 await save_cursor(callback.user_id, extra_data={"current_course": "Обучение для юриста", "status_user": status_user})
                 await start_command(callback, cursor, status_user)
+        elif department_name == 'konstructor':
+            logger.info('Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ')
+            cursor.clear_state()
+            new_cursor = cursor.get_data() if cursor.get_data() else {}
+            new_cursor.update(current_course="Обучение для конструкторов", status_user=status_user)
+            cursor.change_data(new_cursor) #if new_cursor else cursor.change_data({"status_user": status_user, "current_course":"Обучение для конструкторов" })
+            extra_data = new_cursor if new_cursor else {"status_user": status_user, "current_course":"Обучение для юриста" }
+            await save_cursor(callback.user_id, extra_data=extra_data)
+            logger.info(f'Курсор после изменения: {cursor.get_state()} \n{new_cursor}')
+            status_user = new_cursor.get('status_user') if new_cursor else status_user
+            logger.info(f'{status_user=}')
+            if not status_user:
+                logger.warning('была перезагрузка сервера, определим status_user из Redis')
+                status_user = await get_value_from_redis(callback.user_id, 'status_user')
+            if status_user == 'new_employer':
+                await branch_kb_start_handl(callback, cursor)
+            
                 
             
         

@@ -222,7 +222,7 @@ def change_department_kb():
     change_dp_kb = KeyboardBuilder()
  
     change_dp_kb.row(CallbackButton(text="👨‍💻 Отдел продаж", payload="change_department::manager"))
-    change_dp_kb.row(CallbackButton(text="📐 Конструкторский отдел", payload="change_department::in_process"))
+    change_dp_kb.row(CallbackButton(text="📐 Конструкторский отдел", payload="change_department::konstructor"))
     change_dp_kb.row(CallbackButton(text="🔧 Производственно-технический отдел", payload="change_department::in_process"))
     change_dp_kb.row(CallbackButton(text="🧾 Бухгалтерский отдел", payload="change_department::in_process"))
     change_dp_kb.row(CallbackButton(text="⚖️ Юридический отдел", payload="change_department::lawyer"))
