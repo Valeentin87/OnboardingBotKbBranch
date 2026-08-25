@@ -179,11 +179,175 @@ class TrainingStates:
     
     konstructor = {
         # модуль № 0
-        'module_0': 'module_0',
+        'module_0': 'module_0',  # +
         # урок № 1
-        'module_0_lesson_1': 'module_0_lesson_1',
-        'module_0_lesson_1_questions': 'module_0_lesson_1_questions',
-        'module_0_lesson_1_testing': 'module_0_lesson_1_testing',
+        'module_0_lesson_1': 'module_0_lesson_1',  # +
+        'module_0_lesson_1_questions': 'module_0_lesson_1_questions', # +
+        'module_0_lesson_1_testing': 'module_0_lesson_1_testing',     # +
         # урок № 2
-        'module_0_lesson_2': 'module_0_lesson_2'
+        'module_0_lesson_2': 'module_0_lesson_2',   # +
+        'module_0_lesson_2_questions': 'module_0_lesson_2_questions',  # +
+        'module_0_lesson_2_testing': 'module_0_lesson_2_testing',   # +
+        # урок № 3
+        'module_0_lesson_3': 'module_0_lesson_3', # +
+        'module_0_lesson_3_questions': 'module_0_lesson_3_questions',
+        'module_0_lesson_3_testing': 'module_0_lesson_3_testing',
+        # урок № 4
+        'module_0_lesson_4': 'module_0_lesson_4',
+        'module_0_lesson_4_questions': 'module_0_lesson_4_questions',
+        'module_0_lesson_4_testing': 'module_0_lesson_4_testing',
+        # урок № 5
+        'module_0_lesson_5': 'module_0_lesson_5',
+        'module_0_lesson_5_questions': 'module_0_lesson_5_questions',
+        'module_0_lesson_5_testing': 'module_0_lesson_5_testing',
+        # урок № 6
+        'module_0_lesson_6': 'module_0_lesson_6',
+        'module_0_lesson_6_questions': 'module_0_lesson_6_questions',
+        'module_0_lesson_6_testing': 'module_0_lesson_6_testing',
+        'module_0_final_testing': 'module_0_final_testing',
+        # модуль № 1
+        # урок № 1
+        'module_1_lesson_1': 'module_1_lesson_1',
+        'module_1_lesson_1_questions': 'module_1_lesson_1_questions',
+        'module_1_lesson_1_testing': 'module_1_lesson_1_testing',     
+        # урок № 2
+        'module_1_lesson_2': 'module_1_lesson_2',
+        'module_1_lesson_2_questions': 'module_1_lesson_2_questions',
+        'module_1_lesson_2_testing': 'module_1_lesson_2_testing',
+        # урок № 3
+        'module_1_lesson_3': 'module_1_lesson_3',
+        'module_1_lesson_3_questions': 'module_1_lesson_3_questions',
+        'module_1_lesson_3_testing': 'module_1_lesson_3_testing',
+        # урок № 4
+        'module_1_lesson_4': 'module_1_lesson_4',
+        'module_1_lesson_4_questions': 'module_1_lesson_4_questions',
+        'module_1_lesson_4_testing': 'module_1_lesson_4_testing',
+        # урок № 5
+        'module_1_lesson_5': 'module_1_lesson_5',
+        'module_1_lesson_5_questions': 'module_1_lesson_5_questions',
+        'module_1_lesson_5_testing': 'module_1_lesson_5_testing',
+        # урок № 6
+        'module_1_lesson_6': 'module_1_lesson_6',
+        'module_1_lesson_6_questions': 'module_1_lesson_6_questions',
+        'module_1_lesson_6_testing': 'module_1_lesson_6_testing',
+        'module_1_final_testing': 'module_1_final_testing',
+        # модуль № 2
+        # урок № 1
+        'module_2_lesson_1': 'module_2_lesson_1',
+        'module_2_lesson_1_questions': 'module_2_lesson_1_questions',
+        'module_2_lesson_1_testing': 'module_2_lesson_1_testing',     
+        # урок № 2
+        'module_2_lesson_2': 'module_2_lesson_2',
+        'module_2_lesson_2_questions': 'module_2_lesson_2_questions',
+        'module_2_lesson_2_testing': 'module_2_lesson_2_testing',
+        # урок № 3
+        'module_2_lesson_3': 'module_2_lesson_3',
+        'module_2_lesson_3_questions': 'module_2_lesson_3_questions',
+        'module_2_lesson_3_testing': 'module_2_lesson_3_testing',
+        # урок № 4
+        'module_2_lesson_4': 'module_2_lesson_4',
+        'module_2_lesson_4_questions': 'module_2_lesson_4_questions',
+        'module_2_lesson_4_testing': 'module_2_lesson_4_testing',
+        # урок № 5
+        'module_2_lesson_5': 'module_2_lesson_5',
+        'module_2_lesson_5_questions': 'module_2_lesson_5_questions',
+        'module_2_lesson_5_testing': 'module_2_lesson_5_testing',
+        'module_2_final_testing': 'module_2_final_testing',
+        # модуль № 3
+        # урок № 1
+        'module_3_lesson_1': 'module_3_lesson_1',
+        'module_3_lesson_1_questions': 'module_3_lesson_1_questions',
+        'module_3_lesson_1_testing': 'module_3_lesson_1_testing',     
+        # урок № 2
+        'module_3_lesson_2': 'module_3_lesson_2',
+        'module_3_lesson_2_questions': 'module_3_lesson_2_questions',
+        'module_3_lesson_2_testing': 'module_3_lesson_2_testing',
+        # урок № 3
+        'module_3_lesson_3': 'module_3_lesson_3',
+        'module_3_lesson_3_questions': 'module_3_lesson_3_questions',
+        'module_3_lesson_3_testing': 'module_3_lesson_3_testing',
+        # урок № 4
+        'module_3_lesson_4': 'module_3_lesson_4',
+        'module_3_lesson_4_questions': 'module_3_lesson_4_questions',
+        'module_3_lesson_4_testing': 'module_3_lesson_4_testing',
+        # урок № 5
+        'module_3_lesson_5': 'module_3_lesson_5',
+        'module_3_lesson_5_questions': 'module_3_lesson_5_questions',
+        'module_3_lesson_5_testing': 'module_3_lesson_5_testing',
+        'module_3_final_testing': 'module_3_final_testing',
+        # модуль № 4
+        # урок № 1
+        'module_4_lesson_1': 'module_4_lesson_1',
+        'module_4_lesson_1_questions': 'module_4_lesson_1_questions',
+        'module_4_lesson_1_testing': 'module_4_lesson_1_testing',     
+        # урок № 2
+        'module_4_lesson_2': 'module_4_lesson_2',
+        'module_4_lesson_2_questions': 'module_4_lesson_2_questions',
+        'module_4_lesson_2_testing': 'module_4_lesson_2_testing',
+        # урок № 3
+        'module_4_lesson_3': 'module_4_lesson_3',
+        'module_4_lesson_3_questions': 'module_4_lesson_3_questions',
+        'module_4_lesson_3_testing': 'module_4_lesson_3_testing',
+        # урок № 4
+        'module_4_lesson_4': 'module_4_lesson_4',
+        'module_4_lesson_4_questions': 'module_4_lesson_4_questions',
+        'module_4_lesson_4_testing': 'module_4_lesson_4_testing',
+        'module_4_final_testing': 'module_4_final_testing',
+        # модуль № 5
+        # урок № 1
+        'module_5_lesson_1': 'module_5_lesson_1',
+        'module_5_lesson_1_questions': 'module_5_lesson_1_questions',
+        'module_5_lesson_1_testing': 'module_5_lesson_1_testing',     
+        # урок № 2
+        'module_5_lesson_2': 'module_5_lesson_2',
+        'module_5_lesson_2_questions': 'module_5_lesson_2_questions',
+        'module_5_lesson_2_testing': 'module_5_lesson_2_testing',
+        # урок № 3
+        'module_5_lesson_3': 'module_5_lesson_3',
+        'module_5_lesson_3_questions': 'module_5_lesson_3_questions',
+        'module_5_lesson_3_testing': 'module_5_lesson_3_testing',
+        # урок № 4
+        'module_5_lesson_4': 'module_5_lesson_4',
+        'module_5_lesson_4_questions': 'module_5_lesson_4_questions',
+        'module_5_lesson_4_testing': 'module_5_lesson_4_testing',
+        'module_5_final_testing': 'module_5_final_testing',
+        # модуль № 6
+        # урок № 1
+        'module_6_lesson_1': 'module_6_lesson_1',
+        'module_6_lesson_1_questions': 'module_6_lesson_1_questions',
+        'module_6_lesson_1_testing': 'module_6_lesson_1_testing',     
+        # урок № 2
+        'module_6_lesson_2': 'module_6_lesson_2',
+        'module_6_lesson_2_questions': 'module_6_lesson_2_questions',
+        'module_6_lesson_2_testing': 'module_6_lesson_2_testing',
+        # урок № 3
+        'module_6_lesson_3': 'module_6_lesson_3',
+        'module_6_lesson_3_questions': 'module_6_lesson_3_questions',
+        'module_6_lesson_3_testing': 'module_6_lesson_3_testing',
+        # урок № 4
+        'module_6_lesson_4': 'module_6_lesson_4',
+        'module_6_lesson_4_questions': 'module_6_lesson_4_questions',
+        'module_6_lesson_4_testing': 'module_6_lesson_4_testing',
+        'module_6_final_testing': 'module_6_final_testing',
+        # модуль № 7
+        # урок № 1
+        'module_7_lesson_1': 'module_7_lesson_1',
+        'module_7_lesson_1_questions': 'module_67_lesson_1_questions',
+        'module_7_lesson_1_testing': 'module_7_lesson_1_testing',     
+        # урок № 2
+        'module_7_lesson_2': 'module_7_lesson_2',
+        'module_7_lesson_2_questions': 'module_7_lesson_2_questions',
+        'module_7_lesson_2_testing': 'module_7_lesson_2_testing',
+        # урок № 3
+        'module_7_lesson_3': 'module_7_lesson_3',
+        'module_7_lesson_3_questions': 'module_7_lesson_3_questions',
+        'module_7_lesson_3_testing': 'module_7_lesson_3_testing',
+        # урок № 4
+        'module_7_lesson_4': 'module_7_lesson_4',
+        'module_7_lesson_4_questions': 'module_7_lesson_4_questions',
+        'module_7_lesson_4_testing': 'module_7_lesson_4_testing',
+        'module_7_final_testing': 'module_7_final_testing',
+        # итоговый тест по курсу ОБУЧЕНИЕ ДЛЯ КОНТСРУКТТОРОВ
+        'final_test_start': 'final_test_start',
+        'final_test_questions': 'final_test_questions'
     }

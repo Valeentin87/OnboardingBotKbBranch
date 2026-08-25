@@ -20,11 +20,11 @@ from aiomax import bot
 
 
 from bot.adapters.max.data_utils import format_progress_attempts, get_max_accuracy_item, load_user_data, save_reminder, save_user_data, validate_name_surname
-from bot.adapters.max.test_utils import block_definition_func, get_block_2_test_1_quests, get_block_2_test_2_quests, get_block_2_test_3_quests, get_block_3_test_1_quests, get_block_3_test_2_quests, get_block_3_test_3_quests, get_block_3_test_4_quests, get_block_3_test_5_quests, get_block_3_test_6_quests, get_block_4_test_1_quests, get_block_4_test_2_quests, get_block_4_test_3_quests, get_block_4_test_4_quests, get_final_test_all_course_lawyer, get_final_test_block_1, get_final_test_block_1_lawyer, get_final_test_block_2, get_final_test_block_2_lawyer, get_final_test_block_3, get_final_test_block_3_lawyer, get_final_test_block_4, get_final_test_block_4_lawyer, get_final_test_block_5, get_final_test_block_5_lawyer, get_final_test_block_6, get_final_test_block_7, get_testing_data_1, get_testing_data_2, get_testing_data_3, get_testing_data_4, get_testing_data_5, get_testing_data_6, get_testing_data_module_0_test_1_kb
+from bot.adapters.max.test_utils import block_definition_func, get_block_2_test_1_quests, get_block_2_test_2_quests, get_block_2_test_3_quests, get_block_3_test_1_quests, get_block_3_test_2_quests, get_block_3_test_3_quests, get_block_3_test_4_quests, get_block_3_test_5_quests, get_block_3_test_6_quests, get_block_4_test_1_quests, get_block_4_test_2_quests, get_block_4_test_3_quests, get_block_4_test_4_quests, get_final_test_all_course_lawyer, get_final_test_block_1, get_final_test_block_1_lawyer, get_final_test_block_2, get_final_test_block_2_lawyer, get_final_test_block_3, get_final_test_block_3_lawyer, get_final_test_block_4, get_final_test_block_4_lawyer, get_final_test_block_5, get_final_test_block_5_lawyer, get_final_test_block_6, get_final_test_block_7, get_testing_data_1, get_testing_data_2, get_testing_data_3, get_testing_data_4, get_testing_data_5, get_testing_data_6, get_testing_data_module_0_test_1_kb, get_testing_data_module_0_test_2_kb, get_testing_data_module_0_test_3_kb, get_testing_data_module_0_test_4_kb, get_testing_data_module_0_test_5_kb, get_testing_data_module_1_test_1_kb, get_testing_data_module_1_test_2_kb, get_testing_data_module_1_test_3_kb, get_testing_data_module_1_test_4_kb, get_testing_data_module_1_test_5_kb, get_testing_data_module_1_test_6_kb, get_testing_data_module_2_test_1_kb, get_testing_data_module_2_test_2_kb, get_testing_data_module_2_test_3_kb, get_testing_data_module_2_test_4_kb, get_testing_data_module_2_test_5_kb
 from bot.adapters.max.utils_FSM import AnotherEmployerStates, BranchKbStates, LawyerStates, OnboardingStates, TrainingStates, UserInfo
 from bot.core.onboarding_flow import flow_about_company, flow_another_emp_training_intro, flow_branch_kb_training_intro, flow_lawyer_training_intro, flow_sales_training_intro, flow_start, flow_start_change_kb, flow_start_new_empl_change_kb
 from bot.core.reg_managment_content import get_message_11_text, get_message_14_text, get_message_17_text, get_message_1_text, get_message_20_text, get_message_23_text, get_message_26_text, get_message_29_text, get_message_2_text, get_message_32_text, get_message_33_text, get_message_34_text, get_message_5_text, get_message_8_text, get_period_sender_text
-from core.content import get_another_emp_intro_text, get_block1_intro_text, get_block1_intro_text_lawyer, get_block1_section1_intro_text, get_block1_section2_intro_text, get_block1_section_3_intro_text, get_block1_section_4_intro_text, get_block1_section_5_intro_text, get_block1_section_6_intro_text, get_block2_intro_text, get_block2_intro_text_lawyer, get_block2_section1_intro_text, get_block2_section_1_intro_text_lawyer, get_block2_section_2_intro_text, get_block2_section_2_intro_text_lawyer, get_block2_section_3_intro_text, get_block2_section_4_intro_text, get_block3_intro_text, get_block3_intro_text_lawyer, get_block3_section_1_intro_text, get_block3_section_2_intro_text, get_block3_section_3_intro_text, get_block3_section_4_intro_text, get_block3_section_5_intro_text, get_block3_section_6_intro_text, get_block4_intro_text, get_block4_intro_text_lawyer, get_block4_section_1_intro_text, get_block4_section_2_intro_text, get_block4_section_3_intro_text, get_block4_section_4_intro_text, get_block5_intro_text, get_block5_intro_text_lawyer, get_block5_intro_video1, get_block5_intro_video10, get_block5_intro_video11, get_block5_intro_video12, get_block5_intro_video13, get_block5_intro_video14, get_block5_intro_video15, get_block5_intro_video2, get_block5_intro_video3, get_block5_intro_video4, get_block5_intro_video5, get_block5_intro_video6, get_block5_intro_video7, get_block5_intro_video8, get_block5_intro_video9, get_block6_intro_text, get_block6_section_1_intro_text, get_block7_intro_text, get_change_course_text, get_course_intro_text, get_final_another_emp_text, get_final_intro_text, get_final_lawyer_text, get_first_day_congrats_text, get_first_mess_another_empl, get_module0_intro_text_kb_branch, get_module0_lesson1_intro_text_kb_branch, get_reminder_text, get_start_text, get_text_change_department, get_text_change_status, get_text_for_add_educ, get_text_in_process, get_text_start_final_test_block_1, get_text_start_final_test_block_2, get_text_start_final_test_block_3, get_text_start_final_test_block_4, get_text_start_final_test_block_5, get_text_start_final_test_block_6, get_text_to_final_test_block_1, get_text_to_final_test_block_2, get_text_to_final_test_block_3, get_text_to_final_test_block_4, get_text_to_final_test_block_5, get_text_to_final_test_block_6, get_text_to_final_test_block_7, get_text_to_final_test_lawyer, get_text_to_test_after_lesson_kb, get_text_to_test_block_1_lawyer, get_to_final_intro_text_lawyer, get_tomorrow_reminder_text, get_training_step_3_text, go_to_test_1_text, kb_go_to_test_after_lesson, table_of_content_kb_branch, table_of_content_lawyer
+from core.content import get_another_emp_intro_text, get_block1_intro_text, get_block1_intro_text_lawyer, get_block1_section1_intro_text, get_block1_section2_intro_text, get_block1_section_3_intro_text, get_block1_section_4_intro_text, get_block1_section_5_intro_text, get_block1_section_6_intro_text, get_block2_intro_text, get_block2_intro_text_lawyer, get_block2_section1_intro_text, get_block2_section_1_intro_text_lawyer, get_block2_section_2_intro_text, get_block2_section_2_intro_text_lawyer, get_block2_section_3_intro_text, get_block2_section_4_intro_text, get_block3_intro_text, get_block3_intro_text_lawyer, get_block3_section_1_intro_text, get_block3_section_2_intro_text, get_block3_section_3_intro_text, get_block3_section_4_intro_text, get_block3_section_5_intro_text, get_block3_section_6_intro_text, get_block4_intro_text, get_block4_intro_text_lawyer, get_block4_section_1_intro_text, get_block4_section_2_intro_text, get_block4_section_3_intro_text, get_block4_section_4_intro_text, get_block5_intro_text, get_block5_intro_text_lawyer, get_block5_intro_video1, get_block5_intro_video10, get_block5_intro_video11, get_block5_intro_video12, get_block5_intro_video13, get_block5_intro_video14, get_block5_intro_video15, get_block5_intro_video2, get_block5_intro_video3, get_block5_intro_video4, get_block5_intro_video5, get_block5_intro_video6, get_block5_intro_video7, get_block5_intro_video8, get_block5_intro_video9, get_block6_intro_text, get_block6_section_1_intro_text, get_block7_intro_text, get_change_course_text, get_course_intro_text, get_final_another_emp_text, get_final_intro_text, get_final_lawyer_text, get_first_day_congrats_text, get_first_mess_another_empl, get_module0_intro_text_kb_branch, get_module0_lesson1_intro_text_kb_branch, get_module0_lesson2_intro_text_kb_branch, get_module0_lesson3_intro_text_kb_branch, get_module0_lesson4_intro_text_kb_branch, get_module0_lesson5_intro_text_kb_branch, get_module1_lesson1_intro_text_kb_branch, get_module1_lesson2_intro_text_kb_branch, get_module1_lesson3_intro_text_kb_branch, get_module1_lesson4_intro_text_kb_branch, get_module1_lesson5_intro_text_kb_branch, get_module1_lesson6_intro_text_kb_branch, get_module2_lesson1_intro_text_kb_branch, get_module2_lesson2_intro_text_kb_branch, get_module2_lesson3_intro_text_kb_branch, get_module2_lesson4_intro_text_kb_branch, get_module2_lesson5_intro_text_kb_branch, get_reminder_text, get_start_text, get_text_change_department, get_text_change_status, get_text_for_add_educ, get_text_in_process, get_text_start_final_test_block_1, get_text_start_final_test_block_2, get_text_start_final_test_block_3, get_text_start_final_test_block_4, get_text_start_final_test_block_5, get_text_start_final_test_block_6, get_text_to_final_test_block_1, get_text_to_final_test_block_2, get_text_to_final_test_block_3, get_text_to_final_test_block_4, get_text_to_final_test_block_5, get_text_to_final_test_block_6, get_text_to_final_test_block_7, get_text_to_final_test_lawyer, get_text_to_test_after_lesson_kb, get_text_to_test_block_1_lawyer, get_to_final_intro_text_lawyer, get_tomorrow_reminder_text, get_training_step_3_text, go_to_test_1_text, kb_go_to_test_after_lesson, table_of_content_kb_branch, table_of_content_lawyer
 from bot.adapters.max.keyboards import change_another_department_kb, change_course_kb, change_course_to_export_stat_kb, change_department_kb, change_status_kb, continue_studying_kb, education_kb, final_start_test_kb, final_test_kb, finish_studying_kb, main_menu_keyboard, main_one_kb, next_to_educ_to_part_kb, next_to_education_kb, regular_managment_kb, start_test_kb, test_abcd_keyboard, variants_questions_kb, yes_no_kb
 #from services.claude_api import ClaudeService
 from services.ExelStatisticGenerator import ExcelStatisticGenerator
@@ -1867,6 +1867,9 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
         elif state_name == 'module_0_lesson_1_testing':
             cursor.change_state(TrainingStates.konstructor['module_0_lesson_2'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_0_lesson_2'], 'current_course': course_name})
+        elif state_name == 'module_0_lesson_2_testing':
+            cursor.change_state(TrainingStates.konstructor['module_0_lesson_3'])
+            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_0_lesson_3'], 'current_course': course_name})
         
         
         # заглушка - здесь надо продумать с состояниями для ветки ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ
@@ -7568,9 +7571,1476 @@ async def kb_module_0_lesson_1_test_handler(callback: Callback, cursor: FSMCurso
         logger.error(f"[kb_module_0_lesson_1_test_handler] Произошла ошибка {e}")
     finally:
         await remove_repeat_flag(callback.user_id) 
-
-
         
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_0_lesson_2']), lambda data: data.payload.split('::')[1] == "not_first")
+async def kb_module_0_lesson_2_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
+    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №0 Урок №2: «Инструменты и рабочая среда»"""
+    try:
+        logger.info("[kb_module_0_lesson_2_handler] Стартовал")
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2)
+        status_user = await get_value_from_redis(callback.user_id, 'status_user')
+        if not status_user:
+            if cursor.get_data():
+                status_user = cursor.get_data().get('status_user')
+        
+        await callback.message.delete()
+        intro_text = get_module0_lesson2_intro_text_kb_branch()
+        await callback.send(intro_text, disable_link_preview = True) 
+        
+        await asyncio.sleep(2) # 15
+        
+        course_name = await get_value_from_redis(callback.user_id, 'current_course')
+        if not course_name:
+            course_name = get_current_course(cursor)
+        logger.info(f'{course_name=}')
+        
+        game = GamificationService(course_name)
+        user_data = load_user_data()
+        user_id = str(callback.user_id)
+        first_name = user_data.get(user_id).get("first_name")
+        last_name = user_data.get(user_id).get("second_name")
+        
+        await game.increment_lesson_func(
+            user_id=user_id,
+            course_name=course_name, # "Обучение по продажам"
+            lesson_id='section_3', #  "section_1"
+            user_data={
+                "username": f'{first_name} {last_name}',
+                "first_name": first_name,
+                "last_name": last_name
+            }
+        )
+                
+        # сообщение о тестировании с кнопкой
+        test_text = kb_go_to_test_after_lesson(5)
+        await callback.send(test_text, keyboard=start_test_kb())
+        
+        cursor.change_state(TrainingStates.konstructor['module_0_lesson_2_questions'])
+        await asyncio.sleep(2) # 2
+        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_0_lesson_2_questions'], 'payload': 'start_test', 'current_course': 'Обучение для конструкторов', 'status_user': status_user})
+    except Exception as e:
+        logger.error(f"[kb_module_0_lesson_2_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id) 
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_0_lesson_2_questions']), lambda data: data.payload == "start_test")
+async def kb_module_0_lesson_2_test_handler(callback: Callback, cursor: FSMCursor):
+    """ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ Начало тестирования МОДУЛЬ № 0 УРОК № 2 """
+    try:
+        logger.info("[kb_module_0_lesson_2_test_handler] Стартовал")
+        # if await debounce_button_max(callback, cursor):
+        #     logger.info(f"[training_step_4_handler] Идет обработка нажмите позднее")
+        #     return
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}) 
+        questions = get_testing_data_module_0_test_2_kb()
+        logger.info(f"Вопросы для тестирования получены:\nПервый вопрос: {questions[0]}")
+        
+        data = cursor.get_data()
+        logger.info(f'[kb_module_0_lesson_2_test_handler] до добавления вопросов в state: {data=}')
+        # Сохраняем вопросы и начинаем с первого
+        if data and isinstance(data, dict):
+            data.update(questions=questions, current_question=0, answers=[])
+        else:
+            data = dict()
+            data.update(questions=questions, current_question=0, answers=[])
+        logger.info(f'{callback=}')
+        
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        else:
+            await save_cursor(callback, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        
+            
+        logger.info(f'[kb_module_0_lesson_2_test_handler] после добавления вопросов в state: {data=}')  
+        
+        # Отправляем первый вопрос
+        cursor.change_data(data)
+        await send_question(callback, cursor, "section_4")
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(state_name = TrainingStates.konstructor['module_0_lesson_2_testing']))
+        else:
+            await save_cursor(callback, extra_data=dict(state_name = TrainingStates.konstructor['module_0_lesson_2_testing']))
+        cursor.change_state(TrainingStates.konstructor['module_0_lesson_2_testing'])
+    
+    except Exception as e:
+        logger.error(f"[kb_module_0_lesson_2_test_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id)
+        
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_0_lesson_3']), lambda data: data.payload.split('::')[1] == "not_first")
+async def kb_module_0_lesson_3_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
+    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №0 Урок №3: «Типовой день конструктора»"""
+    try:
+        logger.info("[kb_module_0_lesson_3_handler] Стартовал")
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2)
+        status_user = await get_value_from_redis(callback.user_id, 'status_user')
+        if not status_user:
+            if cursor.get_data():
+                status_user = cursor.get_data().get('status_user')
+        
+        await callback.message.delete()
+        intro_text = get_module0_lesson3_intro_text_kb_branch()
+        await callback.send(intro_text, disable_link_preview = True) 
+        
+        await asyncio.sleep(2) # 15
+        
+        course_name = await get_value_from_redis(callback.user_id, 'current_course')
+        if not course_name:
+            course_name = get_current_course(cursor)
+        logger.info(f'{course_name=}')
+        
+        game = GamificationService(course_name)
+        user_data = load_user_data()
+        user_id = str(callback.user_id)
+        first_name = user_data.get(user_id).get("first_name")
+        last_name = user_data.get(user_id).get("second_name")
+        
+        await game.increment_lesson_func(
+            user_id=user_id,
+            course_name=course_name, # "Обучение по продажам"
+            lesson_id='section_5', #  "section_1"
+            user_data={
+                "username": f'{first_name} {last_name}',
+                "first_name": first_name,
+                "last_name": last_name
+            }
+        )
+                
+        # сообщение о тестировании с кнопкой
+        test_text = kb_go_to_test_after_lesson(5)
+        await callback.send(test_text, keyboard=start_test_kb())
+        
+        cursor.change_state(TrainingStates.konstructor['module_0_lesson_3_questions'])
+        await asyncio.sleep(2) # 2
+        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_0_lesson_3_questions'], 'payload': 'start_test', 'current_course': 'Обучение для конструкторов', 'status_user': status_user})
+    except Exception as e:
+        logger.error(f"[kb_module_0_lesson_3_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id) 
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_0_lesson_3_questions']), lambda data: data.payload == "start_test")
+async def kb_module_0_lesson_3_test_handler(callback: Callback, cursor: FSMCursor):
+    """ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ Начало тестирования МОДУЛЬ № 0 УРОК № 3 """
+    try:
+        logger.info("[kb_module_0_lesson_3_test_handler] Стартовал")
+        # if await debounce_button_max(callback, cursor):
+        #     logger.info(f"[training_step_4_handler] Идет обработка нажмите позднее")
+        #     return
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}) 
+        questions = get_testing_data_module_0_test_3_kb()
+        logger.info(f"Вопросы для тестирования получены:\nПервый вопрос: {questions[0]}")
+        
+        data = cursor.get_data()
+        logger.info(f'[kb_module_0_lesson_3_test_handler] до добавления вопросов в state: {data=}')
+        # Сохраняем вопросы и начинаем с первого
+        if data and isinstance(data, dict):
+            data.update(questions=questions, current_question=0, answers=[])
+        else:
+            data = dict()
+            data.update(questions=questions, current_question=0, answers=[])
+        logger.info(f'{callback=}')
+        
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        else:
+            await save_cursor(callback, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        
+            
+        logger.info(f'[kb_module_0_lesson_3_test_handler] после добавления вопросов в state: {data=}')  
+        
+        # Отправляем первый вопрос
+        cursor.change_data(data)
+        await send_question(callback, cursor, "section_6")
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(state_name = TrainingStates.konstructor['module_0_lesson_3_testing']))
+        else:
+            await save_cursor(callback, extra_data=dict(state_name = TrainingStates.konstructor['module_0_lesson_3_testing']))
+        cursor.change_state(TrainingStates.konstructor['module_0_lesson_3_testing'])
+    
+    except Exception as e:
+        logger.error(f"[kb_module_0_lesson_3_test_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id)
+        
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_0_lesson_4']), lambda data: data.payload.split('::')[1] == "not_first")
+async def kb_module_0_lesson_4_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
+    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №0 Урок №4: «Типовой день конструктора»"""
+    try:
+        logger.info("[kb_module_0_lesson_4_handler] Стартовал")
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2)
+        status_user = await get_value_from_redis(callback.user_id, 'status_user')
+        if not status_user:
+            if cursor.get_data():
+                status_user = cursor.get_data().get('status_user')
+        
+        await callback.message.delete()
+        intro_text = get_module0_lesson4_intro_text_kb_branch()
+        await callback.send(intro_text, disable_link_preview = True) 
+        
+        await asyncio.sleep(2) # 15
+        
+        course_name = await get_value_from_redis(callback.user_id, 'current_course')
+        if not course_name:
+            course_name = get_current_course(cursor)
+        logger.info(f'{course_name=}')
+        
+        game = GamificationService(course_name)
+        user_data = load_user_data()
+        user_id = str(callback.user_id)
+        first_name = user_data.get(user_id).get("first_name")
+        last_name = user_data.get(user_id).get("second_name")
+        
+        await game.increment_lesson_func(
+            user_id=user_id,
+            course_name=course_name, # "Обучение по продажам"
+            lesson_id='section_7', #  "section_1"
+            user_data={
+                "username": f'{first_name} {last_name}',
+                "first_name": first_name,
+                "last_name": last_name
+            }
+        )
+                
+        # сообщение о тестировании с кнопкой
+        test_text = kb_go_to_test_after_lesson(5)
+        await callback.send(test_text, keyboard=start_test_kb())
+        
+        cursor.change_state(TrainingStates.konstructor['module_0_lesson_4_questions'])
+        await asyncio.sleep(2) # 2
+        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_0_lesson_4_questions'], 'payload': 'start_test', 'current_course': 'Обучение для конструкторов', 'status_user': status_user})
+    except Exception as e:
+        logger.error(f"[kb_module_0_lesson_4_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id) 
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_0_lesson_4_questions']), lambda data: data.payload == "start_test")
+async def kb_module_0_lesson_4_test_handler(callback: Callback, cursor: FSMCursor):
+    """ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ Начало тестирования МОДУЛЬ № 0 УРОК № 4 """
+    try:
+        logger.info("[kb_module_0_lesson_4_test_handler] Стартовал")
+        # if await debounce_button_max(callback, cursor):
+        #     logger.info(f"[training_step_4_handler] Идет обработка нажмите позднее")
+        #     return
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}) 
+        questions = get_testing_data_module_0_test_4_kb()
+        logger.info(f"Вопросы для тестирования получены:\nПервый вопрос: {questions[0]}")
+        
+        data = cursor.get_data()
+        logger.info(f'[kb_module_0_lesson_4_test_handler] до добавления вопросов в state: {data=}')
+        # Сохраняем вопросы и начинаем с первого
+        if data and isinstance(data, dict):
+            data.update(questions=questions, current_question=0, answers=[])
+        else:
+            data = dict()
+            data.update(questions=questions, current_question=0, answers=[])
+        logger.info(f'{callback=}')
+        
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        else:
+            await save_cursor(callback, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        
+            
+        logger.info(f'[kb_module_0_lesson_4_test_handler] после добавления вопросов в state: {data=}')  
+        
+        # Отправляем первый вопрос
+        cursor.change_data(data)
+        await send_question(callback, cursor, "section_8")
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(state_name = TrainingStates.konstructor['module_0_lesson_4_testing']))
+        else:
+            await save_cursor(callback, extra_data=dict(state_name = TrainingStates.konstructor['module_0_lesson_4_testing']))
+        cursor.change_state(TrainingStates.konstructor['module_0_lesson_4_testing'])
+    
+    except Exception as e:
+        logger.error(f"[kb_module_0_lesson_4_test_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id)
+        
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_0_lesson_5']), lambda data: data.payload.split('::')[1] == "not_first")
+async def kb_module_0_lesson_5_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
+    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №0 Урок №5: Эффективное общение с клиентами и смежными участниками"""
+    try:
+        logger.info("[kb_module_0_lesson_5_handler] Стартовал")
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2)
+        status_user = await get_value_from_redis(callback.user_id, 'status_user')
+        if not status_user:
+            if cursor.get_data():
+                status_user = cursor.get_data().get('status_user')
+        
+        await callback.message.delete()
+        intro_text = get_module0_lesson5_intro_text_kb_branch()
+        await callback.send(intro_text, disable_link_preview = True) 
+        
+        await asyncio.sleep(2) # 15
+        
+        course_name = await get_value_from_redis(callback.user_id, 'current_course')
+        if not course_name:
+            course_name = get_current_course(cursor)
+        logger.info(f'{course_name=}')
+        
+        game = GamificationService(course_name)
+        user_data = load_user_data()
+        user_id = str(callback.user_id)
+        first_name = user_data.get(user_id).get("first_name")
+        last_name = user_data.get(user_id).get("second_name")
+        
+        await game.increment_lesson_func(
+            user_id=user_id,
+            course_name=course_name, # "Обучение по продажам"
+            lesson_id='section_9', #  "section_1"
+            user_data={
+                "username": f'{first_name} {last_name}',
+                "first_name": first_name,
+                "last_name": last_name
+            }
+        )
+                
+        # сообщение о тестировании с кнопкой
+        test_text = kb_go_to_test_after_lesson(5)
+        await callback.send(test_text, keyboard=start_test_kb())
+        
+        cursor.change_state(TrainingStates.konstructor['module_0_lesson_5_questions'])
+        await asyncio.sleep(2) # 2
+        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_0_lesson_5_questions'], 'payload': 'start_test', 'current_course': 'Обучение для конструкторов', 'status_user': status_user})
+    except Exception as e:
+        logger.error(f"[kb_module_0_lesson_5_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id) 
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_0_lesson_5_questions']), lambda data: data.payload == "start_test")
+async def kb_module_0_lesson_5_test_handler(callback: Callback, cursor: FSMCursor):
+    """ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ Начало тестирования МОДУЛЬ № 0 УРОК № 5 """
+    try:
+        logger.info("[kb_module_0_lesson_5_test_handler] Стартовал")
+        # if await debounce_button_max(callback, cursor):
+        #     logger.info(f"[training_step_4_handler] Идет обработка нажмите позднее")
+        #     return
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}) 
+        questions = get_testing_data_module_0_test_5_kb()
+        logger.info(f"Вопросы для тестирования получены:\nПервый вопрос: {questions[0]}")
+        
+        data = cursor.get_data()
+        logger.info(f'[kb_module_0_lesson_5_test_handler] до добавления вопросов в state: {data=}')
+        # Сохраняем вопросы и начинаем с первого
+        if data and isinstance(data, dict):
+            data.update(questions=questions, current_question=0, answers=[])
+        else:
+            data = dict()
+            data.update(questions=questions, current_question=0, answers=[])
+        logger.info(f'{callback=}')
+        
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        else:
+            await save_cursor(callback, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        
+            
+        logger.info(f'[kb_module_0_lesson_5_test_handler] после добавления вопросов в state: {data=}')  
+        
+        # Отправляем первый вопрос
+        cursor.change_data(data)
+        await send_question(callback, cursor, "section_10")
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(state_name = TrainingStates.konstructor['module_0_lesson_5_testing']))
+        else:
+            await save_cursor(callback, extra_data=dict(state_name = TrainingStates.konstructor['module_0_lesson_5_testing']))
+        cursor.change_state(TrainingStates.konstructor['module_0_lesson_5_testing'])
+    
+    except Exception as e:
+        logger.error(f"[kb_module_0_lesson_5_test_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id)       
+
+
+async def kb_module_0_final_test_handler(callback: Callback, cursor: FSMCursor):
+    '''Заглушка для прохождения финального теста по модулю № 0'''
+    pass
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_1_lesson_1']), lambda data: data.payload.split('::')[1] == "not_first")
+async def kb_module_1_lesson_1_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
+    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №1 Урок №1: Расчёт заявки и формирование КП»"""
+    try:
+        logger.info("[kb_module_1_lesson_1_handler] Стартовал")
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2)
+        status_user = await get_value_from_redis(callback.user_id, 'status_user')
+        if not status_user:
+            if cursor.get_data():
+                status_user = cursor.get_data().get('status_user')
+        
+        await callback.message.delete()
+        intro_text = get_module1_lesson1_intro_text_kb_branch()
+        await callback.send(intro_text, disable_link_preview = True) 
+        
+        await asyncio.sleep(2) # 15
+        
+        course_name = await get_value_from_redis(callback.user_id, 'current_course')
+        if not course_name:
+            course_name = get_current_course(cursor)
+        logger.info(f'{course_name=}')
+        
+        game = GamificationService(course_name)
+        user_data = load_user_data()
+        user_id = str(callback.user_id)
+        first_name = user_data.get(user_id).get("first_name")
+        last_name = user_data.get(user_id).get("second_name")
+        
+        await game.increment_lesson_func(
+            user_id=user_id,
+            course_name=course_name, # "Обучение по продажам"
+            lesson_id='section_14', #  "section_1"
+            user_data={
+                "username": f'{first_name} {last_name}',
+                "first_name": first_name,
+                "last_name": last_name
+            }
+        )
+                
+        # сообщение о тестировании с кнопкой
+        test_text = kb_go_to_test_after_lesson(5)
+        await callback.send(test_text, keyboard=start_test_kb())
+        
+        cursor.change_state(TrainingStates.konstructor['module_1_lesson_1_questions'])
+        await asyncio.sleep(2) # 2
+        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_1_lesson_1_questions'], 'payload': 'start_test', 'current_course': 'Обучение для конструкторов', 'status_user': status_user})
+    except Exception as e:
+        logger.error(f"[kb_module_1_lesson_1_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id) 
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_1_lesson_1_questions']), lambda data: data.payload == "start_test")
+async def kb_module_1_lesson_1_test_handler(callback: Callback, cursor: FSMCursor):
+    """ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ Начало тестирования МОДУЛЬ № 1 УРОК № 1 """
+    try:
+        logger.info("[kb_module_1_lesson_1_test_handler] Стартовал")
+        # if await debounce_button_max(callback, cursor):
+        #     logger.info(f"[training_step_4_handler] Идет обработка нажмите позднее")
+        #     return
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}) 
+        questions = get_testing_data_module_1_test_1_kb()
+        logger.info(f"Вопросы для тестирования получены:\nПервый вопрос: {questions[0]}")
+        
+        data = cursor.get_data()
+        logger.info(f'[kb_module_1_lesson_1_test_handler] до добавления вопросов в state: {data=}')
+        # Сохраняем вопросы и начинаем с первого
+        if data and isinstance(data, dict):
+            data.update(questions=questions, current_question=0, answers=[])
+        else:
+            data = dict()
+            data.update(questions=questions, current_question=0, answers=[])
+        logger.info(f'{callback=}')
+        
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        else:
+            await save_cursor(callback, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        
+            
+        logger.info(f'[kb_module_1_lesson_1_test_handler] после добавления вопросов в state: {data=}')  
+        
+        # Отправляем первый вопрос
+        cursor.change_data(data)
+        await send_question(callback, cursor, "section_15")
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(state_name = TrainingStates.konstructor['module_1_lesson_1_testing']))
+        else:
+            await save_cursor(callback, extra_data=dict(state_name = TrainingStates.konstructor['module_1_lesson_1_testing']))
+        cursor.change_state(TrainingStates.konstructor['module_1_lesson_1_testing'])
+    
+    except Exception as e:
+        logger.error(f"[kb_module_0_lesson_5_test_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id)
+        
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_1_lesson_2']), lambda data: data.payload.split('::')[1] == "not_first")
+async def kb_module_1_lesson_2_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
+    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №1 Урок №2: Как определить тип изделия и условия применения"""
+    try:
+        logger.info("[kb_module_1_lesson_2_handler] Стартовал")
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2)
+        status_user = await get_value_from_redis(callback.user_id, 'status_user')
+        if not status_user:
+            if cursor.get_data():
+                status_user = cursor.get_data().get('status_user')
+        
+        await callback.message.delete()
+        intro_text = get_module1_lesson2_intro_text_kb_branch()
+        await callback.send(intro_text, disable_link_preview = True) 
+        
+        await asyncio.sleep(2) # 15
+        
+        course_name = await get_value_from_redis(callback.user_id, 'current_course')
+        if not course_name:
+            course_name = get_current_course(cursor)
+        logger.info(f'{course_name=}')
+        
+        game = GamificationService(course_name)
+        user_data = load_user_data()
+        user_id = str(callback.user_id)
+        first_name = user_data.get(user_id).get("first_name")
+        last_name = user_data.get(user_id).get("second_name")
+        
+        await game.increment_lesson_func(
+            user_id=user_id,
+            course_name=course_name, # "Обучение по продажам"
+            lesson_id='section_16', #  "section_1"
+            user_data={
+                "username": f'{first_name} {last_name}',
+                "first_name": first_name,
+                "last_name": last_name
+            }
+        )
+                
+        # сообщение о тестировании с кнопкой
+        test_text = kb_go_to_test_after_lesson(5)
+        await callback.send(test_text, keyboard=start_test_kb())
+        
+        cursor.change_state(TrainingStates.konstructor['module_1_lesson_2_questions'])
+        await asyncio.sleep(2) # 2
+        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_1_lesson_2_questions'], 'payload': 'start_test', 'current_course': 'Обучение для конструкторов', 'status_user': status_user})
+    except Exception as e:
+        logger.error(f"[kb_module_1_lesson_2_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id) 
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_1_lesson_2_questions']), lambda data: data.payload == "start_test")
+async def kb_module_1_lesson_2_test_handler(callback: Callback, cursor: FSMCursor):
+    """ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ Начало тестирования МОДУЛЬ № 1 УРОК № 2 """
+    try:
+        logger.info("[kb_module_1_lesson_2_test_handler] Стартовал")
+        # if await debounce_button_max(callback, cursor):
+        #     logger.info(f"[training_step_4_handler] Идет обработка нажмите позднее")
+        #     return
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}) 
+        questions = get_testing_data_module_1_test_2_kb()
+        logger.info(f"Вопросы для тестирования получены:\nПервый вопрос: {questions[0]}")
+        
+        data = cursor.get_data()
+        logger.info(f'[kb_module_1_lesson_2_test_handler] до добавления вопросов в state: {data=}')
+        # Сохраняем вопросы и начинаем с первого
+        if data and isinstance(data, dict):
+            data.update(questions=questions, current_question=0, answers=[])
+        else:
+            data = dict()
+            data.update(questions=questions, current_question=0, answers=[])
+        logger.info(f'{callback=}')
+        
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        else:
+            await save_cursor(callback, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        
+            
+        logger.info(f'[kb_module_1_lesson_2_test_handler] после добавления вопросов в state: {data=}')  
+        
+        # Отправляем первый вопрос
+        cursor.change_data(data)
+        await send_question(callback, cursor, "section_17")
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(state_name = TrainingStates.konstructor['module_1_lesson_2_testing']))
+        else:
+            await save_cursor(callback, extra_data=dict(state_name = TrainingStates.konstructor['module_1_lesson_2_testing']))
+        cursor.change_state(TrainingStates.konstructor['module_1_lesson_2_testing'])
+    
+    except Exception as e:
+        logger.error(f"[kb_module_1_lesson_2_test_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id)
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_1_lesson_3']), lambda data: data.payload.split('::')[1] == "not_first")
+async def kb_module_1_lesson_3_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
+    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №1 Урок №3: Как выбрать техническое решение: система, профиль, заполнение, фурнитура"""
+    try:
+        logger.info("[kb_module_1_lesson_3_handler] Стартовал")
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2)
+        status_user = await get_value_from_redis(callback.user_id, 'status_user')
+        if not status_user:
+            if cursor.get_data():
+                status_user = cursor.get_data().get('status_user')
+        
+        await callback.message.delete()
+        intro_text = get_module1_lesson3_intro_text_kb_branch()
+        await callback.send(intro_text, disable_link_preview = True) 
+        
+        await asyncio.sleep(2) # 15
+        
+        course_name = await get_value_from_redis(callback.user_id, 'current_course')
+        if not course_name:
+            course_name = get_current_course(cursor)
+        logger.info(f'{course_name=}')
+        
+        game = GamificationService(course_name)
+        user_data = load_user_data()
+        user_id = str(callback.user_id)
+        first_name = user_data.get(user_id).get("first_name")
+        last_name = user_data.get(user_id).get("second_name")
+        
+        await game.increment_lesson_func(
+            user_id=user_id,
+            course_name=course_name, # "Обучение по продажам"
+            lesson_id='section_18', #  "section_1"
+            user_data={
+                "username": f'{first_name} {last_name}',
+                "first_name": first_name,
+                "last_name": last_name
+            }
+        )
+                
+        # сообщение о тестировании с кнопкой
+        test_text = kb_go_to_test_after_lesson(5)
+        await callback.send(test_text, keyboard=start_test_kb())
+        
+        cursor.change_state(TrainingStates.konstructor['module_1_lesson_3_questions'])
+        await asyncio.sleep(2) # 2
+        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_1_lesson_3_questions'], 'payload': 'start_test', 'current_course': 'Обучение для конструкторов', 'status_user': status_user})
+    except Exception as e:
+        logger.error(f"[kb_module_1_lesson_3_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id) 
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_1_lesson_3_questions']), lambda data: data.payload == "start_test")
+async def kb_module_1_lesson_3_test_handler(callback: Callback, cursor: FSMCursor):
+    """ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ Начало тестирования МОДУЛЬ № 1 УРОК № 3 """
+    try:
+        logger.info("[kb_module_1_lesson_3_test_handler] Стартовал")
+        # if await debounce_button_max(callback, cursor):
+        #     logger.info(f"[training_step_4_handler] Идет обработка нажмите позднее")
+        #     return
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}) 
+        questions = get_testing_data_module_1_test_3_kb()
+        logger.info(f"Вопросы для тестирования получены:\nПервый вопрос: {questions[0]}")
+        
+        data = cursor.get_data()
+        logger.info(f'[kb_module_1_lesson_3_test_handler] до добавления вопросов в state: {data=}')
+        # Сохраняем вопросы и начинаем с первого
+        if data and isinstance(data, dict):
+            data.update(questions=questions, current_question=0, answers=[])
+        else:
+            data = dict()
+            data.update(questions=questions, current_question=0, answers=[])
+        logger.info(f'{callback=}')
+        
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        else:
+            await save_cursor(callback, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        
+            
+        logger.info(f'[kb_module_1_lesson_3_test_handler] после добавления вопросов в state: {data=}')  
+        
+        # Отправляем первый вопрос
+        cursor.change_data(data)
+        await send_question(callback, cursor, "section_19")
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(state_name = TrainingStates.konstructor['module_1_lesson_3_testing']))
+        else:
+            await save_cursor(callback, extra_data=dict(state_name = TrainingStates.konstructor['module_1_lesson_3_testing']))
+        cursor.change_state(TrainingStates.konstructor['module_1_lesson_3_testing'])
+    
+    except Exception as e:
+        logger.error(f"[kb_module_1_lesson_3_test_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id)
+        
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_1_lesson_4']), lambda data: data.payload.split('::')[1] == "not_first")
+async def kb_module_1_lesson_4_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
+    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №1 Урок №4: Как проверить ограничения: сертификаты, размеры, огнестойкость"""
+    try:
+        logger.info("[kb_module_1_lesson_4_handler] Стартовал")
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2)
+        status_user = await get_value_from_redis(callback.user_id, 'status_user')
+        if not status_user:
+            if cursor.get_data():
+                status_user = cursor.get_data().get('status_user')
+        
+        await callback.message.delete()
+        intro_text = get_module1_lesson4_intro_text_kb_branch()
+        await callback.send(intro_text, disable_link_preview = True) 
+        
+        await asyncio.sleep(2) # 15
+        
+        course_name = await get_value_from_redis(callback.user_id, 'current_course')
+        if not course_name:
+            course_name = get_current_course(cursor)
+        logger.info(f'{course_name=}')
+        
+        game = GamificationService(course_name)
+        user_data = load_user_data()
+        user_id = str(callback.user_id)
+        first_name = user_data.get(user_id).get("first_name")
+        last_name = user_data.get(user_id).get("second_name")
+        
+        await game.increment_lesson_func(
+            user_id=user_id,
+            course_name=course_name, # "Обучение по продажам"
+            lesson_id='section_20', #  "section_1"
+            user_data={
+                "username": f'{first_name} {last_name}',
+                "first_name": first_name,
+                "last_name": last_name
+            }
+        )
+                
+        # сообщение о тестировании с кнопкой
+        test_text = kb_go_to_test_after_lesson(5)
+        await callback.send(test_text, keyboard=start_test_kb())
+        
+        cursor.change_state(TrainingStates.konstructor['module_1_lesson_4_questions'])
+        await asyncio.sleep(2) # 2
+        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_1_lesson_4_questions'], 'payload': 'start_test', 'current_course': 'Обучение для конструкторов', 'status_user': status_user})
+    except Exception as e:
+        logger.error(f"[kb_module_1_lesson_4_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id) 
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_1_lesson_3_questions']), lambda data: data.payload == "start_test")
+async def kb_module_1_lesson_4_test_handler(callback: Callback, cursor: FSMCursor):
+    """ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ Начало тестирования МОДУЛЬ № 1 УРОК № 4 """
+    try:
+        logger.info("[kb_module_1_lesson_4_test_handler] Стартовал")
+        # if await debounce_button_max(callback, cursor):
+        #     logger.info(f"[training_step_4_handler] Идет обработка нажмите позднее")
+        #     return
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}) 
+        questions = get_testing_data_module_1_test_4_kb()
+        logger.info(f"Вопросы для тестирования получены:\nПервый вопрос: {questions[0]}")
+        
+        data = cursor.get_data()
+        logger.info(f'[kb_module_1_lesson_4_test_handler] до добавления вопросов в state: {data=}')
+        # Сохраняем вопросы и начинаем с первого
+        if data and isinstance(data, dict):
+            data.update(questions=questions, current_question=0, answers=[])
+        else:
+            data = dict()
+            data.update(questions=questions, current_question=0, answers=[])
+        logger.info(f'{callback=}')
+        
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        else:
+            await save_cursor(callback, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        
+            
+        logger.info(f'[kb_module_1_lesson_4_test_handler] после добавления вопросов в state: {data=}')  
+        
+        # Отправляем первый вопрос
+        cursor.change_data(data)
+        await send_question(callback, cursor, "section_21")
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(state_name = TrainingStates.konstructor['module_1_lesson_4_testing']))
+        else:
+            await save_cursor(callback, extra_data=dict(state_name = TrainingStates.konstructor['module_1_lesson_4_testing']))
+        cursor.change_state(TrainingStates.konstructor['module_1_lesson_4_testing'])
+    
+    except Exception as e:
+        logger.error(f"[kb_module_1_lesson_4_test_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id)
+        
+        
+@router.on_button_callback(state(TrainingStates.konstructor['module_1_lesson_5']), lambda data: data.payload.split('::')[1] == "not_first")
+async def kb_module_1_lesson_5_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
+    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №1 Урок №5: Как выполнить стандартный расчёт в ПрофСтрой / ПФ4"""
+    try:
+        logger.info("[kb_module_1_lesson_5_handler] Стартовал")
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2)
+        status_user = await get_value_from_redis(callback.user_id, 'status_user')
+        if not status_user:
+            if cursor.get_data():
+                status_user = cursor.get_data().get('status_user')
+        
+        await callback.message.delete()
+        intro_text = get_module1_lesson5_intro_text_kb_branch()
+        await callback.send(intro_text, disable_link_preview = True) 
+        
+        await asyncio.sleep(2) # 15
+        
+        course_name = await get_value_from_redis(callback.user_id, 'current_course')
+        if not course_name:
+            course_name = get_current_course(cursor)
+        logger.info(f'{course_name=}')
+        
+        game = GamificationService(course_name)
+        user_data = load_user_data()
+        user_id = str(callback.user_id)
+        first_name = user_data.get(user_id).get("first_name")
+        last_name = user_data.get(user_id).get("second_name")
+        
+        await game.increment_lesson_func(
+            user_id=user_id,
+            course_name=course_name, # "Обучение по продажам"
+            lesson_id='section_22', #  "section_1"
+            user_data={
+                "username": f'{first_name} {last_name}',
+                "first_name": first_name,
+                "last_name": last_name
+            }
+        )
+                
+        # сообщение о тестировании с кнопкой
+        test_text = kb_go_to_test_after_lesson(5)
+        await callback.send(test_text, keyboard=start_test_kb())
+        
+        cursor.change_state(TrainingStates.konstructor['module_1_lesson_5_questions'])
+        await asyncio.sleep(2) # 2
+        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_1_lesson_5_questions'], 'payload': 'start_test', 'current_course': 'Обучение для конструкторов', 'status_user': status_user})
+    except Exception as e:
+        logger.error(f"[kb_module_1_lesson_5_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id) 
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_1_lesson_5_questions']), lambda data: data.payload == "start_test")
+async def kb_module_1_lesson_5_test_handler(callback: Callback, cursor: FSMCursor):
+    """ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ Начало тестирования МОДУЛЬ № 1 УРОК № 5 """
+    try:
+        logger.info("[kb_module_1_lesson_5_test_handler] Стартовал")
+        # if await debounce_button_max(callback, cursor):
+        #     logger.info(f"[training_step_4_handler] Идет обработка нажмите позднее")
+        #     return
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}) 
+        questions = get_testing_data_module_1_test_5_kb()
+        logger.info(f"Вопросы для тестирования получены:\nПервый вопрос: {questions[0]}")
+        
+        data = cursor.get_data()
+        logger.info(f'[kb_module_1_lesson_5_test_handler] до добавления вопросов в state: {data=}')
+        # Сохраняем вопросы и начинаем с первого
+        if data and isinstance(data, dict):
+            data.update(questions=questions, current_question=0, answers=[])
+        else:
+            data = dict()
+            data.update(questions=questions, current_question=0, answers=[])
+        logger.info(f'{callback=}')
+        
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        else:
+            await save_cursor(callback, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        
+            
+        logger.info(f'[kb_module_1_lesson_5_test_handler] после добавления вопросов в state: {data=}')  
+        
+        # Отправляем первый вопрос
+        cursor.change_data(data)
+        await send_question(callback, cursor, "section_23")
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(state_name = TrainingStates.konstructor['module_1_lesson_5_testing']))
+        else:
+            await save_cursor(callback, extra_data=dict(state_name = TrainingStates.konstructor['module_1_lesson_5_testing']))
+        cursor.change_state(TrainingStates.konstructor['module_1_lesson_5_testing'])
+    
+    except Exception as e:
+        logger.error(f"[kb_module_1_lesson_5_test_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id)          
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_1_lesson_6']), lambda data: data.payload.split('::')[1] == "not_first")
+async def kb_module_1_lesson_6_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
+    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №1 Урок №6: Как считать нестандартное решение вручную и когда эскалировать"""
+    try:
+        logger.info("[kb_module_1_lesson_6_handler] Стартовал")
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2)
+        status_user = await get_value_from_redis(callback.user_id, 'status_user')
+        if not status_user:
+            if cursor.get_data():
+                status_user = cursor.get_data().get('status_user')
+        
+        await callback.message.delete()
+        intro_text = get_module1_lesson6_intro_text_kb_branch()
+        await callback.send(intro_text, disable_link_preview = True) 
+        
+        await asyncio.sleep(2) # 15
+        
+        course_name = await get_value_from_redis(callback.user_id, 'current_course')
+        if not course_name:
+            course_name = get_current_course(cursor)
+        logger.info(f'{course_name=}')
+        
+        game = GamificationService(course_name)
+        user_data = load_user_data()
+        user_id = str(callback.user_id)
+        first_name = user_data.get(user_id).get("first_name")
+        last_name = user_data.get(user_id).get("second_name")
+        
+        await game.increment_lesson_func(
+            user_id=user_id,
+            course_name=course_name, # "Обучение по продажам"
+            lesson_id='section_24', #  "section_1"
+            user_data={
+                "username": f'{first_name} {last_name}',
+                "first_name": first_name,
+                "last_name": last_name
+            }
+        )
+                
+        # сообщение о тестировании с кнопкой
+        test_text = kb_go_to_test_after_lesson(5)
+        await callback.send(test_text, keyboard=start_test_kb())
+        
+        cursor.change_state(TrainingStates.konstructor['module_1_lesson_6_questions'])
+        await asyncio.sleep(2) # 2
+        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_1_lesson_6_questions'], 'payload': 'start_test', 'current_course': 'Обучение для конструкторов', 'status_user': status_user})
+    except Exception as e:
+        logger.error(f"[kb_module_1_lesson_6_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id) 
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_1_lesson_6_questions']), lambda data: data.payload == "start_test")
+async def kb_module_1_lesson_6_test_handler(callback: Callback, cursor: FSMCursor):
+    """ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ Начало тестирования МОДУЛЬ № 1 УРОК № 6 """
+    try:
+        logger.info("[kb_module_1_lesson_6_test_handler] Стартовал")
+        # if await debounce_button_max(callback, cursor):
+        #     logger.info(f"[training_step_4_handler] Идет обработка нажмите позднее")
+        #     return
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}) 
+        questions = get_testing_data_module_1_test_6_kb()
+        logger.info(f"Вопросы для тестирования получены:\nПервый вопрос: {questions[0]}")
+        
+        data = cursor.get_data()
+        logger.info(f'[kb_module_1_lesson_6_test_handler] до добавления вопросов в state: {data=}')
+        # Сохраняем вопросы и начинаем с первого
+        if data and isinstance(data, dict):
+            data.update(questions=questions, current_question=0, answers=[])
+        else:
+            data = dict()
+            data.update(questions=questions, current_question=0, answers=[])
+        logger.info(f'{callback=}')
+        
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        else:
+            await save_cursor(callback, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        
+            
+        logger.info(f'[kb_module_1_lesson_6_test_handler] после добавления вопросов в state: {data=}')  
+        
+        # Отправляем первый вопрос
+        cursor.change_data(data)
+        await send_question(callback, cursor, "section_25")
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(state_name = TrainingStates.konstructor['module_1_lesson_6_testing']))
+        else:
+            await save_cursor(callback, extra_data=dict(state_name = TrainingStates.konstructor['module_1_lesson_6_testing']))
+        cursor.change_state(TrainingStates.konstructor['module_1_lesson_6_testing'])
+    
+    except Exception as e:
+        logger.error(f"[kb_module_1_lesson_6_test_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id) 
+        
+
+async def kb_module_1_final_test_handler(callback: Callback, cursor: FSMCursor):
+    '''Заглушка для прохождения финального теста по модулю № 1'''
+    pass 
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_2_lesson_1']), lambda data: data.payload.split('::')[1] == "not_first")
+async def kb_module_2_lesson_1_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
+    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №2 Урок №1: Как отличить актуализацию от пересчёта"""
+    try:
+        logger.info("[kb_module_2_lesson_1_handler] Стартовал")
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2)
+        status_user = await get_value_from_redis(callback.user_id, 'status_user')
+        if not status_user:
+            if cursor.get_data():
+                status_user = cursor.get_data().get('status_user')
+        
+        await callback.message.delete()
+        intro_text = get_module2_lesson1_intro_text_kb_branch()
+        await callback.send(intro_text, disable_link_preview = True) 
+        
+        await asyncio.sleep(2) # 15
+        
+        course_name = await get_value_from_redis(callback.user_id, 'current_course')
+        if not course_name:
+            course_name = get_current_course(cursor)
+        logger.info(f'{course_name=}')
+        
+        game = GamificationService(course_name)
+        user_data = load_user_data()
+        user_id = str(callback.user_id)
+        first_name = user_data.get(user_id).get("first_name")
+        last_name = user_data.get(user_id).get("second_name")
+        
+        await game.increment_lesson_func(
+            user_id=user_id,
+            course_name=course_name, # "Обучение по продажам"
+            lesson_id='section_27', #  "section_1"
+            user_data={
+                "username": f'{first_name} {last_name}',
+                "first_name": first_name,
+                "last_name": last_name
+            }
+        )
+                
+        # сообщение о тестировании с кнопкой
+        test_text = kb_go_to_test_after_lesson(5)
+        await callback.send(test_text, keyboard=start_test_kb())
+        
+        cursor.change_state(TrainingStates.konstructor['module_2_lesson_1_questions'])
+        await asyncio.sleep(2) # 2
+        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_2_lesson_1_questions'], 'payload': 'start_test', 'current_course': 'Обучение для конструкторов', 'status_user': status_user})
+    except Exception as e:
+        logger.error(f"[kb_module_1_lesson_6_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id) 
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_2_lesson_1_questions']), lambda data: data.payload == "start_test")
+async def kb_module_2_lesson_1_test_handler(callback: Callback, cursor: FSMCursor):
+    """ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ Начало тестирования МОДУЛЬ № 2 УРОК № 1 """
+    try:
+        logger.info("[kb_module_2_lesson_1_test_handler] Стартовал")
+        # if await debounce_button_max(callback, cursor):
+        #     logger.info(f"[training_step_4_handler] Идет обработка нажмите позднее")
+        #     return
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}) 
+        questions = get_testing_data_module_2_test_1_kb()
+        logger.info(f"Вопросы для тестирования получены:\nПервый вопрос: {questions[0]}")
+        
+        data = cursor.get_data()
+        logger.info(f'[kb_module_2_lesson_1_test_handler] до добавления вопросов в state: {data=}')
+        # Сохраняем вопросы и начинаем с первого
+        if data and isinstance(data, dict):
+            data.update(questions=questions, current_question=0, answers=[])
+        else:
+            data = dict()
+            data.update(questions=questions, current_question=0, answers=[])
+        logger.info(f'{callback=}')
+        
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        else:
+            await save_cursor(callback, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        
+            
+        logger.info(f'[kb_module_2_lesson_1_test_handler] после добавления вопросов в state: {data=}')  
+        
+        # Отправляем первый вопрос
+        cursor.change_data(data)
+        await send_question(callback, cursor, "section_28")
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(state_name = TrainingStates.konstructor['module_2_lesson_1_testing']))
+        else:
+            await save_cursor(callback, extra_data=dict(state_name = TrainingStates.konstructor['module_2_lesson_1_testing']))
+        cursor.change_state(TrainingStates.konstructor['module_2_lesson_1_testing'])
+    
+    except Exception as e:
+        logger.error(f"[kb_module_2_lesson_1_test_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id) 
+        
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_2_lesson_2']), lambda data: data.payload.split('::')[1] == "not_first")
+async def kb_module_2_lesson_2_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
+    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №2 Урок №2: Как проверить старый расчёт и новые данные клиента"""
+    try:
+        logger.info("[kb_module_2_lesson_2_handler] Стартовал")
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2)
+        status_user = await get_value_from_redis(callback.user_id, 'status_user')
+        if not status_user:
+            if cursor.get_data():
+                status_user = cursor.get_data().get('status_user')
+        
+        await callback.message.delete()
+        intro_text = get_module2_lesson2_intro_text_kb_branch()
+        await callback.send(intro_text, disable_link_preview = True) 
+        
+        await asyncio.sleep(2) # 15
+        
+        course_name = await get_value_from_redis(callback.user_id, 'current_course')
+        if not course_name:
+            course_name = get_current_course(cursor)
+        logger.info(f'{course_name=}')
+        
+        game = GamificationService(course_name)
+        user_data = load_user_data()
+        user_id = str(callback.user_id)
+        first_name = user_data.get(user_id).get("first_name")
+        last_name = user_data.get(user_id).get("second_name")
+        
+        await game.increment_lesson_func(
+            user_id=user_id,
+            course_name=course_name, # "Обучение по продажам"
+            lesson_id='section_29', #  "section_1"
+            user_data={
+                "username": f'{first_name} {last_name}',
+                "first_name": first_name,
+                "last_name": last_name
+            }
+        )
+                
+        # сообщение о тестировании с кнопкой
+        test_text = kb_go_to_test_after_lesson(5)
+        await callback.send(test_text, keyboard=start_test_kb())
+        
+        cursor.change_state(TrainingStates.konstructor['module_2_lesson_2_questions'])
+        await asyncio.sleep(2) # 2
+        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_2_lesson_2_questions'], 'payload': 'start_test', 'current_course': 'Обучение для конструкторов', 'status_user': status_user})
+    except Exception as e:
+        logger.error(f"[kb_module_2_lesson_2_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id) 
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_2_lesson_2_questions']), lambda data: data.payload == "start_test")
+async def kb_module_2_lesson_2_test_handler(callback: Callback, cursor: FSMCursor):
+    """ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ Начало тестирования МОДУЛЬ № 2 УРОК № 2 """
+    try:
+        logger.info("[kb_module_2_lesson_2_test_handler] Стартовал")
+        # if await debounce_button_max(callback, cursor):
+        #     logger.info(f"[training_step_4_handler] Идет обработка нажмите позднее")
+        #     return
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}) 
+        questions = get_testing_data_module_2_test_2_kb()
+        logger.info(f"Вопросы для тестирования получены:\nПервый вопрос: {questions[0]}")
+        
+        data = cursor.get_data()
+        logger.info(f'[kb_module_2_lesson_2_test_handler] до добавления вопросов в state: {data=}')
+        # Сохраняем вопросы и начинаем с первого
+        if data and isinstance(data, dict):
+            data.update(questions=questions, current_question=0, answers=[])
+        else:
+            data = dict()
+            data.update(questions=questions, current_question=0, answers=[])
+        logger.info(f'{callback=}')
+        
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        else:
+            await save_cursor(callback, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        
+            
+        logger.info(f'[kb_module_2_lesson_2_test_handler] после добавления вопросов в state: {data=}')  
+        
+        # Отправляем первый вопрос
+        cursor.change_data(data)
+        await send_question(callback, cursor, "section_30")
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(state_name = TrainingStates.konstructor['module_2_lesson_2_testing']))
+        else:
+            await save_cursor(callback, extra_data=dict(state_name = TrainingStates.konstructor['module_2_lesson_2_testing']))
+        cursor.change_state(TrainingStates.konstructor['module_2_lesson_2_testing'])
+    
+    except Exception as e:
+        logger.error(f"[kb_module_2_lesson_2_test_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id)
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_2_lesson_3']), lambda data: data.payload.split('::')[1] == "not_first")
+async def kb_module_2_lesson_3_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
+    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №2 Урок №3: Как внести изменения и обновить стоимость"""
+    try:
+        logger.info("[kb_module_2_lesson_3_handler] Стартовал")
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2)
+        status_user = await get_value_from_redis(callback.user_id, 'status_user')
+        if not status_user:
+            if cursor.get_data():
+                status_user = cursor.get_data().get('status_user')
+        
+        await callback.message.delete()
+        intro_text = get_module2_lesson3_intro_text_kb_branch()
+        await callback.send(intro_text, disable_link_preview = True) 
+        
+        await asyncio.sleep(2) # 15
+        
+        course_name = await get_value_from_redis(callback.user_id, 'current_course')
+        if not course_name:
+            course_name = get_current_course(cursor)
+        logger.info(f'{course_name=}')
+        
+        game = GamificationService(course_name)
+        user_data = load_user_data()
+        user_id = str(callback.user_id)
+        first_name = user_data.get(user_id).get("first_name")
+        last_name = user_data.get(user_id).get("second_name")
+        
+        await game.increment_lesson_func(
+            user_id=user_id,
+            course_name=course_name, # "Обучение по продажам"
+            lesson_id='section_31', #  "section_1"
+            user_data={
+                "username": f'{first_name} {last_name}',
+                "first_name": first_name,
+                "last_name": last_name
+            }
+        )
+                
+        # сообщение о тестировании с кнопкой
+        test_text = kb_go_to_test_after_lesson(5)
+        await callback.send(test_text, keyboard=start_test_kb())
+        
+        cursor.change_state(TrainingStates.konstructor['module_2_lesson_3_questions'])
+        await asyncio.sleep(2) # 2
+        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_2_lesson_3_questions'], 'payload': 'start_test', 'current_course': 'Обучение для конструкторов', 'status_user': status_user})
+    except Exception as e:
+        logger.error(f"[kb_module_2_lesson_3_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id) 
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_2_lesson_3_questions']), lambda data: data.payload == "start_test")
+async def kb_module_2_lesson_3_test_handler(callback: Callback, cursor: FSMCursor):
+    """ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ Начало тестирования МОДУЛЬ № 2 УРОК № 3 """
+    try:
+        logger.info("[kb_module_2_lesson_3_test_handler] Стартовал")
+        # if await debounce_button_max(callback, cursor):
+        #     logger.info(f"[training_step_4_handler] Идет обработка нажмите позднее")
+        #     return
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}) 
+        questions = get_testing_data_module_2_test_3_kb()
+        logger.info(f"Вопросы для тестирования получены:\nПервый вопрос: {questions[0]}")
+        
+        data = cursor.get_data()
+        logger.info(f'[kb_module_2_lesson_3_test_handler] до добавления вопросов в state: {data=}')
+        # Сохраняем вопросы и начинаем с первого
+        if data and isinstance(data, dict):
+            data.update(questions=questions, current_question=0, answers=[])
+        else:
+            data = dict()
+            data.update(questions=questions, current_question=0, answers=[])
+        logger.info(f'{callback=}')
+        
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        else:
+            await save_cursor(callback, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        
+            
+        logger.info(f'[kb_module_2_lesson_3_test_handler] после добавления вопросов в state: {data=}')  
+        
+        # Отправляем первый вопрос
+        cursor.change_data(data)
+        await send_question(callback, cursor, "section_32")
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(state_name = TrainingStates.konstructor['module_2_lesson_3_testing']))
+        else:
+            await save_cursor(callback, extra_data=dict(state_name = TrainingStates.konstructor['module_2_lesson_3_testing']))
+        cursor.change_state(TrainingStates.konstructor['module_2_lesson_3_testing'])
+    
+    except Exception as e:
+        logger.error(f"[kb_module_2_lesson_3_test_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id)
+        
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_2_lesson_4']), lambda data: data.payload.split('::')[1] == "not_first")
+async def kb_module_2_lesson_4_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
+    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №2 Урок №4: Как проверить ограничения после изменений"""
+    try:
+        logger.info("[kb_module_2_lesson_4_handler] Стартовал")
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2)
+        status_user = await get_value_from_redis(callback.user_id, 'status_user')
+        if not status_user:
+            if cursor.get_data():
+                status_user = cursor.get_data().get('status_user')
+        
+        await callback.message.delete()
+        intro_text = get_module2_lesson4_intro_text_kb_branch()
+        await callback.send(intro_text, disable_link_preview = True) 
+        
+        await asyncio.sleep(2) # 15
+        
+        course_name = await get_value_from_redis(callback.user_id, 'current_course')
+        if not course_name:
+            course_name = get_current_course(cursor)
+        logger.info(f'{course_name=}')
+        
+        game = GamificationService(course_name)
+        user_data = load_user_data()
+        user_id = str(callback.user_id)
+        first_name = user_data.get(user_id).get("first_name")
+        last_name = user_data.get(user_id).get("second_name")
+        
+        await game.increment_lesson_func(
+            user_id=user_id,
+            course_name=course_name, # "Обучение по продажам"
+            lesson_id='section_33', #  "section_1"
+            user_data={
+                "username": f'{first_name} {last_name}',
+                "first_name": first_name,
+                "last_name": last_name
+            }
+        )
+                
+        # сообщение о тестировании с кнопкой
+        test_text = kb_go_to_test_after_lesson(5)
+        await callback.send(test_text, keyboard=start_test_kb())
+        
+        cursor.change_state(TrainingStates.konstructor['module_2_lesson_4_questions'])
+        await asyncio.sleep(2) # 2
+        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_2_lesson_4_questions'], 'payload': 'start_test', 'current_course': 'Обучение для конструкторов', 'status_user': status_user})
+    except Exception as e:
+        logger.error(f"[kb_module_2_lesson_4_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id) 
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_2_lesson_4_questions']), lambda data: data.payload == "start_test")
+async def kb_module_2_lesson_4_test_handler(callback: Callback, cursor: FSMCursor):
+    """ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ Начало тестирования МОДУЛЬ № 2 УРОК № 4 """
+    try:
+        logger.info("[kb_module_2_lesson_4_test_handler] Стартовал")
+        # if await debounce_button_max(callback, cursor):
+        #     logger.info(f"[training_step_4_handler] Идет обработка нажмите позднее")
+        #     return
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}) 
+        questions = get_testing_data_module_2_test_4_kb()
+        logger.info(f"Вопросы для тестирования получены:\nПервый вопрос: {questions[0]}")
+        
+        data = cursor.get_data()
+        logger.info(f'[kb_module_2_lesson_4_test_handler] до добавления вопросов в state: {data=}')
+        # Сохраняем вопросы и начинаем с первого
+        if data and isinstance(data, dict):
+            data.update(questions=questions, current_question=0, answers=[])
+        else:
+            data = dict()
+            data.update(questions=questions, current_question=0, answers=[])
+        logger.info(f'{callback=}')
+        
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        else:
+            await save_cursor(callback, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        
+            
+        logger.info(f'[kb_module_2_lesson_4_test_handler] после добавления вопросов в state: {data=}')  
+        
+        # Отправляем первый вопрос
+        cursor.change_data(data)
+        await send_question(callback, cursor, "section_34")
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(state_name = TrainingStates.konstructor['module_2_lesson_4_testing']))
+        else:
+            await save_cursor(callback, extra_data=dict(state_name = TrainingStates.konstructor['module_2_lesson_4_testing']))
+        cursor.change_state(TrainingStates.konstructor['module_2_lesson_4_testing'])
+    
+    except Exception as e:
+        logger.error(f"[kb_module_2_lesson_4_test_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id)
+        
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_2_lesson_5']), lambda data: data.payload.split('::')[1] == "not_first")
+async def kb_module_2_lesson_5_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
+    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №2 Урок №5: Как передать обновлённый результат менеджеру"""
+    try:
+        logger.info("[kb_module_2_lesson_5_handler] Стартовал")
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2)
+        status_user = await get_value_from_redis(callback.user_id, 'status_user')
+        if not status_user:
+            if cursor.get_data():
+                status_user = cursor.get_data().get('status_user')
+        
+        await callback.message.delete()
+        intro_text = get_module2_lesson5_intro_text_kb_branch()
+        await callback.send(intro_text, disable_link_preview = True) 
+        
+        await asyncio.sleep(2) # 15
+        
+        course_name = await get_value_from_redis(callback.user_id, 'current_course')
+        if not course_name:
+            course_name = get_current_course(cursor)
+        logger.info(f'{course_name=}')
+        
+        game = GamificationService(course_name)
+        user_data = load_user_data()
+        user_id = str(callback.user_id)
+        first_name = user_data.get(user_id).get("first_name")
+        last_name = user_data.get(user_id).get("second_name")
+        
+        await game.increment_lesson_func(
+            user_id=user_id,
+            course_name=course_name, # "Обучение по продажам"
+            lesson_id='section_35', #  "section_1"
+            user_data={
+                "username": f'{first_name} {last_name}',
+                "first_name": first_name,
+                "last_name": last_name
+            }
+        )
+                
+        # сообщение о тестировании с кнопкой
+        test_text = kb_go_to_test_after_lesson(5)
+        await callback.send(test_text, keyboard=start_test_kb())
+        
+        cursor.change_state(TrainingStates.konstructor['module_2_lesson_5_questions'])
+        await asyncio.sleep(2) # 2
+        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_2_lesson_5_questions'], 'payload': 'start_test', 'current_course': 'Обучение для конструкторов', 'status_user': status_user})
+    except Exception as e:
+        logger.error(f"[kb_module_2_lesson_5_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id) 
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_2_lesson_5_questions']), lambda data: data.payload == "start_test")
+async def kb_module_2_lesson_5_test_handler(callback: Callback, cursor: FSMCursor):
+    """ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ Начало тестирования МОДУЛЬ № 2 УРОК № 5 """
+    try:
+        logger.info("[kb_module_2_lesson_5_test_handler] Стартовал")
+        # if await debounce_button_max(callback, cursor):
+        #     logger.info(f"[training_step_4_handler] Идет обработка нажмите позднее")
+        #     return
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}) 
+        questions = get_testing_data_module_2_test_5_kb()
+        logger.info(f"Вопросы для тестирования получены:\nПервый вопрос: {questions[0]}")
+        
+        data = cursor.get_data()
+        logger.info(f'[kb_module_2_lesson_5_test_handler] до добавления вопросов в state: {data=}')
+        # Сохраняем вопросы и начинаем с первого
+        if data and isinstance(data, dict):
+            data.update(questions=questions, current_question=0, answers=[])
+        else:
+            data = dict()
+            data.update(questions=questions, current_question=0, answers=[])
+        logger.info(f'{callback=}')
+        
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        else:
+            await save_cursor(callback, extra_data=dict(questions=questions, current_question=0, answers=[]))
+        
+            
+        logger.info(f'[kb_module_2_lesson_5_test_handler] после добавления вопросов в state: {data=}')  
+        
+        # Отправляем первый вопрос
+        cursor.change_data(data)
+        await send_question(callback, cursor, "section_36")
+        if isinstance(callback, Callback):
+            await save_cursor(callback.user_id, extra_data=dict(state_name = TrainingStates.konstructor['module_2_lesson_5_testing']))
+        else:
+            await save_cursor(callback, extra_data=dict(state_name = TrainingStates.konstructor['module_2_lesson_5_testing']))
+        cursor.change_state(TrainingStates.konstructor['module_2_lesson_5_testing'])
+    
+    except Exception as e:
+        logger.error(f"[kb_module_2_lesson_5_test_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id)
+
+
+async def kb_module_2_final_test_handler(callback: Callback, cursor: FSMCursor):
+    '''Заглушка для прохождения финального теста по модулю № 2'''
+    pass     
+         
         
 # ================== СПЕЦИФИЧЕСКИЕ ХЭНДЛЕРЫ ДЛЯ ВЕТКИ ЮРИДИЧЕСКИЙ ОТДЕЛ =================
 
@@ -9479,8 +10949,10 @@ async def final_process_answer_without_cursor(callback: Callback, cursor: FSMCur
             logger.info(f'Работаем с {current_course=} {state_name=}')
             if state_name == TrainingStates.konstructor['module_0']:
                 await kb_module_0_handler(callback, cursor)
-            if state_name == TrainingStates.konstructor['module_0_lesson_1']:
+            elif state_name == TrainingStates.konstructor['module_0_lesson_1']:
                 await kb_module_0_lesson_1_handler(callback, cursor)
+            elif state_name == TrainingStates.konstructor['module_0_lesson_2']:
+                await kb_module_0_lesson_2_handler(callback, cursor)
             return    
         
         logger.info("Проверяем на принадлежность к блоку ПРОДОЛЖЕНИЯ ОБУЧЕНИЯ")
