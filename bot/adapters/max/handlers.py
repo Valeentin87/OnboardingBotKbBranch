@@ -20,7 +20,7 @@ from aiomax import bot
 
 
 from bot.adapters.max.data_utils import format_progress_attempts, get_max_accuracy_item, load_user_data, save_reminder, save_user_data, validate_name_surname
-from bot.adapters.max.test_utils import block_definition_func, get_block_2_test_1_quests, get_block_2_test_2_quests, get_block_2_test_3_quests, get_block_3_test_1_quests, get_block_3_test_2_quests, get_block_3_test_3_quests, get_block_3_test_4_quests, get_block_3_test_5_quests, get_block_3_test_6_quests, get_block_4_test_1_quests, get_block_4_test_2_quests, get_block_4_test_3_quests, get_block_4_test_4_quests, get_final_test_all_course_lawyer, get_final_test_block_1, get_final_test_block_1_lawyer, get_final_test_block_2, get_final_test_block_2_lawyer, get_final_test_block_3, get_final_test_block_3_lawyer, get_final_test_block_4, get_final_test_block_4_lawyer, get_final_test_block_5, get_final_test_block_5_lawyer, get_final_test_block_6, get_final_test_block_7, get_testing_data_1, get_testing_data_2, get_testing_data_3, get_testing_data_4, get_testing_data_5, get_testing_data_6, get_testing_data_module_0_test_1_kb, get_testing_data_module_0_test_2_kb, get_testing_data_module_0_test_3_kb, get_testing_data_module_0_test_4_kb, get_testing_data_module_0_test_5_kb, get_testing_data_module_1_test_1_kb, get_testing_data_module_1_test_2_kb, get_testing_data_module_1_test_3_kb, get_testing_data_module_1_test_4_kb, get_testing_data_module_1_test_5_kb, get_testing_data_module_1_test_6_kb, get_testing_data_module_2_test_1_kb, get_testing_data_module_2_test_2_kb, get_testing_data_module_2_test_3_kb, get_testing_data_module_2_test_4_kb, get_testing_data_module_2_test_5_kb, get_testing_data_module_3_test_1_kb, get_testing_data_module_3_test_2_kb, get_testing_data_module_3_test_3_kb, get_testing_data_module_3_test_4_kb, get_testing_data_module_3_test_5_kb, get_testing_data_module_4_test_1_kb, get_testing_data_module_4_test_2_kb, get_testing_data_module_4_test_3_kb, get_testing_data_module_4_test_4_kb, get_testing_data_module_5_test_1_kb, get_testing_data_module_5_test_2_kb, get_testing_data_module_5_test_3_kb, get_testing_data_module_5_test_4_kb, get_testing_data_module_6_test_1_kb, get_testing_data_module_6_test_2_kb, get_testing_data_module_6_test_3_kb, get_testing_data_module_6_test_4_kb, get_testing_data_module_7_test_1_kb, get_testing_data_module_7_test_2_kb, get_testing_data_module_7_test_3_kb, get_testing_data_module_7_test_4_kb
+from bot.adapters.max.test_utils import block_definition_func, get_block_2_test_1_quests, get_block_2_test_2_quests, get_block_2_test_3_quests, get_block_3_test_1_quests, get_block_3_test_2_quests, get_block_3_test_3_quests, get_block_3_test_4_quests, get_block_3_test_5_quests, get_block_3_test_6_quests, get_block_4_test_1_quests, get_block_4_test_2_quests, get_block_4_test_3_quests, get_block_4_test_4_quests, get_final_test_all_course_lawyer, get_final_test_block_1, get_final_test_block_1_lawyer, get_final_test_block_2, get_final_test_block_2_lawyer, get_final_test_block_3, get_final_test_block_3_lawyer, get_final_test_block_4, get_final_test_block_4_lawyer, get_final_test_block_5, get_final_test_block_5_lawyer, get_final_test_block_6, get_final_test_block_7, get_final_testing_data_module_0_kb, get_final_testing_data_module_1_kb, get_final_testing_data_module_2_kb, get_final_testing_data_module_3_kb, get_final_testing_data_module_4_kb, get_final_testing_data_module_5_kb, get_final_testing_data_module_6_kb, get_final_testing_data_module_7_kb, get_testing_data_1, get_testing_data_2, get_testing_data_3, get_testing_data_4, get_testing_data_5, get_testing_data_6, get_testing_data_module_0_test_1_kb, get_testing_data_module_0_test_2_kb, get_testing_data_module_0_test_3_kb, get_testing_data_module_0_test_4_kb, get_testing_data_module_0_test_5_kb, get_testing_data_module_1_test_1_kb, get_testing_data_module_1_test_2_kb, get_testing_data_module_1_test_3_kb, get_testing_data_module_1_test_4_kb, get_testing_data_module_1_test_5_kb, get_testing_data_module_1_test_6_kb, get_testing_data_module_2_test_1_kb, get_testing_data_module_2_test_2_kb, get_testing_data_module_2_test_3_kb, get_testing_data_module_2_test_4_kb, get_testing_data_module_2_test_5_kb, get_testing_data_module_3_test_1_kb, get_testing_data_module_3_test_2_kb, get_testing_data_module_3_test_3_kb, get_testing_data_module_3_test_4_kb, get_testing_data_module_3_test_5_kb, get_testing_data_module_4_test_1_kb, get_testing_data_module_4_test_2_kb, get_testing_data_module_4_test_3_kb, get_testing_data_module_4_test_4_kb, get_testing_data_module_5_test_1_kb, get_testing_data_module_5_test_2_kb, get_testing_data_module_5_test_3_kb, get_testing_data_module_5_test_4_kb, get_testing_data_module_6_test_1_kb, get_testing_data_module_6_test_2_kb, get_testing_data_module_6_test_3_kb, get_testing_data_module_6_test_4_kb, get_testing_data_module_7_test_1_kb, get_testing_data_module_7_test_2_kb, get_testing_data_module_7_test_3_kb, get_testing_data_module_7_test_4_kb
 from bot.adapters.max.utils_FSM import AnotherEmployerStates, BranchKbStates, LawyerStates, OnboardingStates, TrainingStates, UserInfo
 from bot.core.onboarding_flow import flow_about_company, flow_another_emp_training_intro, flow_branch_kb_training_intro, flow_lawyer_training_intro, flow_sales_training_intro, flow_start, flow_start_change_kb, flow_start_new_empl_change_kb
 from bot.core.reg_managment_content import get_message_11_text, get_message_14_text, get_message_17_text, get_message_1_text, get_message_20_text, get_message_23_text, get_message_26_text, get_message_29_text, get_message_2_text, get_message_32_text, get_message_33_text, get_message_34_text, get_message_5_text, get_message_8_text, get_period_sender_text
@@ -1877,8 +1877,21 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
             cursor.change_state(TrainingStates.konstructor['module_0_lesson_5'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_0_lesson_5'], 'current_course': course_name})
         elif state_name == 'module_0_lesson_5_testing':
-            cursor.change_state(TrainingStates.konstructor['module_0_lesson_6'])
-            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_0_lesson_6'], 'current_course': course_name})
+        #     cursor.change_state(TrainingStates.konstructor['module_0_lesson_6'])
+        #     await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_0_lesson_6'], 'current_course': course_name})
+        # elif state_name == 'module_0_lesson_6_testing':
+            await game.increment_lesson_func(
+                        user_id=user_id,
+                        course_name=course_name, # "Обучение по продажам"
+                        lesson_id='section_11', #  "section_1"
+                        user_data={
+                            "username": f'{first_name} {last_name}',
+                            "first_name": first_name,
+                            "last_name": last_name
+                        }
+                    )
+            cursor.change_state(TrainingStates.konstructor['module_0_final_testing'])
+            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_0_final_testing'], 'current_course': course_name})
         # заглушка - здесь надо проверить есть ли тест после ГЛОССАРИЙ ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ
         # здесь надо продумать переходы к финальным тестам после каждого модуля и переходы после тестирования к очередному модулю
         elif state_name == 'module_1_lesson_1_testing':
@@ -1896,6 +1909,9 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
         elif state_name == 'module_1_lesson_5_testing':
             cursor.change_state(TrainingStates.konstructor['module_1_lesson_6'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_1_lesson_6'], 'current_course': course_name})
+        elif state_name == 'module_1_lesson_6_testing':
+            cursor.change_state(TrainingStates.konstructor['module_1_final_testing'])
+            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_1_final_testing'], 'current_course': course_name})
         elif state_name == 'module_2_lesson_1_testing':
             cursor.change_state(TrainingStates.konstructor['module_2_lesson_2'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_2_lesson_2'], 'current_course': course_name})
@@ -1908,6 +1924,9 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
         elif state_name == 'module_2_lesson_4_testing':
             cursor.change_state(TrainingStates.konstructor['module_2_lesson_5'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_2_lesson_5'], 'current_course': course_name})
+        elif state_name == 'module_2_lesson_5_testing':
+            cursor.change_state(TrainingStates.konstructor['module_2_final_testing'])
+            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_2_final_testing'], 'current_course': course_name})
         elif state_name == 'module_3_lesson_1_testing':
             cursor.change_state(TrainingStates.konstructor['module_3_lesson_2'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_3_lesson_2'], 'current_course': course_name})
@@ -1920,6 +1939,9 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
         elif state_name == 'module_3_lesson_4_testing':
             cursor.change_state(TrainingStates.konstructor['module_3_lesson_5'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_3_lesson_5'], 'current_course': course_name})
+        elif state_name == 'module_3_lesson_5_testing':
+            cursor.change_state(TrainingStates.konstructor['module_3_final_testing'])
+            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_3_final_testing'], 'current_course': course_name})
         elif state_name == 'module_4_lesson_1_testing':
             cursor.change_state(TrainingStates.konstructor['module_4_lesson_2'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_4_lesson_2'], 'current_course': course_name})
@@ -1929,6 +1951,9 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
         elif state_name == 'module_4_lesson_3_testing':
             cursor.change_state(TrainingStates.konstructor['module_4_lesson_4'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_4_lesson_4'], 'current_course': course_name})
+        elif state_name == 'module_4_lesson_4_testing':
+            cursor.change_state(TrainingStates.konstructor['module_4_final_testing'])
+            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_4_final_testing'], 'current_course': course_name})
         elif state_name == 'module_5_lesson_1_testing':
             cursor.change_state(TrainingStates.konstructor['module_5_lesson_2'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_5_lesson_2'], 'current_course': course_name})
@@ -1938,6 +1963,9 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
         elif state_name == 'module_5_lesson_3_testing':
             cursor.change_state(TrainingStates.konstructor['module_5_lesson_4'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_5_lesson_4'], 'current_course': course_name})
+        elif state_name == 'module_5_lesson_4_testing':
+            cursor.change_state(TrainingStates.konstructor['module_5_final_testing'])
+            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_5_final_testing'], 'current_course': course_name})
         elif state_name == 'module_6_lesson_1_testing':
             cursor.change_state(TrainingStates.konstructor['module_6_lesson_2'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_6_lesson_2'], 'current_course': course_name})
@@ -1947,6 +1975,9 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
         elif state_name == 'module_6_lesson_3_testing':
             cursor.change_state(TrainingStates.konstructor['module_6_lesson_4'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_6_lesson_4'], 'current_course': course_name})
+        elif state_name == 'module_6_lesson_4_testing':
+            cursor.change_state(TrainingStates.konstructor['module_6_final_testing'])
+            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_6_final_testing'], 'current_course': course_name})
         elif state_name == 'module_7_lesson_1_testing':
             cursor.change_state(TrainingStates.konstructor['module_7_lesson_2'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_7_lesson_2'], 'current_course': course_name})
@@ -1956,7 +1987,9 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
         elif state_name == 'module_7_lesson_3_testing':
             cursor.change_state(TrainingStates.konstructor['module_7_lesson_4'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_7_lesson_4'], 'current_course': course_name})
-        
+        elif state_name == 'module_7_lesson_4_testing':
+            cursor.change_state(TrainingStates.konstructor['module_7_final_testing'])
+            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_7_final_testing'], 'current_course': course_name})
         
         
         logger.info(f"[INFO][show_results] state = {cursor.get_state()}")
@@ -1975,8 +2008,44 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
          
     except Exception as e:
         logger.error(f"[show_results] Произошла ошибка {e}")   
+        
 
-
+@router.on_button_callback(state(TrainingStates.konstructor['module_7_lesson_4_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_7_lesson_3_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_7_lesson_2_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_7_lesson_1_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_6_lesson_4_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_6_lesson_3_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_6_lesson_2_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_6_lesson_1_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_5_lesson_4_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_5_lesson_3_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_5_lesson_2_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_5_lesson_1_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_4_lesson_4_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_4_lesson_3_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_4_lesson_2_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_4_lesson_1_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_3_lesson_5_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_3_lesson_4_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_3_lesson_3_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_3_lesson_2_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_3_lesson_1_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_2_lesson_5_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_2_lesson_4_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_2_lesson_3_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_2_lesson_2_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_2_lesson_1_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_1_lesson_6_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_1_lesson_5_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_1_lesson_4_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_1_lesson_3_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_1_lesson_2_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_1_lesson_1_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_0_lesson_5_testing']))        
+@router.on_button_callback(state(TrainingStates.konstructor['module_0_lesson_4_testing']))        
+@router.on_button_callback(state(TrainingStates.konstructor['module_0_lesson_3_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_0_lesson_2_testing']))
 @router.on_button_callback(state(TrainingStates.konstructor['module_0_lesson_1_testing']))
 @router.on_button_callback(state(TrainingStates.block_4_test_4_testing))
 @router.on_button_callback(state(TrainingStates.block_4_test_3_testing))
@@ -2093,6 +2162,78 @@ async def process_answer_handler(callback: Callback, cursor: FSMCursor):
             await send_question(callback, cursor, 'section_21')
         elif state_name == 'module_0_lesson_1_testing':
             await send_question(callback, cursor, 'section_2')
+        elif state_name == 'module_0_lesson_2_testing':
+            await send_question(callback, cursor, 'section_4')
+        elif state_name == 'module_0_lesson_3_testing':
+            await send_question(callback, cursor, 'section_6')
+        elif state_name == 'module_0_lesson_4_testing':
+            await send_question(callback, cursor, 'section_8')
+        elif state_name == 'module_0_lesson_5_testing':
+            await send_question(callback, cursor, 'section_10')
+        elif state_name == 'module_1_lesson_1_testing':
+            await send_question(callback, cursor, 'section_14')
+        elif state_name == 'module_1_lesson_2_testing':
+            await send_question(callback, cursor, 'section_16')
+        elif state_name == 'module_1_lesson_3_testing':
+            await send_question(callback, cursor, 'section_18')
+        elif state_name == 'module_1_lesson_4_testing':
+            await send_question(callback, cursor, 'section_20')
+        elif state_name == 'module_1_lesson_5_testing':
+            await send_question(callback, cursor, 'section_22')
+        elif state_name == 'module_1_lesson_6_testing':
+            await send_question(callback, cursor, 'section_24')
+        elif state_name == 'module_2_lesson_1_testing':
+            await send_question(callback, cursor, 'section_27')
+        elif state_name == 'module_2_lesson_2_testing':
+            await send_question(callback, cursor, 'section_29')
+        elif state_name == 'module_2_lesson_3_testing':
+            await send_question(callback, cursor, 'section_31')
+        elif state_name == 'module_2_lesson_4_testing':
+            await send_question(callback, cursor, 'section_33')
+        elif state_name == 'module_2_lesson_5_testing':
+            await send_question(callback, cursor, 'section_35')
+        elif state_name == 'module_3_lesson_1_testing':
+            await send_question(callback, cursor, 'section_38')
+        elif state_name == 'module_3_lesson_2_testing':
+            await send_question(callback, cursor, 'section_40')
+        elif state_name == 'module_3_lesson_3_testing':
+            await send_question(callback, cursor, 'section_42')
+        elif state_name == 'module_3_lesson_4_testing':
+            await send_question(callback, cursor, 'section_44')
+        elif state_name == 'module_3_lesson_5_testing':
+            await send_question(callback, cursor, 'section_46')
+        elif state_name == 'module_4_lesson_1_testing':
+            await send_question(callback, cursor, 'section_49')
+        elif state_name == 'module_4_lesson_2_testing':
+            await send_question(callback, cursor, 'section_51')
+        elif state_name == 'module_4_lesson_3_testing':
+            await send_question(callback, cursor, 'section_53')
+        elif state_name == 'module_4_lesson_4_testing':
+            await send_question(callback, cursor, 'section_55')
+        elif state_name == 'module_5_lesson_1_testing':
+            await send_question(callback, cursor, 'section_58')
+        elif state_name == 'module_5_lesson_2_testing':
+            await send_question(callback, cursor, 'section_60')
+        elif state_name == 'module_5_lesson_3_testing':
+            await send_question(callback, cursor, 'section_62')
+        elif state_name == 'module_5_lesson_4_testing':
+            await send_question(callback, cursor, 'section_64')
+        elif state_name == 'module_6_lesson_1_testing':
+            await send_question(callback, cursor, 'section_67')
+        elif state_name == 'module_6_lesson_2_testing':
+            await send_question(callback, cursor, 'section_69')
+        elif state_name == 'module_6_lesson_3_testing':
+            await send_question(callback, cursor, 'section_71')
+        elif state_name == 'module_6_lesson_4_testing':
+            await send_question(callback, cursor, 'section_73')
+        elif state_name == 'module_7_lesson_1_testing':
+            await send_question(callback, cursor, 'section_76')
+        elif state_name == 'module_7_lesson_2_testing':
+            await send_question(callback, cursor, 'section_78')
+        elif state_name == 'module_7_lesson_3_testing':
+            await send_question(callback, cursor, 'section_80')
+        elif state_name == 'module_7_lesson_4_testing':
+            await send_question(callback, cursor, 'section_82')
     except Exception as e:
         logger.error(f"[ERROR][process_answer_handler] Произошла ошибка {e}")
     finally:
@@ -2736,6 +2877,31 @@ async def check_valid_answer_of_question(message: Message, cursor: FSMCursor):
         elif migration_state == 'block_7_final_testing': 
             await block7_final_testing_handler(message, cursor)
             return
+        elif migration_state == 'module_0_final_testing':
+            await kb_module_0_final_testing_handler(message, cursor)
+            return
+        elif migration_state == 'module_1_final_testing':
+            await kb_module_1_final_testing_handler(message, cursor)
+            return
+        elif migration_state == 'module_2_final_testing':
+            await kb_module_2_final_testing_handler(message, cursor)
+            return
+        elif migration_state == 'module_3_final_testing':
+            await kb_module_3_final_testing_handler(message, cursor)
+            return
+        elif migration_state == 'module_4_final_testing':
+            await kb_module_4_final_testing_handler(message, cursor)
+            return
+        elif migration_state == 'module_5_final_testing':
+            await kb_module_5_final_testing_handler(message, cursor)
+            return
+        elif migration_state == 'module_6_final_testing':
+            await kb_module_6_final_testing_handler(message, cursor)
+            return
+        elif migration_state == 'module_7_final_testing':
+            await kb_module_7_final_testing_handler(message, cursor)
+            return
+            
                
         #await send_question_step_12(message, cursor, 'final_test', 'Обучение по продажам')
         
@@ -3984,7 +4150,14 @@ async def start_testing_block2_handler(callback: Callback, cursor: FSMCursor):
 
 
 #####################################################
-
+@router.on_button_callback(state(TrainingStates.konstructor['module_7_final_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_6_final_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_5_final_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_4_final_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_3_final_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_2_final_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_1_final_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_0_final_testing']))
 @router.on_button_callback(state(TrainingStates.block_7_final_testing))
 @router.on_button_callback(state(TrainingStates.block_6_final_testing))
 @router.on_button_callback(state(TrainingStates.block_5_final_testing))
@@ -4070,6 +4243,30 @@ async def final_process_answer_handler(callback: Callback, cursor: FSMCursor):
             elif migration_state == 'block_7_final_testing':
                 await send_question_step_12(callback, cursor, 'section_42')
                 return
+            elif migration_state == 'module_0_final_testing':
+                await send_question_step_12(callback, cursor, 'section_12')
+                return
+            elif migration_state == 'module_1_final_testing':
+                await send_question_step_12(callback, cursor, 'section_25')
+                return
+            elif migration_state == 'module_2_final_testing':
+                await send_question_step_12(callback, cursor, 'section_36')
+                return
+            elif migration_state == 'module_3_final_testing':
+                await send_question_step_12(callback, cursor, 'section_47')
+                return
+            elif migration_state == 'module_4_final_testing':
+                await send_question_step_12(callback, cursor, 'section_56')
+                return
+            elif migration_state == 'module_5_final_testing':
+                await send_question_step_12(callback, cursor, 'section_65')
+                return
+            elif migration_state == 'module_6_final_testing':
+                await send_question_step_12(callback, cursor, 'section_74')
+                return
+            elif migration_state == 'module_7_final_testing':
+                await send_question_step_12(callback, cursor, 'section_83')
+                return
         elif callback.payload == 'to_final_test':
             if migration_state == 'step_12_testing':
                 await send_question_step_12(callback, cursor, 'final_test')
@@ -4092,8 +4289,30 @@ async def final_process_answer_handler(callback: Callback, cursor: FSMCursor):
             elif migration_state == 'block_7_final_testing':
                 await send_question_step_12(callback, cursor, 'section_42')
                 return
-
-        
+            elif migration_state == 'module_0_final_testing':
+                await send_question_step_12(callback, cursor, 'section_12')
+                return
+            elif migration_state == 'module_1_final_testing':
+                await send_question_step_12(callback, cursor, 'section_25')
+                return
+            elif migration_state == 'module_2_final_testing':
+                await send_question_step_12(callback, cursor, 'section_36')
+                return
+            elif migration_state == 'module_3_final_testing':
+                await send_question_step_12(callback, cursor, 'section_47')
+                return
+            elif migration_state == 'module_4_final_testing':
+                await send_question_step_12(callback, cursor, 'section_56')
+                return
+            elif migration_state == 'module_5_final_testing':
+                await send_question_step_12(callback, cursor, 'section_65')
+                return
+            elif migration_state == 'module_6_final_testing':
+                await send_question_step_12(callback, cursor, 'section_74')
+                return
+            elif migration_state == 'module_7_final_testing':
+                await send_question_step_12(callback, cursor, 'section_83')
+                return
      
     except Exception as e:
         logger.error(f"[ERROR][final_process_answer_handler] Произошла ошибка {e}")  
@@ -8045,106 +8264,322 @@ async def kb_module_0_lesson_5_test_handler(callback: Callback, cursor: FSMCurso
         await remove_repeat_flag(callback.user_id)
         
 
-@router.on_button_callback(state(TrainingStates.konstructor['module_0_lesson_6']), lambda data: data.payload.split('::')[1] == "not_first")
-async def kb_module_0_lesson_6_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
-    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №0 Урок №6: Глоссарий"""
+@router.on_message(state(TrainingStates.konstructor['module_0_final_testing']))
+async def kb_module_0_final_testing_handler(message: Message, cursor: FSMCursor):
+    """Ответы на вопросы по модулю № 0 (KB) через RAG + Claude"""
     try:
-        logger.info("[kb_module_0_lesson_6_handler] Стартовал")
-        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2)
-        status_user = await get_value_from_redis(callback.user_id, 'status_user')
-        if not status_user:
-            if cursor.get_data():
-                status_user = cursor.get_data().get('status_user')
+        logger.info(f"[INFO][kb_module_0_final_testing_handler] Стартовал")           #await thinking_msg.delete() 
+        await asyncio.sleep(2)
+        await send_question_step_12(message, cursor, 'section_12')
+        return
         
-        await callback.message.delete()
-        intro_text = get_module0_lesson6_intro_text_kb_branch()
-        await callback.send(intro_text, disable_link_preview = True) 
-        
-        await asyncio.sleep(2) # 15
-        
-        course_name = await get_value_from_redis(callback.user_id, 'current_course')
-        if not course_name:
-            course_name = get_current_course(cursor)
-        logger.info(f'{course_name=}')
-        
-        game = GamificationService(course_name)
-        user_data = load_user_data()
-        user_id = str(callback.user_id)
-        first_name = user_data.get(user_id).get("first_name")
-        last_name = user_data.get(user_id).get("second_name")
-        
-        await game.increment_lesson_func(
-            user_id=user_id,
-            course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_24', #  "section_1"
-            user_data={
-                "username": f'{first_name} {last_name}',
-                "first_name": first_name,
-                "last_name": last_name
-            }
+    except Exception as e:
+        #await thinking_msg.delete()
+        logger.error(f"[ERROR][kb_module_0_final_testing_handler] Произошла ошибка {e}")   
+
+        await message.send(
+            "❌ Произошла ошибка при обработке вопроса.\n\n"
+            "Попробуйте задать вопрос ещё раз или обратитесь к администратору.",
+            keyboard=final_start_test_kb()
         )
-                
-        # сообщение о тестировании с кнопкой
-        test_text = kb_go_to_test_after_lesson(5)
-        await callback.send(test_text, keyboard=start_test_kb())
         
-        cursor.change_state(TrainingStates.konstructor['module_0_lesson_6_questions'])
-        await asyncio.sleep(2) # 2
-        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_0_lesson_6_questions'], 'payload': 'start_test', 'current_course': 'Обучение для конструкторов', 'status_user': status_user})
-    except Exception as e:
-        logger.error(f"[kb_module_0_lesson_6_handler] Произошла ошибка {e}")
-    finally:
-        await remove_repeat_flag(callback.user_id) 
-
-
-@router.on_button_callback(state(TrainingStates.konstructor['module_0_lesson_6_questions']), lambda data: data.payload == "start_test")
-async def kb_module_0_lesson_6_test_handler(callback: Callback, cursor: FSMCursor):
-    """ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ Начало тестирования МОДУЛЬ № 0 УРОК № 5 """
+@router.on_message(state(TrainingStates.konstructor['module_1_final_testing']))
+async def kb_module_1_final_testing_handler(message: Message, cursor: FSMCursor):
+    """Ответы на вопросы по модулю № 1 (KB) через RAG + Claude"""
     try:
-        logger.info("[kb_module_0_lesson_6_test_handler] Стартовал")
-        # if await debounce_button_max(callback, cursor):
-        #     logger.info(f"[training_step_4_handler] Идет обработка нажмите позднее")
-        #     return
-        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}) 
-        questions = get_testing_data_module_0_test_6_kb()
-        logger.info(f"Вопросы для тестирования получены:\nПервый вопрос: {questions[0]}")
+        logger.info(f"[INFO][kb_module_1_final_testing_handler] Стартовал")           #await thinking_msg.delete() 
+        await asyncio.sleep(2)
+        await send_question_step_12(message, cursor, 'section_25')
+        return
         
-        data = cursor.get_data()
-        logger.info(f'[kb_module_0_lesson_6_test_handler] до добавления вопросов в state: {data=}')
-        # Сохраняем вопросы и начинаем с первого
-        if data and isinstance(data, dict):
-            data.update(questions=questions, current_question=0, answers=[])
-        else:
-            data = dict()
-            data.update(questions=questions, current_question=0, answers=[])
-        logger.info(f'{callback=}')
-        
-        if isinstance(callback, Callback):
-            await save_cursor(callback.user_id, extra_data=dict(questions=questions, current_question=0, answers=[]))
-        else:
-            await save_cursor(callback, extra_data=dict(questions=questions, current_question=0, answers=[]))
-        
-            
-        logger.info(f'[kb_module_0_lesson_5_test_handler] после добавления вопросов в state: {data=}')  
-        
-        # Отправляем первый вопрос
-        cursor.change_data(data)
-        await send_question(callback, cursor, "section_25")
-        if isinstance(callback, Callback):
-            await save_cursor(callback.user_id, extra_data=dict(state_name = TrainingStates.konstructor['module_0_lesson_6_testing']))
-        else:
-            await save_cursor(callback, extra_data=dict(state_name = TrainingStates.konstructor['module_0_lesson_6_testing']))
-        cursor.change_state(TrainingStates.konstructor['module_0_lesson_6_testing'])
-    
     except Exception as e:
-        logger.error(f"[kb_module_0_lesson_6_test_handler] Произошла ошибка {e}")
-    finally:
-        await remove_repeat_flag(callback.user_id)          
+        #await thinking_msg.delete()
+        logger.error(f"[ERROR][kb_module_1_final_testing_handler] Произошла ошибка {e}")   
+
+        await message.send(
+            "❌ Произошла ошибка при обработке вопроса.\n\n"
+            "Попробуйте задать вопрос ещё раз или обратитесь к администратору.",
+            keyboard=final_start_test_kb()
+        )
+        
+@router.on_message(state(TrainingStates.konstructor['module_2_final_testing']))
+async def kb_module_2_final_testing_handler(message: Message, cursor: FSMCursor):
+    """Ответы на вопросы по модулю № 2 (KB) через RAG + Claude"""
+    try:
+        logger.info(f"[INFO][kb_module_2_final_testing_handler] Стартовал")           #await thinking_msg.delete() 
+        await asyncio.sleep(2)
+        await send_question_step_12(message, cursor, 'section_36')
+        return
+        
+    except Exception as e:
+        #await thinking_msg.delete()
+        logger.error(f"[ERROR][kb_module_2_final_testing_handler] Произошла ошибка {e}")   
+
+        await message.send(
+            "❌ Произошла ошибка при обработке вопроса.\n\n"
+            "Попробуйте задать вопрос ещё раз или обратитесь к администратору.",
+            keyboard=final_start_test_kb()
+        ) 
 
 
+@router.on_message(state(TrainingStates.konstructor['module_3_final_testing']))
+async def kb_module_3_final_testing_handler(message: Message, cursor: FSMCursor):
+    """Ответы на вопросы по модулю № 3 (KB) через RAG + Claude"""
+    try:
+        logger.info(f"[INFO][kb_module_3_final_testing_handler] Стартовал")           #await thinking_msg.delete() 
+        await asyncio.sleep(2)
+        await send_question_step_12(message, cursor, 'section_47')
+        return
+        
+    except Exception as e:
+        #await thinking_msg.delete()
+        logger.error(f"[ERROR][kb_module_3_final_testing_handler] Произошла ошибка {e}")   
+
+        await message.send(
+            "❌ Произошла ошибка при обработке вопроса.\n\n"
+            "Попробуйте задать вопрос ещё раз или обратитесь к администратору.",
+            keyboard=final_start_test_kb()
+        )  
+        
+        
+@router.on_message(state(TrainingStates.konstructor['module_4_final_testing']))
+async def kb_module_4_final_testing_handler(message: Message, cursor: FSMCursor):
+    """Ответы на вопросы по модулю № 4 (KB) через RAG + Claude"""
+    try:
+        logger.info(f"[INFO][kb_module_4_final_testing_handler] Стартовал")           #await thinking_msg.delete() 
+        await asyncio.sleep(2)
+        await send_question_step_12(message, cursor, 'section_56')
+        return
+        
+    except Exception as e:
+        #await thinking_msg.delete()
+        logger.error(f"[ERROR][kb_module_4_final_testing_handler] Произошла ошибка {e}")   
+
+        await message.send(
+            "❌ Произошла ошибка при обработке вопроса.\n\n"
+            "Попробуйте задать вопрос ещё раз или обратитесь к администратору.",
+            keyboard=final_start_test_kb()
+        )
+        
+@router.on_message(state(TrainingStates.konstructor['module_5_final_testing']))
+async def kb_module_5_final_testing_handler(message: Message, cursor: FSMCursor):
+    """Ответы на вопросы по модулю № 5 (KB) через RAG + Claude"""
+    try:
+        logger.info(f"[INFO][kb_module_5_final_testing_handler] Стартовал")           #await thinking_msg.delete() 
+        await asyncio.sleep(2)
+        await send_question_step_12(message, cursor, 'section_65')
+        return
+        
+    except Exception as e:
+        #await thinking_msg.delete()
+        logger.error(f"[ERROR][kb_module_5_final_testing_handler] Произошла ошибка {e}")   
+
+        await message.send(
+            "❌ Произошла ошибка при обработке вопроса.\n\n"
+            "Попробуйте задать вопрос ещё раз или обратитесь к администратору.",
+            keyboard=final_start_test_kb()
+        )
+        
+@router.on_message(state(TrainingStates.konstructor['module_6_final_testing']))
+async def kb_module_6_final_testing_handler(message: Message, cursor: FSMCursor):
+    """Ответы на вопросы по модулю № 6 (KB) через RAG + Claude"""
+    try:
+        logger.info(f"[INFO][kb_module_6_final_testing_handler] Стартовал")           #await thinking_msg.delete() 
+        await asyncio.sleep(2)
+        await send_question_step_12(message, cursor, 'section_74')
+        return
+        
+    except Exception as e:
+        #await thinking_msg.delete()
+        logger.error(f"[ERROR][kb_module_6_final_testing_handler] Произошла ошибка {e}")   
+
+        await message.send(
+            "❌ Произошла ошибка при обработке вопроса.\n\n"
+            "Попробуйте задать вопрос ещё раз или обратитесь к администратору.",
+            keyboard=final_start_test_kb()
+        )  
+        
+
+@router.on_message(state(TrainingStates.konstructor['module_7_final_testing']))
+async def kb_module_7_final_testing_handler(message: Message, cursor: FSMCursor):
+    """Ответы на вопросы по модулю № 7 (KB) через RAG + Claude"""
+    try:
+        logger.info(f"[INFO][kb_module_7_final_testing_handler] Стартовал")           #await thinking_msg.delete() 
+        await asyncio.sleep(2)
+        await send_question_step_12(message, cursor, 'section_83')
+        return
+        
+    except Exception as e:
+        #await thinking_msg.delete()
+        logger.error(f"[ERROR][kb_module_7_final_testing_handler] Произошла ошибка {e}")   
+
+        await message.send(
+            "❌ Произошла ошибка при обработке вопроса.\n\n"
+            "Попробуйте задать вопрос ещё раз или обратитесь к администратору.",
+            keyboard=final_start_test_kb()
+        )                            
+
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_0_final_testing']), lambda data: data.payload == "to_final_test")
 async def kb_module_0_final_test_handler(callback: Callback, cursor: FSMCursor):
     '''Заглушка для прохождения финального теста по модулю № 0'''
-    pass
+    try:
+        logger.info("[kb_module_0_final_test_handler] Стартовал")
+        # ЧАСТЬ 1: Закрытые вопросы (10 вопросов с вариантами A/B/C/D)
+        closed_questions = get_final_testing_data_module_0_kb('close')
+        logger.info(f"[INFO][kb_module_0_final_test_handler] {closed_questions=}")
+        
+        # ЧАСТЬ 2: Открытые вопросы (5 вопросов с эталонными ответами)
+        open_questions = get_final_testing_data_module_0_kb('open')
+        logger.info(f"[INFO][kb_module_0_final_test_handler] {open_questions=}")
+        
+        data = cursor.get_data()
+        logger.info(f'[kb_module_0_final_test_handler] до добавления вопросов в state: {data=}')
+        # Сохраняем вопросы и начинаем с первого
+    
+        if data and isinstance(data, dict):
+                data.update(
+                    closed_questions=closed_questions,
+                    open_questions=open_questions,
+                    current_question=0,
+                    closed_answers=[],  # Ответы на закрытые вопросы
+                    open_answers=[],    # Ответы на открытые вопросы
+                    test_stage="closed",  # Начинаем с закрытых вопросов
+                    migration_state = "module_0_final_testing",
+                    current_course='Обучение для конструкторов'
+                    )
+                await save_cursor(callback.user_id, extra_data = dict(
+                    closed_questions=closed_questions,
+                    open_questions=open_questions,
+                    current_question=0,
+                    closed_answers=[],  # Ответы на закрытые вопросы
+                    open_answers=[],    # Ответы на открытые вопросы
+                    test_stage="closed",  # Начинаем с закрытых вопросов
+                    migration_state = "module_0_final_testing",
+                    current_course='Обучение для конструкторов'
+                ))
+        else:
+            data = dict()
+            data.update(
+                closed_questions=closed_questions,
+                open_questions=open_questions,
+                current_question=0,
+                closed_answers=[],  # Ответы на закрытые вопросы
+                open_answers=[],    # Ответы на открытые вопросы
+                test_stage="closed",  # Начинаем с закрытых вопросов
+                migration_state = "module_0_final_testing",
+                current_course='Обучение для конструкторов'
+                )
+            await save_cursor(callback.user_id, extra_data = dict(
+                    closed_questions=closed_questions,
+                    open_questions=open_questions,
+                    current_question=0,
+                    closed_answers=[],  # Ответы на закрытые вопросы
+                    open_answers=[],    # Ответы на открытые вопросы
+                    test_stage="closed",  # Начинаем с закрытых вопросов
+                    migration_state = "module_0_final_testing",
+                    current_course='Обучение для конструкторов'
+                ))
+            
+        logger.info(f'[kb_module_0_final_test_handler] после добавления вопросов в state: {data=}')  
+        cursor.change_data(data)
+        # Отправляем первый закрытый вопрос
+        logger.info(f'[kb_module_0_final_test_handler] Отправляем первый закрытый вопрос')
+        current_course = cursor.get_data().get('current_course')
+        if not current_course:
+            current_course = await get_value_from_redis(callback.user_id, 'current_course')
+        else:
+            current_course = get_current_course(cursor)
+        logger.info(f'{current_course=}')
+        await send_question_step_12(callback, cursor, "module_0_final_test", "Обучение для конструкторов")
+
+        cursor.change_state(TrainingStates.step_12_testing)
+        
+
+    except Exception as e:
+        logger.error(f"[ERROR][kb_module_0_final_test_handler] Произошла ошибка {e}")
+        
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_1_final_testing']), lambda data: data.payload == "to_final_test")
+async def kb_module_1_final_test_handler(callback: Callback, cursor: FSMCursor):
+    '''Заглушка для прохождения финального теста по модулю № 1'''
+    try:
+        logger.info("[kb_module_1_final_test_handler] Стартовал")
+        # ЧАСТЬ 1: Закрытые вопросы (10 вопросов с вариантами A/B/C/D)
+        closed_questions = get_final_testing_data_module_1_kb('close')
+        logger.info(f"[INFO][kb_module_1_final_test_handler] {closed_questions=}")
+        
+        # ЧАСТЬ 2: Открытые вопросы (5 вопросов с эталонными ответами)
+        open_questions = get_final_testing_data_module_1_kb('open')
+        logger.info(f"[INFO][kb_module_1_final_test_handler] {open_questions=}")
+        
+        data = cursor.get_data()
+        logger.info(f'[kb_module_1_final_test_handler] до добавления вопросов в state: {data=}')
+        # Сохраняем вопросы и начинаем с первого
+    
+        if data and isinstance(data, dict):
+                data.update(
+                    closed_questions=closed_questions,
+                    open_questions=open_questions,
+                    current_question=0,
+                    closed_answers=[],  # Ответы на закрытые вопросы
+                    open_answers=[],    # Ответы на открытые вопросы
+                    test_stage="closed",  # Начинаем с закрытых вопросов
+                    migration_state = "module_1_final_testing",
+                    current_course='Обучение для конструкторов'
+                    )
+                await save_cursor(callback.user_id, extra_data = dict(
+                    closed_questions=closed_questions,
+                    open_questions=open_questions,
+                    current_question=0,
+                    closed_answers=[],  # Ответы на закрытые вопросы
+                    open_answers=[],    # Ответы на открытые вопросы
+                    test_stage="closed",  # Начинаем с закрытых вопросов
+                    migration_state = "module_1_final_testing",
+                    current_course='Обучение для конструкторов'
+                ))
+        else:
+            data = dict()
+            data.update(
+                closed_questions=closed_questions,
+                open_questions=open_questions,
+                current_question=0,
+                closed_answers=[],  # Ответы на закрытые вопросы
+                open_answers=[],    # Ответы на открытые вопросы
+                test_stage="closed",  # Начинаем с закрытых вопросов
+                migration_state = "module_1_final_testing",
+                current_course='Обучение для конструкторов'
+                )
+            await save_cursor(callback.user_id, extra_data = dict(
+                    closed_questions=closed_questions,
+                    open_questions=open_questions,
+                    current_question=0,
+                    closed_answers=[],  # Ответы на закрытые вопросы
+                    open_answers=[],    # Ответы на открытые вопросы
+                    test_stage="closed",  # Начинаем с закрытых вопросов
+                    migration_state = "module_1_final_testing",
+                    current_course='Обучение для конструкторов'
+                ))
+            
+        logger.info(f'[kb_module_1_final_test_handler] после добавления вопросов в state: {data=}')  
+        cursor.change_data(data)
+        # Отправляем первый закрытый вопрос
+        logger.info(f'[kb_module_1_final_test_handler] Отправляем первый закрытый вопрос')
+        current_course = cursor.get_data().get('current_course')
+        if not current_course:
+            current_course = await get_value_from_redis(callback.user_id, 'current_course')
+        else:
+            current_course = get_current_course(cursor)
+        logger.info(f'{current_course=}')
+        await send_question_step_12(callback, cursor, "module_1_final_test", "Обучение для конструкторов")
+
+        cursor.change_state(TrainingStates.step_12_testing)
+        
+
+    except Exception as e:
+        logger.error(f"[ERROR][kb_module_1_final_test_handler] Произошла ошибка {e}") 
+ 
 
 
 @router.on_button_callback(state(TrainingStates.konstructor['module_1_lesson_1']), lambda data: data.payload.split('::')[1] == "not_first")
@@ -8178,7 +8613,7 @@ async def kb_module_1_lesson_1_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_14', #  "section_1"
+            lesson_id='section_13', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -8275,7 +8710,7 @@ async def kb_module_1_lesson_2_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_16', #  "section_1"
+            lesson_id='section_15', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -8372,7 +8807,7 @@ async def kb_module_1_lesson_3_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_18', #  "section_1"
+            lesson_id='section_17', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -8469,7 +8904,7 @@ async def kb_module_1_lesson_4_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_20', #  "section_1"
+            lesson_id='section_19', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -8566,7 +9001,7 @@ async def kb_module_1_lesson_5_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_22', #  "section_1"
+            lesson_id='section_21', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -8663,7 +9098,7 @@ async def kb_module_1_lesson_6_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_24', #  "section_1"
+            lesson_id='section_23', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -8729,10 +9164,6 @@ async def kb_module_1_lesson_6_test_handler(callback: Callback, cursor: FSMCurso
         await remove_repeat_flag(callback.user_id) 
         
 
-async def kb_module_1_final_test_handler(callback: Callback, cursor: FSMCursor):
-    '''Заглушка для прохождения финального теста по модулю № 1'''
-    pass 
-
 @router.on_button_callback(state(TrainingStates.konstructor['module_2_lesson_1']), lambda data: data.payload.split('::')[1] == "not_first")
 async def kb_module_2_lesson_1_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
     """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №2 Урок №1: Как отличить актуализацию от пересчёта"""
@@ -8764,7 +9195,7 @@ async def kb_module_2_lesson_1_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_27', #  "section_1"
+            lesson_id='section_26', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -8861,7 +9292,7 @@ async def kb_module_2_lesson_2_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_29', #  "section_1"
+            lesson_id='section_28', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -8958,7 +9389,7 @@ async def kb_module_2_lesson_3_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_31', #  "section_1"
+            lesson_id='section_30', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -9055,7 +9486,7 @@ async def kb_module_2_lesson_4_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_33', #  "section_1"
+            lesson_id='section_32', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -9152,7 +9583,7 @@ async def kb_module_2_lesson_5_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_35', #  "section_1"
+            lesson_id='section_34', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -9218,9 +9649,84 @@ async def kb_module_2_lesson_5_test_handler(callback: Callback, cursor: FSMCurso
         await remove_repeat_flag(callback.user_id)
 
 
+@router.on_button_callback(state(TrainingStates.konstructor['module_2_final_testing']), lambda data: data.payload == "to_final_test")
 async def kb_module_2_final_test_handler(callback: Callback, cursor: FSMCursor):
     '''Заглушка для прохождения финального теста по модулю № 2'''
-    pass
+    try:
+        logger.info("[kb_module_2_final_test_handler] Стартовал")
+        # ЧАСТЬ 1: Закрытые вопросы (10 вопросов с вариантами A/B/C/D)
+        closed_questions = get_final_testing_data_module_2_kb('close')
+        logger.info(f"[INFO][kb_module_2_final_test_handler] {closed_questions=}")
+        
+        # ЧАСТЬ 2: Открытые вопросы (5 вопросов с эталонными ответами)
+        open_questions = get_final_testing_data_module_2_kb('open')
+        logger.info(f"[INFO][kb_module_2_final_test_handler] {open_questions=}")
+        
+        data = cursor.get_data()
+        logger.info(f'[kb_module_2_final_test_handler] до добавления вопросов в state: {data=}')
+        # Сохраняем вопросы и начинаем с первого
+    
+        if data and isinstance(data, dict):
+                data.update(
+                    closed_questions=closed_questions,
+                    open_questions=open_questions,
+                    current_question=0,
+                    closed_answers=[],  # Ответы на закрытые вопросы
+                    open_answers=[],    # Ответы на открытые вопросы
+                    test_stage="closed",  # Начинаем с закрытых вопросов
+                    migration_state = "module_2_final_testing",
+                    current_course='Обучение для конструкторов'
+                    )
+                await save_cursor(callback.user_id, extra_data = dict(
+                    closed_questions=closed_questions,
+                    open_questions=open_questions,
+                    current_question=0,
+                    closed_answers=[],  # Ответы на закрытые вопросы
+                    open_answers=[],    # Ответы на открытые вопросы
+                    test_stage="closed",  # Начинаем с закрытых вопросов
+                    migration_state = "module_2_final_testing",
+                    current_course='Обучение для конструкторов'
+                ))
+        else:
+            data = dict()
+            data.update(
+                closed_questions=closed_questions,
+                open_questions=open_questions,
+                current_question=0,
+                closed_answers=[],  # Ответы на закрытые вопросы
+                open_answers=[],    # Ответы на открытые вопросы
+                test_stage="closed",  # Начинаем с закрытых вопросов
+                migration_state = "module_2_final_testing",
+                current_course='Обучение для конструкторов'
+                )
+            await save_cursor(callback.user_id, extra_data = dict(
+                    closed_questions=closed_questions,
+                    open_questions=open_questions,
+                    current_question=0,
+                    closed_answers=[],  # Ответы на закрытые вопросы
+                    open_answers=[],    # Ответы на открытые вопросы
+                    test_stage="closed",  # Начинаем с закрытых вопросов
+                    migration_state = "module_2_final_testing",
+                    current_course='Обучение для конструкторов'
+                ))
+            
+        logger.info(f'[kb_module_2_final_test_handler] после добавления вопросов в state: {data=}')  
+        cursor.change_data(data)
+        # Отправляем первый закрытый вопрос
+        logger.info(f'[kb_module_2_final_test_handler] Отправляем первый закрытый вопрос')
+        current_course = cursor.get_data().get('current_course')
+        if not current_course:
+            current_course = await get_value_from_redis(callback.user_id, 'current_course')
+        else:
+            current_course = get_current_course(cursor)
+        logger.info(f'{current_course=}')
+        await send_question_step_12(callback, cursor, "module_2_final_test", "Обучение для конструкторов")
+
+        cursor.change_state(TrainingStates.step_12_testing)
+        
+
+    except Exception as e:
+        logger.error(f"[ERROR][kb_module_2_final_test_handler] Произошла ошибка {e}") 
 
 
 @router.on_button_callback(state(TrainingStates.konstructor['module_3_lesson_1']), lambda data: data.payload.split('::')[1] == "not_first")
@@ -9254,7 +9760,7 @@ async def kb_module_3_lesson_1_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_38', #  "section_1"
+            lesson_id='section_37', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -9351,7 +9857,7 @@ async def kb_module_3_lesson_2_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_40', #  "section_1"
+            lesson_id='section_39', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -9448,7 +9954,7 @@ async def kb_module_3_lesson_3_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_42', #  "section_1"
+            lesson_id='section_41', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -9545,7 +10051,7 @@ async def kb_module_3_lesson_4_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_44', #  "section_1"
+            lesson_id='section_43', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -9642,7 +10148,7 @@ async def kb_module_3_lesson_5_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_46', #  "section_1"
+            lesson_id='section_45', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -9708,9 +10214,84 @@ async def kb_module_3_lesson_5_test_handler(callback: Callback, cursor: FSMCurso
         await remove_repeat_flag(callback.user_id)
         
 
+@router.on_button_callback(state(TrainingStates.konstructor['module_3_final_testing']), lambda data: data.payload == "to_final_test")
 async def kb_module_3_final_test_handler(callback: Callback, cursor: FSMCursor):
     '''Заглушка для прохождения финального теста по модулю № 3'''
-    pass
+    try:
+        logger.info("[kb_module_3_final_test_handler] Стартовал")
+        # ЧАСТЬ 1: Закрытые вопросы (10 вопросов с вариантами A/B/C/D)
+        closed_questions = get_final_testing_data_module_3_kb('close')
+        logger.info(f"[INFO][kb_module_3_final_test_handler] {closed_questions=}")
+        
+        # ЧАСТЬ 2: Открытые вопросы (5 вопросов с эталонными ответами)
+        open_questions = get_final_testing_data_module_3_kb('open')
+        logger.info(f"[INFO][kb_module_3_final_test_handler] {open_questions=}")
+        
+        data = cursor.get_data()
+        logger.info(f'[kb_module_3_final_test_handler] до добавления вопросов в state: {data=}')
+        # Сохраняем вопросы и начинаем с первого
+    
+        if data and isinstance(data, dict):
+                data.update(
+                    closed_questions=closed_questions,
+                    open_questions=open_questions,
+                    current_question=0,
+                    closed_answers=[],  # Ответы на закрытые вопросы
+                    open_answers=[],    # Ответы на открытые вопросы
+                    test_stage="closed",  # Начинаем с закрытых вопросов
+                    migration_state = "module_3_final_testing",
+                    current_course='Обучение для конструкторов'
+                    )
+                await save_cursor(callback.user_id, extra_data = dict(
+                    closed_questions=closed_questions,
+                    open_questions=open_questions,
+                    current_question=0,
+                    closed_answers=[],  # Ответы на закрытые вопросы
+                    open_answers=[],    # Ответы на открытые вопросы
+                    test_stage="closed",  # Начинаем с закрытых вопросов
+                    migration_state = "module_3_final_testing",
+                    current_course='Обучение для конструкторов'
+                ))
+        else:
+            data = dict()
+            data.update(
+                closed_questions=closed_questions,
+                open_questions=open_questions,
+                current_question=0,
+                closed_answers=[],  # Ответы на закрытые вопросы
+                open_answers=[],    # Ответы на открытые вопросы
+                test_stage="closed",  # Начинаем с закрытых вопросов
+                migration_state = "module_3_final_testing",
+                current_course='Обучение для конструкторов'
+                )
+            await save_cursor(callback.user_id, extra_data = dict(
+                    closed_questions=closed_questions,
+                    open_questions=open_questions,
+                    current_question=0,
+                    closed_answers=[],  # Ответы на закрытые вопросы
+                    open_answers=[],    # Ответы на открытые вопросы
+                    test_stage="closed",  # Начинаем с закрытых вопросов
+                    migration_state = "module_3_final_testing",
+                    current_course='Обучение для конструкторов'
+                ))
+            
+        logger.info(f'[kb_module_3_final_test_handler] после добавления вопросов в state: {data=}')  
+        cursor.change_data(data)
+        # Отправляем первый закрытый вопрос
+        logger.info(f'[kb_module_3_final_test_handler] Отправляем первый закрытый вопрос')
+        current_course = cursor.get_data().get('current_course')
+        if not current_course:
+            current_course = await get_value_from_redis(callback.user_id, 'current_course')
+        else:
+            current_course = get_current_course(cursor)
+        logger.info(f'{current_course=}')
+        await send_question_step_12(callback, cursor, "module_3_final_test", "Обучение для конструкторов")
+
+        cursor.change_state(TrainingStates.step_12_testing)
+        
+
+    except Exception as e:
+        logger.error(f"[ERROR][kb_module_3_final_test_handler] Произошла ошибка {e}") 
 
 
 @router.on_button_callback(state(TrainingStates.konstructor['module_4_lesson_1']), lambda data: data.payload.split('::')[1] == "not_first")
@@ -9744,7 +10325,7 @@ async def kb_module_4_lesson_1_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_49', #  "section_1"
+            lesson_id='section_48', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -9841,7 +10422,7 @@ async def kb_module_4_lesson_2_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_51', #  "section_1"
+            lesson_id='section_50', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -9938,7 +10519,7 @@ async def kb_module_4_lesson_3_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_53', #  "section_1"
+            lesson_id='section_52', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -10101,9 +10682,324 @@ async def kb_module_4_lesson_4_test_handler(callback: Callback, cursor: FSMCurso
         await remove_repeat_flag(callback.user_id)
         
 
+@router.on_button_callback(state(TrainingStates.konstructor['module_4_final_testing']), lambda data: data.payload == "to_final_test")
 async def kb_module_4_final_test_handler(callback: Callback, cursor: FSMCursor):
     '''Заглушка для прохождения финального теста по модулю № 4'''
-    pass
+    try:
+        logger.info("[kb_module_4_final_test_handler] Стартовал")
+        # ЧАСТЬ 1: Закрытые вопросы (10 вопросов с вариантами A/B/C/D)
+        closed_questions = get_final_testing_data_module_4_kb('close')
+        logger.info(f"[INFO][kb_module_4_final_test_handler] {closed_questions=}")
+        
+        # ЧАСТЬ 2: Открытые вопросы (5 вопросов с эталонными ответами)
+        open_questions = get_final_testing_data_module_4_kb('open')
+        logger.info(f"[INFO][kb_module_4_final_test_handler] {open_questions=}")
+        
+        data = cursor.get_data()
+        logger.info(f'[kb_module_4_final_test_handler] до добавления вопросов в state: {data=}')
+        # Сохраняем вопросы и начинаем с первого
+    
+        if data and isinstance(data, dict):
+                data.update(
+                    closed_questions=closed_questions,
+                    open_questions=open_questions,
+                    current_question=0,
+                    closed_answers=[],  # Ответы на закрытые вопросы
+                    open_answers=[],    # Ответы на открытые вопросы
+                    test_stage="closed",  # Начинаем с закрытых вопросов
+                    migration_state = "module_4_final_testing",
+                    current_course='Обучение для конструкторов'
+                    )
+                await save_cursor(callback.user_id, extra_data = dict(
+                    closed_questions=closed_questions,
+                    open_questions=open_questions,
+                    current_question=0,
+                    closed_answers=[],  # Ответы на закрытые вопросы
+                    open_answers=[],    # Ответы на открытые вопросы
+                    test_stage="closed",  # Начинаем с закрытых вопросов
+                    migration_state = "module_4_final_testing",
+                    current_course='Обучение для конструкторов'
+                ))
+        else:
+            data = dict()
+            data.update(
+                closed_questions=closed_questions,
+                open_questions=open_questions,
+                current_question=0,
+                closed_answers=[],  # Ответы на закрытые вопросы
+                open_answers=[],    # Ответы на открытые вопросы
+                test_stage="closed",  # Начинаем с закрытых вопросов
+                migration_state = "module_4_final_testing",
+                current_course='Обучение для конструкторов'
+                )
+            await save_cursor(callback.user_id, extra_data = dict(
+                    closed_questions=closed_questions,
+                    open_questions=open_questions,
+                    current_question=0,
+                    closed_answers=[],  # Ответы на закрытые вопросы
+                    open_answers=[],    # Ответы на открытые вопросы
+                    test_stage="closed",  # Начинаем с закрытых вопросов
+                    migration_state = "module_4_final_testing",
+                    current_course='Обучение для конструкторов'
+                ))
+            
+        logger.info(f'[kb_module_4_final_test_handler] после добавления вопросов в state: {data=}')  
+        cursor.change_data(data)
+        # Отправляем первый закрытый вопрос
+        logger.info(f'[kb_module_4_final_test_handler] Отправляем первый закрытый вопрос')
+        current_course = cursor.get_data().get('current_course')
+        if not current_course:
+            current_course = await get_value_from_redis(callback.user_id, 'current_course')
+        else:
+            current_course = get_current_course(cursor)
+        logger.info(f'{current_course=}')
+        await send_question_step_12(callback, cursor, "module_4_final_test", "Обучение для конструкторов")
+
+        cursor.change_state(TrainingStates.step_12_testing)
+        
+
+    except Exception as e:
+        logger.error(f"[ERROR][kb_module_4_final_test_handler] Произошла ошибка {e}") 
+        
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_5_final_testing']), lambda data: data.payload == "to_final_test")
+async def kb_module_5_final_test_handler(callback: Callback, cursor: FSMCursor):
+    '''Заглушка для прохождения финального теста по модулю № 5'''
+    try:
+        logger.info("[kb_module_5_final_test_handler] Стартовал")
+        # ЧАСТЬ 1: Закрытые вопросы (10 вопросов с вариантами A/B/C/D)
+        closed_questions = get_final_testing_data_module_5_kb('close')
+        logger.info(f"[INFO][kb_module_4_final_test_handler] {closed_questions=}")
+        
+        # ЧАСТЬ 2: Открытые вопросы (5 вопросов с эталонными ответами)
+        open_questions = get_final_testing_data_module_5_kb('open')
+        logger.info(f"[INFO][kb_module_5_final_test_handler] {open_questions=}")
+        
+        data = cursor.get_data()
+        logger.info(f'[kb_module_5_final_test_handler] до добавления вопросов в state: {data=}')
+        # Сохраняем вопросы и начинаем с первого
+    
+        if data and isinstance(data, dict):
+                data.update(
+                    closed_questions=closed_questions,
+                    open_questions=open_questions,
+                    current_question=0,
+                    closed_answers=[],  # Ответы на закрытые вопросы
+                    open_answers=[],    # Ответы на открытые вопросы
+                    test_stage="closed",  # Начинаем с закрытых вопросов
+                    migration_state = "module_5_final_testing",
+                    current_course='Обучение для конструкторов'
+                    )
+                await save_cursor(callback.user_id, extra_data = dict(
+                    closed_questions=closed_questions,
+                    open_questions=open_questions,
+                    current_question=0,
+                    closed_answers=[],  # Ответы на закрытые вопросы
+                    open_answers=[],    # Ответы на открытые вопросы
+                    test_stage="closed",  # Начинаем с закрытых вопросов
+                    migration_state = "module_5_final_testing",
+                    current_course='Обучение для конструкторов'
+                ))
+        else:
+            data = dict()
+            data.update(
+                closed_questions=closed_questions,
+                open_questions=open_questions,
+                current_question=0,
+                closed_answers=[],  # Ответы на закрытые вопросы
+                open_answers=[],    # Ответы на открытые вопросы
+                test_stage="closed",  # Начинаем с закрытых вопросов
+                migration_state = "module_5_final_testing",
+                current_course='Обучение для конструкторов'
+                )
+            await save_cursor(callback.user_id, extra_data = dict(
+                    closed_questions=closed_questions,
+                    open_questions=open_questions,
+                    current_question=0,
+                    closed_answers=[],  # Ответы на закрытые вопросы
+                    open_answers=[],    # Ответы на открытые вопросы
+                    test_stage="closed",  # Начинаем с закрытых вопросов
+                    migration_state = "module_5_final_testing",
+                    current_course='Обучение для конструкторов'
+                ))
+            
+        logger.info(f'[kb_module_5_final_test_handler] после добавления вопросов в state: {data=}')  
+        cursor.change_data(data)
+        # Отправляем первый закрытый вопрос
+        logger.info(f'[kb_module_5_final_test_handler] Отправляем первый закрытый вопрос')
+        current_course = cursor.get_data().get('current_course')
+        if not current_course:
+            current_course = await get_value_from_redis(callback.user_id, 'current_course')
+        else:
+            current_course = get_current_course(cursor)
+        logger.info(f'{current_course=}')
+        await send_question_step_12(callback, cursor, "module_5_final_test", "Обучение для конструкторов")
+
+        cursor.change_state(TrainingStates.step_12_testing)
+        
+
+    except Exception as e:
+        logger.error(f"[ERROR][kb_module_5_final_test_handler] Произошла ошибка {e}")
+        
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_6_final_testing']), lambda data: data.payload == "to_final_test")
+async def kb_module_6_final_test_handler(callback: Callback, cursor: FSMCursor):
+    '''Заглушка для прохождения финального теста по модулю № 6'''
+    try:
+        logger.info("[kb_module_6_final_test_handler] Стартовал")
+        # ЧАСТЬ 1: Закрытые вопросы (10 вопросов с вариантами A/B/C/D)
+        closed_questions = get_final_testing_data_module_6_kb('close')
+        logger.info(f"[INFO][kb_module_4_final_test_handler] {closed_questions=}")
+        
+        # ЧАСТЬ 2: Открытые вопросы (5 вопросов с эталонными ответами)
+        open_questions = get_final_testing_data_module_6_kb('open')
+        logger.info(f"[INFO][kb_module_6_final_test_handler] {open_questions=}")
+        
+        data = cursor.get_data()
+        logger.info(f'[kb_module_6_final_test_handler] до добавления вопросов в state: {data=}')
+        # Сохраняем вопросы и начинаем с первого
+    
+        if data and isinstance(data, dict):
+                data.update(
+                    closed_questions=closed_questions,
+                    open_questions=open_questions,
+                    current_question=0,
+                    closed_answers=[],  # Ответы на закрытые вопросы
+                    open_answers=[],    # Ответы на открытые вопросы
+                    test_stage="closed",  # Начинаем с закрытых вопросов
+                    migration_state = "module_6_final_testing",
+                    current_course='Обучение для конструкторов'
+                    )
+                await save_cursor(callback.user_id, extra_data = dict(
+                    closed_questions=closed_questions,
+                    open_questions=open_questions,
+                    current_question=0,
+                    closed_answers=[],  # Ответы на закрытые вопросы
+                    open_answers=[],    # Ответы на открытые вопросы
+                    test_stage="closed",  # Начинаем с закрытых вопросов
+                    migration_state = "module_6_final_testing",
+                    current_course='Обучение для конструкторов'
+                ))
+        else:
+            data = dict()
+            data.update(
+                closed_questions=closed_questions,
+                open_questions=open_questions,
+                current_question=0,
+                closed_answers=[],  # Ответы на закрытые вопросы
+                open_answers=[],    # Ответы на открытые вопросы
+                test_stage="closed",  # Начинаем с закрытых вопросов
+                migration_state = "module_6_final_testing",
+                current_course='Обучение для конструкторов'
+                )
+            await save_cursor(callback.user_id, extra_data = dict(
+                    closed_questions=closed_questions,
+                    open_questions=open_questions,
+                    current_question=0,
+                    closed_answers=[],  # Ответы на закрытые вопросы
+                    open_answers=[],    # Ответы на открытые вопросы
+                    test_stage="closed",  # Начинаем с закрытых вопросов
+                    migration_state = "module_6_final_testing",
+                    current_course='Обучение для конструкторов'
+                ))
+            
+        logger.info(f'[kb_module_6_final_test_handler] после добавления вопросов в state: {data=}')  
+        cursor.change_data(data)
+        # Отправляем первый закрытый вопрос
+        logger.info(f'[kb_module_6_final_test_handler] Отправляем первый закрытый вопрос')
+        current_course = cursor.get_data().get('current_course')
+        if not current_course:
+            current_course = await get_value_from_redis(callback.user_id, 'current_course')
+        else:
+            current_course = get_current_course(cursor)
+        logger.info(f'{current_course=}')
+        await send_question_step_12(callback, cursor, "module_6_final_test", "Обучение для конструкторов")
+
+        cursor.change_state(TrainingStates.step_12_testing)
+        
+
+    except Exception as e:
+        logger.error(f"[ERROR][kb_module_6_final_test_handler] Произошла ошибка {e}")
+        
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_7_final_testing']), lambda data: data.payload == "to_final_test")
+async def kb_module_7_final_test_handler(callback: Callback, cursor: FSMCursor):
+    '''Заглушка для прохождения финального теста по модулю № 7'''
+    try:
+        logger.info("[kb_module_7_final_test_handler] Стартовал")
+        # ЧАСТЬ 1: Закрытые вопросы (10 вопросов с вариантами A/B/C/D)
+        closed_questions = get_final_testing_data_module_7_kb('close')
+        logger.info(f"[INFO][kb_module_7_final_test_handler] {closed_questions=}")
+        
+        # ЧАСТЬ 2: Открытые вопросы (5 вопросов с эталонными ответами)
+        open_questions = get_final_testing_data_module_7_kb('open')
+        logger.info(f"[INFO][kb_module_7_final_test_handler] {open_questions=}")
+        
+        data = cursor.get_data()
+        logger.info(f'[kb_module_7_final_test_handler] до добавления вопросов в state: {data=}')
+        # Сохраняем вопросы и начинаем с первого
+    
+        if data and isinstance(data, dict):
+                data.update(
+                    closed_questions=closed_questions,
+                    open_questions=open_questions,
+                    current_question=0,
+                    closed_answers=[],  # Ответы на закрытые вопросы
+                    open_answers=[],    # Ответы на открытые вопросы
+                    test_stage="closed",  # Начинаем с закрытых вопросов
+                    migration_state = "module_7_final_testing",
+                    current_course='Обучение для конструкторов'
+                    )
+                await save_cursor(callback.user_id, extra_data = dict(
+                    closed_questions=closed_questions,
+                    open_questions=open_questions,
+                    current_question=0,
+                    closed_answers=[],  # Ответы на закрытые вопросы
+                    open_answers=[],    # Ответы на открытые вопросы
+                    test_stage="closed",  # Начинаем с закрытых вопросов
+                    migration_state = "module_7_final_testing",
+                    current_course='Обучение для конструкторов'
+                ))
+        else:
+            data = dict()
+            data.update(
+                closed_questions=closed_questions,
+                open_questions=open_questions,
+                current_question=0,
+                closed_answers=[],  # Ответы на закрытые вопросы
+                open_answers=[],    # Ответы на открытые вопросы
+                test_stage="closed",  # Начинаем с закрытых вопросов
+                migration_state = "module_7_final_testing",
+                current_course='Обучение для конструкторов'
+                )
+            await save_cursor(callback.user_id, extra_data = dict(
+                    closed_questions=closed_questions,
+                    open_questions=open_questions,
+                    current_question=0,
+                    closed_answers=[],  # Ответы на закрытые вопросы
+                    open_answers=[],    # Ответы на открытые вопросы
+                    test_stage="closed",  # Начинаем с закрытых вопросов
+                    migration_state = "module_7_final_testing",
+                    current_course='Обучение для конструкторов'
+                ))
+            
+        logger.info(f'[kb_module_7_final_test_handler] после добавления вопросов в state: {data=}')  
+        cursor.change_data(data)
+        # Отправляем первый закрытый вопрос
+        logger.info(f'[kb_module_7_final_test_handler] Отправляем первый закрытый вопрос')
+        current_course = cursor.get_data().get('current_course')
+        if not current_course:
+            current_course = await get_value_from_redis(callback.user_id, 'current_course')
+        else:
+            current_course = get_current_course(cursor)
+        logger.info(f'{current_course=}')
+        await send_question_step_12(callback, cursor, "module_7_final_test", "Обучение для конструкторов")
+
+        cursor.change_state(TrainingStates.step_12_testing)
+        
+
+    except Exception as e:
+        logger.error(f"[ERROR][kb_module_7_final_test_handler] Произошла ошибка {e}")    
 
 
 @router.on_button_callback(state(TrainingStates.konstructor['module_5_lesson_1']), lambda data: data.payload.split('::')[1] == "not_first")
@@ -10137,7 +11033,7 @@ async def kb_module_5_lesson_1_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_58', #  "section_1"
+            lesson_id='section_57', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -10234,7 +11130,7 @@ async def kb_module_5_lesson_2_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_60', #  "section_1"
+            lesson_id='section_59', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -10331,7 +11227,7 @@ async def kb_module_5_lesson_3_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_62', #  "section_1"
+            lesson_id='section_61', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -10428,7 +11324,7 @@ async def kb_module_5_lesson_4_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_64', #  "section_1"
+            lesson_id='section_63', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -10530,7 +11426,7 @@ async def kb_module_6_lesson_1_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_67', #  "section_1"
+            lesson_id='section_66', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -10627,7 +11523,7 @@ async def kb_module_6_lesson_2_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_69', #  "section_1"
+            lesson_id='section_68', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -10724,7 +11620,7 @@ async def kb_module_6_lesson_3_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_71', #  "section_1"
+            lesson_id='section_70', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -10821,7 +11717,7 @@ async def kb_module_6_lesson_4_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_73', #  "section_1"
+            lesson_id='section_72', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -10923,7 +11819,7 @@ async def kb_module_7_lesson_1_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_76', #  "section_1"
+            lesson_id='section_75', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -11020,7 +11916,7 @@ async def kb_module_7_lesson_2_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_78', #  "section_1"
+            lesson_id='section_77', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -11117,7 +12013,7 @@ async def kb_module_7_lesson_3_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_80', #  "section_1"
+            lesson_id='section_79', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -11214,7 +12110,7 @@ async def kb_module_7_lesson_4_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_82', #  "section_1"
+            lesson_id='section_81', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -11851,7 +12747,7 @@ async def lawyer_start_final_testing_handler(callback: Callback, cursor: FSMCurs
 async def lawyer_start_testing_without_cursor(callback: Callback, cursor: FSMCursor):
     """Ветка ЮРИСТ - обработка начала тестирования после перезагрузки сервера"""
     try:
-        logger.info("[lawlawyer_start_testing_without_cursor] Стартовал")
+        logger.info("[lawyer_start_testing_without_cursor] Стартовал")
         cursor_data = cursor.get_data()
         if not cursor_data:
             state_name = await get_value_from_redis(callback.user_id, 'state_name')
@@ -11872,6 +12768,22 @@ async def lawyer_start_testing_without_cursor(callback: Callback, cursor: FSMCur
                 await lawyer_start_testing_block5_handler(callback, cursor)
             elif state_name == TrainingStates.lawyer['final_test_questions']:
                 await lawyer_start_final_testing_handler(callback, cursor)
+            elif state_name == TrainingStates.konstructor['module_0_final_testing']:
+                await kb_module_0_final_test_handler(callback, cursor)
+            elif state_name == TrainingStates.konstructor['module_1_final_testing']:
+                await kb_module_1_final_test_handler(callback, cursor)
+            elif state_name == TrainingStates.konstructor['module_2_final_testing']:
+                await kb_module_2_final_test_handler(callback, cursor)   
+            elif state_name == TrainingStates.konstructor['module_3_final_testing']:
+                await kb_module_3_final_test_handler(callback, cursor) 
+            elif state_name == TrainingStates.konstructor['module_4_final_testing']:
+                await kb_module_4_final_test_handler(callback, cursor) 
+            elif state_name == TrainingStates.konstructor['module_5_final_testing']:
+                await kb_module_5_final_test_handler(callback, cursor)
+            elif state_name == TrainingStates.konstructor['module_6_final_testing']:
+                await kb_module_6_final_test_handler(callback, cursor) 
+            elif state_name == TrainingStates.konstructor['module_7_final_testing']:
+                await kb_module_7_final_test_handler(callback, cursor) 
         else:
             return
     except Exception as e:
@@ -13205,8 +14117,6 @@ async def final_process_answer_without_cursor(callback: Callback, cursor: FSMCur
                 await kb_module_0_lesson_4_handler(callback, cursor)
             elif state_name == TrainingStates.konstructor['module_0_lesson_5']:
                 await kb_module_0_lesson_5_handler(callback, cursor)
-            elif state_name == TrainingStates.konstructor['module_0_lesson_6']:
-                await kb_module_0_lesson_6_handler(callback, cursor) 
             elif state_name == TrainingStates.konstructor['module_1_lesson_1']:
                 await kb_module_1_lesson_1_handler(callback, cursor)
             elif state_name == TrainingStates.konstructor['module_1_lesson_2']:

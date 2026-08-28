@@ -202,8 +202,6 @@ class TrainingStates:
         'module_0_lesson_5_testing': 'module_0_lesson_5_testing',
         # урок № 6
         'module_0_lesson_6': 'module_0_lesson_6',
-        'module_0_lesson_6_questions': 'module_0_lesson_6_questions',
-        'module_0_lesson_6_testing': 'module_0_lesson_6_testing',
         'module_0_final_testing': 'module_0_final_testing',
         # модуль № 1
         # урок № 1
