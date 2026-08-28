@@ -24,7 +24,7 @@ from bot.adapters.max.test_utils import block_definition_func, get_block_2_test_
 from bot.adapters.max.utils_FSM import AnotherEmployerStates, BranchKbStates, LawyerStates, OnboardingStates, TrainingStates, UserInfo
 from bot.core.onboarding_flow import flow_about_company, flow_another_emp_training_intro, flow_branch_kb_training_intro, flow_lawyer_training_intro, flow_sales_training_intro, flow_start, flow_start_change_kb, flow_start_new_empl_change_kb
 from bot.core.reg_managment_content import get_message_11_text, get_message_14_text, get_message_17_text, get_message_1_text, get_message_20_text, get_message_23_text, get_message_26_text, get_message_29_text, get_message_2_text, get_message_32_text, get_message_33_text, get_message_34_text, get_message_5_text, get_message_8_text, get_period_sender_text
-from core.content import get_another_emp_intro_text, get_block1_intro_text, get_block1_intro_text_lawyer, get_block1_section1_intro_text, get_block1_section2_intro_text, get_block1_section_3_intro_text, get_block1_section_4_intro_text, get_block1_section_5_intro_text, get_block1_section_6_intro_text, get_block2_intro_text, get_block2_intro_text_lawyer, get_block2_section1_intro_text, get_block2_section_1_intro_text_lawyer, get_block2_section_2_intro_text, get_block2_section_2_intro_text_lawyer, get_block2_section_3_intro_text, get_block2_section_4_intro_text, get_block3_intro_text, get_block3_intro_text_lawyer, get_block3_section_1_intro_text, get_block3_section_2_intro_text, get_block3_section_3_intro_text, get_block3_section_4_intro_text, get_block3_section_5_intro_text, get_block3_section_6_intro_text, get_block4_intro_text, get_block4_intro_text_lawyer, get_block4_section_1_intro_text, get_block4_section_2_intro_text, get_block4_section_3_intro_text, get_block4_section_4_intro_text, get_block5_intro_text, get_block5_intro_text_lawyer, get_block5_intro_video1, get_block5_intro_video10, get_block5_intro_video11, get_block5_intro_video12, get_block5_intro_video13, get_block5_intro_video14, get_block5_intro_video15, get_block5_intro_video2, get_block5_intro_video3, get_block5_intro_video4, get_block5_intro_video5, get_block5_intro_video6, get_block5_intro_video7, get_block5_intro_video8, get_block5_intro_video9, get_block6_intro_text, get_block6_section_1_intro_text, get_block7_intro_text, get_change_course_text, get_course_intro_text, get_final_another_emp_text, get_final_intro_text, get_final_lawyer_text, get_first_day_congrats_text, get_first_mess_another_empl, get_module0_intro_text_kb_branch, get_module0_lesson1_intro_text_kb_branch, get_module0_lesson2_intro_text_kb_branch, get_module0_lesson3_intro_text_kb_branch, get_module0_lesson4_intro_text_kb_branch, get_module0_lesson5_intro_text_kb_branch, get_module1_lesson1_intro_text_kb_branch, get_module1_lesson2_intro_text_kb_branch, get_module1_lesson3_intro_text_kb_branch, get_module1_lesson4_intro_text_kb_branch, get_module1_lesson5_intro_text_kb_branch, get_module1_lesson6_intro_text_kb_branch, get_module2_lesson1_intro_text_kb_branch, get_module2_lesson2_intro_text_kb_branch, get_module2_lesson3_intro_text_kb_branch, get_module2_lesson4_intro_text_kb_branch, get_module2_lesson5_intro_text_kb_branch, get_module3_lesson1_intro_text_kb_branch, get_module3_lesson2_intro_text_kb_branch, get_module3_lesson3_intro_text_kb_branch, get_module3_lesson4_intro_text_kb_branch, get_module3_lesson5_intro_text_kb_branch, get_module4_lesson1_intro_text_kb_branch, get_module4_lesson2_intro_text_kb_branch, get_module4_lesson3_intro_text_kb_branch, get_module4_lesson4_intro_text_kb_branch, get_module5_lesson1_intro_text_kb_branch, get_module5_lesson2_intro_text_kb_branch, get_module5_lesson3_intro_text_kb_branch, get_module6_lesson1_intro_text_kb_branch, get_module6_lesson2_intro_text_kb_branch, get_module6_lesson3_intro_text_kb_branch, get_module6_lesson4_intro_text_kb_branch, get_module7_lesson1_intro_text_kb_branch, get_module7_lesson2_intro_text_kb_branch, get_module7_lesson3_intro_text_kb_branch, get_module7_lesson4_intro_text_kb_branch, get_reminder_text, get_start_text, get_text_change_department, get_text_change_status, get_text_for_add_educ, get_text_in_process, get_text_start_final_test_block_1, get_text_start_final_test_block_2, get_text_start_final_test_block_3, get_text_start_final_test_block_4, get_text_start_final_test_block_5, get_text_start_final_test_block_6, get_text_to_final_test_block_1, get_text_to_final_test_block_2, get_text_to_final_test_block_3, get_text_to_final_test_block_4, get_text_to_final_test_block_5, get_text_to_final_test_block_6, get_text_to_final_test_block_7, get_text_to_final_test_lawyer, get_text_to_test_after_lesson_kb, get_text_to_test_block_1_lawyer, get_to_final_intro_text_lawyer, get_tomorrow_reminder_text, get_training_step_3_text, go_to_test_1_text, kb_go_to_test_after_lesson, table_of_content_kb_branch, table_of_content_lawyer
+from core.content import get_another_emp_intro_text, get_block1_intro_text, get_block1_intro_text_lawyer, get_block1_section1_intro_text, get_block1_section2_intro_text, get_block1_section_3_intro_text, get_block1_section_4_intro_text, get_block1_section_5_intro_text, get_block1_section_6_intro_text, get_block2_intro_text, get_block2_intro_text_lawyer, get_block2_section1_intro_text, get_block2_section_1_intro_text_lawyer, get_block2_section_2_intro_text, get_block2_section_2_intro_text_lawyer, get_block2_section_3_intro_text, get_block2_section_4_intro_text, get_block3_intro_text, get_block3_intro_text_lawyer, get_block3_section_1_intro_text, get_block3_section_2_intro_text, get_block3_section_3_intro_text, get_block3_section_4_intro_text, get_block3_section_5_intro_text, get_block3_section_6_intro_text, get_block4_intro_text, get_block4_intro_text_lawyer, get_block4_section_1_intro_text, get_block4_section_2_intro_text, get_block4_section_3_intro_text, get_block4_section_4_intro_text, get_block5_intro_text, get_block5_intro_text_lawyer, get_block5_intro_video1, get_block5_intro_video10, get_block5_intro_video11, get_block5_intro_video12, get_block5_intro_video13, get_block5_intro_video14, get_block5_intro_video15, get_block5_intro_video2, get_block5_intro_video3, get_block5_intro_video4, get_block5_intro_video5, get_block5_intro_video6, get_block5_intro_video7, get_block5_intro_video8, get_block5_intro_video9, get_block6_intro_text, get_block6_section_1_intro_text, get_block7_intro_text, get_change_course_text, get_course_intro_text, get_final_another_emp_text, get_final_intro_text, get_final_lawyer_text, get_first_day_congrats_text, get_first_mess_another_empl, get_module0_intro_text_kb_branch, get_module0_lesson1_intro_text_kb_branch, get_module0_lesson2_intro_text_kb_branch, get_module0_lesson3_intro_text_kb_branch, get_module0_lesson4_intro_text_kb_branch, get_module0_lesson5_intro_text_kb_branch, get_module1_intro_text_kb_branch, get_module1_lesson1_intro_text_kb_branch, get_module1_lesson2_intro_text_kb_branch, get_module1_lesson3_intro_text_kb_branch, get_module1_lesson4_intro_text_kb_branch, get_module1_lesson5_intro_text_kb_branch, get_module1_lesson6_intro_text_kb_branch, get_module2_intro_text_kb_branch, get_module2_lesson1_intro_text_kb_branch, get_module2_lesson2_intro_text_kb_branch, get_module2_lesson3_intro_text_kb_branch, get_module2_lesson4_intro_text_kb_branch, get_module2_lesson5_intro_text_kb_branch, get_module3_intro_text_kb_branch, get_module3_lesson1_intro_text_kb_branch, get_module3_lesson2_intro_text_kb_branch, get_module3_lesson3_intro_text_kb_branch, get_module3_lesson4_intro_text_kb_branch, get_module3_lesson5_intro_text_kb_branch, get_module4_intro_text_kb_branch, get_module4_lesson1_intro_text_kb_branch, get_module4_lesson2_intro_text_kb_branch, get_module4_lesson3_intro_text_kb_branch, get_module4_lesson4_intro_text_kb_branch, get_module5_intro_text_kb_branch, get_module5_lesson1_intro_text_kb_branch, get_module5_lesson2_intro_text_kb_branch, get_module5_lesson3_intro_text_kb_branch, get_module6_intro_text_kb_branch, get_module6_lesson1_intro_text_kb_branch, get_module6_lesson2_intro_text_kb_branch, get_module6_lesson3_intro_text_kb_branch, get_module6_lesson4_intro_text_kb_branch, get_module7_intro_text_kb_branch, get_module7_lesson1_intro_text_kb_branch, get_module7_lesson2_intro_text_kb_branch, get_module7_lesson3_intro_text_kb_branch, get_module7_lesson4_intro_text_kb_branch, get_reminder_text, get_start_text, get_text_change_department, get_text_change_status, get_text_for_add_educ, get_text_in_process, get_text_start_final_test_block_1, get_text_start_final_test_block_2, get_text_start_final_test_block_3, get_text_start_final_test_block_4, get_text_start_final_test_block_5, get_text_start_final_test_block_6, get_text_to_final_test_block_1, get_text_to_final_test_block_2, get_text_to_final_test_block_3, get_text_to_final_test_block_4, get_text_to_final_test_block_5, get_text_to_final_test_block_6, get_text_to_final_test_block_7, get_text_to_final_test_lawyer, get_text_to_test_after_lesson_kb, get_text_to_test_block_1_lawyer, get_to_final_intro_text_lawyer, get_tomorrow_reminder_text, get_training_step_3_text, go_to_test_1_text, kb_get_text_to_final_test_module_0, kb_get_text_to_final_test_module_1, kb_get_text_to_final_test_module_2, kb_get_text_to_final_test_module_3, kb_get_text_to_final_test_module_4, kb_get_text_to_final_test_module_5, kb_get_text_to_final_test_module_6, kb_get_text_to_final_test_module_7, kb_go_to_test_after_lesson, table_of_content_kb_branch, table_of_content_lawyer
 from bot.adapters.max.keyboards import change_another_department_kb, change_course_kb, change_course_to_export_stat_kb, change_department_kb, change_status_kb, continue_studying_kb, education_kb, final_start_test_kb, final_test_kb, finish_studying_kb, main_menu_keyboard, main_one_kb, next_to_educ_to_part_kb, next_to_education_kb, regular_managment_kb, start_test_kb, test_abcd_keyboard, variants_questions_kb, yes_no_kb
 #from services.claude_api import ClaudeService
 from services.ExelStatisticGenerator import ExcelStatisticGenerator
@@ -1890,8 +1890,10 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
                             "last_name": last_name
                         }
                     )
-            cursor.change_state(TrainingStates.konstructor['module_0_final_testing'])
-            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_0_final_testing'], 'current_course': course_name})
+            #cursor.change_state(TrainingStates.konstructor['module_0_final_testing'])  # ''' заглушка
+            #await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_0_final_testing'], 'current_course': course_name, 'migration_state': 'module_0_final_testing'})
+            #cursor.change_state(TrainingStates.konstructor['module_0_questions']) 
+            #await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_0_questions'], 'current_course': course_name, 'migration_state': 'module_0_questions'})
         # заглушка - здесь надо проверить есть ли тест после ГЛОССАРИЙ ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ
         # здесь надо продумать переходы к финальным тестам после каждого модуля и переходы после тестирования к очередному модулю
         elif state_name == 'module_1_lesson_1_testing':
@@ -1911,7 +1913,7 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_1_lesson_6'], 'current_course': course_name})
         elif state_name == 'module_1_lesson_6_testing':
             cursor.change_state(TrainingStates.konstructor['module_1_final_testing'])
-            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_1_final_testing'], 'current_course': course_name})
+            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_1_final_testing'], 'current_course': course_name, 'migration_state': 'module_1_final_testing'})
         elif state_name == 'module_2_lesson_1_testing':
             cursor.change_state(TrainingStates.konstructor['module_2_lesson_2'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_2_lesson_2'], 'current_course': course_name})
@@ -1926,7 +1928,7 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_2_lesson_5'], 'current_course': course_name})
         elif state_name == 'module_2_lesson_5_testing':
             cursor.change_state(TrainingStates.konstructor['module_2_final_testing'])
-            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_2_final_testing'], 'current_course': course_name})
+            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_2_final_testing'], 'current_course': course_name, 'migration_state': 'module_2_final_testing'})
         elif state_name == 'module_3_lesson_1_testing':
             cursor.change_state(TrainingStates.konstructor['module_3_lesson_2'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_3_lesson_2'], 'current_course': course_name})
@@ -1941,7 +1943,7 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_3_lesson_5'], 'current_course': course_name})
         elif state_name == 'module_3_lesson_5_testing':
             cursor.change_state(TrainingStates.konstructor['module_3_final_testing'])
-            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_3_final_testing'], 'current_course': course_name})
+            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_3_final_testing'], 'current_course': course_name, 'migration_state': 'module_3_final_testing'})
         elif state_name == 'module_4_lesson_1_testing':
             cursor.change_state(TrainingStates.konstructor['module_4_lesson_2'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_4_lesson_2'], 'current_course': course_name})
@@ -1953,7 +1955,7 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_4_lesson_4'], 'current_course': course_name})
         elif state_name == 'module_4_lesson_4_testing':
             cursor.change_state(TrainingStates.konstructor['module_4_final_testing'])
-            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_4_final_testing'], 'current_course': course_name})
+            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_4_final_testing'], 'current_course': course_name, 'migration_state': 'module_4_final_testing'})
         elif state_name == 'module_5_lesson_1_testing':
             cursor.change_state(TrainingStates.konstructor['module_5_lesson_2'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_5_lesson_2'], 'current_course': course_name})
@@ -1965,7 +1967,7 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_5_lesson_4'], 'current_course': course_name})
         elif state_name == 'module_5_lesson_4_testing':
             cursor.change_state(TrainingStates.konstructor['module_5_final_testing'])
-            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_5_final_testing'], 'current_course': course_name})
+            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_5_final_testing'], 'current_course': course_name, 'migration_state': 'module_5_final_testing'})
         elif state_name == 'module_6_lesson_1_testing':
             cursor.change_state(TrainingStates.konstructor['module_6_lesson_2'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_6_lesson_2'], 'current_course': course_name})
@@ -1977,7 +1979,7 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_6_lesson_4'], 'current_course': course_name})
         elif state_name == 'module_6_lesson_4_testing':
             cursor.change_state(TrainingStates.konstructor['module_6_final_testing'])
-            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_6_final_testing'], 'current_course': course_name})
+            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_6_final_testing'], 'current_course': course_name, 'migration_state': 'module_6_final_testing'})
         elif state_name == 'module_7_lesson_1_testing':
             cursor.change_state(TrainingStates.konstructor['module_7_lesson_2'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_7_lesson_2'], 'current_course': course_name})
@@ -1989,11 +1991,11 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_7_lesson_4'], 'current_course': course_name})
         elif state_name == 'module_7_lesson_4_testing':
             cursor.change_state(TrainingStates.konstructor['module_7_final_testing'])
-            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_7_final_testing'], 'current_course': course_name})
+            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_7_final_testing'], 'current_course': course_name, 'migration_state': 'module_7_final_testing'})
         
         
-        logger.info(f"[INFO][show_results] state = {cursor.get_state()}")
-        if state_name != 'step_11_testing':
+        logger.info(f"[INFO][show_results] state = {cursor.get_state()} type= {type(cursor.get_state())}")
+        if state_name != 'step_11_testing' and cursor.get_state() != 'module_0_questions': 
             await message.send(
                     "📚 Вы можете продолжить обучение, нажав кнопку ниже 👇",
                     keyboard=kb
@@ -2650,8 +2652,15 @@ async def start_block1_final_test_handler(callback: Callback, cursor: FSMCursor)
     finally:
         await remove_repeat_flag(callback.user_id)
         
-        
 
+@router.on_message(state(TrainingStates.konstructor['module_7_questions']))
+@router.on_message(state(TrainingStates.konstructor['module_6_questions']))
+@router.on_message(state(TrainingStates.konstructor['module_5_questions']))
+@router.on_message(state(TrainingStates.konstructor['module_4_questions']))
+@router.on_message(state(TrainingStates.konstructor['module_3_questions']))
+@router.on_message(state(TrainingStates.konstructor['module_2_questions']))
+@router.on_message(state(TrainingStates.konstructor['module_1_questions']))        
+@router.on_message(state(TrainingStates.konstructor['module_0_questions']))
 @router.on_message(state(TrainingStates.lawyer['block1_questions']))
 @router.on_message(state(TrainingStates.block1_questions))
 async def answer_block1_question_handler(message: Message, cursor: FSMCursor, state_name: str = None):
@@ -2674,6 +2683,9 @@ async def answer_block1_question_handler(message: Message, cursor: FSMCursor, st
         if state_name in ['block1_questions_lawyer', 'block2_questions_lawyer', 'block3_questions_lawyer',
                           'block4_questions_lawyer']:
             rag = RAGService(branch_name = 'lawyer')
+        elif state_name in ['module_0_questions', 'module_1_questions', 'module_2_questions', 'module_3_questions'
+                            'module_4_questions', 'module_5_questions', 'module_6_questions', 'module_7_questions']:
+            rag = RAGService(branch_name = 'branch_kb')
         else:
             rag = RAGService()
         
@@ -2688,6 +2700,32 @@ async def answer_block1_question_handler(message: Message, cursor: FSMCursor, st
             f"{answer}\n\n"
             "➡️ Задайте следующий вопрос или нажмите 📝 **Перейти к тестированию**"
         )
+        if state_name in ['module_0_questions', 'module_1_questions', 'module_2_questions', 'module_3_questions'
+                            'module_4_questions', 'module_5_questions', 'module_6_questions', 'module_7_questions']:
+            module_number = ''
+            if '0' in state_name:
+                module_number = '0'
+            elif '1' in state_name:
+                module_number = '1'
+            elif '2' in state_name:
+                module_number = '2'
+            elif '3' in state_name:
+                module_number = '3'
+            elif '4' in state_name:
+                module_number = '4'
+            elif '5' in state_name:
+                module_number = '5'
+            elif '6' in state_name:
+                module_number = '6'
+            elif '7' in state_name:
+                module_number = '7'
+            
+            response_text = (
+                        f"💡 **Ответ по Модулю № {module_number}:**\n\n"
+                        f"{answer}\n\n"
+                        "➡️ Задайте следующий вопрос или нажмите 📝 **Перейти к тестированию**"
+                    )
+            
         
         await message.send(response_text, keyboard=final_start_test_kb(), format='markdown')
         cursor.change_state(state_name)
@@ -3311,9 +3349,28 @@ async def show_results_step12(message: Message, cursor: FSMCursor, lesson_id: st
             migration_header = '№6'
         elif migration_state == 'block_7_final_testing':
             migration_header = '№7'
-        
+        elif migration_state == 'module_0_final_testing':
+            migration_header = '№0'
+        elif migration_state == 'module_1_final_testing':
+            migration_header = '№1'
+        elif migration_state == 'module_2_final_testing':
+            migration_header = '№2'
+        elif migration_state == 'module_3_final_testing':
+            migration_header = '№3'
+        elif migration_state == 'module_4_final_testing':
+            migration_header = '№4'
+        elif migration_state == 'module_5_final_testing':
+            migration_header = '№5'
+        elif migration_state == 'module_6_final_testing':
+            migration_header = '№6'
+        elif migration_state == 'module_7_final_testing':
+            migration_header = '№7'
+            
+        part_name = 'Блоку'
+        if current_course == 'Обучение для конструкторов':
+            part_name = 'Модулю'
                
-        result_text = f"📊 **Результаты финального теста по Блоку {migration_header}**\n\n" if migration_header else f"📊 **Результаты финального теста по Блоку**\n\n"
+        result_text = f"📊 **Результаты финального теста по {part_name} {migration_header}**\n\n" if migration_header else f"📊 **Результаты финального теста по Блоку**\n\n"
         result_text += f"**Правильных ответов: {total_correct}/{total_questions}**\n\n"
         result_text += f"━━━━━━━━━━━━━━━━━━━━\n\n"
         if full_completed_lessons == 12 and cursor_data.get("current_course") == "Обучение для юриста":
@@ -3337,8 +3394,11 @@ async def show_results_step12(message: Message, cursor: FSMCursor, lesson_id: st
                     result_text += f"💬 **Фидбек**:\n{comment['feedback']}\n\n"
                     result_text += f"━━━━━━━━━━━━━━━━━━━━\n\n"
                 
+            part_name = 'Блока'
+            if current_course == 'Обучение для конструкторов':
+                part_name = 'Модуля'
             
-            result_text += f"🎉 **Отлично!**\n\nВы успешно прошли финальный тест! Поздравляем с завершением Блока {migration_header}!"
+            result_text += f"🎉 **Отлично!**\n\nВы успешно прошли финальный тест! Поздравляем с завершением {part_name} {migration_header}!"
 
         
         else:
@@ -3439,8 +3499,13 @@ async def show_results_step12(message: Message, cursor: FSMCursor, lesson_id: st
         completed_dict = {'0': 0, '1': 5, '2': 10, '3': 15, '4': 20, '5': 25, '6': 30, '7': 45}
         
         logger.info(f'{progress=}')
+                
+        part_name = 'Блока'
+        if current_course == 'Обучение для конструкторов':
+            part_name = 'Модуля'
         
         max_progress = get_max_accuracy_item(progress)
+            
         if isinstance(progress, list):
             #max_progress = get_max_accuracy_item(progress)
             logger.info(f'{max_progress=}')
@@ -3464,7 +3529,9 @@ async def show_results_step12(message: Message, cursor: FSMCursor, lesson_id: st
                 else:
                     completed_lesson = 7
                            
-            first_phrase = f"🏆 **Ваш рейтинг по итогам Блока {migration_header}**\n\n" if migration_header else "🏆 **Ваш рейтинг по итогам Блока**\n\n"
+            
+            
+            first_phrase = f"🏆 **Ваш рейтинг по итогам {part_name} {migration_header}**\n\n" if migration_header else "🏆 **Ваш рейтинг по итогам Блока**\n\n"
             
             if current_course == 'Обучение для юриста':
                 full_completed_lessons, current_persent = game.get_full_completed_lessons(course_name = current_course, user_id = user_id)
@@ -3493,7 +3560,7 @@ async def show_results_step12(message: Message, cursor: FSMCursor, lesson_id: st
             completed_lesson = progress[1]['lessons_completed']
             logger.info(f'{completed_lesson=}')
             
-            first_phrase = f"🏆 **Ваш рейтинг по итогам Блока {migration_header}**\n\n" if migration_header else "🏆 **Ваш рейтинг по итогам Блока**\n\n"
+            first_phrase = f"🏆 **Ваш рейтинг по итогам {part_name} {migration_header}**\n\n" if migration_header else "🏆 **Ваш рейтинг по итогам Блока**\n\n"
             
             if current_course == 'Другой сотрудник':
                 if int(completed_lesson) < 5:
@@ -3561,10 +3628,12 @@ async def show_results_step12(message: Message, cursor: FSMCursor, lesson_id: st
         else:
             status_user = data.get('status_user', 'new_employer')
         
-        if course_name == 'Обучение для юриста':
+        if course_name in ['Обучение для юриста', 'Обучение для конструкторов']:
             block_intro = "Чтобы продолжить обучение, нажмите на кнопку 📚 Продолжить обучение"
             
-            if migration_header == 6:
+            logger.info(f'{migration_header=} {type(migration_header)}')
+            
+            if migration_header == 6 and course_name == 'Обучение для юриста':
                 block_intro = get_final_lawyer_text()
                 await message.send(block_intro, format="markdown", keyboard=main_one_kb())
                 cursor.clear_state()
@@ -3572,34 +3641,70 @@ async def show_results_step12(message: Message, cursor: FSMCursor, lesson_id: st
                 await save_cursor(message.user_id, extra_data={'status_user': status_user, 'current_course': 'Обучение для юриста', 'migration_header': migration_header})
                 return
             await message.send(block_intro, format="markdown", keyboard=next_to_educ_to_part_kb())
-            if migration_header == 1:
+            if migration_header == 1 and course_name == 'Обучение для юриста':
                 await clear_cursor(message.user_id)
                 await save_cursor(message.user_id, extra_data={'status_user': status_user, 'current_course': 'Обучение для юриста', "state_name": TrainingStates.lawyer['block_2_start'], 'migration_header': migration_header})
                 #await save_cursor(message.user_id, extra_data = {"state_name": TrainingStates.lawyer['block_2_start']})
                 cursor.change_state(TrainingStates.lawyer['block_2_start'])
                 return
-            elif migration_header == 2:
+            elif migration_header == 2 and course_name == 'Обучение для юриста':
                 await clear_cursor(message.user_id)
                 await save_cursor(message.user_id, extra_data={'status_user': status_user, 'current_course': 'Обучение для юриста', "state_name": TrainingStates.lawyer['block_3_start'], 'migration_header': migration_header})
                 #await save_cursor(message.user_id, extra_data = {"state_name": TrainingStates.lawyer['block_3_start']})
                 cursor.change_state(TrainingStates.lawyer['block_3_start'])
-            elif migration_header == 3:
+            elif migration_header == 3 and course_name == 'Обучение для юриста':
                 await clear_cursor(message.user_id)
                 await save_cursor(message.user_id, extra_data={'status_user': status_user, 'current_course': 'Обучение для юриста', "state_name": TrainingStates.lawyer['block_4_start'], 'migration_header': migration_header})
                 #await save_cursor(message.user_id, extra_data = {"state_name": TrainingStates.lawyer['block_4_start']})
                 cursor.change_state(TrainingStates.lawyer['block_4_start'])
-            elif migration_header == 4:
+            elif migration_header == 4 and course_name == 'Обучение для юриста':
                 await clear_cursor(message.user_id)
                 await save_cursor(message.user_id, extra_data={'status_user': status_user, 'current_course': 'Обучение для юриста', "state_name": TrainingStates.lawyer['block_5_start'], 'migration_header': migration_header})
                 #await save_cursor(message.user_id, extra_data = {"state_name": TrainingStates.lawyer['block_5_start']})
                 cursor.change_state(TrainingStates.lawyer['block_5_start'])
-            elif migration_header == 5:
+            elif migration_header == 5 and course_name == 'Обучение для юриста':
                 await clear_cursor(message.user_id)
                 await save_cursor(message.user_id, extra_data={'status_user': status_user, 'current_course': 'Обучение для юриста', "state_name": TrainingStates.lawyer['final_test_start'], 'migration_header': migration_header})
                 #await save_cursor(message.user_id, extra_data = {"state_name": TrainingStates.lawyer['final_test_start']})
                 cursor.change_state(TrainingStates.lawyer['final_test_start'])
+            elif migration_header == '№0' and course_name == 'Обучение для конструкторов':
+                await clear_cursor(message.user_id)
+                await save_cursor(message.user_id, extra_data={'status_user': status_user, 'current_course': 'Обучение для конструкторов', "state_name": TrainingStates.konstructor['kb_module_1_start'], 'migration_header': migration_header})
+                #await save_cursor(message.user_id, extra_data = {"state_name": TrainingStates.lawyer['block_3_start']})
+                cursor.change_state(TrainingStates.konstructor['kb_module_1_start'])
+            elif migration_header == '№1' and course_name == 'Обучение для конструкторов':
+                await clear_cursor(message.user_id)
+                await save_cursor(message.user_id, extra_data={'status_user': status_user, 'current_course': 'Обучение для конструкторов', "state_name": TrainingStates.konstructor['kb_module_2_start'], 'migration_header': migration_header})
+                #await save_cursor(message.user_id, extra_data = {"state_name": TrainingStates.lawyer['block_3_start']})
+                cursor.change_state(TrainingStates.konstructor['kb_module_2_start'])
+            elif migration_header == '№2' and course_name == 'Обучение для конструкторов':
+                await clear_cursor(message.user_id)
+                await save_cursor(message.user_id, extra_data={'status_user': status_user, 'current_course': 'Обучение для конструкторов', "state_name": TrainingStates.konstructor['kb_module_3_start'], 'migration_header': migration_header})
+                #await save_cursor(message.user_id, extra_data = {"state_name": TrainingStates.lawyer['block_3_start']})
+                cursor.change_state(TrainingStates.konstructor['kb_module_3_start'])
+            elif migration_header == '№3' and course_name == 'Обучение для конструкторов':
+                await clear_cursor(message.user_id)
+                await save_cursor(message.user_id, extra_data={'status_user': status_user, 'current_course': 'Обучение для конструкторов', "state_name": TrainingStates.konstructor['kb_module_4_start'], 'migration_header': migration_header})
+                #await save_cursor(message.user_id, extra_data = {"state_name": TrainingStates.lawyer['block_3_start']})
+                cursor.change_state(TrainingStates.konstructor['kb_module_4_start'])
+            elif migration_header == '№4' and course_name == 'Обучение для конструкторов':
+                await clear_cursor(message.user_id)
+                await save_cursor(message.user_id, extra_data={'status_user': status_user, 'current_course': 'Обучение для конструкторов', "state_name": TrainingStates.konstructor['kb_module_5_start'], 'migration_header': migration_header})
+                #await save_cursor(message.user_id, extra_data = {"state_name": TrainingStates.lawyer['block_3_start']})
+                cursor.change_state(TrainingStates.konstructor['kb_module_5_start'])
+            elif migration_header == '№5' and course_name == 'Обучение для конструкторов':
+                await clear_cursor(message.user_id)
+                await save_cursor(message.user_id, extra_data={'status_user': status_user, 'current_course': 'Обучение для конструкторов', "state_name": TrainingStates.konstructor['kb_module_6_start'], 'migration_header': migration_header})
+                #await save_cursor(message.user_id, extra_data = {"state_name": TrainingStates.lawyer['block_3_start']})
+                cursor.change_state(TrainingStates.konstructor['kb_module_6_start'])
+            elif migration_header == '№6' and course_name == 'Обучение для конструкторов':
+                await clear_cursor(message.user_id)
+                await save_cursor(message.user_id, extra_data={'status_user': status_user, 'current_course': 'Обучение для конструкторов', "state_name": TrainingStates.konstructor['kb_module_37_start'], 'migration_header': migration_header})
+                #await save_cursor(message.user_id, extra_data = {"state_name": TrainingStates.lawyer['block_3_start']})
+                cursor.change_state(TrainingStates.konstructor['kb_module_7_start'])
             return
-            
+        
+        logger.info(f'Строка 3704')    
         
         if migration_header == "":
             block_intro = get_final_another_emp_text()
@@ -4177,7 +4282,11 @@ async def final_process_answer_handler(callback: Callback, cursor: FSMCursor):
             current = data.get("current_question")
             await save_cursor(callback.user_id, extra_data = dict(current_question = current + 1))
             correct = data.get("correct")
+            current_course = data.get('current_course')
             migration_state = data.get('migration_state')
+            if not migration_state and current_course == "Обучение для конструкторов":
+                logger.info('Пытаемся получить значение migration_state из redis')
+                migration_state = await get_value_from_redis(callback.user_id, 'migration_state')
             logger.info(f'Из курсора:\n{answers=}\n{closed_answers=}\n{current=}\n{correct=}\n{migration_state=}')
         else:
             answers = await get_value_from_redis(callback.user_id, 'open_answers')
@@ -8264,7 +8373,49 @@ async def kb_module_0_lesson_5_test_handler(callback: Callback, cursor: FSMCurso
         await remove_repeat_flag(callback.user_id)
         
 
-@router.on_message(state(TrainingStates.konstructor['module_0_final_testing']))
+@router.on_button_callback(state(TrainingStates.konstructor['module_0_lesson_5_testing']), lambda data: data.payload.split('::')[1] == "not_first")
+async def continue_after_kb_module_0_handler(callback: Callback, cursor: FSMCursor):
+    """Завершение Модуля №0 - КБ. Переход к вопросам или финальному тесту"""
+    try:
+        logger.info(f"[continue_after_kb_module_0_handler] Стартовал")
+        await callback.message.delete()
+        branch_name = ''
+        current_course = await get_value_from_redis(callback.user_id, 'current_course')
+        if not current_course:
+            current_course = get_current_course(cursor)
+        # Проверяем загрузку базы знаний
+        rag = RAGService()
+        
+        if current_course == 'Обучение для конструкторов':
+            branch_name = 'branch_kb'
+        if isinstance(callback, Callback):
+            await callback.message.delete()
+        # Проверяем загрузку базы знаний
+        await save_cursor(callback.user_id, extra_data={'branch_name': branch_name})
+        rag = RAGService(branch_name=branch_name)
+        stats = rag.get_stats()
+                        
+        if not stats['is_loaded']:
+            await callback.send(
+                "❌ База знаний не загружена. Обратитесь к администратору.",
+                keyboard=main_menu_keyboard(current_course)
+            )
+            cursor.clear()
+            return
+        
+        text = kb_get_text_to_final_test_module_0()
+        logger.info('Должны отправить текст')        
+        await callback.send(text=text, keyboard=final_start_test_kb())
+        cursor.change_state(TrainingStates.konstructor['module_0_questions'])
+        await save_cursor(callback.user_id, extra_data = {'payload': 'to_final_test', 'state_name': TrainingStates.konstructor['module_0_questions'], 'current_course': current_course})
+        logger.info('Завершение работы метода')
+        return 
+        
+    except Exception as e:
+        logger.error(f"[continue_after_kb_module_0_handler] Произошла ошибка {e}")
+
+
+@router.on_message(state(TrainingStates.konstructor['module_1_final_testing']))
 async def kb_module_0_final_testing_handler(message: Message, cursor: FSMCursor):
     """Ответы на вопросы по модулю № 0 (KB) через RAG + Claude"""
     try:
@@ -8421,7 +8572,7 @@ async def kb_module_7_final_testing_handler(message: Message, cursor: FSMCursor)
 
 
 
-@router.on_button_callback(state(TrainingStates.konstructor['module_0_final_testing']), lambda data: data.payload == "to_final_test")
+@router.on_button_callback(state(TrainingStates.konstructor['module_0_questions']), lambda data: data.payload == "to_final_test")
 async def kb_module_0_final_test_handler(callback: Callback, cursor: FSMCursor):
     '''Заглушка для прохождения финального теста по модулю № 0'''
     try:
@@ -8501,7 +8652,7 @@ async def kb_module_0_final_test_handler(callback: Callback, cursor: FSMCursor):
         logger.error(f"[ERROR][kb_module_0_final_test_handler] Произошла ошибка {e}")
         
 
-@router.on_button_callback(state(TrainingStates.konstructor['module_1_final_testing']), lambda data: data.payload == "to_final_test")
+@router.on_button_callback(state(TrainingStates.konstructor['module_1_questions']), lambda data: data.payload == "to_final_test")
 async def kb_module_1_final_test_handler(callback: Callback, cursor: FSMCursor):
     '''Заглушка для прохождения финального теста по модулю № 1'''
     try:
@@ -8580,6 +8731,292 @@ async def kb_module_1_final_test_handler(callback: Callback, cursor: FSMCursor):
     except Exception as e:
         logger.error(f"[ERROR][kb_module_1_final_test_handler] Произошла ошибка {e}") 
  
+
+@router.on_button_callback(state(TrainingStates.konstructor['kb_module_1_start']), lambda data: data.payload == "next_educ_to_part_2")
+async def kb_module_1_start_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
+    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №1 Стартовое сообщение с оглавлением»"""
+    try:
+        logger.info("[kb_module_1_start_handler] Стартовал")
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2) 
+        if continue_flag:
+            intro_text = get_module1_intro_text_kb_branch()
+            await callback.send(intro_text)
+            await asyncio.sleep(2) # 10
+        
+        status_user = await get_value_from_redis(callback.user_id, 'status_user')
+        if not status_user:
+            if cursor.get_data():
+                status_user = cursor.get_data().get('status_user')
+        
+        # if await debounce_button_max(callback, cursor):
+        #     logger.info(f"[training_step_3_handler] Идет обработка нажмите позднее")
+        #     return      
+        await callback.message.delete()
+        intro_text = get_module1_intro_text_kb_branch()
+        await callback.send(intro_text)
+        
+        await asyncio.sleep(2) # 15
+        
+        kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
+                
+        cursor.change_state(TrainingStates.konstructor['module_0_lesson_1'])
+        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_1_lesson_1'], 'current_course': 'Обучение для конструкторов', 'payload': 'next_education::not_first', 'status_user': status_user})
+        
+        await callback.send(
+            "📚 Вы можете продолжить обучение, нажав кнопку ниже 👇",
+            keyboard=kb
+        )
+    
+    except Exception as e:
+        logger.error(f"[kb_module_0_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id)
+        
+
+@router.on_button_callback(state(TrainingStates.konstructor['kb_module_2_start']), lambda data: data.payload == "next_educ_to_part_2")
+async def kb_module_2_start_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
+    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №2 Стартовое сообщение с оглавлением»"""
+    try:
+        logger.info("[kb_module_2_start_handler] Стартовал")
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2) 
+        if continue_flag:
+            intro_text = get_module2_intro_text_kb_branch()
+            await callback.send(intro_text)
+            await asyncio.sleep(2) # 10
+        
+        status_user = await get_value_from_redis(callback.user_id, 'status_user')
+        if not status_user:
+            if cursor.get_data():
+                status_user = cursor.get_data().get('status_user')
+        
+        # if await debounce_button_max(callback, cursor):
+        #     logger.info(f"[training_step_3_handler] Идет обработка нажмите позднее")
+        #     return      
+        await callback.message.delete()
+        intro_text = get_module2_intro_text_kb_branch()
+        await callback.send(intro_text)
+        
+        await asyncio.sleep(2) # 15
+        
+        kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
+                
+        cursor.change_state(TrainingStates.konstructor['module_2_lesson_1'])
+        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_2_lesson_1'], 'current_course': 'Обучение для конструкторов', 'payload': 'next_education::not_first', 'status_user': status_user})
+        
+        await callback.send(
+            "📚 Вы можете продолжить обучение, нажав кнопку ниже 👇",
+            keyboard=kb
+        )
+    
+    except Exception as e:
+        logger.error(f"[kb_module_2_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id)  
+        
+
+@router.on_button_callback(state(TrainingStates.konstructor['kb_module_3_start']), lambda data: data.payload == "next_educ_to_part_2")
+async def kb_module_3_start_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
+    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №3 Стартовое сообщение с оглавлением»"""
+    try:
+        logger.info("[kb_module_1_start_handler] Стартовал")
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2) 
+        if continue_flag:
+            intro_text = get_module3_intro_text_kb_branch()
+            await callback.send(intro_text)
+            await asyncio.sleep(2) # 10
+        
+        status_user = await get_value_from_redis(callback.user_id, 'status_user')
+        if not status_user:
+            if cursor.get_data():
+                status_user = cursor.get_data().get('status_user')
+        
+        # if await debounce_button_max(callback, cursor):
+        #     logger.info(f"[training_step_3_handler] Идет обработка нажмите позднее")
+        #     return      
+        await callback.message.delete()
+        intro_text = get_module3_intro_text_kb_branch()
+        await callback.send(intro_text)
+        
+        await asyncio.sleep(2) # 15
+        
+        kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
+                
+        cursor.change_state(TrainingStates.konstructor['module_3_lesson_1'])
+        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_3_lesson_1'], 'current_course': 'Обучение для конструкторов', 'payload': 'next_education::not_first', 'status_user': status_user})
+        
+        await callback.send(
+            "📚 Вы можете продолжить обучение, нажав кнопку ниже 👇",
+            keyboard=kb
+        )
+    
+    except Exception as e:
+        logger.error(f"[kb_module_3_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id) 
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['kb_module_4_start']), lambda data: data.payload == "next_educ_to_part_2")
+async def kb_module_4_start_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
+    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №4 Стартовое сообщение с оглавлением»"""
+    try:
+        logger.info("[kb_module_4_start_handler] Стартовал")
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2) 
+        if continue_flag:
+            intro_text = get_module4_intro_text_kb_branch()
+            await callback.send(intro_text)
+            await asyncio.sleep(2) # 10
+        
+        status_user = await get_value_from_redis(callback.user_id, 'status_user')
+        if not status_user:
+            if cursor.get_data():
+                status_user = cursor.get_data().get('status_user')
+        
+        # if await debounce_button_max(callback, cursor):
+        #     logger.info(f"[training_step_3_handler] Идет обработка нажмите позднее")
+        #     return      
+        await callback.message.delete()
+        intro_text = get_module4_intro_text_kb_branch()
+        await callback.send(intro_text)
+        
+        await asyncio.sleep(2) # 15
+        
+        kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
+                
+        cursor.change_state(TrainingStates.konstructor['module_4_lesson_1'])
+        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_4_lesson_1'], 'current_course': 'Обучение для конструкторов', 'payload': 'next_education::not_first', 'status_user': status_user})
+        
+        await callback.send(
+            "📚 Вы можете продолжить обучение, нажав кнопку ниже 👇",
+            keyboard=kb
+        )
+    
+    except Exception as e:
+        logger.error(f"[kb_module_4_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id) 
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['kb_module_5_start']), lambda data: data.payload == "next_educ_to_part_2")
+async def kb_module_5_start_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
+    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №5 Стартовое сообщение с оглавлением»"""
+    try:
+        logger.info("[kb_module_5_start_handler] Стартовал")
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2) 
+        if continue_flag:
+            intro_text = get_module5_intro_text_kb_branch()
+            await callback.send(intro_text)
+            await asyncio.sleep(2) # 10
+        
+        status_user = await get_value_from_redis(callback.user_id, 'status_user')
+        if not status_user:
+            if cursor.get_data():
+                status_user = cursor.get_data().get('status_user')
+        
+        # if await debounce_button_max(callback, cursor):
+        #     logger.info(f"[training_step_3_handler] Идет обработка нажмите позднее")
+        #     return      
+        await callback.message.delete()
+        intro_text = get_module5_intro_text_kb_branch()
+        await callback.send(intro_text)
+        
+        await asyncio.sleep(2) # 15
+        
+        kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
+                
+        cursor.change_state(TrainingStates.konstructor['module_5_lesson_1'])
+        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_5_lesson_1'], 'current_course': 'Обучение для конструкторов', 'payload': 'next_education::not_first', 'status_user': status_user})
+        
+        await callback.send(
+            "📚 Вы можете продолжить обучение, нажав кнопку ниже 👇",
+            keyboard=kb
+        )
+    
+    except Exception as e:
+        logger.error(f"[kb_module_5_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id) 
+        
+        
+@router.on_button_callback(state(TrainingStates.konstructor['kb_module_6_start']), lambda data: data.payload == "next_educ_to_part_2")
+async def kb_module_6_start_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
+    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №6 Стартовое сообщение с оглавлением»"""
+    try:
+        logger.info("[kb_module_6_start_handler] Стартовал")
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2) 
+        if continue_flag:
+            intro_text = get_module6_intro_text_kb_branch()
+            await callback.send(intro_text)
+            await asyncio.sleep(2) # 10
+        
+        status_user = await get_value_from_redis(callback.user_id, 'status_user')
+        if not status_user:
+            if cursor.get_data():
+                status_user = cursor.get_data().get('status_user')
+        
+        # if await debounce_button_max(callback, cursor):
+        #     logger.info(f"[training_step_3_handler] Идет обработка нажмите позднее")
+        #     return      
+        await callback.message.delete()
+        intro_text = get_module6_intro_text_kb_branch()
+        await callback.send(intro_text)
+        
+        await asyncio.sleep(2) # 15
+        
+        kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
+                
+        cursor.change_state(TrainingStates.konstructor['module_6_lesson_1'])
+        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_6_lesson_1'], 'current_course': 'Обучение для конструкторов', 'payload': 'next_education::not_first', 'status_user': status_user})
+        
+        await callback.send(
+            "📚 Вы можете продолжить обучение, нажав кнопку ниже 👇",
+            keyboard=kb
+        )
+    
+    except Exception as e:
+        logger.error(f"[kb_module_6_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id) 
+        
+        
+@router.on_button_callback(state(TrainingStates.konstructor['kb_module_7_start']), lambda data: data.payload == "next_educ_to_part_2")
+async def kb_module_7_start_handler(callback: Callback, cursor: FSMCursor, continue_flag:bool=False):
+    """Ветка ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ - Модуль №7 Стартовое сообщение с оглавлением»"""
+    try:
+        logger.info("[kb_module_7_start_handler] Стартовал")
+        await save_cursor(callback.user_id, extra_data = {'repeat_flag': True}, ttl_seconds = 2) 
+        if continue_flag:
+            intro_text = get_module7_intro_text_kb_branch()
+            await callback.send(intro_text)
+            await asyncio.sleep(2) # 10
+        
+        status_user = await get_value_from_redis(callback.user_id, 'status_user')
+        if not status_user:
+            if cursor.get_data():
+                status_user = cursor.get_data().get('status_user')
+        
+        # if await debounce_button_max(callback, cursor):
+        #     logger.info(f"[training_step_3_handler] Идет обработка нажмите позднее")
+        #     return      
+        await callback.message.delete()
+        intro_text = get_module7_intro_text_kb_branch()
+        await callback.send(intro_text)
+        
+        await asyncio.sleep(2) # 15
+        
+        kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
+                
+        cursor.change_state(TrainingStates.konstructor['module_7_lesson_1'])
+        await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_7_lesson_1'], 'current_course': 'Обучение для конструкторов', 'payload': 'next_education::not_first', 'status_user': status_user})
+        
+        await callback.send(
+            "📚 Вы можете продолжить обучение, нажав кнопку ниже 👇",
+            keyboard=kb
+        )
+    
+    except Exception as e:
+        logger.error(f"[kb_module_7_handler] Произошла ошибка {e}")
+    finally:
+        await remove_repeat_flag(callback.user_id) 
 
 
 @router.on_button_callback(state(TrainingStates.konstructor['module_1_lesson_1']), lambda data: data.payload.split('::')[1] == "not_first")
@@ -9162,6 +9599,39 @@ async def kb_module_1_lesson_6_test_handler(callback: Callback, cursor: FSMCurso
         logger.error(f"[kb_module_1_lesson_6_test_handler] Произошла ошибка {e}")
     finally:
         await remove_repeat_flag(callback.user_id) 
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_1_lesson_6_testing']), lambda data: data.payload.split('::')[1] == "not_first")
+async def continue_after_kb_module_1_handler(callback: Callback, cursor: FSMCursor):
+    """Завершение Модуля №01 - КБ. Переход к вопросам или финальному тесту"""
+    try:
+        logger.info(f"[continue_after_kb_module_1_handler] Стартовал")
+        await callback.message.delete()
+        current_course = await get_value_from_redis(callback.user_id, 'current_course')
+        if not current_course:
+            current_course = get_current_course(cursor)
+        # Проверяем загрузку базы знаний
+        rag = RAGService()
+        stats = rag.get_stats()
+        
+        cursor_data = cursor.get_data()
+                
+        if not stats['is_loaded']:
+            await callback.send(
+                "❌ База знаний не загружена. Обратитесь к администратору.",
+                keyboard=main_menu_keyboard(current_course)
+            )
+            cursor.clear()
+            return
+        
+        text = kb_get_text_to_final_test_module_1()
+                
+        await callback.send(text, keyboard=final_start_test_kb())
+        cursor.change_state(TrainingStates.konstructor['module_1_questions'])
+        await save_cursor(callback.user_id, extra_data = {'payload': 'to_final_test', 'state_name': TrainingStates.konstructor['module_1_questions'], 'current_course': current_course})
+    
+    except Exception as e:
+        logger.error(f"[continue_after_kb_module_1_handler] Произошла ошибка {e}")
         
 
 @router.on_button_callback(state(TrainingStates.konstructor['module_2_lesson_1']), lambda data: data.payload.split('::')[1] == "not_first")
@@ -9647,9 +10117,42 @@ async def kb_module_2_lesson_5_test_handler(callback: Callback, cursor: FSMCurso
         logger.error(f"[kb_module_2_lesson_5_test_handler] Произошла ошибка {e}")
     finally:
         await remove_repeat_flag(callback.user_id)
+        
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_2_lesson_5_testing']), lambda data: data.payload.split('::')[1] == "not_first")
+async def continue_after_kb_module_2_handler(callback: Callback, cursor: FSMCursor):
+    """Завершение Модуля №2 - КБ. Переход к вопросам или финальному тесту"""
+    try:
+        logger.info(f"[continue_after_kb_module_2_handler] Стартовал")
+        await callback.message.delete()
+        current_course = await get_value_from_redis(callback.user_id, 'current_course')
+        if not current_course:
+            current_course = get_current_course(cursor)
+        # Проверяем загрузку базы знаний
+        rag = RAGService()
+        stats = rag.get_stats()
+        
+        cursor_data = cursor.get_data()
+                
+        if not stats['is_loaded']:
+            await callback.send(
+                "❌ База знаний не загружена. Обратитесь к администратору.",
+                keyboard=main_menu_keyboard(current_course)
+            )
+            cursor.clear()
+            return
+        
+        text = kb_get_text_to_final_test_module_2()
+                
+        await callback.send(text, keyboard=final_start_test_kb())
+        cursor.change_state(TrainingStates.konstructor['module_0_questions'])
+        await save_cursor(callback.user_id, extra_data = {'payload': 'to_final_test', 'state_name': TrainingStates.konstructor['module_2_questions'], 'current_course': current_course})
+    
+    except Exception as e:
+        logger.error(f"[continue_after_kb_module_2_handler] Произошла ошибка {e}")
 
 
-@router.on_button_callback(state(TrainingStates.konstructor['module_2_final_testing']), lambda data: data.payload == "to_final_test")
+@router.on_button_callback(state(TrainingStates.konstructor['module_2_questions']), lambda data: data.payload == "to_final_test")
 async def kb_module_2_final_test_handler(callback: Callback, cursor: FSMCursor):
     '''Заглушка для прохождения финального теста по модулю № 2'''
     try:
@@ -10212,9 +10715,42 @@ async def kb_module_3_lesson_5_test_handler(callback: Callback, cursor: FSMCurso
         logger.error(f"[kb_module_3_lesson_5_test_handler] Произошла ошибка {e}")
     finally:
         await remove_repeat_flag(callback.user_id)
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_3_lesson_5_testing']), lambda data: data.payload.split('::')[1] == "not_first")
+async def continue_after_kb_module_3_handler(callback: Callback, cursor: FSMCursor):
+    """Завершение Модуля №3 - КБ. Переход к вопросам или финальному тесту"""
+    try:
+        logger.info(f"[continue_after_kb_module_3_handler] Стартовал")
+        await callback.message.delete()
+        current_course = await get_value_from_redis(callback.user_id, 'current_course')
+        if not current_course:
+            current_course = get_current_course(cursor)
+        # Проверяем загрузку базы знаний
+        rag = RAGService()
+        stats = rag.get_stats()
+        
+        cursor_data = cursor.get_data()
+                
+        if not stats['is_loaded']:
+            await callback.send(
+                "❌ База знаний не загружена. Обратитесь к администратору.",
+                keyboard=main_menu_keyboard(current_course)
+            )
+            cursor.clear()
+            return
+        
+        text = kb_get_text_to_final_test_module_3()
+                
+        await callback.send(text, keyboard=final_start_test_kb())
+        cursor.change_state(TrainingStates.konstructor['module_3_questions'])
+        await save_cursor(callback.user_id, extra_data = {'payload': 'to_final_test', 'state_name': TrainingStates.konstructor['module_3_questions'], 'current_course': current_course})
+    
+    except Exception as e:
+        logger.error(f"[continue_after_kb_module_3_handler] Произошла ошибка {e}")
         
 
-@router.on_button_callback(state(TrainingStates.konstructor['module_3_final_testing']), lambda data: data.payload == "to_final_test")
+@router.on_button_callback(state(TrainingStates.konstructor['module_3_questions']), lambda data: data.payload == "to_final_test")
 async def kb_module_3_final_test_handler(callback: Callback, cursor: FSMCursor):
     '''Заглушка для прохождения финального теста по модулю № 3'''
     try:
@@ -10680,9 +11216,42 @@ async def kb_module_4_lesson_4_test_handler(callback: Callback, cursor: FSMCurso
         logger.error(f"[kb_module_4_lesson_4_test_handler] Произошла ошибка {e}")
     finally:
         await remove_repeat_flag(callback.user_id)
+
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_4_lesson_4_testing']), lambda data: data.payload.split('::')[1] == "not_first")
+async def continue_after_kb_module_4_handler(callback: Callback, cursor: FSMCursor):
+    """Завершение Модуля №4 - КБ. Переход к вопросам или финальному тесту"""
+    try:
+        logger.info(f"[continue_after_kb_module_4_handler] Стартовал")
+        await callback.message.delete()
+        current_course = await get_value_from_redis(callback.user_id, 'current_course')
+        if not current_course:
+            current_course = get_current_course(cursor)
+        # Проверяем загрузку базы знаний
+        rag = RAGService()
+        stats = rag.get_stats()
+        
+        cursor_data = cursor.get_data()
+                
+        if not stats['is_loaded']:
+            await callback.send(
+                "❌ База знаний не загружена. Обратитесь к администратору.",
+                keyboard=main_menu_keyboard(current_course)
+            )
+            cursor.clear()
+            return
+        
+        text = kb_get_text_to_final_test_module_4()
+                
+        await callback.send(text, keyboard=final_start_test_kb())
+        cursor.change_state(TrainingStates.konstructor['module_4_questions'])
+        await save_cursor(callback.user_id, extra_data = {'payload': 'to_final_test', 'state_name': TrainingStates.konstructor['module_4_questions'], 'current_course': current_course})
+    
+    except Exception as e:
+        logger.error(f"[continue_after_kb_module_4_handler] Произошла ошибка {e}")
         
 
-@router.on_button_callback(state(TrainingStates.konstructor['module_4_final_testing']), lambda data: data.payload == "to_final_test")
+@router.on_button_callback(state(TrainingStates.konstructor['module_4_questions']), lambda data: data.payload == "to_final_test")
 async def kb_module_4_final_test_handler(callback: Callback, cursor: FSMCursor):
     '''Заглушка для прохождения финального теста по модулю № 4'''
     try:
@@ -10762,7 +11331,7 @@ async def kb_module_4_final_test_handler(callback: Callback, cursor: FSMCursor):
         logger.error(f"[ERROR][kb_module_4_final_test_handler] Произошла ошибка {e}") 
         
 
-@router.on_button_callback(state(TrainingStates.konstructor['module_5_final_testing']), lambda data: data.payload == "to_final_test")
+@router.on_button_callback(state(TrainingStates.konstructor['module_5_questions']), lambda data: data.payload == "to_final_test")
 async def kb_module_5_final_test_handler(callback: Callback, cursor: FSMCursor):
     '''Заглушка для прохождения финального теста по модулю № 5'''
     try:
@@ -10842,7 +11411,7 @@ async def kb_module_5_final_test_handler(callback: Callback, cursor: FSMCursor):
         logger.error(f"[ERROR][kb_module_5_final_test_handler] Произошла ошибка {e}")
         
 
-@router.on_button_callback(state(TrainingStates.konstructor['module_6_final_testing']), lambda data: data.payload == "to_final_test")
+@router.on_button_callback(state(TrainingStates.konstructor['module_6_questions']), lambda data: data.payload == "to_final_test")
 async def kb_module_6_final_test_handler(callback: Callback, cursor: FSMCursor):
     '''Заглушка для прохождения финального теста по модулю № 6'''
     try:
@@ -10922,7 +11491,7 @@ async def kb_module_6_final_test_handler(callback: Callback, cursor: FSMCursor):
         logger.error(f"[ERROR][kb_module_6_final_test_handler] Произошла ошибка {e}")
         
 
-@router.on_button_callback(state(TrainingStates.konstructor['module_7_final_testing']), lambda data: data.payload == "to_final_test")
+@router.on_button_callback(state(TrainingStates.konstructor['module_7_questions']), lambda data: data.payload == "to_final_test")
 async def kb_module_7_final_test_handler(callback: Callback, cursor: FSMCursor):
     '''Заглушка для прохождения финального теста по модулю № 7'''
     try:
@@ -11390,6 +11959,39 @@ async def kb_module_5_lesson_4_test_handler(callback: Callback, cursor: FSMCurso
         await remove_repeat_flag(callback.user_id)
         
 
+@router.on_button_callback(state(TrainingStates.konstructor['module_5_lesson_4_testing']), lambda data: data.payload.split('::')[1] == "not_first")
+async def continue_after_kb_module_5_handler(callback: Callback, cursor: FSMCursor):
+    """Завершение Модуля №5 - КБ. Переход к вопросам или финальному тесту"""
+    try:
+        logger.info(f"[continue_after_kb_module_5_handler] Стартовал")
+        await callback.message.delete()
+        current_course = await get_value_from_redis(callback.user_id, 'current_course')
+        if not current_course:
+            current_course = get_current_course(cursor)
+        # Проверяем загрузку базы знаний
+        rag = RAGService()
+        stats = rag.get_stats()
+        
+        cursor_data = cursor.get_data()
+                
+        if not stats['is_loaded']:
+            await callback.send(
+                "❌ База знаний не загружена. Обратитесь к администратору.",
+                keyboard=main_menu_keyboard(current_course)
+            )
+            cursor.clear()
+            return
+        
+        text = kb_get_text_to_final_test_module_5()
+                
+        await callback.send(text, keyboard=final_start_test_kb())
+        cursor.change_state(TrainingStates.konstructor['module_5_questions'])
+        await save_cursor(callback.user_id, extra_data = {'payload': 'to_final_test', 'state_name': TrainingStates.konstructor['module_5_questions'], 'current_course': current_course})
+    
+    except Exception as e:
+        logger.error(f"[continue_after_kb_module_5_handler] Произошла ошибка {e}")
+        
+
 async def kb_module_5_final_test_handler(callback: Callback, cursor: FSMCursor):
     '''Заглушка для прохождения финального теста по модулю № 5'''
     pass
@@ -11783,6 +12385,39 @@ async def kb_module_6_lesson_4_test_handler(callback: Callback, cursor: FSMCurso
         await remove_repeat_flag(callback.user_id)
         
 
+@router.on_button_callback(state(TrainingStates.konstructor['module_6_lesson_4_testing']), lambda data: data.payload.split('::')[1] == "not_first")
+async def continue_after_kb_module_6_handler(callback: Callback, cursor: FSMCursor):
+    """Завершение Модуля №6 - КБ. Переход к вопросам или финальному тесту"""
+    try:
+        logger.info(f"[continue_after_kb_module_6_handler] Стартовал")
+        await callback.message.delete()
+        current_course = await get_value_from_redis(callback.user_id, 'current_course')
+        if not current_course:
+            current_course = get_current_course(cursor)
+        # Проверяем загрузку базы знаний
+        rag = RAGService()
+        stats = rag.get_stats()
+        
+        cursor_data = cursor.get_data()
+                
+        if not stats['is_loaded']:
+            await callback.send(
+                "❌ База знаний не загружена. Обратитесь к администратору.",
+                keyboard=main_menu_keyboard(current_course)
+            )
+            cursor.clear()
+            return
+        
+        text = kb_get_text_to_final_test_module_6()
+                
+        await callback.send(text, keyboard=final_start_test_kb())
+        cursor.change_state(TrainingStates.konstructor['module_6_questions'])
+        await save_cursor(callback.user_id, extra_data = {'payload': 'to_final_test', 'state_name': TrainingStates.konstructor['module_6_questions'], 'current_course': current_course})
+    
+    except Exception as e:
+        logger.error(f"[continue_after_kb_module_6_handler] Произошла ошибка {e}")
+        
+
 async def kb_module_6_final_test_handler(callback: Callback, cursor: FSMCursor):
     '''Заглушка для прохождения финального теста по модулю № 6'''
     pass
@@ -12174,6 +12809,39 @@ async def kb_module_7_lesson_4_test_handler(callback: Callback, cursor: FSMCurso
         logger.error(f"[kb_module_7_lesson_4_test_handler] Произошла ошибка {e}")
     finally:
         await remove_repeat_flag(callback.user_id)
+        
+
+@router.on_button_callback(state(TrainingStates.konstructor['module_7_lesson_4_testing']), lambda data: data.payload.split('::')[1] == "not_first")
+async def continue_after_kb_module_7_handler(callback: Callback, cursor: FSMCursor):
+    """Завершение Модуля №7 - КБ. Переход к вопросам или финальному тесту"""
+    try:
+        logger.info(f"[continue_after_kb_module_7_handler] Стартовал")
+        await callback.message.delete()
+        current_course = await get_value_from_redis(callback.user_id, 'current_course')
+        if not current_course:
+            current_course = get_current_course(cursor)
+        # Проверяем загрузку базы знаний
+        rag = RAGService()
+        stats = rag.get_stats()
+        
+        cursor_data = cursor.get_data()
+                
+        if not stats['is_loaded']:
+            await callback.send(
+                "❌ База знаний не загружена. Обратитесь к администратору.",
+                keyboard=main_menu_keyboard(current_course)
+            )
+            cursor.clear()
+            return
+        
+        text = kb_get_text_to_final_test_module_7()
+                
+        await callback.send(text, keyboard=final_start_test_kb())
+        cursor.change_state(TrainingStates.konstructor['module_7_questions'])
+        await save_cursor(callback.user_id, extra_data = {'payload': 'to_final_test', 'state_name': TrainingStates.konstructor['module_7_questions'], 'current_course': current_course})
+    
+    except Exception as e:
+        logger.error(f"[continue_after_kb_module_7_handler] Произошла ошибка {e}")
         
 
 async def kb_module_7_final_test_handler(callback: Callback, cursor: FSMCursor):

@@ -3613,7 +3613,7 @@
       "username": "Валентин Иванов",
       "first_name": "Валентин",
       "last_name": "Иванов",
-      "last_activity": "2026-08-24T02:32:00.180838"
+      "last_activity": "2026-08-29T00:55:31.601940"
     },
     "courses": {
       "Обучение по продукту": {
@@ -3624,11 +3624,11 @@
         "accuracy_percent": 40.0
       },
       "Обучение для конструкторов": {
-        "lessons_completed": 2,
+        "lessons_completed": 13,
         "total_lessons": 85,
-        "correct_answers": 0,
-        "total_answers": 5,
-        "accuracy_percent": 0.0
+        "correct_answers": 12,
+        "total_answers": 40,
+        "accuracy_percent": 30.0
       }
     },
     "lesson_results": {
@@ -3647,6 +3647,46 @@
           "correct_count": 0,
           "total_count": 5,
           "accuracy": 0.0
+        },
+        "section_3": {
+          "finished_flag": true
+        },
+        "section_4": {
+          "correct_count": 3,
+          "total_count": 5,
+          "accuracy": 60.0
+        },
+        "section_5": {
+          "finished_flag": true
+        },
+        "section_6": {
+          "correct_count": 1,
+          "total_count": 5,
+          "accuracy": 20.0
+        },
+        "section_7": {
+          "finished_flag": true
+        },
+        "section_8": {
+          "correct_count": 2,
+          "total_count": 5,
+          "accuracy": 40.0
+        },
+        "section_9": {
+          "finished_flag": true
+        },
+        "section_10": {
+          "correct_count": 2,
+          "total_count": 5,
+          "accuracy": 40.0
+        },
+        "section_11": {
+          "finished_flag": true
+        },
+        "section_12": {
+          "correct_count": 4,
+          "total_count": 15,
+          "accuracy": 26.7
         }
       }
     }

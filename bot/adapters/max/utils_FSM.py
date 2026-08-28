@@ -202,8 +202,10 @@ class TrainingStates:
         'module_0_lesson_5_testing': 'module_0_lesson_5_testing',
         # урок № 6
         'module_0_lesson_6': 'module_0_lesson_6',
+        'module_0_questions': 'module_0_questions',
         'module_0_final_testing': 'module_0_final_testing',
         # модуль № 1
+        'kb_module_1_start': 'kb_module_1_start',
         # урок № 1
         'module_1_lesson_1': 'module_1_lesson_1',
         'module_1_lesson_1_questions': 'module_1_lesson_1_questions',
@@ -228,8 +230,10 @@ class TrainingStates:
         'module_1_lesson_6': 'module_1_lesson_6',
         'module_1_lesson_6_questions': 'module_1_lesson_6_questions',
         'module_1_lesson_6_testing': 'module_1_lesson_6_testing',
+        'module_1_questions': 'module_1_questions',
         'module_1_final_testing': 'module_1_final_testing',
         # модуль № 2
+        'kb_module_2_start': 'kb_module_2_start',
         # урок № 1
         'module_2_lesson_1': 'module_2_lesson_1',
         'module_2_lesson_1_questions': 'module_2_lesson_1_questions',
@@ -250,8 +254,10 @@ class TrainingStates:
         'module_2_lesson_5': 'module_2_lesson_5',
         'module_2_lesson_5_questions': 'module_2_lesson_5_questions',
         'module_2_lesson_5_testing': 'module_2_lesson_5_testing',
+        'module_2_questions': 'module_2_questions',
         'module_2_final_testing': 'module_2_final_testing',
         # модуль № 3
+        'kb_module_3_start': 'kb_module_3_start',
         # урок № 1
         'module_3_lesson_1': 'module_3_lesson_1',
         'module_3_lesson_1_questions': 'module_3_lesson_1_questions',
@@ -272,8 +278,10 @@ class TrainingStates:
         'module_3_lesson_5': 'module_3_lesson_5',
         'module_3_lesson_5_questions': 'module_3_lesson_5_questions',
         'module_3_lesson_5_testing': 'module_3_lesson_5_testing',
+        'module_3_questions': 'module_3_questions',
         'module_3_final_testing': 'module_3_final_testing',
         # модуль № 4
+        'kb_module_4_start': 'kb_module_4_start',
         # урок № 1
         'module_4_lesson_1': 'module_4_lesson_1',
         'module_4_lesson_1_questions': 'module_4_lesson_1_questions',
@@ -290,8 +298,10 @@ class TrainingStates:
         'module_4_lesson_4': 'module_4_lesson_4',
         'module_4_lesson_4_questions': 'module_4_lesson_4_questions',
         'module_4_lesson_4_testing': 'module_4_lesson_4_testing',
+        'module_4_questions': 'module_4_questions',
         'module_4_final_testing': 'module_4_final_testing',
         # модуль № 5
+        'kb_module_5_start': 'kb_module_5_start',
         # урок № 1
         'module_5_lesson_1': 'module_5_lesson_1',
         'module_5_lesson_1_questions': 'module_5_lesson_1_questions',
@@ -308,8 +318,10 @@ class TrainingStates:
         'module_5_lesson_4': 'module_5_lesson_4',
         'module_5_lesson_4_questions': 'module_5_lesson_4_questions',
         'module_5_lesson_4_testing': 'module_5_lesson_4_testing',
+        'module_5_questions': 'module_5_questions',
         'module_5_final_testing': 'module_5_final_testing',
         # модуль № 6
+        'kb_module_6_start': 'kb_module_6_start',
         # урок № 1
         'module_6_lesson_1': 'module_6_lesson_1',
         'module_6_lesson_1_questions': 'module_6_lesson_1_questions',
@@ -326,8 +338,10 @@ class TrainingStates:
         'module_6_lesson_4': 'module_6_lesson_4',
         'module_6_lesson_4_questions': 'module_6_lesson_4_questions',
         'module_6_lesson_4_testing': 'module_6_lesson_4_testing',
+        'module_6_questions': 'module_6_questions',
         'module_6_final_testing': 'module_6_final_testing',
         # модуль № 7
+        'kb_module_7_start': 'kb_module_7_start',
         # урок № 1
         'module_7_lesson_1': 'module_7_lesson_1',
         'module_7_lesson_1_questions': 'module_67_lesson_1_questions',
@@ -344,6 +358,7 @@ class TrainingStates:
         'module_7_lesson_4': 'module_7_lesson_4',
         'module_7_lesson_4_questions': 'module_7_lesson_4_questions',
         'module_7_lesson_4_testing': 'module_7_lesson_4_testing',
+        'module_7_questions': 'module_7_questions',
         'module_7_final_testing': 'module_7_final_testing',
         # итоговый тест по курсу ОБУЧЕНИЕ ДЛЯ КОНТСРУКТТОРОВ
         'final_test_start': 'final_test_start',
