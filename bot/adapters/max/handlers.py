@@ -1880,22 +1880,24 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
         #     cursor.change_state(TrainingStates.konstructor['module_0_lesson_6'])
         #     await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_0_lesson_6'], 'current_course': course_name})
         # elif state_name == 'module_0_lesson_6_testing':
-            await game.increment_lesson_func(
-                        user_id=user_id,
-                        course_name=course_name, # "Обучение по продажам"
-                        lesson_id='section_11', #  "section_1"
-                        user_data={
-                            "username": f'{first_name} {last_name}',
-                            "first_name": first_name,
-                            "last_name": last_name
-                        }
-                    )
-            #cursor.change_state(TrainingStates.konstructor['module_0_final_testing'])  # ''' заглушка
-            #await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_0_final_testing'], 'current_course': course_name, 'migration_state': 'module_0_final_testing'})
-            #cursor.change_state(TrainingStates.konstructor['module_0_questions']) 
-            #await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_0_questions'], 'current_course': course_name, 'migration_state': 'module_0_questions'})
-        # заглушка - здесь надо проверить есть ли тест после ГЛОССАРИЙ ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ
-        # здесь надо продумать переходы к финальным тестам после каждого модуля и переходы после тестирования к очередному модулю
+            logger.info('Добавляю 1 к урокам')
+            cursor_data = cursor.get_data()
+            append_flag = cursor_data.get("append_flag", False)
+            if not append_flag:
+                await game.increment_lesson_func(
+                            user_id=user_id,
+                            course_name=course_name, # "Обучение по продажам"
+                            lesson_id='section_11', #  "section_1"
+                            user_data={
+                                "username": f'{first_name} {last_name}',
+                                "first_name": first_name,
+                                "last_name": last_name
+                            },
+                            increment_value=1
+                        )
+                cursor_data.update(append_flag=True)
+                cursor.change_data(cursor_data)
+            
         elif state_name == 'module_1_lesson_1_testing':
             cursor.change_state(TrainingStates.konstructor['module_1_lesson_2'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_1_lesson_2'], 'current_course': course_name})
@@ -1995,7 +1997,8 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
         
         
         logger.info(f"[INFO][show_results] state = {cursor.get_state()} type= {type(cursor.get_state())}")
-        if state_name != 'step_11_testing' and cursor.get_state() != 'module_0_questions': 
+        if state_name != 'step_11_testing' and cursor.get_state() not in ['module_0_questions', 'module_1_questions', 'module_2_questions', 'module_3_questions',
+                                                                          'module_4_questions', 'module_5_questions', 'module_6_questions', 'module_7_questions']: 
             await message.send(
                     "📚 Вы можете продолжить обучение, нажав кнопку ниже 👇",
                     keyboard=kb
@@ -7392,7 +7395,7 @@ async def flow_sales_training_handler(callback: Callback, cursor: FSMCursor):
         
         full_completed_lessons, current_persent = game.get_full_completed_lessons(course_name = current_course, user_id = user_id)
         
-        full_block = 1
+        full_block = 1 if current_course != 'Обучение для конструкторов' else 0
                 
         if not lessons_completed:
             if current_course == 'Обучение по продажам':
@@ -7438,7 +7441,38 @@ async def flow_sales_training_handler(callback: Callback, cursor: FSMCursor):
             logger.info(f"[flow_sales_training_handler] Обучение по курсу ОБУЧЕНИЕ ДЛЯ ЮРИСТА не завершено")
             data = game._load_data()
             logger.info(f'{data=}')
+        
+        elif lessons_completed in range(1, 12) and current_course == "Обучение для конструкторов":
+            logger.info(f"[flow_sales_training_handler] Обучение по курсу ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ не завершено (МОДУЛЬ № 0)")
+            full_block = 0
+        
+        elif lessons_completed in range(12, 25) and current_course == "Обучение для конструкторов":
+            logger.info(f"[flow_sales_training_handler] Обучение по курсу ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ не завершено (МОДУЛЬ № 1)")
+            full_block = 1
+        
+        elif lessons_completed in range(25, 36) and current_course == "Обучение для конструкторов":
+            logger.info(f"[flow_sales_training_handler] Обучение по курсу ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ не завершено (МОДУЛЬ № 2)")
+            full_block = 2
+        
+        elif lessons_completed in range(36, 47) and current_course == "Обучение для конструкторов":
+            logger.info(f"[flow_sales_training_handler] Обучение по курсу ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ не завершено (МОДУЛЬ № 3)")
+            full_block = 3
             
+        elif lessons_completed in range(47, 56) and current_course == "Обучение для конструкторов":
+            logger.info(f"[flow_sales_training_handler] Обучение по курсу ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ не завершено (МОДУЛЬ № 4)")
+            full_block = 4
+            
+        elif lessons_completed in range(56, 65) and current_course == "Обучение для конструкторов":
+            logger.info(f"[flow_sales_training_handler] Обучение по курсу ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ не завершено (МОДУЛЬ № 5)")
+            full_block = 5                
+        
+        elif lessons_completed in range(65, 74) and current_course == "Обучение для конструкторов":
+            logger.info(f"[flow_sales_training_handler] Обучение по курсу ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ не завершено (МОДУЛЬ № 6)")
+            full_block = 6
+            
+        elif lessons_completed in range(74, 83) and current_course == "Обучение для конструкторов":
+            logger.info(f"[flow_sales_training_handler] Обучение по курсу ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ не завершено (МОДУЛЬ № 7)")
+            full_block = 7  
         
         elif lessons_completed < 7:
             logger.info(f"[flow_sales_training_handler] Обучение по блоку № 1 не завершено")
@@ -7476,9 +7510,14 @@ async def flow_sales_training_handler(callback: Callback, cursor: FSMCursor):
         
         if current_course == "Обучение по продажам":
             text = (
-                f"Вы уже приступили к обучению и в настоящий момент полностью прошли **{full_block - 1} из 7** блоков обучения\n"
+                f"Вы уже приступили к обучению и в настоящий момент полностью прошли **{full_block} из 7** блоков обучения\n"
                 " Вы можете 📚 **Продолжить обучение** \n либо попытаться ⬆️ **Улучшить результат**, нажав на соответствующие  кнопки ниже 👇"
-                ) 
+                )
+        elif current_course == "Обучение для конструкторов":
+            text = (
+                f"Вы уже приступили к обучению и в настоящий момент полностью прошли **{full_block} из 8** модулей обучения\n"
+                " Вы можете 📚 **Продолжить обучение** \n либо попытаться ⬆️ **Улучшить результат**, нажав на соответствующие  кнопки ниже 👇"
+                )
         
         else:
             if current_course == 'Обучение для юриста':
@@ -7539,9 +7578,21 @@ async def flow_sales_training_handler(callback: Callback, cursor: FSMCursor):
             await callback.message.delete()
             await callback.send(text, keyboard=finish_studying_kb())
             return
+
+        elif lessons_completed == 84 and current_course == 'Обучение для конструкторов':
+            logger.info(f"[flow_sales_training_handler] Обучение по курсу ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ ранее было завершено")
+            full_block = 7
+            text = (
+            f"Вы ранее уже полностью прошли курс обучения **ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ**\n"
+            " Вы можете попытаться ⬆️ **Улучшить результат**, нажав на соответствующую  кнопку ниже 👇\n"
+            "либо вернуться в 🏠 **Главное меню**"
+            )
+            await callback.message.delete()
+            await callback.send(text, keyboard=finish_studying_kb())
+            return
         
         await callback.message.delete()
-        if current_course == "Обучение по продажам":
+        if current_course in ["Обучение по продажам", "Обучение для конструкторов"]:
             await save_cursor(callback.user_id, extra_data = {'full_block_id': full_block})
             await callback.send(text, keyboard=continue_studying_kb(full_block))
         elif current_course in ["Другой сотрудник", "Обучение по продукту"]:
@@ -7701,11 +7752,42 @@ async def continue_studying_handler(callback: Callback, cursor: FSMCursor):
                 cursor.change_state(state(TrainingStates.regular_managment['message_26']))
             elif str(full_block_id) == '9':
                 await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.regular_managment['message_29']})
-                cursor.change_state(state(TrainingStates.regular_managment['message_29']))
-            
+                cursor.change_state(state(TrainingStates.regular_managment['message_29']))    
             await regular_managment_message_2_handler(callback, cursor)
-                
-                
+            
+        elif current_course == 'Обучение для конструкторов':
+            if str(full_block_id) == '0':
+                cursor.change_state(TrainingStates.konstructor['module_0'])
+                await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_0']})
+                await kb_module_0_handler(callback, cursor)
+            elif str(full_block_id) == '1':
+                cursor.change_state(TrainingStates.konstructor['kb_module_1_start'])
+                await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['kb_module_1_start']})
+                await kb_module_1_start_handler(callback, cursor)
+            elif str(full_block_id) == '2':
+                cursor.change_state(TrainingStates.konstructor['kb_module_2_start'])
+                await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['kb_module_2_start']})
+                await kb_module_2_start_handler(callback, cursor)
+            elif str(full_block_id) == '3':
+                cursor.change_state(TrainingStates.konstructor['kb_module_3_start'])
+                await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['kb_module_3_start']})
+                await kb_module_3_start_handler(callback, cursor)
+            elif str(full_block_id) == '4':
+                cursor.change_state(TrainingStates.konstructor['kb_module_4_start'])
+                await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['kb_module_4_start']})
+                await kb_module_4_start_handler(callback, cursor)
+            elif str(full_block_id) == '5':
+                cursor.change_state(TrainingStates.konstructor['kb_module_5_start'])
+                await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['kb_module_5_start']})
+                await kb_module_5_start_handler(callback, cursor)
+            elif str(full_block_id) == '6':
+                cursor.change_state(TrainingStates.konstructor['kb_module_6_start'])
+                await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['kb_module_6_start']})
+                await kb_module_6_start_handler(callback, cursor)
+            elif str(full_block_id) == '7':
+                cursor.change_state(TrainingStates.konstructor['kb_module_7_start'])
+                await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['kb_module_7_start']})
+                await kb_module_7_start_handler(callback, cursor)        
             
     except Exception as e:
         logger.error(f"[continue_studying_handler] Произошла ошибка {e}")
@@ -8759,7 +8841,7 @@ async def kb_module_1_start_handler(callback: Callback, cursor: FSMCursor, conti
         
         kb = KeyboardBuilder().add(CallbackButton(text="📚 Продолжить обучение", payload="next_education::not_first"))
                 
-        cursor.change_state(TrainingStates.konstructor['module_0_lesson_1'])
+        cursor.change_state(TrainingStates.konstructor['module_1_lesson_1'])
         await save_cursor(callback.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_1_lesson_1'], 'current_course': 'Обучение для конструкторов', 'payload': 'next_education::not_first', 'status_user': status_user})
         
         await callback.send(
@@ -9362,7 +9444,7 @@ async def kb_module_1_lesson_4_handler(callback: Callback, cursor: FSMCursor, co
         await remove_repeat_flag(callback.user_id) 
 
 
-@router.on_button_callback(state(TrainingStates.konstructor['module_1_lesson_3_questions']), lambda data: data.payload == "start_test")
+@router.on_button_callback(state(TrainingStates.konstructor['module_1_lesson_4_questions']), lambda data: data.payload == "start_test")
 async def kb_module_1_lesson_4_test_handler(callback: Callback, cursor: FSMCursor):
     """ОБУЧЕНИЕ ДЛЯ КОНСТРУКТОРОВ Начало тестирования МОДУЛЬ № 1 УРОК № 4 """
     try:
@@ -9607,15 +9689,22 @@ async def continue_after_kb_module_1_handler(callback: Callback, cursor: FSMCurs
     try:
         logger.info(f"[continue_after_kb_module_1_handler] Стартовал")
         await callback.message.delete()
+        branch_name = ''
         current_course = await get_value_from_redis(callback.user_id, 'current_course')
         if not current_course:
             current_course = get_current_course(cursor)
         # Проверяем загрузку базы знаний
         rag = RAGService()
-        stats = rag.get_stats()
         
-        cursor_data = cursor.get_data()
-                
+        if current_course == 'Обучение для конструкторов':
+            branch_name = 'branch_kb'
+        if isinstance(callback, Callback):
+            await callback.message.delete()
+        # Проверяем загрузку базы знаний
+        await save_cursor(callback.user_id, extra_data={'branch_name': branch_name})
+        rag = RAGService(branch_name=branch_name)
+        stats = rag.get_stats()
+                        
         if not stats['is_loaded']:
             await callback.send(
                 "❌ База знаний не загружена. Обратитесь к администратору.",
@@ -9625,11 +9714,13 @@ async def continue_after_kb_module_1_handler(callback: Callback, cursor: FSMCurs
             return
         
         text = kb_get_text_to_final_test_module_1()
-                
-        await callback.send(text, keyboard=final_start_test_kb())
+        logger.info('Должны отправить текст')        
+        await callback.send(text=text, keyboard=final_start_test_kb())
         cursor.change_state(TrainingStates.konstructor['module_1_questions'])
         await save_cursor(callback.user_id, extra_data = {'payload': 'to_final_test', 'state_name': TrainingStates.konstructor['module_1_questions'], 'current_course': current_course})
-    
+        logger.info('Завершение работы метода')
+        return 
+        
     except Exception as e:
         logger.error(f"[continue_after_kb_module_1_handler] Произошла ошибка {e}")
         
@@ -10125,15 +10216,22 @@ async def continue_after_kb_module_2_handler(callback: Callback, cursor: FSMCurs
     try:
         logger.info(f"[continue_after_kb_module_2_handler] Стартовал")
         await callback.message.delete()
+        branch_name = ''
         current_course = await get_value_from_redis(callback.user_id, 'current_course')
         if not current_course:
             current_course = get_current_course(cursor)
         # Проверяем загрузку базы знаний
         rag = RAGService()
-        stats = rag.get_stats()
         
-        cursor_data = cursor.get_data()
-                
+        if current_course == 'Обучение для конструкторов':
+            branch_name = 'branch_kb'
+        if isinstance(callback, Callback):
+            await callback.message.delete()
+        # Проверяем загрузку базы знаний
+        await save_cursor(callback.user_id, extra_data={'branch_name': branch_name})
+        rag = RAGService(branch_name=branch_name)
+        stats = rag.get_stats()
+                        
         if not stats['is_loaded']:
             await callback.send(
                 "❌ База знаний не загружена. Обратитесь к администратору.",
@@ -10143,11 +10241,13 @@ async def continue_after_kb_module_2_handler(callback: Callback, cursor: FSMCurs
             return
         
         text = kb_get_text_to_final_test_module_2()
-                
-        await callback.send(text, keyboard=final_start_test_kb())
-        cursor.change_state(TrainingStates.konstructor['module_0_questions'])
+        logger.info('Должны отправить текст')        
+        await callback.send(text=text, keyboard=final_start_test_kb())
+        cursor.change_state(TrainingStates.konstructor['module_2_questions'])
         await save_cursor(callback.user_id, extra_data = {'payload': 'to_final_test', 'state_name': TrainingStates.konstructor['module_2_questions'], 'current_course': current_course})
-    
+        logger.info('Завершение работы метода')
+        return 
+        
     except Exception as e:
         logger.error(f"[continue_after_kb_module_2_handler] Произошла ошибка {e}")
 
@@ -10723,15 +10823,22 @@ async def continue_after_kb_module_3_handler(callback: Callback, cursor: FSMCurs
     try:
         logger.info(f"[continue_after_kb_module_3_handler] Стартовал")
         await callback.message.delete()
+        branch_name = ''
         current_course = await get_value_from_redis(callback.user_id, 'current_course')
         if not current_course:
             current_course = get_current_course(cursor)
         # Проверяем загрузку базы знаний
         rag = RAGService()
-        stats = rag.get_stats()
         
-        cursor_data = cursor.get_data()
-                
+        if current_course == 'Обучение для конструкторов':
+            branch_name = 'branch_kb'
+        if isinstance(callback, Callback):
+            await callback.message.delete()
+        # Проверяем загрузку базы знаний
+        await save_cursor(callback.user_id, extra_data={'branch_name': branch_name})
+        rag = RAGService(branch_name=branch_name)
+        stats = rag.get_stats()
+                        
         if not stats['is_loaded']:
             await callback.send(
                 "❌ База знаний не загружена. Обратитесь к администратору.",
@@ -10741,11 +10848,13 @@ async def continue_after_kb_module_3_handler(callback: Callback, cursor: FSMCurs
             return
         
         text = kb_get_text_to_final_test_module_3()
-                
-        await callback.send(text, keyboard=final_start_test_kb())
+        logger.info('Должны отправить текст')        
+        await callback.send(text=text, keyboard=final_start_test_kb())
         cursor.change_state(TrainingStates.konstructor['module_3_questions'])
         await save_cursor(callback.user_id, extra_data = {'payload': 'to_final_test', 'state_name': TrainingStates.konstructor['module_3_questions'], 'current_course': current_course})
-    
+        logger.info('Завершение работы метода')
+        return 
+        
     except Exception as e:
         logger.error(f"[continue_after_kb_module_3_handler] Произошла ошибка {e}")
         
@@ -11224,15 +11333,22 @@ async def continue_after_kb_module_4_handler(callback: Callback, cursor: FSMCurs
     try:
         logger.info(f"[continue_after_kb_module_4_handler] Стартовал")
         await callback.message.delete()
+        branch_name = ''
         current_course = await get_value_from_redis(callback.user_id, 'current_course')
         if not current_course:
             current_course = get_current_course(cursor)
         # Проверяем загрузку базы знаний
         rag = RAGService()
-        stats = rag.get_stats()
         
-        cursor_data = cursor.get_data()
-                
+        if current_course == 'Обучение для конструкторов':
+            branch_name = 'branch_kb'
+        if isinstance(callback, Callback):
+            await callback.message.delete()
+        # Проверяем загрузку базы знаний
+        await save_cursor(callback.user_id, extra_data={'branch_name': branch_name})
+        rag = RAGService(branch_name=branch_name)
+        stats = rag.get_stats()
+                        
         if not stats['is_loaded']:
             await callback.send(
                 "❌ База знаний не загружена. Обратитесь к администратору.",
@@ -11242,11 +11358,13 @@ async def continue_after_kb_module_4_handler(callback: Callback, cursor: FSMCurs
             return
         
         text = kb_get_text_to_final_test_module_4()
-                
-        await callback.send(text, keyboard=final_start_test_kb())
+        logger.info('Должны отправить текст')        
+        await callback.send(text=text, keyboard=final_start_test_kb())
         cursor.change_state(TrainingStates.konstructor['module_4_questions'])
         await save_cursor(callback.user_id, extra_data = {'payload': 'to_final_test', 'state_name': TrainingStates.konstructor['module_4_questions'], 'current_course': current_course})
-    
+        logger.info('Завершение работы метода')
+        return 
+        
     except Exception as e:
         logger.error(f"[continue_after_kb_module_4_handler] Произошла ошибка {e}")
         
@@ -11965,15 +12083,22 @@ async def continue_after_kb_module_5_handler(callback: Callback, cursor: FSMCurs
     try:
         logger.info(f"[continue_after_kb_module_5_handler] Стартовал")
         await callback.message.delete()
+        branch_name = ''
         current_course = await get_value_from_redis(callback.user_id, 'current_course')
         if not current_course:
             current_course = get_current_course(cursor)
         # Проверяем загрузку базы знаний
         rag = RAGService()
-        stats = rag.get_stats()
         
-        cursor_data = cursor.get_data()
-                
+        if current_course == 'Обучение для конструкторов':
+            branch_name = 'branch_kb'
+        if isinstance(callback, Callback):
+            await callback.message.delete()
+        # Проверяем загрузку базы знаний
+        await save_cursor(callback.user_id, extra_data={'branch_name': branch_name})
+        rag = RAGService(branch_name=branch_name)
+        stats = rag.get_stats()
+                        
         if not stats['is_loaded']:
             await callback.send(
                 "❌ База знаний не загружена. Обратитесь к администратору.",
@@ -11983,11 +12108,13 @@ async def continue_after_kb_module_5_handler(callback: Callback, cursor: FSMCurs
             return
         
         text = kb_get_text_to_final_test_module_5()
-                
-        await callback.send(text, keyboard=final_start_test_kb())
+        logger.info('Должны отправить текст')        
+        await callback.send(text=text, keyboard=final_start_test_kb())
         cursor.change_state(TrainingStates.konstructor['module_5_questions'])
         await save_cursor(callback.user_id, extra_data = {'payload': 'to_final_test', 'state_name': TrainingStates.konstructor['module_5_questions'], 'current_course': current_course})
-    
+        logger.info('Завершение работы метода')
+        return 
+        
     except Exception as e:
         logger.error(f"[continue_after_kb_module_5_handler] Произошла ошибка {e}")
         
@@ -12391,15 +12518,22 @@ async def continue_after_kb_module_6_handler(callback: Callback, cursor: FSMCurs
     try:
         logger.info(f"[continue_after_kb_module_6_handler] Стартовал")
         await callback.message.delete()
+        branch_name = ''
         current_course = await get_value_from_redis(callback.user_id, 'current_course')
         if not current_course:
             current_course = get_current_course(cursor)
         # Проверяем загрузку базы знаний
         rag = RAGService()
-        stats = rag.get_stats()
         
-        cursor_data = cursor.get_data()
-                
+        if current_course == 'Обучение для конструкторов':
+            branch_name = 'branch_kb'
+        if isinstance(callback, Callback):
+            await callback.message.delete()
+        # Проверяем загрузку базы знаний
+        await save_cursor(callback.user_id, extra_data={'branch_name': branch_name})
+        rag = RAGService(branch_name=branch_name)
+        stats = rag.get_stats()
+                        
         if not stats['is_loaded']:
             await callback.send(
                 "❌ База знаний не загружена. Обратитесь к администратору.",
@@ -12409,18 +12543,15 @@ async def continue_after_kb_module_6_handler(callback: Callback, cursor: FSMCurs
             return
         
         text = kb_get_text_to_final_test_module_6()
-                
-        await callback.send(text, keyboard=final_start_test_kb())
+        logger.info('Должны отправить текст')        
+        await callback.send(text=text, keyboard=final_start_test_kb())
         cursor.change_state(TrainingStates.konstructor['module_6_questions'])
         await save_cursor(callback.user_id, extra_data = {'payload': 'to_final_test', 'state_name': TrainingStates.konstructor['module_6_questions'], 'current_course': current_course})
-    
+        logger.info('Завершение работы метода')
+        return 
+        
     except Exception as e:
         logger.error(f"[continue_after_kb_module_6_handler] Произошла ошибка {e}")
-        
-
-async def kb_module_6_final_test_handler(callback: Callback, cursor: FSMCursor):
-    '''Заглушка для прохождения финального теста по модулю № 6'''
-    pass
 
 
 @router.on_button_callback(state(TrainingStates.konstructor['module_7_lesson_1']), lambda data: data.payload.split('::')[1] == "not_first")
@@ -12817,15 +12948,22 @@ async def continue_after_kb_module_7_handler(callback: Callback, cursor: FSMCurs
     try:
         logger.info(f"[continue_after_kb_module_7_handler] Стартовал")
         await callback.message.delete()
+        branch_name = ''
         current_course = await get_value_from_redis(callback.user_id, 'current_course')
         if not current_course:
             current_course = get_current_course(cursor)
         # Проверяем загрузку базы знаний
         rag = RAGService()
-        stats = rag.get_stats()
         
-        cursor_data = cursor.get_data()
-                
+        if current_course == 'Обучение для конструкторов':
+            branch_name = 'branch_kb'
+        if isinstance(callback, Callback):
+            await callback.message.delete()
+        # Проверяем загрузку базы знаний
+        await save_cursor(callback.user_id, extra_data={'branch_name': branch_name})
+        rag = RAGService(branch_name=branch_name)
+        stats = rag.get_stats()
+                        
         if not stats['is_loaded']:
             await callback.send(
                 "❌ База знаний не загружена. Обратитесь к администратору.",
@@ -12835,11 +12973,13 @@ async def continue_after_kb_module_7_handler(callback: Callback, cursor: FSMCurs
             return
         
         text = kb_get_text_to_final_test_module_7()
-                
-        await callback.send(text, keyboard=final_start_test_kb())
+        logger.info('Должны отправить текст')        
+        await callback.send(text=text, keyboard=final_start_test_kb())
         cursor.change_state(TrainingStates.konstructor['module_7_questions'])
         await save_cursor(callback.user_id, extra_data = {'payload': 'to_final_test', 'state_name': TrainingStates.konstructor['module_7_questions'], 'current_course': current_course})
-    
+        logger.info('Завершение работы метода')
+        return 
+        
     except Exception as e:
         logger.error(f"[continue_after_kb_module_7_handler] Произошла ошибка {e}")
         

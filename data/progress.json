@@ -3609,11 +3609,11 @@
   },
   "175082514": {
     "user_info": {
-      "user_id": 175082514,
+      "user_id": "175082514",
       "username": "Валентин Иванов",
       "first_name": "Валентин",
       "last_name": "Иванов",
-      "last_activity": "2026-08-29T00:55:31.601940"
+      "last_activity": "2026-08-29T17:52:15.856643"
     },
     "courses": {
       "Обучение по продукту": {
@@ -3624,11 +3624,11 @@
         "accuracy_percent": 40.0
       },
       "Обучение для конструкторов": {
-        "lessons_completed": 13,
+        "lessons_completed": 17,
         "total_lessons": 85,
-        "correct_answers": 12,
-        "total_answers": 40,
-        "accuracy_percent": 30.0
+        "correct_answers": 26,
+        "total_answers": 75,
+        "accuracy_percent": 34.7
       }
     },
     "lesson_results": {
@@ -3644,17 +3644,17 @@
           "finished_flag": true
         },
         "section_2": {
-          "correct_count": 0,
+          "correct_count": 2,
           "total_count": 5,
-          "accuracy": 0.0
+          "accuracy": 40.0
         },
         "section_3": {
           "finished_flag": true
         },
         "section_4": {
-          "correct_count": 3,
+          "correct_count": 2,
           "total_count": 5,
-          "accuracy": 60.0
+          "accuracy": 40.0
         },
         "section_5": {
           "finished_flag": true
@@ -3684,9 +3684,28 @@
           "finished_flag": true
         },
         "section_12": {
-          "correct_count": 4,
+          "correct_count": 6,
           "total_count": 15,
-          "accuracy": 26.7
+          "accuracy": 40.0
+        },
+        "section_13": {
+          "finished_flag": true
+        },
+        "section_14": {
+          "correct_count": 1,
+          "total_count": 5,
+          "accuracy": 20.0
+        },
+        "section_15": {
+          "finished_flag": true
+        },
+        "section_16": {
+          "correct_count": 2,
+          "total_count": 5,
+          "accuracy": 40.0
+        },
+        "section_17": {
+          "finished_flag": true
         }
       }
     }
