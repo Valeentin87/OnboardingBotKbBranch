@@ -1913,9 +1913,9 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
         elif state_name == 'module_1_lesson_5_testing':
             cursor.change_state(TrainingStates.konstructor['module_1_lesson_6'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_1_lesson_6'], 'current_course': course_name})
-        elif state_name == 'module_1_lesson_6_testing':
-            cursor.change_state(TrainingStates.konstructor['module_1_final_testing'])
-            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_1_final_testing'], 'current_course': course_name, 'migration_state': 'module_1_final_testing'})
+        # elif state_name == 'module_1_lesson_6_testing':
+        #     cursor.change_state(TrainingStates.konstructor['module_1_final_testing'])
+        #     await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_1_final_testing'], 'current_course': course_name, 'migration_state': 'module_1_final_testing'})
         elif state_name == 'module_2_lesson_1_testing':
             cursor.change_state(TrainingStates.konstructor['module_2_lesson_2'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_2_lesson_2'], 'current_course': course_name})
@@ -1928,9 +1928,9 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
         elif state_name == 'module_2_lesson_4_testing':
             cursor.change_state(TrainingStates.konstructor['module_2_lesson_5'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_2_lesson_5'], 'current_course': course_name})
-        elif state_name == 'module_2_lesson_5_testing':
-            cursor.change_state(TrainingStates.konstructor['module_2_final_testing'])
-            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_2_final_testing'], 'current_course': course_name, 'migration_state': 'module_2_final_testing'})
+        # elif state_name == 'module_2_lesson_5_testing':
+        #     cursor.change_state(TrainingStates.konstructor['module_2_final_testing'])
+        #     await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_2_final_testing'], 'current_course': course_name, 'migration_state': 'module_2_final_testing'})
         elif state_name == 'module_3_lesson_1_testing':
             cursor.change_state(TrainingStates.konstructor['module_3_lesson_2'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_3_lesson_2'], 'current_course': course_name})
@@ -1943,9 +1943,9 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
         elif state_name == 'module_3_lesson_4_testing':
             cursor.change_state(TrainingStates.konstructor['module_3_lesson_5'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_3_lesson_5'], 'current_course': course_name})
-        elif state_name == 'module_3_lesson_5_testing':
-            cursor.change_state(TrainingStates.konstructor['module_3_final_testing'])
-            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_3_final_testing'], 'current_course': course_name, 'migration_state': 'module_3_final_testing'})
+        # elif state_name == 'module_3_lesson_5_testing':
+        #     cursor.change_state(TrainingStates.konstructor['module_3_final_testing'])
+        #     await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_3_final_testing'], 'current_course': course_name, 'migration_state': 'module_3_final_testing'})
         elif state_name == 'module_4_lesson_1_testing':
             cursor.change_state(TrainingStates.konstructor['module_4_lesson_2'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_4_lesson_2'], 'current_course': course_name})
@@ -1955,9 +1955,9 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
         elif state_name == 'module_4_lesson_3_testing':
             cursor.change_state(TrainingStates.konstructor['module_4_lesson_4'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_4_lesson_4'], 'current_course': course_name})
-        elif state_name == 'module_4_lesson_4_testing':
-            cursor.change_state(TrainingStates.konstructor['module_4_final_testing'])
-            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_4_final_testing'], 'current_course': course_name, 'migration_state': 'module_4_final_testing'})
+        # elif state_name == 'module_4_lesson_4_testing':
+        #     cursor.change_state(TrainingStates.konstructor['module_4_final_testing'])
+        #     await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_4_final_testing'], 'current_course': course_name, 'migration_state': 'module_4_final_testing'})
         elif state_name == 'module_5_lesson_1_testing':
             cursor.change_state(TrainingStates.konstructor['module_5_lesson_2'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_5_lesson_2'], 'current_course': course_name})
@@ -1967,9 +1967,9 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
         elif state_name == 'module_5_lesson_3_testing':
             cursor.change_state(TrainingStates.konstructor['module_5_lesson_4'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_5_lesson_4'], 'current_course': course_name})
-        elif state_name == 'module_5_lesson_4_testing':
-            cursor.change_state(TrainingStates.konstructor['module_5_final_testing'])
-            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_5_final_testing'], 'current_course': course_name, 'migration_state': 'module_5_final_testing'})
+        # elif state_name == 'module_5_lesson_4_testing':
+        #     cursor.change_state(TrainingStates.konstructor['module_5_final_testing'])
+        #     await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_5_final_testing'], 'current_course': course_name, 'migration_state': 'module_5_final_testing'})
         elif state_name == 'module_6_lesson_1_testing':
             cursor.change_state(TrainingStates.konstructor['module_6_lesson_2'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_6_lesson_2'], 'current_course': course_name})
@@ -1979,9 +1979,9 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
         elif state_name == 'module_6_lesson_3_testing':
             cursor.change_state(TrainingStates.konstructor['module_6_lesson_4'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_6_lesson_4'], 'current_course': course_name})
-        elif state_name == 'module_6_lesson_4_testing':
-            cursor.change_state(TrainingStates.konstructor['module_6_final_testing'])
-            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_6_final_testing'], 'current_course': course_name, 'migration_state': 'module_6_final_testing'})
+        # elif state_name == 'module_6_lesson_4_testing':
+        #     cursor.change_state(TrainingStates.konstructor['module_6_final_testing'])
+        #     await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_6_final_testing'], 'current_course': course_name, 'migration_state': 'module_6_final_testing'})
         elif state_name == 'module_7_lesson_1_testing':
             cursor.change_state(TrainingStates.konstructor['module_7_lesson_2'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_7_lesson_2'], 'current_course': course_name})
@@ -1991,9 +1991,9 @@ async def show_results(message: Message, cursor: FSMCursor, lesson_id: str, cour
         elif state_name == 'module_7_lesson_3_testing':
             cursor.change_state(TrainingStates.konstructor['module_7_lesson_4'])
             await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_7_lesson_4'], 'current_course': course_name})
-        elif state_name == 'module_7_lesson_4_testing':
-            cursor.change_state(TrainingStates.konstructor['module_7_final_testing'])
-            await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_7_final_testing'], 'current_course': course_name, 'migration_state': 'module_7_final_testing'})
+        # elif state_name == 'module_7_lesson_4_testing':
+        #     cursor.change_state(TrainingStates.konstructor['module_7_final_testing'])
+        #     await save_cursor(message.user_id, extra_data = {'state_name': TrainingStates.konstructor['module_7_final_testing'], 'current_course': course_name, 'migration_state': 'module_7_final_testing'})
         
         
         logger.info(f"[INFO][show_results] state = {cursor.get_state()} type= {type(cursor.get_state())}")
@@ -8466,7 +8466,6 @@ async def continue_after_kb_module_0_handler(callback: Callback, cursor: FSMCurs
         if not current_course:
             current_course = get_current_course(cursor)
         # Проверяем загрузку базы знаний
-        rag = RAGService()
         
         if current_course == 'Обучение для конструкторов':
             branch_name = 'branch_kb'
@@ -9694,7 +9693,6 @@ async def continue_after_kb_module_1_handler(callback: Callback, cursor: FSMCurs
         if not current_course:
             current_course = get_current_course(cursor)
         # Проверяем загрузку базы знаний
-        rag = RAGService()
         
         if current_course == 'Обучение для конструкторов':
             branch_name = 'branch_kb'
@@ -10221,7 +10219,6 @@ async def continue_after_kb_module_2_handler(callback: Callback, cursor: FSMCurs
         if not current_course:
             current_course = get_current_course(cursor)
         # Проверяем загрузку базы знаний
-        rag = RAGService()
         
         if current_course == 'Обучение для конструкторов':
             branch_name = 'branch_kb'
@@ -10828,7 +10825,6 @@ async def continue_after_kb_module_3_handler(callback: Callback, cursor: FSMCurs
         if not current_course:
             current_course = get_current_course(cursor)
         # Проверяем загрузку базы знаний
-        rag = RAGService()
         
         if current_course == 'Обучение для конструкторов':
             branch_name = 'branch_kb'
@@ -11261,7 +11257,7 @@ async def kb_module_4_lesson_4_handler(callback: Callback, cursor: FSMCursor, co
         await game.increment_lesson_func(
             user_id=user_id,
             course_name=course_name, # "Обучение по продажам"
-            lesson_id='section_55', #  "section_1"
+            lesson_id='section_54', #  "section_1"
             user_data={
                 "username": f'{first_name} {last_name}',
                 "first_name": first_name,
@@ -11338,7 +11334,6 @@ async def continue_after_kb_module_4_handler(callback: Callback, cursor: FSMCurs
         if not current_course:
             current_course = get_current_course(cursor)
         # Проверяем загрузку базы знаний
-        rag = RAGService()
         
         if current_course == 'Обучение для конструкторов':
             branch_name = 'branch_kb'
@@ -12088,7 +12083,6 @@ async def continue_after_kb_module_5_handler(callback: Callback, cursor: FSMCurs
         if not current_course:
             current_course = get_current_course(cursor)
         # Проверяем загрузку базы знаний
-        rag = RAGService()
         
         if current_course == 'Обучение для конструкторов':
             branch_name = 'branch_kb'
@@ -12523,7 +12517,6 @@ async def continue_after_kb_module_6_handler(callback: Callback, cursor: FSMCurs
         if not current_course:
             current_course = get_current_course(cursor)
         # Проверяем загрузку базы знаний
-        rag = RAGService()
         
         if current_course == 'Обучение для конструкторов':
             branch_name = 'branch_kb'
@@ -12953,7 +12946,6 @@ async def continue_after_kb_module_7_handler(callback: Callback, cursor: FSMCurs
         if not current_course:
             current_course = get_current_course(cursor)
         # Проверяем загрузку базы знаний
-        rag = RAGService()
         
         if current_course == 'Обучение для конструкторов':
             branch_name = 'branch_kb'

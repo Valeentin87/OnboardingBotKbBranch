@@ -3609,11 +3609,11 @@
   },
   "175082514": {
     "user_info": {
-      "user_id": "175082514",
+      "user_id": 175082514,
       "username": "Валентин Иванов",
       "first_name": "Валентин",
       "last_name": "Иванов",
-      "last_activity": "2026-08-29T17:52:15.856643"
+      "last_activity": "2026-08-30T16:47:16.525044"
     },
     "courses": {
       "Обучение по продукту": {
@@ -3624,11 +3624,11 @@
         "accuracy_percent": 40.0
       },
       "Обучение для конструкторов": {
-        "lessons_completed": 17,
+        "lessons_completed": 74,
         "total_lessons": 85,
-        "correct_answers": 26,
-        "total_answers": 75,
-        "accuracy_percent": 34.7
+        "correct_answers": 103,
+        "total_answers": 415,
+        "accuracy_percent": 24.8
       }
     },
     "lesson_results": {
@@ -3700,12 +3700,247 @@
           "finished_flag": true
         },
         "section_16": {
+          "correct_count": 1,
+          "total_count": 5,
+          "accuracy": 20.0
+        },
+        "section_17": {
+          "finished_flag": true
+        },
+        "section_18": {
+          "correct_count": 1,
+          "total_count": 5,
+          "accuracy": 20.0
+        },
+        "section_19": {
+          "finished_flag": true
+        },
+        "section_20": {
+          "correct_count": 1,
+          "total_count": 5,
+          "accuracy": 20.0
+        },
+        "section_21": {
+          "finished_flag": true
+        },
+        "section_22": {
+          "correct_count": 0,
+          "total_count": 5,
+          "accuracy": 0.0
+        },
+        "section_23": {
+          "finished_flag": true
+        },
+        "section_24": {
+          "correct_count": 1,
+          "total_count": 5,
+          "accuracy": 20.0
+        },
+        "section_25": {
+          "correct_count": 5,
+          "total_count": 15,
+          "accuracy": 33.3
+        },
+        "section_26": {
+          "finished_flag": true
+        },
+        "section_27": {
+          "correct_count": 0,
+          "total_count": 5,
+          "accuracy": 0.0
+        },
+        "section_28": {
+          "finished_flag": true
+        },
+        "section_29": {
+          "correct_count": 1,
+          "total_count": 5,
+          "accuracy": 20.0
+        },
+        "section_30": {
+          "finished_flag": true
+        },
+        "section_31": {
+          "correct_count": 0,
+          "total_count": 5,
+          "accuracy": 0.0
+        },
+        "section_32": {
+          "finished_flag": true
+        },
+        "section_33": {
+          "correct_count": 1,
+          "total_count": 5,
+          "accuracy": 20.0
+        },
+        "section_34": {
+          "finished_flag": true
+        },
+        "section_35": {
+          "correct_count": 0,
+          "total_count": 5,
+          "accuracy": 0.0
+        },
+        "section_36": {
+          "correct_count": 4,
+          "total_count": 15,
+          "accuracy": 26.7
+        },
+        "section_37": {
+          "finished_flag": true
+        },
+        "section_38": {
+          "correct_count": 0,
+          "total_count": 5,
+          "accuracy": 0.0
+        },
+        "section_39": {
+          "finished_flag": true
+        },
+        "section_40": {
+          "correct_count": 1,
+          "total_count": 5,
+          "accuracy": 20.0
+        },
+        "section_41": {
+          "finished_flag": true
+        },
+        "section_42": {
           "correct_count": 2,
           "total_count": 5,
           "accuracy": 40.0
         },
-        "section_17": {
+        "section_43": {
           "finished_flag": true
+        },
+        "section_44": {
+          "correct_count": 2,
+          "total_count": 5,
+          "accuracy": 40.0
+        },
+        "section_45": {
+          "finished_flag": true
+        },
+        "section_46": {
+          "correct_count": 2,
+          "total_count": 5,
+          "accuracy": 40.0
+        },
+        "section_47": {
+          "correct_count": 2,
+          "total_count": 15,
+          "accuracy": 13.3
+        },
+        "section_48": {
+          "finished_flag": true
+        },
+        "section_49": {
+          "correct_count": 1,
+          "total_count": 5,
+          "accuracy": 20.0
+        },
+        "section_50": {
+          "finished_flag": true
+        },
+        "section_51": {
+          "correct_count": 0,
+          "total_count": 5,
+          "accuracy": 0.0
+        },
+        "section_52": {
+          "finished_flag": true
+        },
+        "section_53": {
+          "correct_count": 2,
+          "total_count": 5,
+          "accuracy": 40.0
+        },
+        "section_54": {
+          "finished_flag": true
+        },
+        "section_55": {
+          "correct_count": 2,
+          "total_count": 5,
+          "accuracy": 40.0
+        },
+        "section_56": {
+          "correct_count": 2,
+          "total_count": 15,
+          "accuracy": 13.3
+        },
+        "section_57": {
+          "finished_flag": true
+        },
+        "section_58": {
+          "correct_count": 3,
+          "total_count": 5,
+          "accuracy": 60.0
+        },
+        "section_59": {
+          "finished_flag": true
+        },
+        "section_60": {
+          "correct_count": 0,
+          "total_count": 5,
+          "accuracy": 0.0
+        },
+        "section_61": {
+          "finished_flag": true
+        },
+        "section_62": {
+          "correct_count": 1,
+          "total_count": 5,
+          "accuracy": 20.0
+        },
+        "section_63": {
+          "finished_flag": true
+        },
+        "section_64": {
+          "correct_count": 2,
+          "total_count": 5,
+          "accuracy": 40.0
+        },
+        "section_65": {
+          "correct_count": 4,
+          "total_count": 15,
+          "accuracy": 26.7
+        },
+        "section_66": {
+          "finished_flag": true
+        },
+        "section_67": {
+          "correct_count": 0,
+          "total_count": 5,
+          "accuracy": 0.0
+        },
+        "section_68": {
+          "finished_flag": true
+        },
+        "section_69": {
+          "correct_count": 2,
+          "total_count": 5,
+          "accuracy": 40.0
+        },
+        "section_70": {
+          "finished_flag": true
+        },
+        "section_71": {
+          "correct_count": 1,
+          "total_count": 5,
+          "accuracy": 20.0
+        },
+        "section_72": {
+          "finished_flag": true
+        },
+        "section_73": {
+          "correct_count": 3,
+          "total_count": 5,
+          "accuracy": 60.0
+        },
+        "section_74": {
+          "correct_count": 4,
+          "total_count": 15,
+          "accuracy": 26.7
         }
       }
     }
