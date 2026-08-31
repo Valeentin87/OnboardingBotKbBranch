@@ -361,6 +361,7 @@ class TrainingStates:
         'module_7_questions': 'module_7_questions',
         'module_7_final_testing': 'module_7_final_testing',
         # итоговый тест по курсу ОБУЧЕНИЕ ДЛЯ КОНТСРУКТТОРОВ
-        'final_test_start': 'final_test_start',
-        'final_test_questions': 'final_test_questions'
+        'before_send_qustions':'before_send_qustions',
+        'final_test_questions': 'final_test_questions',
+        'final_test_start': 'final_test_start'  
     }
