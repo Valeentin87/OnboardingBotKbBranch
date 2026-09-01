@@ -3613,7 +3613,7 @@
       "username": "Валентин Иванов",
       "first_name": "Валентин",
       "last_name": "Иванов",
-      "last_activity": "2026-08-31T17:13:24.678736"
+      "last_activity": "2026-09-01T19:49:21.201548"
     },
     "courses": {
       "Обучение по продукту": {
@@ -3624,11 +3624,11 @@
         "accuracy_percent": 40.0
       },
       "Обучение для конструкторов": {
-        "lessons_completed": 83,
-        "total_lessons": 85,
-        "correct_answers": 114,
-        "total_answers": 450,
-        "accuracy_percent": 25.3
+        "lessons_completed": 84,
+        "total_lessons": 84,
+        "correct_answers": 174,
+        "total_answers": 680,
+        "accuracy_percent": 25.6
       }
     },
     "lesson_results": {
@@ -3946,41 +3946,56 @@
           "finished_flag": true
         },
         "section_76": {
-          "correct_count": 1,
+          "correct_count": 2,
           "total_count": 5,
-          "accuracy": 20.0
+          "accuracy": 40.0
         },
         "section_77": {
           "finished_flag": true
         },
         "section_78": {
-          "correct_count": 2,
+          "correct_count": 3,
           "total_count": 5,
-          "accuracy": 40.0
+          "accuracy": 60.0
         },
         "section_79": {
           "finished_flag": true
         },
         "section_80": {
-          "correct_count": 2,
+          "correct_count": 0,
           "total_count": 5,
-          "accuracy": 40.0
+          "accuracy": 0.0
         },
         "section_81": {
           "finished_flag": true
         },
         "section_82": {
-          "correct_count": 2,
+          "correct_count": 3,
           "total_count": 5,
-          "accuracy": 40.0
+          "accuracy": 60.0
         },
         "section_83": {
           "correct_count": 4,
           "total_count": 15,
           "accuracy": 26.7
+        },
+        "final_test": {
+          "correct_count": 7,
+          "total_count": 30,
+          "accuracy": 23.3
         }
       }
-    }
+    },
+    "completed_attempts": [
+      {
+        "date_completed": "2026-09-01T19:49:21.224923",
+        "correct_answers": 174,
+        "total_answers": 680,
+        "accuracy_percent": 25.6,
+        "lessons_completed": 7,
+        "course_name": "Обучение по продукту"
+      }
+    ]
   },
   "231035421": {
     "user_info": {
