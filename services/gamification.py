@@ -4,6 +4,7 @@ from typing import Dict, Any
 from datetime import datetime
 #import logging
 from bot.adapters.max.create_bot import logger
+from services.redis_storage import del_value_from_redis, get_value_from_redis, save_cursor
 
 # USERNAME = "fps_shabalin"
 # PROJECT_NAME = "onboarding_bot_with_redis"
@@ -23,7 +24,7 @@ class GamificationService:
             "Обучение по продукту": 7,
             "Обучение для юриста": 12,
             "Регулярный менеджмент": 10,
-            "Обучение для конструкторов": 85
+            "Обучение для конструкторов": 84
         }
         self.current_course = current_course
         
@@ -140,6 +141,11 @@ class GamificationService:
     async def increment_lesson_func(self, user_id: int, course_name: str, lesson_id: str, user_data: dict = None, increment_value: int = 1):
         """Увеличивает количество пройденных по курсу уроков"""
         # Загружаем все данные
+        logger.info('Проверяем наличие флага повторной попытки прохождения урока в redis_storage')
+        repeat_attemp = await get_value_from_redis(user_id, 'repeat_attemp')
+        if repeat_attemp:
+            await del_value_from_redis(user_id, 'repeat_attemp')
+            return
         data = self._load_data()
         
         # Инициализируем структуру пользователя
@@ -187,7 +193,10 @@ class GamificationService:
                 'accuracy_percent': 0.0
             }
         course_progress = data[user_key]['courses'][course_name]
-        course_progress['lessons_completed'] += increment_value
+        all_completed_lessons = data[user_key]['lesson_results'][course_name]
+        logger.info(f'Уже пройденные уроки по курсу {course_name}: {list(all_completed_lessons.keys())}')
+        if lesson_id not in all_completed_lessons:
+            course_progress['lessons_completed'] += increment_value
         
         info_dict = data[user_key]['lesson_results']
         course_result_flag = info_dict.setdefault(course_name, {})
@@ -281,6 +290,7 @@ class GamificationService:
         
         if not is_first_attempt:
             logger.info(f'[INFO][GamificationService][update_lesson_progress] повторная попытка — вычитаем старый результат')
+            await save_cursor(user_id, extra_data={'repeat_attemp': True})
             # Если повторная попытка — вычитаем старый результат
             old_result = data[user_key]['lesson_results'][course_name][lesson_id]
             old_correct = old_result.get('correct_count', 0)
@@ -660,7 +670,7 @@ class GamificationService:
         elif course_name == 'Регулярный менеджмент':
             lessons_completed = 10
         elif course_name == 'Обучение для конструкторов':
-            lessons_completed = 85
+            lessons_completed = 84
         else:
             logger.warning("Кажется не корректное название курса обучения, возможно надо поменять на ОБУЧЕНИЕ ПО ПРОДУКТУ")
             
@@ -852,7 +862,7 @@ class GamificationService:
         elif course_name == "Регулярный менеджмент":
             total_lessons = 10
         elif course_name == "Обучение для конструкторов":
-            total_lessons = 10
+            total_lessons = 84
         else:
             logger.warning("Кажется не корректное название курса обучения, возможно надо поменять на ОБУЧЕНИЕ ПО ПРОДУКТУ")
 
