@@ -2,6 +2,7 @@
 __pycache__/
 *.py[codz]
 *$py.class
+konstructor_readme.txt
 
 # C extensions
 *.so
