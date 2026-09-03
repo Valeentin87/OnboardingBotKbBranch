@@ -105,6 +105,7 @@ def format_progress_attempts(attempts: list) -> str:
     logger.info(f'{max_accuracy=}')
 
     formatted_blocks = []
+    block_lines = []
 
     for attempt in attempts:
         logger.info(f'{attempt=}')
@@ -139,7 +140,11 @@ def format_progress_attempts(attempts: list) -> str:
             ]
         elif attempt["course_name"] == "Обучение для конструкторов":
             pass # заглушка
-            
+            block_lines = [
+                f"🗓️ Дата прохождения: {formatted_date}",
+                f"✅ Уроков пройдено: {attempt['lessons_completed']} / 84",
+                f"📈 Процент правильных ответов: {attempt['accuracy_percent']}%"
+            ]
 
         block = "\n".join(block_lines)
 

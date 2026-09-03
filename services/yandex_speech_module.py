@@ -7,6 +7,7 @@ import aiohttp
 import requests
 from dotenv import load_dotenv
 from aiomax import Bot
+from bot.adapters.max.create_bot import bot, logger
 
 load_dotenv()
 
@@ -18,7 +19,7 @@ BOT_TOKEN = os.getenv('MAX_BOT_TOKEN')
 YANDEX_API_KEY = os.getenv('YANDEX_API_KEY').strip()
 YANDEX_FOLDER_ID = os.getenv('YANDEX_FOLDER_ID').strip()
 
-bot = Bot(access_token=BOT_TOKEN)
+# bot = Bot(access_token=BOT_TOKEN)
 
 
 async def download_file_by_url(url: str, destination: str):
@@ -145,7 +146,7 @@ async def transcribe_voice_yandex(file_path: str) -> str:
         return ""
     
 
-@bot.on_message()
+#@bot.on_message()
 async def handle_message(update):
     message = update.message if hasattr(update, 'message') else update
 
@@ -162,6 +163,7 @@ async def handle_message(update):
         return
 
     logging.info(f"=== Обработка аудиосообщения ID: {message.id} ===")
+    await message.send(f"🗣 **Распознаю Ваше голосовое сообщение...**")
 
     input_file = f"voice_input_{message.id}.ogg"
     converted_file = f"voice_ready_{message.id}.ogg"  # Сохраняем в эталонный .ogg контейнер
@@ -181,8 +183,8 @@ async def handle_message(update):
             logging.info(f"[Результат] Текст: '{text_result}'")
 
             if text_result:
-                await message.reply(f"🗣 **Текст сообщения:**\n\n{text_result}")
-                return
+                # await message.reply(f"🗣 **Текст сообщения:**\n\n{text_result}")
+                return text_result
 
         await message.reply("❌ Не удалось распознать речь.")
 

@@ -67,7 +67,7 @@ class GigaChatService:
     @staticmethod
     async def _get_embeddings(giga: GigaChat, texts: List[str]):
         """Вспомогательный метод для вызова API эмбеддингов."""
-        response = await giga.embeddings(texts=texts)
+        response = giga.embeddings(texts=texts)
         return [item.embedding for item in response.data]
 
     @staticmethod
@@ -132,7 +132,7 @@ class GigaChatService:
             return ""
 
         try:
-            q_emb_resp = await giga.embeddings(texts=[question])
+            q_emb_resp = giga.embeddings(texts=[question])
             q_emb = q_emb_resp.data[0].embedding
         except Exception as e:
             logger.error(f"Не удалось получить эмбеддинг вопроса: {e}")
