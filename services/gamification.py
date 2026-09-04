@@ -232,6 +232,18 @@ class GamificationService:
             user_data: Данные пользователя (username, first_name, last_name)
         """
         logger.info(f'[INFO][GamificationService][update_lesson_progress] Обновляем прогресс пользователя по курсу: {course_name}')
+        logger.info("Проверяем не нужно ли нам добавить end_module_flag, для правильных дейтсвий в случае падения сервера")
+        if lesson_id == 'section_46':
+            await save_cursor(user_id, extra_data = {'end_module_flag': 'module_3'})
+        elif lesson_id == 'section_55':
+            await save_cursor(user_id, extra_data = {'end_module_flag': 'module_4'})
+        elif lesson_id == 'section_64':
+            await save_cursor(user_id, extra_data = {'end_module_flag': 'module_5'})
+        elif lesson_id == 'section_73':
+            await save_cursor(user_id, extra_data = {'end_module_flag': 'module_6'})
+        elif lesson_id == 'section_82':
+            await save_cursor(user_id, extra_data = {'end_module_flag': 'module_7'})
+        
         # Загружаем все данные
         data = self._load_data()
         
